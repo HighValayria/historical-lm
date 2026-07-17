@@ -154,3 +154,14 @@
 - Blockers: none.
 - Next ready node: T62.
 
+## T62 - Generate next autonomous task graph
+
+- Date: 2026-07-17.
+- Status: completed.
+- Actions: generated next-run backlog and marked exploration-001 complete.
+- Artifacts: `state/NEXT_RUN_BACKLOG.yaml`, `reports/nodes/T62.md`.
+- Changed assumptions: next run should focus on verified passages, OCR quality, annotation consistency, and no-training evaluation.
+- Decisions: adaptation remains deferred until the next run produces passage-grounded benchmark evidence.
+- Blockers: none.
+- Next ready node: none for exploration-001.
+

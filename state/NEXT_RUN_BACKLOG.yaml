@@ -1,0 +1,164 @@
+run_id: exploration-002-proposed
+objective: >
+  Convert the first-run benchmark seed into a passage-grounded pilot benchmark
+  and run a no-training prompt/source/RAG comparison for late-Qing
+  public-health historical knowledge boundaries.
+
+nodes:
+  N00:
+    title: Confirm source-use terms and passage extraction plan
+    depends_on: []
+    objective: Review rights/access signals for Wellcome, CRL, and bnAsie items before extracting passages.
+    planned_actions:
+      - Review item pages and rights statements.
+      - Record allowed use, citation format, and download constraints.
+      - Select 2-3 items for close passage extraction.
+    expected_artifacts:
+      - reports/next/source_use_review.md
+      - decisions/source_use_decisions.md
+    completion_criteria:
+      - Each selected source has rights/access notes and allowed next action.
+    stopping_criteria:
+      - Stop using any source if terms prohibit the intended extraction.
+
+  N01:
+    title: Extract verified pilot passages
+    depends_on: [N00]
+    objective: Extract 4-8 short, cited passages from permission-compatible sources.
+    planned_actions:
+      - Extract short passages from selected PDFs/pages.
+      - Record source title, date, page/stable locator, transcription status, and source-family caveat.
+      - Preserve raw extraction metadata separately from processed snippets.
+    expected_artifacts:
+      - data/raw/passage_extraction/
+      - data/processed/pilot_passages.jsonl
+      - reports/next/passage_extraction_report.md
+    completion_criteria:
+      - At least 4 verified passages exist with complete metadata.
+    stopping_criteria:
+      - Stop if no source allows lawful passage extraction.
+
+  N02:
+    title: Probe PDF/OCR quality on selected items
+    depends_on: [N00]
+    objective: Test text extraction/OCR quality on the Wellcome and bnAsie PDF candidates.
+    planned_actions:
+      - Extract text from one or two PDFs.
+      - Compare a small sample against page images manually.
+      - Record layout, table, encoding, and OCR problems.
+    expected_artifacts:
+      - probes/ocr/pdf_text_probe_results.json
+      - reports/next/ocr_quality_report.md
+    completion_criteria:
+      - OCR/text quality is classified for at least two source items.
+    stopping_criteria:
+      - Stop before bulk extraction if item terms or quality fail.
+
+  N03:
+    title: Expand pilot benchmark with passage-grounded items
+    depends_on: [N01]
+    objective: Add source-grounded factual, lexical, causal, value, and attribution items.
+    planned_actions:
+      - Convert verified passages into benchmark items.
+      - Replace or supplement `needs_source_excerpt` placeholders.
+      - Validate JSONL with the T51 probe.
+    expected_artifacts:
+      - benchmarks/pilot/pilot_items_v0_2.jsonl
+      - benchmarks/pilot/passage_item_manifest.md
+    completion_criteria:
+      - At least 20 benchmark items, including at least 8 passage-grounded items.
+    stopping_criteria:
+      - Stop expansion if annotation labels cannot be assigned consistently.
+
+  N04:
+    title: Annotation consistency dry run
+    depends_on: [N03]
+    objective: Test whether the anachronism taxonomy can be applied consistently.
+    planned_actions:
+      - Double-annotate a small item subset.
+      - Record disagreements and revise guidelines.
+    expected_artifacts:
+      - reports/next/annotation_dry_run.md
+      - benchmarks/pilot/annotation_guidelines_v0_2.md
+    completion_criteria:
+      - Main disagreement categories are documented and guidelines revised.
+    stopping_criteria:
+      - Stop if core labels remain too ambiguous after revision.
+
+  N05:
+    title: Add family-aware retrieval and date-authority routing
+    depends_on: [N03]
+    objective: Improve the T51 prototype so post-cutoff controls and source-grounded items route differently.
+    planned_actions:
+      - Add retrieval filters by item family and source IDs.
+      - Add date-authority handling for post-cutoff controls.
+      - Emit per-item retrieval diagnostics.
+    expected_artifacts:
+      - prototypes/min_engineering_probe/probe_v0_2.py
+      - prototypes/min_engineering_probe/probe_v0_2_results.json
+    completion_criteria:
+      - Prototype validates expanded benchmark and avoids historical-source retrieval for pure post-cutoff controls.
+    stopping_criteria:
+      - Stop if benchmark fields are insufficient for routing and update schema first.
+
+  N06:
+    title: Run no-training prompt/source/RAG comparison
+    depends_on: [N03, N05]
+    objective: Compare prompt-only, source-provided, and local retrieval conditions without paid APIs.
+    planned_actions:
+      - Use local/open model only if already available; otherwise use labelled manual/procedural outputs.
+      - Score outputs against benchmark dimensions.
+      - Record anachronism and attribution error patterns.
+    expected_artifacts:
+      - reports/next/no_training_comparison.md
+      - data/processed/evaluation_outputs/
+    completion_criteria:
+      - At least 10 items evaluated under at least two conditions.
+    stopping_criteria:
+      - Stop before any paid API call or large training.
+
+  N07:
+    title: Authorized Chinese-source access assessment
+    depends_on: []
+    objective: Determine whether Shen Bao, late-Qing periodicals, or gazetteer full text can be used lawfully.
+    planned_actions:
+      - Record available institutional access and license terms if provided.
+      - If no access, document search strategy and remain blocked.
+    expected_artifacts:
+      - reports/next/chinese_source_access_assessment.md
+      - blockers/chinese_source_access_blockers.md
+    completion_criteria:
+      - Each candidate Chinese source is classified as authorized, manual-only, blocked, or unknown.
+    stopping_criteria:
+      - Do not bypass authentication, paywalls, CAPTCHAs, or no-batch-download rules.
+
+  N08:
+    title: Term registry for public-health lexical anachronism
+    depends_on: [N01, N07]
+    objective: Build a small term registry for `weisheng`, hygiene, quarantine, vaccination, plague, sanitation, and related terms.
+    planned_actions:
+      - Record source attestations and translation caveats.
+      - Separate source-attested terms from secondary-scholarship guidance.
+    expected_artifacts:
+      - evidence/term_registry.md
+      - benchmarks/pilot/lexical_items.jsonl
+    completion_criteria:
+      - At least 10 terms or term senses recorded with source status.
+    stopping_criteria:
+      - Stop if no primary attestation is available for a term.
+
+  N09:
+    title: Next synthesis and pilot report
+    depends_on: [N02, N04, N06]
+    objective: Synthesize passage extraction, OCR quality, annotation consistency, and no-training evaluation.
+    planned_actions:
+      - Update executive brief and final report.
+      - Decide whether to proceed to RAG expansion, Chinese-source access work, or adaptation comparison.
+    expected_artifacts:
+      - reports/next/PILOT_REPORT.md
+      - state/NEXT_RUN_BACKLOG_002.yaml
+    completion_criteria:
+      - Next research decision is evidence-based and source-boundary aware.
+    stopping_criteria:
+      - Stop if evidence is sufficient for a decision or if all data routes are blocked.
+
