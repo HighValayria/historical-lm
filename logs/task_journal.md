@@ -33,3 +33,14 @@
 - Blockers: unauthorized bulk use of Shen Bao, late-Qing periodical databases, ProQuest-style products, and some commercial gazetteer platforms.
 - Next ready nodes: T12 remains running.
 
+## T12 - Digital-humanities concept map
+
+- Date: 2026-07-17.
+- Status: completed.
+- Actions: defined project concepts, converted them into benchmark indicators, and drafted a label schema for historically bounded answers.
+- Artifacts: `evidence/concept_map.md`, `evidence/evidence_map.md`, `reports/nodes/T12.md`.
+- Changed assumptions: the benchmark must reward historically appropriate ignorance and provenance caveats.
+- Decisions: anachronism will be treated as a multi-label taxonomy, not a single error class.
+- Blockers: none.
+- Next ready node: T20.
+

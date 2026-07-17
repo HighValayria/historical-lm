@@ -61,3 +61,19 @@ Autonomous exploration. Initial stage classification: S1 evidence and S3 experim
 - Artifacts produced: `evidence/source_registry.md`, updated `evidence/evidence_map.md`, `reports/nodes/T11.md`, journal/state/decision/assumption/blocker updates.
 - Verification run: pending targeted file checks after patch.
 - Remaining risk: exact item-level OCR and reuse terms require T30/T31 probes.
+
+### T12 Completion
+
+- Status: completed.
+- Main output: `evidence/concept_map.md` and `reports/nodes/T12.md`.
+- Finding: the evaluation target should be "source-grounded, historically bounded answering" rather than generic factual QA.
+
+### Capability-use audit
+
+- Required skills: evidence-driven-writing, verification.
+- Skills actually used: evidence-driven-writing, verification.
+- Inputs consumed: T12 subagent report, T10/T11 outputs, historiography/archival/DH/NLG source metadata.
+- Inputs not used and why: one unverified 2026 benchmark-aging source proposed by the subagent was not included in core evidence.
+- Artifacts produced: `evidence/concept_map.md`, updated `evidence/evidence_map.md`, `reports/nodes/T12.md`, journal/state/decision/assumption updates.
+- Verification run: pending targeted file checks after patch.
+- Remaining risk: label definitions need pilot annotation before they can be considered stable.
