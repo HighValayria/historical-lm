@@ -22,3 +22,14 @@
 - Blockers: no hard blocker; close reading is still needed for fine-grained historical claims.
 - Next ready nodes: T11 and T12 remain running.
 
+## T11 - Historical source and access landscape
+
+- Date: 2026-07-17.
+- Status: completed.
+- Actions: mapped archive/database candidates, access modes, OCR/text signals, metadata quality, bulk-use feasibility, and source-population bias.
+- Artifacts: `evidence/source_registry.md`, `evidence/evidence_map.md`, `reports/nodes/T11.md`.
+- Changed assumptions: first pilot should be framed around accessible source ecologies, likely treaty-port/customs/missionary/municipal materials, not all late-Qing China.
+- Decisions: subscription newspaper/periodical databases are not bulk sources unless explicit institutional authorization is obtained.
+- Blockers: unauthorized bulk use of Shen Bao, late-Qing periodical databases, ProQuest-style products, and some commercial gazetteer platforms.
+- Next ready nodes: T12 remains running.
+

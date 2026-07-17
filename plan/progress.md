@@ -45,3 +45,19 @@ Autonomous exploration. Initial stage classification: S1 evidence and S3 experim
 - Artifacts produced: `evidence/literature_matrix.md`, updated `evidence/evidence_map.md`, `reports/nodes/T10.md`, journal/state/decision/assumption updates.
 - Verification run: `Select-String` over literature matrix, run-state readback, `git status --short`.
 - Remaining risk: some source claims are abstract-level or publisher-metadata-level and need close reading before manuscript use.
+
+### T11 Completion
+
+- Status: completed.
+- Main output: `evidence/source_registry.md` and `reports/nodes/T11.md`.
+- Finding: open first-round probes should focus on customs, missionary, and municipal-report materials; Chinese newspaper/periodical databases remain important but access-constrained.
+
+### Capability-use audit
+
+- Required skills: literature-review, evidence-driven-writing, verification.
+- Skills actually used: literature-review, evidence-driven-writing, verification.
+- Inputs consumed: T11 subagent report, archive/library/catalogue pages, project access rules.
+- Inputs not used and why: subscription full-text databases were not accessed or bypassed.
+- Artifacts produced: `evidence/source_registry.md`, updated `evidence/evidence_map.md`, `reports/nodes/T11.md`, journal/state/decision/assumption/blocker updates.
+- Verification run: pending targeted file checks after patch.
+- Remaining risk: exact item-level OCR and reuse terms require T30/T31 probes.

@@ -3,14 +3,14 @@
   "status": "running",
   "completed_nodes": [
     "T00",
-    "T10"
+    "T10",
+    "T11"
   ],
   "running_nodes": [
-    "T11",
     "T12"
   ],
   "blocked_nodes": [],
   "skipped_nodes": [],
   "dynamic_nodes_created": 0,
-  "last_updated": "2026-07-17T21:22:00+08:00"
+  "last_updated": "2026-07-17T21:32:00+08:00"
 }
