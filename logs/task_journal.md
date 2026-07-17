@@ -66,3 +66,14 @@
 - Blockers: none.
 - Next ready nodes: T30, T40, T50.
 
+## T30 - Probe real data access
+
+- Date: 2026-07-17.
+- Status: completed.
+- Actions: created and ran a metadata-only source access probe for four high-priority source candidates.
+- Artifacts: `probes/data_access/probe_sources.ps1`, `probes/data_access/access_probe_results.json`, `probes/data_access/access_probe_summary.md`, `data/raw/access_probe/*_http_metadata.json`, `reports/nodes/T30.md`.
+- Changed assumptions: there are enough reachable item-level source entry points for a small pilot.
+- Decisions: continue with small item-level probes; do not infer bulk permissions from HTTP 200 pages.
+- Blockers: OCR/text availability and reuse terms remain unresolved for T31.
+- Next ready nodes: T31; T40 and T50 are also ready from T21.
+

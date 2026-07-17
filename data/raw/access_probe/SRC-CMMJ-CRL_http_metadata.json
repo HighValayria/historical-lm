@@ -1,0 +1,27 @@
+﻿{
+    "id":  "SRC-CMMJ-CRL",
+    "url":  "https://digitalcollections.crl.edu/record/370733?ln=en\u0026v=uv",
+    "probed_at":  "2026-07-17T21:27:21.1364226+08:00",
+    "status_code":  200,
+    "headers":  {
+                    "Transfer-Encoding":  "chunked",
+                    "Connection":  "keep-alive",
+                    "Strict-Transport-Security":  "max-age=63072000; includeSubdomains; preload",
+                    "Referrer-Policy":  "strict-origin-when-cross-origin",
+                    "Vary":  "Cookie,ETag,Cache-Control,Accept-Encoding",
+                    "Allow":  "GET, POST, HEAD, OPTIONS, PUT",
+                    "Cache-Control":  "public, max-age=3600, no-cache=\"set-cookie\"",
+                    "Content-Type":  "text/html; charset=UTF-8",
+                    "Date":  "Fri, 17 Jul 2026 13:27:17 GMT",
+                    "Set-Cookie":  "INVENIOSESSION_crlstub=NO; path=/; secure; HttpOnly; samesite=lax,INVENIOSESSION_crl=c7b98f34ceab5d79e92053bc16096466; path=/; secure; HttpOnly; samesite=lax,INVENIOSESSION_crl_csrf_token=8bfded587703f5210f7174e4e621e899f7152553fae953771f1897b899403854; path=/; secure; HttpOnly; samesite=lax",
+                    "Server":  "Apache",
+                    "X-Content-Type-Options":  "nosniff",
+                    "X-XSS-Protection":  "1; mode=block",
+                    "Content-Security-Policy":  "default-src https: \u0027self\u0027 tind.io *.tind.io \u0027unsafe-inline\u0027; img-src https: * blob: data: \u0027self\u0027; style-src https: * \u0027unsafe-inline\u0027; script-src https: * \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 blob: \u0027self\u0027; manifest-src https: *; media-src https: * blob: \u0027self\u0027; connect-src https: wss: *; frame-ancestors \u0027self\u0027; upgrade-insecure-requests",
+                    "Content-Security-Policy-Report-Only":  "default-src https: \u0027self\u0027 tind.io *.tind.io \u0027unsafe-inline\u0027; img-src https: * blob: data: \u0027self\u0027; style-src https: * \u0027unsafe-inline\u0027; script-src \u0027self\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 blob: https://www.google.com https://www.gstatic.com https://cdnjs.cloudflare.com https://cdn.jwplayer.com https://*.disqus.com https://stats.tind.io; manifest-src https: *; media-src https: * blob: \u0027self\u0027; connect-src \u0027self\u0027 https://www.google.com https://www.gstatic.com https://*.disqus.com https://*.s3.amazonaws.com https://*.s3.eu-west-1.amazonaws.com https://stats.tind.io https://sentry.internal.tind.io; frame-ancestors \u0027self\u0027; upgrade-insecure-requests ; object-src \u0027none\u0027; report-uri https://sentry.internal.tind.io/api/38/security/?sentry_key=5e4555fe193047f686380355d5716bcc\u0026sentry_environment=digitalcollections.crl.edu"
+                },
+    "title":  "The China medical missionary journal, 1894",
+    "sha256":  "6cb539d12f04fdcb53e99c3ac29811076088138af9b0a1146f56d03e3b5c0acb",
+    "observed_bytes":  55786,
+    "note":  "Metadata-only access probe; response body was not persisted."
+}

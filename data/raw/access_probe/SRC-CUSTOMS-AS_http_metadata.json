@@ -1,0 +1,21 @@
+﻿{
+    "id":  "SRC-CUSTOMS-AS",
+    "url":  "https://mhdb.mh.sinica.edu.tw/customs/web/",
+    "probed_at":  "2026-07-17T21:27:26.2870435+08:00",
+    "status_code":  200,
+    "headers":  {
+                    "X-Frame-Options":  "SAMEORIGIN",
+                    "Frame-Options":  "SAMEORIGIN",
+                    "X-XSS-Protection":  "1; mode=block",
+                    "Strict-Transport-Security":  "max-age=31536000; includeSubDomains; preload",
+                    "Content-Security-Policy":  "default-src \u0027self\u0027 www.google-analytics.com;script-src \u0027self\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 www.googletagmanager.com www.google-analytics.com www.google.com www.gstatic.com www.youtube.com; style-src \u0027self\u0027 \u0027unsafe-inline\u0027;img-src \u0027self\u0027 data: gis.sinica.edu.tw mhdb.mh.sinica.edu.tw;",
+                    "Transfer-Encoding":  "chunked",
+                    "Content-Type":  "text/html; charset=UTF-8",
+                    "Date":  "Fri, 17 Jul 2026 13:27:21 GMT",
+                    "Server":  "Apache"
+                },
+    "title":  "海關資料總入口",
+    "sha256":  "03a8aecd9b7fe587394c144cde009af74816db3fd98deac4411f71cdc29750ab",
+    "observed_bytes":  20509,
+    "note":  "Metadata-only access probe; response body was not persisted."
+}

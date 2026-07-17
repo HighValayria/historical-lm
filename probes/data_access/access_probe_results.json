@@ -1,0 +1,62 @@
+﻿[
+    {
+        "id":  "SRC-CUSTOMS-WELLCOME",
+        "url":  "https://wellcomecollection.org/works/za7rnxwq",
+        "expected":  "Wellcome item page for C. A. Gordon customs medical reports epitome",
+        "probed_at":  "2026-07-17T21:27:17.6554355+08:00",
+        "status":  "reachable",
+        "http_status":  200,
+        "content_type":  "text/html; charset=utf-8",
+        "content_length_header":  "533508",
+        "observed_bytes":  533508,
+        "sha256":  "33cd4ad38f89bbc6f81c6ada5de840988e3d81b6a13b18a9c9ba8b97c4d8da3a",
+        "title":  "An epitome of the reports of the medical officers to the Chinese imperial maritime customs service, from 1871 to 1882 : with chapters on the history of medicine in China; materia medica; epidemics; famine; ethnology; and chronology in relation to medicine and public health / compiled and arranged by C.A. Gordon. | Wellcome Collection",
+        "raw_metadata_file":  "data\\raw\\access_probe\\SRC-CUSTOMS-WELLCOME_http_metadata.json",
+        "error":  null
+    },
+    {
+        "id":  "SRC-CMMJ-CRL",
+        "url":  "https://digitalcollections.crl.edu/record/370733?ln=en\u0026v=uv",
+        "expected":  "CRL record for China Medical Missionary Journal",
+        "probed_at":  "2026-07-17T21:27:21.1364226+08:00",
+        "status":  "reachable",
+        "http_status":  200,
+        "content_type":  "text/html; charset=UTF-8",
+        "content_length_header":  "",
+        "observed_bytes":  55786,
+        "sha256":  "6cb539d12f04fdcb53e99c3ac29811076088138af9b0a1146f56d03e3b5c0acb",
+        "title":  "The China medical missionary journal, 1894",
+        "raw_metadata_file":  "data\\raw\\access_probe\\SRC-CMMJ-CRL_http_metadata.json",
+        "error":  null
+    },
+    {
+        "id":  "SRC-SMC-BNASIE",
+        "url":  "https://www.bnasie.eu/BN/Periodicals?ID=60",
+        "expected":  "bnAsie Shanghai Municipal Council annual report page",
+        "probed_at":  "2026-07-17T21:27:23.6585173+08:00",
+        "status":  "reachable",
+        "http_status":  200,
+        "content_type":  "text/html; charset=utf-8",
+        "content_length_header":  "",
+        "observed_bytes":  12306,
+        "sha256":  "5aadc62055b57bb6af9e4d6acb53ee008d9be08a66b07164d2648f4945526c6e",
+        "title":  "Report for the year 1898 and budget for the year 1899 - Shanghai Municipal Council | bnAsie",
+        "raw_metadata_file":  "data\\raw\\access_probe\\SRC-SMC-BNASIE_http_metadata.json",
+        "error":  null
+    },
+    {
+        "id":  "SRC-CUSTOMS-AS",
+        "url":  "https://mhdb.mh.sinica.edu.tw/customs/web/",
+        "expected":  "Academia Sinica Chinese Maritime Customs database landing page",
+        "probed_at":  "2026-07-17T21:27:26.2870435+08:00",
+        "status":  "reachable",
+        "http_status":  200,
+        "content_type":  "text/html; charset=UTF-8",
+        "content_length_header":  "",
+        "observed_bytes":  20509,
+        "sha256":  "03a8aecd9b7fe587394c144cde009af74816db3fd98deac4411f71cdc29750ab",
+        "title":  "海關資料總入口",
+        "raw_metadata_file":  "data\\raw\\access_probe\\SRC-CUSTOMS-AS_http_metadata.json",
+        "error":  null
+    }
+]

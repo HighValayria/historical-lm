@@ -1,0 +1,23 @@
+﻿{
+    "id":  "SRC-SMC-BNASIE",
+    "url":  "https://www.bnasie.eu/BN/Periodicals?ID=60",
+    "probed_at":  "2026-07-17T21:27:23.6585173+08:00",
+    "status_code":  200,
+    "headers":  {
+                    "Strict-Transport-Security":  "max-age=31536000; includeSubDomains",
+                    "Pragma":  "no-cache",
+                    "Transfer-Encoding":  "chunked",
+                    "Cache-Control":  "private",
+                    "Content-Type":  "text/html; charset=utf-8",
+                    "Date":  "Fri, 17 Jul 2026 13:27:19 GMT",
+                    "Expires":  "Thu, 19 Nov 1981 08:52:00 GMT",
+                    "Last-Modified":  "Fri, 17 Jul 2026 13:27:19 GMT",
+                    "Set-Cookie":  "PHPSESSID=09gitb8b93h47v5nb6lrbn8q57; path=/",
+                    "Server":  "Apache/2.4.6 (CentOS) PHP/7.0.33 OpenSSL/1.0.2k-fips mod_fcgid/2.3.9",
+                    "X-Powered-By":  "PHP/7.0.33"
+                },
+    "title":  "Report for the year 1898 and budget for the year 1899 - Shanghai Municipal Council | bnAsie",
+    "sha256":  "5aadc62055b57bb6af9e4d6acb53ee008d9be08a66b07164d2648f4945526c6e",
+    "observed_bytes":  12306,
+    "note":  "Metadata-only access probe; response body was not persisted."
+}
