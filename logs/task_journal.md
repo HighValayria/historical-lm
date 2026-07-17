@@ -99,3 +99,14 @@
 - Blockers: source-passage extraction still needed for full factual/lexical/causal/value evaluation.
 - Next ready node: T41.
 
+## T41 - Build a small pilot benchmark
+
+- Date: 2026-07-17.
+- Status: completed.
+- Actions: created pilot source records, 12 seed benchmark items, and annotation guidelines.
+- Artifacts: `benchmarks/pilot/source_records.jsonl`, `benchmarks/pilot/pilot_items.jsonl`, `benchmarks/pilot/annotation_guidelines.md`, `reports/nodes/T41.md`.
+- Changed assumptions: current seed is ready for schema/prototype validation, not full historical scoring.
+- Decisions: passage-dependent items are labelled `needs_source_excerpt` and excluded from scoring.
+- Blockers: verified historical passages are still required for full factual/lexical/causal/value benchmark items.
+- Next ready node: T50 or T51 after T50.
+
