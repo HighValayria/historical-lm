@@ -132,3 +132,14 @@
 - Blockers: none; local `python` absent from PATH was resolved with bundled Python.
 - Next ready node: T60 after all branches complete.
 
+## T60 - Cross-branch synthesis
+
+- Date: 2026-07-17.
+- Status: completed.
+- Actions: synthesized findings across literature, sources, concepts, candidate scoring, access/OCR probes, benchmark seed, and engineering probe.
+- Artifacts: `reports/cross_branch_synthesis.md`, `reports/nodes/T60.md`.
+- Changed assumptions: first-round evidence is sufficient to recommend a benchmark-first path, but not a model-training path.
+- Decisions: final report should frame feasibility as conditional and source-ecology-specific.
+- Blockers: none.
+- Next ready node: T61.
+
