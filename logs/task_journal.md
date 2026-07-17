@@ -110,3 +110,14 @@
 - Blockers: verified historical passages are still required for full factual/lexical/causal/value benchmark items.
 - Next ready node: T50 or T51 after T50.
 
+## T50 - Compare technical routes
+
+- Date: 2026-07-17.
+- Status: completed.
+- Actions: compared prompting, source-provided prompting, local RAG, OCR-first corpus work, DAPT/TAPT, LoRA/QLoRA, and hybrid routes.
+- Artifacts: `reports/technical_route_comparison.md`, `reports/nodes/T50.md`.
+- Changed assumptions: first engineering probe should validate benchmark and retrieval readiness, not train a model.
+- Decisions: T51 will implement a local no-training schema/retrieval/evaluation-readiness prototype.
+- Blockers: none.
+- Next ready node: T51.
+
