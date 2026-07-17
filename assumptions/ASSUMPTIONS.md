@@ -4,4 +4,5 @@
 |---|---|---|---|---|---|---|
 | A-0001 | 2026-07-17 | T00 | The first run can proceed without user confirmation between nodes. | active | `MASTER_PROMPT.md` and user instruction. | Low. |
 | A-0002 | 2026-07-17 | T00 | The source period and cutoff remain provisional until source and evaluation feasibility are tested. | active | `PROJECT_CHARTER.md`. | Medium. |
+| A-0003 | 2026-07-17 | T10 | Historical RAG and benchmark design are more immediately informative than LoRA/DAPT training. | active | T10 literature landscape. | Medium; revisit after T50. |
 

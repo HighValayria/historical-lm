@@ -22,3 +22,26 @@ Autonomous exploration. Initial stage classification: S1 evidence and S3 experim
 - Verification run: directory and file existence checks are scheduled after file creation.
 - Remaining risk: some local skill files are displayed with mojibake, so only unambiguous operational requirements were adopted.
 
+### T10/T11/T12 Branch Start
+
+- Status: running.
+- T10 delegated as a read-only research/method landscape branch.
+- T11 delegated as a read-only historical source/access landscape branch.
+- T12 delegated as a read-only digital-humanities concept-map branch.
+- Main-agent responsibility: normalize evidence, verify important claims, write repository artifacts, update state, and commit node boundaries.
+
+### T10 Completion
+
+- Status: completed.
+- Main output: `evidence/literature_matrix.md` and `reports/nodes/T10.md`.
+- Finding: there is enough adjacent method work to justify a pilot, but the missing piece is a source-grounded late-Qing public-health anachronism benchmark and not another generic temporal-LM experiment.
+
+### Capability-use audit
+
+- Required skills: literature-review, evidence-driven-writing, verification.
+- Skills actually used: literature-review, evidence-driven-writing, verification.
+- Inputs consumed: T10 subagent report, web source pages, project charter, task graph, config.
+- Inputs not used and why: full texts behind access barriers were not used; detailed historical claims were downgraded to partial verification where close reading is pending.
+- Artifacts produced: `evidence/literature_matrix.md`, updated `evidence/evidence_map.md`, `reports/nodes/T10.md`, journal/state/decision/assumption updates.
+- Verification run: `Select-String` over literature matrix, run-state readback, `git status --short`.
+- Remaining risk: some source claims are abstract-level or publisher-metadata-level and need close reading before manuscript use.

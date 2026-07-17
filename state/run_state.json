@@ -2,11 +2,15 @@
   "run_id": "exploration-001",
   "status": "running",
   "completed_nodes": [
-    "T00"
+    "T00",
+    "T10"
   ],
-  "running_nodes": [],
+  "running_nodes": [
+    "T11",
+    "T12"
+  ],
   "blocked_nodes": [],
   "skipped_nodes": [],
   "dynamic_nodes_created": 0,
-  "last_updated": "2026-07-17T21:05:15+08:00"
+  "last_updated": "2026-07-17T21:22:00+08:00"
 }
