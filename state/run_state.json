@@ -1,10 +1,12 @@
 {
   "run_id": "exploration-001",
-  "status": "not_started",
-  "completed_nodes": [],
+  "status": "running",
+  "completed_nodes": [
+    "T00"
+  ],
   "running_nodes": [],
   "blocked_nodes": [],
   "skipped_nodes": [],
   "dynamic_nodes_created": 0,
-  "last_updated": null
+  "last_updated": "2026-07-17T21:05:15+08:00"
 }
