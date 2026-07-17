@@ -1,0 +1,36 @@
+project:
+  provisional_cutoff: "1900-01-01"
+  provisional_source_period:
+    start: "1880-01-01"
+    end: "1899-12-31"
+  provisional_domain: "late-Qing public health"
+
+run:
+  mode: "autonomous_exploration"
+  ask_for_confirmation_between_nodes: false
+  allow_dynamic_nodes: true
+  max_dynamic_nodes: 12
+  continue_after_blocker: true
+  require_git_commits: true
+
+budgets:
+  large_model_training_allowed: false
+  paid_external_model_api_allowed: false
+  bypass_access_controls_allowed: false
+  exhaustive_web_scraping_allowed: false
+
+candidate_scoring:
+  dimensions:
+    - digital_humanities_value
+    - novelty
+    - data_feasibility
+    - evaluation_clarity
+    - compute_feasibility
+    - value_if_results_are_negative
+  scale_min: 1
+  scale_max: 5
+
+stopping:
+  no_material_new_findings_rounds: 3
+  stop_if_access_is_prohibited: true
+  stop_if_evidence_is_sufficient_for_decision: true

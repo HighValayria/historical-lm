@@ -1,0 +1,10 @@
+{
+  "run_id": "exploration-001",
+  "status": "not_started",
+  "completed_nodes": [],
+  "running_nodes": [],
+  "blocked_nodes": [],
+  "skipped_nodes": [],
+  "dynamic_nodes_created": 0,
+  "last_updated": null
+}

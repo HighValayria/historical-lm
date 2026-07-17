@@ -1,0 +1,20 @@
+# Local caches and temporary files
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+.cache/
+tmp/
+temp/
+
+# Potentially large downloaded or generated files
+data_raw/
+models/
+checkpoints/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

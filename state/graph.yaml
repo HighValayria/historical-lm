@@ -1,0 +1,46 @@
+nodes:
+  T00:
+    title: Bootstrap workspace and protocols
+    depends_on: []
+  T10:
+    title: Research and method landscape
+    depends_on: [T00]
+  T11:
+    title: Historical source and access landscape
+    depends_on: [T00]
+  T12:
+    title: Digital-humanities concept map
+    depends_on: [T00]
+  T20:
+    title: Generate candidate research questions
+    depends_on: [T10, T11, T12]
+  T21:
+    title: Score and select candidate directions
+    depends_on: [T20]
+  T30:
+    title: Probe real data access
+    depends_on: [T21]
+  T31:
+    title: Probe OCR and metadata quality
+    depends_on: [T30]
+  T40:
+    title: Design anachronism benchmark
+    depends_on: [T21]
+  T41:
+    title: Build a small pilot benchmark
+    depends_on: [T40]
+  T50:
+    title: Compare technical routes
+    depends_on: [T21]
+  T51:
+    title: Build a minimum engineering probe
+    depends_on: [T50]
+  T60:
+    title: Cross-branch synthesis
+    depends_on: [T31, T41, T51]
+  T61:
+    title: Final exploratory report
+    depends_on: [T60]
+  T62:
+    title: Generate next autonomous task graph
+    depends_on: [T61]
