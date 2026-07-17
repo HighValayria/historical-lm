@@ -44,3 +44,14 @@
 - Blockers: none.
 - Next ready node: T20.
 
+## T20 - Generate candidate research questions
+
+- Date: 2026-07-17.
+- Status: completed.
+- Actions: generated seven candidate research questions from T10/T11/T12 evidence.
+- Artifacts: `reports/candidate_research_questions.md`, `reports/nodes/T20.md`.
+- Changed assumptions: strong candidates should combine source criticism, benchmark design, and lightweight technical evaluation.
+- Decisions: defer model adaptation comparisons until after data and benchmark probes.
+- Blockers: none.
+- Next ready node: T21.
+
