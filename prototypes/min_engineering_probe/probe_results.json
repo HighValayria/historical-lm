@@ -1,0 +1,311 @@
+{
+  "schema": "benchmarks\\pilot\\schema.json",
+  "source_count": 4,
+  "item_count": 12,
+  "error_count": 0,
+  "errors": [],
+  "scoring_ready_count": 10,
+  "requires_passage_count": 2,
+  "items": [
+    {
+      "item_id": "PHB-001",
+      "family": "post_cutoff_control",
+      "evidence_status": "post_cutoff_control_verified",
+      "expected_answer_policy": "reject_anachronism",
+      "scoring_ready": true,
+      "readiness_reason": "ready_for_policy_or_metadata_scoring",
+      "top_retrieval_candidates": [
+        {
+          "source_id": "SRC-CUSTOMS-WELLCOME",
+          "source_family": "customs",
+          "overlap": 5
+        },
+        {
+          "source_id": "SRC-SMC-BNASIE",
+          "source_family": "municipal_treaty_port",
+          "overlap": 4
+        },
+        {
+          "source_id": "SRC-CUSTOMS-AS",
+          "source_family": "customs_portal",
+          "overlap": 2
+        }
+      ]
+    },
+    {
+      "item_id": "PHB-002",
+      "family": "post_cutoff_control",
+      "evidence_status": "post_cutoff_control_verified",
+      "expected_answer_policy": "reject_anachronism",
+      "scoring_ready": true,
+      "readiness_reason": "ready_for_policy_or_metadata_scoring",
+      "top_retrieval_candidates": [
+        {
+          "source_id": "SRC-CUSTOMS-WELLCOME",
+          "source_family": "customs",
+          "overlap": 3
+        },
+        {
+          "source_id": "SRC-CUSTOMS-AS",
+          "source_family": "customs_portal",
+          "overlap": 2
+        },
+        {
+          "source_id": "SRC-CMMJ-CRL",
+          "source_family": "missionary_medical",
+          "overlap": 1
+        }
+      ]
+    },
+    {
+      "item_id": "PHB-003",
+      "family": "post_cutoff_control",
+      "evidence_status": "post_cutoff_control_verified",
+      "expected_answer_policy": "reject_anachronism",
+      "scoring_ready": true,
+      "readiness_reason": "ready_for_policy_or_metadata_scoring",
+      "top_retrieval_candidates": [
+        {
+          "source_id": "SRC-CUSTOMS-WELLCOME",
+          "source_family": "customs",
+          "overlap": 4
+        },
+        {
+          "source_id": "SRC-CMMJ-CRL",
+          "source_family": "missionary_medical",
+          "overlap": 1
+        },
+        {
+          "source_id": "SRC-CUSTOMS-AS",
+          "source_family": "customs_portal",
+          "overlap": 1
+        }
+      ]
+    },
+    {
+      "item_id": "PHB-004",
+      "family": "metadata_provenance",
+      "evidence_status": "metadata_verified",
+      "expected_answer_policy": "answer_with_caveat",
+      "scoring_ready": true,
+      "readiness_reason": "ready_for_policy_or_metadata_scoring",
+      "top_retrieval_candidates": [
+        {
+          "source_id": "SRC-CUSTOMS-WELLCOME",
+          "source_family": "customs",
+          "overlap": 9
+        },
+        {
+          "source_id": "SRC-SMC-BNASIE",
+          "source_family": "municipal_treaty_port",
+          "overlap": 6
+        },
+        {
+          "source_id": "SRC-CUSTOMS-AS",
+          "source_family": "customs_portal",
+          "overlap": 5
+        }
+      ]
+    },
+    {
+      "item_id": "PHB-005",
+      "family": "metadata_provenance",
+      "evidence_status": "metadata_verified",
+      "expected_answer_policy": "answer_with_caveat",
+      "scoring_ready": true,
+      "readiness_reason": "ready_for_policy_or_metadata_scoring",
+      "top_retrieval_candidates": [
+        {
+          "source_id": "SRC-CMMJ-CRL",
+          "source_family": "missionary_medical",
+          "overlap": 13
+        },
+        {
+          "source_id": "SRC-CUSTOMS-WELLCOME",
+          "source_family": "customs",
+          "overlap": 7
+        },
+        {
+          "source_id": "SRC-CUSTOMS-AS",
+          "source_family": "customs_portal",
+          "overlap": 3
+        }
+      ]
+    },
+    {
+      "item_id": "PHB-006",
+      "family": "metadata_provenance",
+      "evidence_status": "metadata_verified",
+      "expected_answer_policy": "answer_with_caveat",
+      "scoring_ready": true,
+      "readiness_reason": "ready_for_policy_or_metadata_scoring",
+      "top_retrieval_candidates": [
+        {
+          "source_id": "SRC-SMC-BNASIE",
+          "source_family": "municipal_treaty_port",
+          "overlap": 12
+        },
+        {
+          "source_id": "SRC-CUSTOMS-WELLCOME",
+          "source_family": "customs",
+          "overlap": 5
+        },
+        {
+          "source_id": "SRC-CMMJ-CRL",
+          "source_family": "missionary_medical",
+          "overlap": 3
+        }
+      ]
+    },
+    {
+      "item_id": "PHB-007",
+      "family": "historical_ignorance",
+      "evidence_status": "metadata_verified",
+      "expected_answer_policy": "abstain_with_reason",
+      "scoring_ready": true,
+      "readiness_reason": "ready_for_policy_or_metadata_scoring",
+      "top_retrieval_candidates": [
+        {
+          "source_id": "SRC-CUSTOMS-WELLCOME",
+          "source_family": "customs",
+          "overlap": 6
+        },
+        {
+          "source_id": "SRC-SMC-BNASIE",
+          "source_family": "municipal_treaty_port",
+          "overlap": 5
+        },
+        {
+          "source_id": "SRC-CMMJ-CRL",
+          "source_family": "missionary_medical",
+          "overlap": 4
+        }
+      ]
+    },
+    {
+      "item_id": "PHB-008",
+      "family": "historical_ignorance",
+      "evidence_status": "metadata_verified",
+      "expected_answer_policy": "abstain_with_reason",
+      "scoring_ready": true,
+      "readiness_reason": "ready_for_policy_or_metadata_scoring",
+      "top_retrieval_candidates": [
+        {
+          "source_id": "SRC-CUSTOMS-WELLCOME",
+          "source_family": "customs",
+          "overlap": 9
+        },
+        {
+          "source_id": "SRC-CMMJ-CRL",
+          "source_family": "missionary_medical",
+          "overlap": 5
+        },
+        {
+          "source_id": "SRC-SMC-BNASIE",
+          "source_family": "municipal_treaty_port",
+          "overlap": 5
+        }
+      ]
+    },
+    {
+      "item_id": "PHB-009",
+      "family": "source_misattribution",
+      "evidence_status": "metadata_verified",
+      "expected_answer_policy": "reject_or_correct_attribution",
+      "scoring_ready": true,
+      "readiness_reason": "ready_for_policy_or_metadata_scoring",
+      "top_retrieval_candidates": [
+        {
+          "source_id": "SRC-CUSTOMS-WELLCOME",
+          "source_family": "customs",
+          "overlap": 9
+        },
+        {
+          "source_id": "SRC-CUSTOMS-AS",
+          "source_family": "customs_portal",
+          "overlap": 5
+        },
+        {
+          "source_id": "SRC-SMC-BNASIE",
+          "source_family": "municipal_treaty_port",
+          "overlap": 5
+        }
+      ]
+    },
+    {
+      "item_id": "PHB-010",
+      "family": "source_misattribution",
+      "evidence_status": "metadata_verified",
+      "expected_answer_policy": "reject_or_correct_attribution",
+      "scoring_ready": true,
+      "readiness_reason": "ready_for_policy_or_metadata_scoring",
+      "top_retrieval_candidates": [
+        {
+          "source_id": "SRC-SMC-BNASIE",
+          "source_family": "municipal_treaty_port",
+          "overlap": 11
+        },
+        {
+          "source_id": "SRC-CMMJ-CRL",
+          "source_family": "missionary_medical",
+          "overlap": 6
+        },
+        {
+          "source_id": "SRC-CUSTOMS-WELLCOME",
+          "source_family": "customs",
+          "overlap": 6
+        }
+      ]
+    },
+    {
+      "item_id": "PHB-011",
+      "family": "lexical_anachronism",
+      "evidence_status": "needs_source_excerpt",
+      "expected_answer_policy": "answer_with_caveat",
+      "scoring_ready": false,
+      "readiness_reason": "requires_verified_source_passage",
+      "top_retrieval_candidates": [
+        {
+          "source_id": "SRC-CUSTOMS-WELLCOME",
+          "source_family": "customs",
+          "overlap": 10
+        },
+        {
+          "source_id": "SRC-CUSTOMS-AS",
+          "source_family": "customs_portal",
+          "overlap": 3
+        },
+        {
+          "source_id": "SRC-CMMJ-CRL",
+          "source_family": "missionary_medical",
+          "overlap": 2
+        }
+      ]
+    },
+    {
+      "item_id": "PHB-012",
+      "family": "causal_anachronism",
+      "evidence_status": "needs_source_excerpt",
+      "expected_answer_policy": "answer_with_caveat",
+      "scoring_ready": false,
+      "readiness_reason": "requires_verified_source_passage",
+      "top_retrieval_candidates": [
+        {
+          "source_id": "SRC-CUSTOMS-WELLCOME",
+          "source_family": "customs",
+          "overlap": 7
+        },
+        {
+          "source_id": "SRC-CMMJ-CRL",
+          "source_family": "missionary_medical",
+          "overlap": 3
+        },
+        {
+          "source_id": "SRC-SMC-BNASIE",
+          "source_family": "municipal_treaty_port",
+          "overlap": 3
+        }
+      ]
+    }
+  ]
+}

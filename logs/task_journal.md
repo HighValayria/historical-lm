@@ -121,3 +121,14 @@
 - Blockers: none.
 - Next ready node: T51.
 
+## T51 - Build a minimum engineering probe
+
+- Date: 2026-07-17.
+- Status: completed.
+- Actions: implemented and ran a local validation/retrieval/evaluation-readiness prototype.
+- Artifacts: `prototypes/min_engineering_probe/probe.py`, `prototypes/min_engineering_probe/probe_results.json`, `prototypes/min_engineering_probe/probe_summary.md`, `reports/nodes/T51.md`.
+- Changed assumptions: the seed benchmark is technically usable for next-run validation and expansion.
+- Decisions: next engineering step should add verified passages and family-aware retrieval before any model training.
+- Blockers: none; local `python` absent from PATH was resolved with bundled Python.
+- Next ready node: T60 after all branches complete.
+
