@@ -143,3 +143,14 @@
 - Blockers: none.
 - Next ready node: T61.
 
+## T61 - Final exploratory report
+
+- Date: 2026-07-17.
+- Status: completed.
+- Actions: wrote executive brief, final report, minimum viable pilot, and rejected/blocked directions.
+- Artifacts: `reports/EXECUTIVE_BRIEF.md`, `reports/FINAL_REPORT.md`, `reports/minimum_viable_pilot.md`, `reports/rejected_and_blocked_directions.md`, `reports/nodes/T61.md`.
+- Changed assumptions: none.
+- Decisions: final recommendation remains benchmark-first and source-ecology-specific.
+- Blockers: none.
+- Next ready node: T62.
+

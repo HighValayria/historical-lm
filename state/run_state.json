@@ -14,11 +14,12 @@
     "T41",
     "T50",
     "T51",
-    "T60"
+    "T60",
+    "T61"
   ],
   "running_nodes": [],
   "blocked_nodes": [],
   "skipped_nodes": [],
   "dynamic_nodes_created": 0,
-  "last_updated": "2026-07-17T23:33:00+08:00"
+  "last_updated": "2026-07-17T23:46:00+08:00"
 }
