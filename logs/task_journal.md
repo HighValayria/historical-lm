@@ -77,3 +77,14 @@
 - Blockers: OCR/text availability and reuse terms remain unresolved for T31.
 - Next ready nodes: T31; T40 and T50 are also ready from T21.
 
+## T31 - Probe OCR and metadata quality
+
+- Date: 2026-07-17.
+- Status: completed.
+- Actions: created and ran a link/keyword probe for OCR, full-text, PDF, download, IIIF, rights, date, and title signals on T30-reachable pages.
+- Artifacts: `probes/ocr/probe_text_signals.ps1`, `probes/ocr/ocr_metadata_probe_results.json`, `probes/ocr/ocr_metadata_probe_summary.md`, `reports/nodes/T31.md`.
+- Changed assumptions: first benchmark should use curated excerpts and metadata, not a presumed clean OCR corpus.
+- Decisions: prioritize Wellcome/CRL and possibly bnAsie for item-level text follow-up; treat Academia Sinica portal as discovery/manual-navigation source for now.
+- Blockers: actual OCR accuracy remains unmeasured; no explicit OCR signal found on probed pages.
+- Next ready nodes: T40 and T50; T41 can follow T40.
+

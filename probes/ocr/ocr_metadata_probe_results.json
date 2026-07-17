@@ -1,0 +1,156 @@
+﻿[
+    {
+        "id":  "SRC-CUSTOMS-WELLCOME",
+        "url":  "https://wellcomecollection.org/works/za7rnxwq",
+        "probed_at":  "2026-07-17T21:30:40.7139391+08:00",
+        "status":  "probed",
+        "http_status":  200,
+        "keyword_counts":  {
+                               "pdf":  6,
+                               "ocr":  0,
+                               "full_text":  0,
+                               "download":  6,
+                               "iiif":  3293,
+                               "rights":  16,
+                               "date":  105,
+                               "title":  28
+                           },
+        "candidate_links":  [
+                                {
+                                    "href":  "https://wellcomecollection.org/works/za7rnxwq#main",
+                                    "text":  "Skip to main content"
+                                },
+                                {
+                                    "href":  "https://wellcomecollection.org/works/za7rnxwq/items?shouldScrollToCanvas=true",
+                                    "text":  "View"
+                                },
+                                {
+                                    "href":  "https://iiif.wellcomecollection.org/pdf/b20416179",
+                                    "text":  "Whole item ( PDF )"
+                                },
+                                {
+                                    "href":  "https://creativecommons.org/publicdomain/mark/1.0",
+                                    "text":  "Read more about this licence"
+                                }
+                            ],
+        "metadata_score":  3,
+        "text_signal_score":  3,
+        "feasibility":  "high_for_followup",
+        "notes":  [
+                      "No explicit OCR keyword signal found on page.",
+                      "Rights/terms language detected; review before reuse."
+                  ],
+        "error":  null
+    },
+    {
+        "id":  "SRC-CMMJ-CRL",
+        "url":  "https://digitalcollections.crl.edu/record/370733?ln=en\u0026v=uv",
+        "probed_at":  "2026-07-17T21:30:43.0131750+08:00",
+        "status":  "probed",
+        "http_status":  200,
+        "keyword_counts":  {
+                               "pdf":  2,
+                               "ocr":  0,
+                               "full_text":  0,
+                               "download":  56,
+                               "iiif":  15,
+                               "rights":  5,
+                               "date":  48,
+                               "title":  61
+                           },
+        "candidate_links":  [
+                                {
+                                    "href":  "https://digitalcollections.crl.edu/record/370733?ln=en\u0026v=uv#main-content",
+                                    "text":  "Go to main content"
+                                },
+                                {
+                                    "href":  "https://digitalcollections.crl.edu/tindstats/bibdoc_downloads_dl?recid=370733\u0026download=csv",
+                                    "text":  "Download Full History"
+                                },
+                                {
+                                    "href":  "https://digitalcollections.crl.edu/record/370733?ln=en\u0026v=uv#files",
+                                    "text":  "Download"
+                                }
+                            ],
+        "metadata_score":  3,
+        "text_signal_score":  3,
+        "feasibility":  "high_for_followup",
+        "notes":  [
+                      "No explicit OCR keyword signal found on page.",
+                      "Rights/terms language detected; review before reuse."
+                  ],
+        "error":  null
+    },
+    {
+        "id":  "SRC-SMC-BNASIE",
+        "url":  "https://www.bnasie.eu/BN/Periodicals?ID=60",
+        "probed_at":  "2026-07-17T21:30:45.4734802+08:00",
+        "status":  "probed",
+        "http_status":  200,
+        "keyword_counts":  {
+                               "pdf":  3,
+                               "ocr":  0,
+                               "full_text":  2,
+                               "download":  0,
+                               "iiif":  0,
+                               "rights":  2,
+                               "date":  15,
+                               "title":  27
+                           },
+        "candidate_links":  [
+                                {
+                                    "href":  "https://www.bnasie.eu/Overview/About",
+                                    "text":  "About"
+                                },
+                                {
+                                    "href":  "https://www.bnasie.eu/Overview/Contact",
+                                    "text":  "Contact"
+                                },
+                                {
+                                    "href":  "https://www.bnasie.eu/Asset/Source/bnPeriodical_ID-60_No-1.pdf",
+                                    "text":  "SMC-Report_1898-300.pdf (10.5 Mo)"
+                                },
+                                {
+                                    "href":  "https://www.bnasie.eu/coreWeb/docReader/myReader.php?fID=bnPeriodical_ID-60_No-1.pdf",
+                                    "text":  "or read document on line in a new window"
+                                }
+                            ],
+        "metadata_score":  3,
+        "text_signal_score":  2,
+        "feasibility":  "medium_for_followup",
+        "notes":  [
+                      "No explicit OCR keyword signal found on page.",
+                      "Rights/terms language detected; review before reuse."
+                  ],
+        "error":  null
+    },
+    {
+        "id":  "SRC-CUSTOMS-AS",
+        "url":  "https://mhdb.mh.sinica.edu.tw/customs/web/",
+        "probed_at":  "2026-07-17T21:30:47.1018533+08:00",
+        "status":  "probed",
+        "http_status":  200,
+        "keyword_counts":  {
+                               "pdf":  0,
+                               "ocr":  0,
+                               "full_text":  0,
+                               "download":  0,
+                               "iiif":  0,
+                               "rights":  3,
+                               "date":  11,
+                               "title":  22
+                           },
+        "candidate_links":  [
+
+                            ],
+        "metadata_score":  3,
+        "text_signal_score":  0,
+        "feasibility":  "low_without_manual_navigation",
+        "notes":  [
+                      "No explicit OCR keyword signal found on page.",
+                      "Rights/terms language detected; review before reuse.",
+                      "No candidate full-text/download links detected by regex."
+                  ],
+        "error":  null
+    }
+]
