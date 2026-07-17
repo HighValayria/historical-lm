@@ -55,3 +55,14 @@
 - Blockers: none.
 - Next ready node: T21.
 
+## T21 - Score and select candidate directions
+
+- Date: 2026-07-17.
+- Status: completed.
+- Actions: scored seven candidates on the six configured dimensions and selected a primary direction.
+- Artifacts: `reports/candidate_topic_scorecard.md`, `reports/recommended_direction.md`, `reports/nodes/T21.md`.
+- Changed assumptions: first probes should support benchmark construction and lightweight historical RAG, not adaptation.
+- Decisions: C1 is selected as the primary direction; C2/C5/C7 are support/alternative paths.
+- Blockers: none.
+- Next ready nodes: T30, T40, T50.
+
