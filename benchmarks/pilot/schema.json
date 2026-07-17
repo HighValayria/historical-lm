@@ -1,0 +1,67 @@
+{
+  "benchmark_name": "late_qing_public_health_historical_boundary_pilot",
+  "version": "0.1.0",
+  "cutoff_date": "1900-01-01",
+  "required_fields": [
+    "item_id",
+    "family",
+    "question",
+    "target_date",
+    "cutoff_date",
+    "source_ids",
+    "source_population",
+    "audience_or_actor",
+    "evidence_status",
+    "expected_answer_policy",
+    "gold_behavior",
+    "anachronism_labels",
+    "accessibility_status",
+    "provenance_requirements",
+    "scoring_notes",
+    "risk_notes"
+  ],
+  "allowed_families": [
+    "post_cutoff_control",
+    "metadata_provenance",
+    "source_grounded_factual",
+    "lexical_anachronism",
+    "causal_anachronism",
+    "value_anachronism",
+    "source_misattribution",
+    "historical_ignorance"
+  ],
+  "allowed_evidence_status": [
+    "source_passage_verified",
+    "metadata_verified",
+    "post_cutoff_control_verified",
+    "needs_source_excerpt",
+    "secondary_guidance_only"
+  ],
+  "allowed_answer_policies": [
+    "answer_with_citation",
+    "answer_with_caveat",
+    "abstain_with_reason",
+    "reject_anachronism",
+    "reject_or_correct_attribution"
+  ],
+  "allowed_anachronism_labels": [
+    "none",
+    "factual",
+    "lexical",
+    "causal",
+    "value",
+    "source_misattribution",
+    "provenance"
+  ],
+  "scoring_dimensions": [
+    "temporal_consistency",
+    "source_support",
+    "correct_answer_policy",
+    "provenance_caveat",
+    "accessibility_caveat",
+    "correct_anachronism_label",
+    "attribution_correctness",
+    "abstention_quality"
+  ]
+}
+

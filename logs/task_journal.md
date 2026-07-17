@@ -88,3 +88,14 @@
 - Blockers: actual OCR accuracy remains unmeasured; no explicit OCR signal found on probed pages.
 - Next ready nodes: T40 and T50; T41 can follow T40.
 
+## T40 - Design anachronism benchmark
+
+- Date: 2026-07-17.
+- Status: completed.
+- Actions: designed pilot benchmark scope, item families, evidence status values, answer policies, scoring dimensions, and exclusion rules.
+- Artifacts: `benchmarks/pilot/benchmark_spec.md`, `benchmarks/pilot/schema.json`, `reports/nodes/T40.md`.
+- Changed assumptions: pilot seed data can include metadata-only and post-cutoff control items if they are clearly labelled.
+- Decisions: unverified source-grounded items must be marked `needs_source_excerpt` and excluded from scoring.
+- Blockers: source-passage extraction still needed for full factual/lexical/causal/value evaluation.
+- Next ready node: T41.
+
