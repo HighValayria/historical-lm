@@ -1,7 +1,7 @@
-# Failures and Negative Findings
+# 失败与负结果记录
 
-| Failure ID | Date | Node | Failure or negative finding | Evidence | Impact | Follow-up |
+| 编号 | 日期 | 节点 | 失败或负结果 | 影响 | 后续处理 |
 |---|---|---|---|---|---|
-| F-0001 | 2026-07-17 | T30 | Initial sandboxed web access probe failed with remote-connection errors for all four source URLs. | `probes/data_access/access_probe_results.json` from first run was overwritten by successful approved run; failure recorded in `probes/data_access/access_probe_summary.md`. | Demonstrated that local sandbox network status can confound access probes. | Re-run required network probes with approved access and record exact command. |
-| F-0002 | 2026-07-17 | T31 | No explicit OCR keyword signal was detected on any of the four probed pages. | `probes/ocr/ocr_metadata_probe_results.json`. | The first pilot should not assume ready OCR text. | Use curated excerpts first; later test PDF extraction/OCR on a small item. |
-| F-0003 | 2026-07-17 | T51 | `python` was not available on PATH. | Failed command output before rerun. | Local scripts must use bundled Python path or document dependency setup. | Use `C:\Users\33967\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe`. |
+| F-0001 | 2026-07-17 | T30 | 沙箱内初次访问探针全部远程连接失败。 | 说明网络环境会干扰访问探针。 | 通过授权网络访问复跑并记录命令。 |
+| F-0002 | 2026-07-17 | T31 | 四个页面都没有明确 OCR 关键词信号。 | 第一版不能假设已有干净 OCR 文本。 | 先使用人工核验摘录，后续再做 PDF/OCR 探针。 |
+| F-0003 | 2026-07-17 | T51 | 本机 PATH 中没有 `python`。 | 本地脚本需记录运行环境。 | 使用 Codex 内置 Python 路径复跑成功。 |

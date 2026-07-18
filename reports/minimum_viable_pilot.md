@@ -1,60 +1,39 @@
-# Minimum Viable Pilot Study
+# 最小可行试点研究
 
-## Aim
+## 目标
 
-Test whether a small, source-grounded benchmark can expose anachronistic, unsupported, or overconfident answers in late-Qing public-health LLM/RAG settings.
+检验一个小型、有来源约束的评测集能否揭示模型在晚清公共卫生问题上出现的时代错置、来源不支撑、过度自信或错误拒答。
 
-## Pilot Corpus
+## 试点语料
 
-Start with 4-8 verified passages from open or permission-compatible sources:
+优先从以下开放或许可兼容来源中抽取 4—8 条可核验短段落：
 
-- Wellcome customs medical reports epitome.
-- CRL China Medical Missionary Journal item(s).
-- bnAsie Shanghai Municipal Council report.
+- Wellcome 海关医学报告汇编；
+- CRL China Medical Missionary Journal 条目；
+- bnAsie 上海工部局年度报告。
 
-Each passage must include source title, date, source family, page/stable locator, transcription status, rights/access note, and source-population caveat.
+每条段落都必须记录来源标题、日期、来源类型、页码或稳定定位符、转写状态、访问/权利说明和来源群体限制。
 
-## Pilot Benchmark
+## 试点评测集
 
-Expand `benchmarks/pilot/pilot_items.jsonl` from 12 seed items to 20-30 items:
+把 `benchmarks/pilot/pilot_items.jsonl` 从 12 条扩展到 20—30 条，覆盖截止日期控制、元数据/出处、来源支撑事实、词汇错置、因果/价值错置、来源误归因和历史性无知。
 
-- 4 post-cutoff controls.
-- 4 metadata/provenance items.
-- 4 source-grounded factual items.
-- 3 lexical-anachronism items.
-- 3 causal/value-anachronism items.
-- 3 source-misattribution items.
-- 3 historical-ignorance/abstention items.
+## 评测条件
 
-## Evaluation Conditions
+1. 普通提示基线。
+2. 直接提供来源段落和元数据的提示。
+3. 基于本地检索的轻量原型。
 
-1. Prompt-only baseline.
-2. Source-provided prompting with one passage and metadata.
-3. Local retrieval over curated passages and metadata.
+本试点不需要付费模型 API，也不需要大规模训练。
 
-No paid model API calls and no large training are required for the pilot.
+## 评分维度
 
-## Metrics
+评分维度包括时间一致性、来源支撑、回答策略、出处限定、知识可达性限定、时代错置标签、归因正确性和拒答质量。
 
-- Temporal consistency.
-- Source support.
-- Correct answer policy.
-- Provenance caveat.
-- Accessibility caveat.
-- Correct anachronism label.
-- Attribution correctness.
-- Abstention quality.
+## 成功标准
 
-## Success Criteria
+试点成功并不要求模型表现好，而是要证明 schema 可执行、来源群体限定会改变期望答案、不同条件能暴露不同错误类型，并且报告不会过度声称来源代表性。
 
-The pilot is successful if it demonstrates that:
+## 负结果价值
 
-- the item schema can be applied consistently;
-- source-population caveats materially change expected answers;
-- at least one evaluation condition exposes distinct anachronism or attribution failures;
-- the source limitations are explicit enough to prevent overclaiming.
-
-## Negative-result Value
-
-If models fail, the pilot still produces a useful error taxonomy and evidence about why historical boundary evaluation is hard. If source passage extraction fails, the pilot still documents access/OCR constraints and narrows the next source strategy.
-
+如果模型失败，错误类型本身就是研究发现。如果段落抽取失败，访问与 OCR 限制也能直接改写下一轮研究设计。

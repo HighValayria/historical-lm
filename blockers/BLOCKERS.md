@@ -1,6 +1,5 @@
-# Blockers
+# 阻塞记录
 
-| Blocker ID | Date | Node | Description | Severity | Status | Mitigation |
+| 编号 | 日期 | 节点 | 阻塞 | 严重度 | 状态 | 缓解方式 |
 |---|---|---|---|---|---|---|
-| B-0001 | 2026-07-17 | T11 | Subscription and no-batch-download limits block unauthorised bulk use of Shen Bao, late-Qing periodical databases, ProQuest-style newspaper products, and some commercial gazetteer platforms. | medium | active | Use open item-level probes first; later pursue authorized institutional access or manual sampling within terms. |
-
+| B-0001 | 2026-07-17 | T11 | 《申报》、晚清期刊全文库、ProQuest 类报纸库和部分商业方志库受到订阅或禁止批量下载限制。 | 中 | 有效 | 使用开放小样本；如需使用，先取得授权并记录条款。 |

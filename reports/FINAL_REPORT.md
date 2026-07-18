@@ -1,142 +1,86 @@
-# Final Exploratory Report
+# 最终探索报告
 
-## 1. Run Scope
+## 1. 运行范围
 
-This first autonomous exploration run investigated whether late-Qing public-health materials can support a feasible, evaluable, individual-scale digital-humanities project about historical knowledge boundaries, anachronism, historical RAG, and lightweight model adaptation.
+第一轮自主探索检验了一个核心问题：晚清公共卫生材料能否支撑一个可行、可评价、个人规模的数字人文项目，用来研究历史知识边界、时代错置、历史检索增强生成以及轻量模型适配。
 
-The provisional cutoff was 1900-01-01. The provisional source period was 1880-01-01 to 1899-12-31.
+本轮使用的临时历史截止点为 1900-01-01，临时史料期段为 1880-01-01 至 1899-12-31。
 
-## 2. Verified Findings
+## 2. 已验证发现
 
-### 2.1 Literature and Method Landscape
+### 2.1 文献与方法图景
 
-The literature landscape supports the importance of temporal evaluation, historical-domain language adaptation, RAG/provenance, and lightweight adaptation. Key method references include temporal mismatch and time-aware language models, historical-domain pretraining, RAG, DAPT/TAPT, LoRA/QLoRA, and diachronic semantic-change work.
+文献矩阵显示，时间错位评测、时间感知语言模型、历史领域预训练、检索增强生成、领域继续预训练、低秩适配和历时语义变化等方向都能为本项目提供方法参照。不过，本轮没有发现一个现成的、面向 1900 年前中文公共卫生材料、并且能处理来源约束和历史性无知的评测集。这正是本项目最有价值的缺口。
 
-No ready-made benchmark was identified for source-grounded pre-1900 Chinese public-health anachronism and historically appropriate ignorance. This is the central gap.
+主要产物见 `evidence/literature_matrix.md` 和 `reports/nodes/T10.md`。
 
-Primary artifacts:
+### 2.2 史料与访问图景
 
-- `evidence/literature_matrix.md`
-- `reports/nodes/T10.md`
+史料注册表记录了 12 类相关来源。第一轮最适合作为小样本探针的入口包括 Wellcome 的海关医学报告汇编、CRL 的 China Medical Missionary Journal 记录、bnAsie 的上海工部局年度报告页面，以及中研院近史所海关资料入口。
 
-### 2.2 Historical Source Landscape
+《申报》、晚清期刊全文库、商业报纸数据库和部分方志全文库具有很高研究价值，但受到订阅、授权或禁止批量下载规则限制，不能在未获许可时作为批量语料来源。
 
-The source registry identified twelve relevant source families. Open or item-level probe candidates are strongest for:
+主要产物见 `evidence/source_registry.md` 和 `reports/nodes/T11.md`。
 
-- Wellcome customs medical reports epitome.
-- CRL China Medical Missionary Journal record.
-- bnAsie Shanghai Municipal Council annual report page.
-- Academia Sinica Chinese Maritime Customs portal.
+### 2.3 概念地图
 
-High-value Chinese newspaper and periodical resources exist, including Shen Bao and late-Qing periodical databases, but they are subscription-bound or terms-constrained for bulk use.
+本轮把“历史知识边界”定义为不只是日期截止，还包括来源流通、知识可达性、档案存续、出处元数据、来源群体偏差和历史性无知。评测分类区分事实时代错置、词汇时代错置、因果时代错置、价值时代错置、来源误归因、出处不确定性和历史性无知。
 
-Primary artifacts:
+主要产物见 `evidence/concept_map.md` 和 `reports/nodes/T12.md`。
 
-- `evidence/source_registry.md`
-- `reports/nodes/T11.md`
+### 2.4 访问、OCR 与元数据探针
 
-### 2.3 Concept Map
+T30 通过元数据级探针确认 4 个入口返回 HTTP 200。T31 显示 Wellcome 和 CRL 页面具备较强后续跟进信号，bnAsie 具备中等后续跟进信号，中研院海关入口页需要人工导航或接口说明。
 
-The concept map operationalizes historical knowledge boundary as more than a date cutoff. It includes chronology, source circulation, knowledge accessibility, archival survival, provenance, and historically appropriate ignorance.
+四个页面都没有被简单关键词探针识别出明确 OCR 信号。因此，第一版 benchmark 不应假设已有干净 OCR 语料，而应从人工核验摘录和元数据开始。
 
-The benchmark taxonomy separates:
+主要产物见 `probes/data_access/access_probe_summary.md`、`probes/ocr/ocr_metadata_probe_summary.md`、`reports/nodes/T30.md` 和 `reports/nodes/T31.md`。
 
-- factual anachronism;
-- lexical anachronism;
-- causal anachronism;
-- value anachronism;
-- source misattribution;
-- provenance uncertainty;
-- historical ignorance.
+### 2.5 评测集与工程探针
 
-Primary artifacts:
+本轮已经形成评测规范、JSON schema、12 条试点题目、4 条来源记录和一个本地无训练工程探针。T51 复跑结果为：来源记录 4 条、试点题目 12 条、结构错误 0 个、当前可评分题目 10 条、需要真实史料段落后再评分的题目 2 条。
 
-- `evidence/concept_map.md`
-- `reports/nodes/T12.md`
+主要产物见 `benchmarks/pilot/benchmark_spec.md`、`benchmarks/pilot/schema.json`、`benchmarks/pilot/pilot_items.jsonl`、`benchmarks/pilot/source_records.jsonl` 和 `prototypes/min_engineering_probe/probe_summary.md`。
 
-### 2.4 Access, OCR, and Metadata Probes
+## 3. 解释性判断
 
-T30 verified reachability for four source entry points with HTTP 200. T31 found:
+项目可行，但它应被表述为“benchmark 优先、来源批判优先”的数字人文研究，而不是训练一个声称代表晚清公共卫生知识的大模型。当前试点来源生态应明确限定为海关、传教士、市政/租界和部分英文材料。这不是缺陷，而是研究对象的一部分。
 
-- high follow-up feasibility for Wellcome and CRL pages;
-- medium follow-up feasibility for bnAsie;
-- low extraction feasibility from the Academia Sinica landing page without manual navigation.
+检索增强生成是近期最合适的技术路线，因为它能暴露出处、来源群体和可达性限制。LoRA、DAPT 或混合适配仍可作为后续比较方向，但需要等真实段落、稳定评测集和小型语料准备好之后再做。
 
-No explicit OCR keyword signal was found on the four probed pages. This means the first benchmark should use curated excerpts and metadata rather than assume a clean OCR corpus.
+## 4. 推荐方向
 
-Primary artifacts:
+推荐继续建设“有来源约束的晚清公共卫生时代错置与历史性无知试点评测集”。工作问题可以表述为：一个小型评测集能否检验模型或检索增强系统在回答晚清公共卫生问题时，是否避免引入 1900 年后的事实、现代词义、无出处支撑的因果/价值框架和错误来源归属？
 
-- `probes/data_access/access_probe_summary.md`
-- `probes/ocr/ocr_metadata_probe_summary.md`
-- `reports/nodes/T30.md`
-- `reports/nodes/T31.md`
+## 5. 可行替代方向
 
-### 2.5 Benchmark and Engineering Probe
+- 比较海关/市政治理记录与传教士医学记录所呈现的不同公共卫生知识边界。
+- 构建一个通商口岸公共卫生历史 RAG 原型，重点评分出处和限定语。
+- 将 OCR 与元数据可行性扩展为独立的数据可行性报告。
 
-The run produced a benchmark specification, a schema, a 12-item pilot seed, and a local no-training engineering probe.
+## 6. 拒绝或暂缓方向
 
-The engineering probe validated:
+- 大规模模型训练：本阶段拒绝。
+- LoRA/DAPT 比较：等真实段落和稳定评测集形成后再考虑。
+- 未授权批量抓取订阅数据库：阻塞。
+- 关于“全部晚清人群”的结论：当前来源生态无法支持。
 
-- source records: 4;
-- pilot items: 12;
-- validation errors: 0;
-- scoring-ready items: 10;
-- items requiring verified passages: 2.
+## 7. 未解决问题
 
-Primary artifacts:
+1. 能否从最高优先级来源中合法、可复现地抽取 4—8 条真实段落？
+2. Wellcome 与 bnAsie PDF 的实际 OCR 质量如何？
+3. 是否能在不违反条款的前提下加入中文全文来源？
+4. 标注者能否稳定地区分事实、词汇、因果、价值、来源和出处类错置？
+5. 检索增强是否真的比直接提供来源或普通提示更能减少时代错置？
 
-- `benchmarks/pilot/benchmark_spec.md`
-- `benchmarks/pilot/schema.json`
-- `benchmarks/pilot/pilot_items.jsonl`
-- `benchmarks/pilot/source_records.jsonl`
-- `prototypes/min_engineering_probe/probe_summary.md`
+## 8. 最小可行试点
 
-## 3. Interpretations
+最小可行试点详见 `reports/minimum_viable_pilot.md`。
 
-The project is feasible if framed as a benchmark-first, source-critical digital-humanities project. Its value lies in testing historically bounded answering, not in claiming to reconstruct late-Qing public opinion or in training a large model.
+## 9. 下一轮任务
 
-The first pilot should explicitly identify its source ecology as customs, missionary, municipal/treaty-port, and partly English-language. That limitation is not a defect if it is part of the research question.
+下一轮任务图见 `state/NEXT_RUN_BACKLOG.yaml`。
 
-RAG is a strong near-term technical route because it exposes provenance and source-population caveats. LoRA, DAPT, and hybrid adaptation are plausible later comparisons but premature now.
+## 10. 证据边界
 
-## 4. Recommended Direction
-
-Build a source-grounded pilot benchmark for late-Qing public-health anachronism and historical ignorance.
-
-Working question:
-
-Can a small benchmark evaluate whether LLM/RAG systems answer late-Qing public-health questions without importing post-1900 facts, modern lexical meanings, unsupported causal/value frames, or unsupported source attributions?
-
-## 5. Viable Alternatives
-
-- Compare customs/municipal governance records with missionary medical records as different public-health knowledge ecologies.
-- Build a treaty-port historical RAG prototype with provenance and caveat scoring.
-- Extend OCR and metadata feasibility into a standalone data feasibility study.
-
-## 6. Rejected or Deferred Directions
-
-- Large-scale model training: rejected for this stage.
-- LoRA/DAPT comparison: deferred until verified passages and stable benchmark data exist.
-- Bulk scraping of subscription databases: blocked without explicit authorization.
-- Claims about all late-Qing people: rejected because the source ecology cannot support them.
-
-## 7. Unresolved Questions
-
-1. Can 4-8 verified passages be extracted lawfully and reproducibly from the top source candidates?
-2. What is the actual OCR quality of the Wellcome and bnAsie PDFs?
-3. Can authorized Chinese-language sources be added without violating access terms?
-4. Can annotators consistently apply the anachronism taxonomy?
-5. Does retrieval reduce anachronism compared with source-provided prompting?
-
-## 8. Minimum Viable Pilot
-
-The minimum viable pilot is specified in `reports/minimum_viable_pilot.md`.
-
-## 9. Next Autonomous Tasks
-
-The next-run backlog is specified in `state/NEXT_RUN_BACKLOG.yaml`.
-
-## 10. Evidence Boundary
-
-This report does not treat model-generated text as historical evidence. It does not claim the source ecology represents all late-Qing people. It distinguishes verified probe outputs from interpretations and recommendations.
-
+本报告不把模型生成文本当作历史证据，不声称当前来源生态代表所有晚清人群，并且区分了探针直接结果、解释性判断和研究建议。

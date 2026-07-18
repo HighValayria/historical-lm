@@ -1,34 +1,22 @@
-# Pilot Annotation Guidelines
+# 试点标注指南
 
-## Item Status
+## 题目状态
 
-- `post_cutoff_control_verified`: may be used if the date authority is recorded.
-- `metadata_verified`: may be used for source-family, provenance, and accessibility behavior.
-- `source_passage_verified`: may be used for factual/lexical/causal/value scoring after a passage is attached.
-- `needs_source_excerpt`: design placeholder only; do not score.
-- `secondary_guidance_only`: use for framing and annotation caution, not primary historical evidence.
+- `post_cutoff_control_verified`：有稳定日期依据，可用于截止日期控制评分。
+- `metadata_verified`：可用于来源类型、出处和知识可达性行为评分。
+- `source_passage_verified`：已有真实史料段落，可用于事实、词汇、因果或价值错置评分。
+- `needs_source_excerpt`：只是设计占位，不能评分。
+- `secondary_guidance_only`：只能作解释和标注参考，不能当作一手历史证据。
 
-## Annotation Rules
+## 标注规则
 
-1. Annotate one atomic behavior per item when possible.
-2. Reward explicit caveats when the source population is narrow.
-3. Reward abstention when the item asks for knowledge not attested in the seed corpus.
-4. Penalize fluent answers that cite the wrong source, wrong date, or wrong source family.
-5. Do not infer all late-Qing public-health knowledge from customs, missionary, or municipal materials.
-6. Do not use generated examples as historical evidence.
+1. 尽量每题只标注一个原子行为。
+2. 来源生态狭窄时，应奖励明确限定语。
+3. 当前语料无法支撑的问题，应奖励说明理由后的拒答。
+4. 错误来源、错误日期或错误来源类型应扣分。
+5. 不得从海关、传教士或市政材料推论全部晚清公共卫生知识。
+6. 生成文本不能作为历史证据。
 
-## Minimum Fields for a Source-grounded Item
+## 来源支撑题的最低信息
 
-- Source passage.
-- Source title.
-- Source date.
-- Source family.
-- Page or stable locator if available.
-- Passage transcription status: human, OCR, corrected OCR, or uncertain.
-- Rights/access note.
-- Source-population caveat.
-
-## Pilot Limitations
-
-The current seed is suitable for schema and evaluator-behavior validation. It is not yet a full historical benchmark because most content-specific item families still require verified passages.
-
+必须记录史料段落、来源标题、日期、来源类型、页码或稳定定位符、转写状态、访问/权利说明和来源群体限制。

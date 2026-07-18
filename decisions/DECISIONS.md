@@ -1,15 +1,11 @@
-# Decisions
+# 决策记录
 
-| Decision ID | Date | Node | Decision | Rationale | Evidence | Revisit trigger |
-|---|---|---|---|---|---|---|
-| D-0001 | 2026-07-17 | T00 | Use English for structured repository artifacts in this run. | Several existing Chinese files display mojibake in the terminal, while ASCII/English files are safer for scripts and diffs. | Local file reads on 2026-07-17. | If repository encoding is normalized later. |
-| D-0002 | 2026-07-17 | T10 | Prioritize source-grounded evaluation before adaptation. | The literature landscape has many adaptation methods but no ready late-Qing public-health anachronism benchmark. | `evidence/literature_matrix.md`. | If T30/T31 show source access is too weak for a benchmark. |
-| D-0003 | 2026-07-17 | T11 | Treat subscription Chinese newspaper/periodical databases as authorized-access extensions, not first-run bulk corpora. | Access notes and library/provider terms indicate subscription access and batch-download limits. | `evidence/source_registry.md`. | If the user provides institutional access and explicit permission-compatible terms. |
-| D-0004 | 2026-07-17 | T12 | Model evaluation should include historically appropriate abstention as a positive behavior. | The concept map distinguishes not-yet-known, not-attested, not-accessible, and post-cutoff states. | `evidence/concept_map.md`. | If pilot annotators cannot apply the labels consistently. |
-| D-0005 | 2026-07-17 | T20 | Treat adaptation comparison as downstream of benchmark/data feasibility. | Candidate generation shows adaptation only becomes meaningful after a source-grounded benchmark exists. | `reports/candidate_research_questions.md`. | If T30/T41 unexpectedly produce a robust corpus and benchmark quickly. |
-| D-0006 | 2026-07-17 | T21 | Select C1 as the primary first-run direction. | It scored highest and best balances DH value, novelty, feasibility, evaluation clarity, compute feasibility, and negative-result value. | `reports/candidate_topic_scorecard.md`. | Revisit after T30/T31/T41 evidence. |
-| D-0007 | 2026-07-17 | T30 | Treat HTTP 200 reachability as item-level feasibility only, not bulk-data permission. | The T30 probe recorded live pages but did not establish license, OCR, or bulk access. | `probes/data_access/access_probe_results.json`. | Revisit after explicit rights review or institutional permission. |
-| D-0008 | 2026-07-17 | T31 | Build the first benchmark from curated excerpts and metadata rather than a bulk OCR corpus. | T31 found link signals but no explicit OCR signals, and T11 already identified OCR/bulk-access risks. | `probes/ocr/ocr_metadata_probe_results.json`. | Revisit if a clean open OCR source is verified. |
-| D-0009 | 2026-07-17 | T40 | Allow metadata-only and post-cutoff control items in the pilot seed, but exclude unverified passage placeholders from scoring. | This supports early schema validation while preserving evidence standards. | `benchmarks/pilot/benchmark_spec.md`. | Revisit after T41/T51 validation. |
-| D-0010 | 2026-07-17 | T50 | Choose a local no-training benchmark/retrieval prototype for T51. | It directly tests benchmark mechanics without requiring paid APIs, large training, or clean OCR. | `reports/technical_route_comparison.md`. | Revisit after verified passages are added. |
-| D-0011 | 2026-07-17 | T51 | Treat the T51 retriever as a validation scaffold, not a final RAG system. | It uses simple token overlap over metadata and is intended to expose readiness gaps. | `prototypes/min_engineering_probe/probe_summary.md`. | Replace after verified passages and retrieval filtering are added. |
+| 编号 | 日期 | 节点 | 决策 | 理由 | 重新考虑条件 |
+|---|---|---|---|---|---|
+| D-0001 | 2026-07-17 | T00 | 结构化机器文件可保留英文标识，但人类报告改为中文。 | 兼顾脚本稳定性和用户阅读需求。 | 若建立全中文 schema。 |
+| D-0002 | 2026-07-17 | T10 | 先做来源约束评测，再考虑适配。 | 文献显示方法多，但缺少晚清公共卫生 benchmark。 | 若后续数据探针失败。 |
+| D-0003 | 2026-07-17 | T11 | 订阅中文报刊库作为授权扩展，不作为第一轮批量语料。 | 访问与条款限制明显。 | 获得明确授权后。 |
+| D-0004 | 2026-07-17 | T12 | 将历史性无知作为正向评测行为。 | 有些问题应合理拒答。 | 标注者无法稳定应用时。 |
+| D-0005 | 2026-07-17 | T21 | 选择 C1 为主方向。 | 综合评分最高。 | T30/T31/T41 证据推翻时。 |
+| D-0006 | 2026-07-17 | T40 | 元数据题和截止日期控制题可进入 seed，但未核验段落题不得评分。 | 可先验证 schema，同时保持证据标准。 | 加入真实段落后。 |
+| D-0007 | 2026-07-17 | T50 | T51 选择本地无训练原型。 | 不需要付费 API、训练或干净 OCR。 | 下一轮 passage-grounded 数据扩展后。 |

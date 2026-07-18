@@ -1,24 +1,15 @@
-# Candidate-topic Scorecard
+# 候选题目评分表
 
-Scale: 1 = weak, 5 = strong. Total maximum = 30.
+评分范围为 1—5，总分最高 30。
 
-| ID | Candidate | DH value | Novelty | Data feasibility | Evaluation clarity | Compute feasibility | Negative-result value | Total | Recommendation |
+| 编号 | 候选方向 | 数字人文价值 | 新颖性 | 数据可行性 | 评估清晰度 | 算力可行性 | 负结果价值 | 总分 | 判断 |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---|
-| C1 | Source-grounded anachronism and historical ignorance benchmark | 5 | 5 | 4 | 5 | 5 | 5 | 29 | Recommended primary direction |
-| C7 | Public-health governance versus medical missionary knowledge boundaries | 5 | 4 | 4 | 3 | 5 | 5 | 26 | Strong DH alternative and source-analysis layer |
-| C2 | Treaty-port public-health RAG with provenance and caveat scoring | 4 | 4 | 4 | 4 | 5 | 4 | 25 | Viable technical pilot paired with C1 |
-| C4 | Source-ecology sensitivity in historical RAG | 5 | 4 | 3 | 4 | 4 | 5 | 25 | Strong but needs broader balanced source access |
-| C5 | OCR-aware late-Qing public-health corpus feasibility study | 4 | 3 | 5 | 3 | 5 | 5 | 25 | Enabling study, best as support task |
-| C3 | Lexical and conceptual drift of `weisheng` and public-health terms | 5 | 4 | 2 | 4 | 4 | 4 | 23 | Valuable but access-constrained |
-| C6 | Lightweight adaptation versus RAG for historically bounded answers | 3 | 3 | 2 | 4 | 3 | 4 | 19 | Deferred until benchmark/corpus exist |
+| C1 | 有来源约束的时代错置与历史性无知评测集 | 5 | 5 | 4 | 5 | 5 | 5 | 29 | 主推荐方向 |
+| C7 | 公共卫生治理记录与传教士医学记录的知识边界比较 | 5 | 4 | 4 | 3 | 5 | 5 | 26 | 强替代方向 |
+| C2 | 带出处和限定语评分的通商口岸公共卫生 RAG | 4 | 4 | 4 | 4 | 5 | 4 | 25 | 可与 C1 配套 |
+| C4 | 历史 RAG 的来源生态敏感性 | 5 | 4 | 3 | 4 | 4 | 5 | 25 | 需更多平衡来源 |
+| C5 | OCR 与语料可行性研究 | 4 | 3 | 5 | 3 | 5 | 5 | 25 | 支撑任务 |
+| C3 | `weisheng` 与公共卫生词汇漂移 | 5 | 4 | 2 | 4 | 4 | 4 | 23 | 数据访问受限 |
+| C6 | 轻量适配与 RAG 比较 | 3 | 3 | 2 | 4 | 3 | 4 | 19 | 暂缓 |
 
-## Rationale by Dimension
-
-- C1 scores highest because it converts the main conceptual gap into a small, evaluable artifact with strong negative-result value and low compute requirements.
-- C7 is historically rich and source-critical, but its evaluation target is less crisp unless paired with C1's benchmark schema.
-- C2 is the best technical pilot once C1 supplies prompts, labels, and scoring rules.
-- C4 would be excellent after balanced source-family access improves; it is too source-access-sensitive for the first pilot.
-- C5 is necessary infrastructure rather than the central research question.
-- C3 is intellectually strong, especially for lexical anachronism, but depends heavily on Chinese full-text access and OCR.
-- C6 is methodologically tempting but premature before the project has data, labels, and a benchmark.
-
+C1 得分最高，因为它把概念缺口转化为可执行的小型评测集，并且不依赖大规模训练。C2、C5 和 C7 是最自然的支撑路线。

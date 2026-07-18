@@ -1,42 +1,23 @@
-# Technical Route Comparison
+# 技术路线比较
 
-## Decision Context
+## 决策背景
 
-The selected direction is a source-grounded benchmark for historical knowledge boundaries. The first engineering goal is therefore not "make a model smarter"; it is to test whether the benchmark schema, source metadata, retrieval, citation, and answer-policy evaluation can be operationalized.
+当前主方向是有来源约束的历史知识边界 benchmark。第一步工程目标不是让模型“更聪明”，而是验证 schema、来源元数据、检索、引用和回答策略评估是否能落地。
 
-## Route Matrix
-
-| Route | What it tests | Data requirement | Compute requirement | Strength | Main risk | First-run decision |
+| 路线 | 检验内容 | 数据需求 | 算力需求 | 优点 | 主要风险 | 第一轮判断 |
 |---|---|---|---|---|---|---|
-| Prompting only | Baseline behavior without retrieved sources | Benchmark items only | very low | Cheap baseline for anachronism and abstention failures | Model may answer fluently from modern priors | Keep as baseline |
-| Source-provided prompting | Whether explicit source metadata/passages improve answer policy | Curated snippets or metadata | very low | Separates prompt framing from retrieval | Still not scalable and may overfit prompt wording | Keep as baseline |
-| Local lightweight RAG | Whether retrieval and source metadata can support provenance/caveats | Small source records and snippets | low | Aligns with C1/C2; no paid API or training required | Retrieval over metadata is not full historical evidence | Select for T51 |
-| OCR-first corpus pipeline | Whether sources can become usable text | Open PDFs/images and OCR tooling | medium | Necessary for later passage items | T31 shows OCR is unproven; may dominate the run | Defer to next-run source-passage task |
-| DAPT/TAPT | Whether domain continued pretraining helps historical text handling | Larger clean corpus | medium-high | Supported by NLP literature | Premature without clean corpus and benchmark | Defer |
-| LoRA/QLoRA | Whether lightweight adaptation improves historical boundary behavior | Stable training/eval set | medium | Individual-scale compared with full finetuning | May amplify modern priors or overfit tiny data | Defer |
-| Hybrid RAG + PEFT | Whether retrieval plus adaptation works best | Corpus, benchmark, training set | high | Long-term promising | Too many moving parts for uncertainty-reduction run | Defer |
+| 普通提示 | 无来源条件下的基线行为 | 只需评测题 | 很低 | 便宜，能暴露时代错置 | 容易依赖现代先验 | 保留为基线 |
+| 直接提供来源提示 | 明示段落/元数据是否改善回答 | 人工摘录或元数据 | 很低 | 分离提示效果与检索效果 | 不可扩展 | 保留为基线 |
+| 本地轻量 RAG | 检索与元数据能否支持出处限定 | 小规模来源记录和段落 | 低 | 与 C1/C2 直接相关 | 当前只是原型 | 选为 T51 |
+| OCR 优先管线 | 来源能否转为可用文本 | PDF/图像与 OCR 工具 | 中 | 后续必要 | 可能吞掉本轮预算 | 暂缓 |
+| DAPT/TAPT | 继续预训练是否有帮助 | 较大干净语料 | 中高 | 文献支持 | 无语料时过早 | 暂缓 |
+| LoRA/QLoRA | 轻量适配是否改善历史边界回答 | 稳定训练/评测集 | 中 | 比全量训练可行 | 可能放大现代先验 | 暂缓 |
+| RAG 与适配混合 | 检索加适配是否最佳 | 语料、评测集、训练集 | 高 | 长期有潜力 | 变量太多 | 暂缓 |
 
-## Selected Minimum Engineering Route
+## 选定的最小工程路线
 
-T51 should implement a local, no-training prototype that:
+T51 应实现本地无训练原型：验证 JSONL 与 schema，基于来源记录做极小检索，判断题目是否具备评分条件，并输出评估就绪报告。
 
-1. validates the benchmark schema and JSONL files;
-2. builds a tiny lexical retriever over `source_records.jsonl` and item metadata;
-3. produces retrieval candidates for each pilot item;
-4. checks whether item evidence statuses allow scoring;
-5. outputs a compact evaluation-readiness report.
+## 暂缓问题
 
-## Why This Route
-
-- It directly tests the benchmark mechanics selected in T21 and designed in T40/T41.
-- It avoids paid APIs and large training.
-- It remains useful even if OCR/full passages are not yet available.
-- It can be expanded later to BM25/vector retrieval, passage OCR, model calls, and PEFT experiments.
-
-## Deferred Technical Questions
-
-- Does OCR from the Wellcome and bnAsie PDFs produce reliable historical text?
-- Does RAG reduce anachronism compared with source-provided prompting?
-- Does LoRA or DAPT improve term sense without harming historical ignorance?
-- Can Chinese-language term drift be evaluated without authorized Chinese full-text database access?
-
+后续再检验 OCR 质量、RAG 是否减少时代错置、LoRA/DAPT 是否改善词义处理，以及中文全文来源能否合法纳入。

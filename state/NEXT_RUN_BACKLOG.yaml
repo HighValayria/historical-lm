@@ -1,164 +1,116 @@
 run_id: exploration-002-proposed
 objective: >
-  Convert the first-run benchmark seed into a passage-grounded pilot benchmark
-  and run a no-training prompt/source/RAG comparison for late-Qing
-  public-health historical knowledge boundaries.
+  将第一轮 seed benchmark 扩展为带真实史料段落支撑的试点评测集，
+  并在不训练模型、不调用付费 API 的条件下比较普通提示、直接提供来源和本地轻量检索。
 
 nodes:
   N00:
-    title: Confirm source-use terms and passage extraction plan
+    title: 核查来源使用条款与段落抽取计划
     depends_on: []
-    objective: Review rights/access signals for Wellcome, CRL, and bnAsie items before extracting passages.
-    planned_actions:
-      - Review item pages and rights statements.
-      - Record allowed use, citation format, and download constraints.
-      - Select 2-3 items for close passage extraction.
+    objective: 在抽取段落前复核 Wellcome、CRL 与 bnAsie 条款。
     expected_artifacts:
       - reports/next/source_use_review.md
-      - decisions/source_use_decisions.md
     completion_criteria:
-      - Each selected source has rights/access notes and allowed next action.
+      - 每个候选来源都有访问与复用说明。
     stopping_criteria:
-      - Stop using any source if terms prohibit the intended extraction.
+      - 如果条款禁止目标用途，停止使用该来源。
 
   N01:
-    title: Extract verified pilot passages
+    title: 抽取可核验试点段落
     depends_on: [N00]
-    objective: Extract 4-8 short, cited passages from permission-compatible sources.
-    planned_actions:
-      - Extract short passages from selected PDFs/pages.
-      - Record source title, date, page/stable locator, transcription status, and source-family caveat.
-      - Preserve raw extraction metadata separately from processed snippets.
+    objective: 从许可兼容来源抽取 4—8 条短段落。
     expected_artifacts:
-      - data/raw/passage_extraction/
       - data/processed/pilot_passages.jsonl
       - reports/next/passage_extraction_report.md
     completion_criteria:
-      - At least 4 verified passages exist with complete metadata.
+      - 至少 4 条段落具备完整元数据。
     stopping_criteria:
-      - Stop if no source allows lawful passage extraction.
+      - 如果没有来源允许合法抽取，则停止。
 
   N02:
-    title: Probe PDF/OCR quality on selected items
+    title: 测试 PDF/OCR 质量
     depends_on: [N00]
-    objective: Test text extraction/OCR quality on the Wellcome and bnAsie PDF candidates.
-    planned_actions:
-      - Extract text from one or two PDFs.
-      - Compare a small sample against page images manually.
-      - Record layout, table, encoding, and OCR problems.
+    objective: 对 Wellcome 与 bnAsie 候选 PDF 做小样本文本抽取。
     expected_artifacts:
-      - probes/ocr/pdf_text_probe_results.json
       - reports/next/ocr_quality_report.md
     completion_criteria:
-      - OCR/text quality is classified for at least two source items.
+      - 至少两个来源条目完成 OCR/文本质量分级。
     stopping_criteria:
-      - Stop before bulk extraction if item terms or quality fail.
+      - 条款或质量不满足时停止批量化。
 
   N03:
-    title: Expand pilot benchmark with passage-grounded items
+    title: 扩展 passage-grounded benchmark
     depends_on: [N01]
-    objective: Add source-grounded factual, lexical, causal, value, and attribution items.
-    planned_actions:
-      - Convert verified passages into benchmark items.
-      - Replace or supplement `needs_source_excerpt` placeholders.
-      - Validate JSONL with the T51 probe.
+    objective: 添加真实段落支撑的事实、词汇、因果、价值和归因题目。
     expected_artifacts:
       - benchmarks/pilot/pilot_items_v0_2.jsonl
-      - benchmarks/pilot/passage_item_manifest.md
     completion_criteria:
-      - At least 20 benchmark items, including at least 8 passage-grounded items.
+      - 至少 20 条题目，其中至少 8 条由真实段落支撑。
     stopping_criteria:
-      - Stop expansion if annotation labels cannot be assigned consistently.
+      - 如果标签无法稳定应用，先修订指南。
 
   N04:
-    title: Annotation consistency dry run
+    title: 标注一致性干运行
     depends_on: [N03]
-    objective: Test whether the anachronism taxonomy can be applied consistently.
-    planned_actions:
-      - Double-annotate a small item subset.
-      - Record disagreements and revise guidelines.
+    objective: 检查时代错置标签是否可稳定使用。
     expected_artifacts:
       - reports/next/annotation_dry_run.md
-      - benchmarks/pilot/annotation_guidelines_v0_2.md
     completion_criteria:
-      - Main disagreement categories are documented and guidelines revised.
+      - 主要分歧类型被记录并修订指南。
     stopping_criteria:
-      - Stop if core labels remain too ambiguous after revision.
+      - 核心标签持续模糊时停止扩展。
 
   N05:
-    title: Add family-aware retrieval and date-authority routing
+    title: 增加来源类型感知检索与日期权威路由
     depends_on: [N03]
-    objective: Improve the T51 prototype so post-cutoff controls and source-grounded items route differently.
-    planned_actions:
-      - Add retrieval filters by item family and source IDs.
-      - Add date-authority handling for post-cutoff controls.
-      - Emit per-item retrieval diagnostics.
+    objective: 改进 T51 原型，避免截止日期控制题错误检索历史来源。
     expected_artifacts:
       - prototypes/min_engineering_probe/probe_v0_2.py
-      - prototypes/min_engineering_probe/probe_v0_2_results.json
     completion_criteria:
-      - Prototype validates expanded benchmark and avoids historical-source retrieval for pure post-cutoff controls.
+      - 原型能验证扩展 benchmark 并按题型路由。
     stopping_criteria:
-      - Stop if benchmark fields are insufficient for routing and update schema first.
+      - 字段不足时先更新 schema。
 
   N06:
-    title: Run no-training prompt/source/RAG comparison
+    title: 无训练条件下的提示/来源/RAG 比较
     depends_on: [N03, N05]
-    objective: Compare prompt-only, source-provided, and local retrieval conditions without paid APIs.
-    planned_actions:
-      - Use local/open model only if already available; otherwise use labelled manual/procedural outputs.
-      - Score outputs against benchmark dimensions.
-      - Record anachronism and attribution error patterns.
+    objective: 比较普通提示、直接提供来源和本地检索条件。
     expected_artifacts:
       - reports/next/no_training_comparison.md
-      - data/processed/evaluation_outputs/
     completion_criteria:
-      - At least 10 items evaluated under at least two conditions.
+      - 至少 10 条题目在至少两种条件下完成评估。
     stopping_criteria:
-      - Stop before any paid API call or large training.
+      - 不进行付费 API 调用或大规模训练。
 
   N07:
-    title: Authorized Chinese-source access assessment
+    title: 中文来源授权访问评估
     depends_on: []
-    objective: Determine whether Shen Bao, late-Qing periodicals, or gazetteer full text can be used lawfully.
-    planned_actions:
-      - Record available institutional access and license terms if provided.
-      - If no access, document search strategy and remain blocked.
+    objective: 判断《申报》、晚清期刊或方志全文能否合法使用。
     expected_artifacts:
       - reports/next/chinese_source_access_assessment.md
-      - blockers/chinese_source_access_blockers.md
     completion_criteria:
-      - Each candidate Chinese source is classified as authorized, manual-only, blocked, or unknown.
+      - 每个候选中文来源被分类为授权、仅手工、阻塞或未知。
     stopping_criteria:
-      - Do not bypass authentication, paywalls, CAPTCHAs, or no-batch-download rules.
+      - 不绕过认证、付费墙、验证码或禁止批量下载规则。
 
   N08:
-    title: Term registry for public-health lexical anachronism
+    title: 公共卫生词汇时代错置术语表
     depends_on: [N01, N07]
-    objective: Build a small term registry for `weisheng`, hygiene, quarantine, vaccination, plague, sanitation, and related terms.
-    planned_actions:
-      - Record source attestations and translation caveats.
-      - Separate source-attested terms from secondary-scholarship guidance.
+    objective: 建立 `weisheng`、检疫、接种、鼠疫、卫生等词的来源见证表。
     expected_artifacts:
       - evidence/term_registry.md
-      - benchmarks/pilot/lexical_items.jsonl
     completion_criteria:
-      - At least 10 terms or term senses recorded with source status.
+      - 至少 10 个术语或词义具备来源状态记录。
     stopping_criteria:
-      - Stop if no primary attestation is available for a term.
+      - 无一手见证时停止该词条。
 
   N09:
-    title: Next synthesis and pilot report
+    title: 下一轮综合与试点报告
     depends_on: [N02, N04, N06]
-    objective: Synthesize passage extraction, OCR quality, annotation consistency, and no-training evaluation.
-    planned_actions:
-      - Update executive brief and final report.
-      - Decide whether to proceed to RAG expansion, Chinese-source access work, or adaptation comparison.
+    objective: 综合段落抽取、OCR、标注一致性和无训练评测结果。
     expected_artifacts:
       - reports/next/PILOT_REPORT.md
-      - state/NEXT_RUN_BACKLOG_002.yaml
     completion_criteria:
-      - Next research decision is evidence-based and source-boundary aware.
+      - 下一步研究决策有证据支撑。
     stopping_criteria:
-      - Stop if evidence is sufficient for a decision or if all data routes are blocked.
-
+      - 证据足够或所有数据路线阻塞时停止。

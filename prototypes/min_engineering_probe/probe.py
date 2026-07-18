@@ -141,17 +141,17 @@ def main():
     OUT_JSON.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
 
     lines = [
-        "# Minimum Engineering Probe Summary",
+        "# 最小工程探针摘要",
         "",
-        f"- Source records: {summary['source_count']}",
-        f"- Pilot items: {summary['item_count']}",
-        f"- Validation errors: {summary['error_count']}",
-        f"- Scoring-ready items: {summary['scoring_ready_count']}",
-        f"- Items requiring verified passages: {summary['requires_passage_count']}",
+        f"- 来源记录：{summary['source_count']}",
+        f"- 试点题目：{summary['item_count']}",
+        f"- 校验错误：{summary['error_count']}",
+        f"- 当前可评分题目：{summary['scoring_ready_count']}",
+        f"- 需要真实史料段落的题目：{summary['requires_passage_count']}",
         "",
-        "## Item Readiness",
+        "## 题目就绪情况",
         "",
-        "| Item | Family | Evidence status | Ready? | Top candidates |",
+        "| 题目 | 类型 | 证据状态 | 是否可评分 | 主要候选来源 |",
         "|---|---|---|---:|---|",
     ]
     for result in item_results:
@@ -161,7 +161,7 @@ def main():
             f"{str(result['scoring_ready']).lower()} | {candidates} |"
         )
     if errors:
-        lines.extend(["", "## Validation Errors", ""])
+        lines.extend(["", "## 校验错误", ""])
         for error in errors:
             lines.append(f"- `{error}`")
     OUT_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
@@ -178,4 +178,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

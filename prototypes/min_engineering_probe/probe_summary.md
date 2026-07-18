@@ -1,14 +1,14 @@
-# Minimum Engineering Probe Summary
+# 最小工程探针摘要
 
-- Source records: 4
-- Pilot items: 12
-- Validation errors: 0
-- Scoring-ready items: 10
-- Items requiring verified passages: 2
+- 来源记录：4
+- 试点题目：12
+- 校验错误：0
+- 当前可评分题目：10
+- 需要真实史料段落的题目：2
 
-## Item Readiness
+## 题目就绪情况
 
-| Item | Family | Evidence status | Ready? | Top candidates |
+| 题目 | 类型 | 证据状态 | 是否可评分 | 主要候选来源 |
 |---|---|---|---:|---|
 | PHB-001 | post_cutoff_control | post_cutoff_control_verified | true | SRC-CUSTOMS-WELLCOME, SRC-SMC-BNASIE, SRC-CUSTOMS-AS |
 | PHB-002 | post_cutoff_control | post_cutoff_control_verified | true | SRC-CUSTOMS-WELLCOME, SRC-CUSTOMS-AS, SRC-CMMJ-CRL |

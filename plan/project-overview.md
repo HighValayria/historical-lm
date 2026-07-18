@@ -1,34 +1,13 @@
-# Project Overview
+# 项目概览
 
-## Project Identity
+## 项目身份
 
-- Working title: From time cutoff to historical knowledge boundaries.
-- Run ID: exploration-001.
-- Current stage: autonomous exploratory research, first round.
-- Primary domain: late-Qing public health.
-- Provisional source period: 1880-01-01 to 1899-12-31.
-- Provisional historical cutoff: 1900-01-01.
+工作题目是“从时间截止到历史知识边界：晚清公共卫生语言模型探索”。当前运行编号为 `exploration-001`，阶段为第一轮自主探索。
 
-## Central Decision
+## 中心决策
 
-Decide whether late-Qing public-health materials can support an individual-scale, evaluable digital-humanities project about historical knowledge boundaries, anachronism, historical RAG, and lightweight language-model adaptation.
+判断晚清公共卫生材料是否能够支撑一个个人规模、可评价、具有数字人文价值的历史知识边界研究。
 
-## Scope Boundaries
+## 范围边界
 
-- No large-scale model training.
-- No paid external model API calls.
-- No bypassing paywalls, authentication, CAPTCHAs, access controls, licensing restrictions, robots policies, or bulk-download restrictions.
-- Model-generated text is allowed only as labelled engineering-probe material, never as historical evidence.
-
-## Required Final Artifacts
-
-- `reports/EXECUTIVE_BRIEF.md`
-- `reports/FINAL_REPORT.md`
-- `evidence/literature_matrix.md`
-- `evidence/source_registry.md`
-- `reports/candidate_topic_scorecard.md`
-- `reports/minimum_viable_pilot.md`
-- `benchmarks/pilot/benchmark_spec.md` or a small pilot dataset
-- `reports/rejected_and_blocked_directions.md`
-- `state/NEXT_RUN_BACKLOG.yaml`
-
+不做大规模训练，不使用付费外部模型 API，不绕过访问控制，不把模型生成文本当历史证据。

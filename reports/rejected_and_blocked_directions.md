@@ -1,29 +1,28 @@
-# Rejected and Blocked Directions
+# 拒绝与阻塞方向
 
-## Rejected for This Stage
+## 本阶段拒绝
 
-| Direction | Status | Reason |
+| 方向 | 状态 | 原因 |
 |---|---|---|
-| Large-scale model training | rejected | Outside project budget and contrary to uncertainty-reduction mandate. |
-| Claiming to represent all late-Qing people | rejected | Current sources overrepresent treaty-port, customs, missionary, municipal, elite, and partly English-language perspectives. |
-| Commercial historical chatbot | rejected | Explicit non-goal and not aligned with DH research contribution. |
-| Using generated text as historical evidence | rejected | Violates project evidence rules. |
+| 大规模模型训练 | 拒绝 | 超出预算，也违背“先降低不确定性”的阶段目标。 |
+| 声称代表全部晚清人群 | 拒绝 | 当前来源偏向通商口岸、海关、传教士、市政、精英和部分英文材料。 |
+| 商业历史聊天机器人 | 拒绝 | 不符合项目的数字人文研究目标。 |
+| 把生成文本当历史证据 | 拒绝 | 违反证据规则。 |
 
-## Deferred
+## 暂缓
 
-| Direction | Status | Revisit trigger |
+| 方向 | 状态 | 重新考虑条件 |
 |---|---|---|
-| LoRA/DAPT/QLoRA method comparison | deferred | After verified passages, stable benchmark items, and a clean corpus exist. |
-| Source-ecology sensitivity across customs/missionary/municipal/newspaper/gazetteer families | deferred | After more balanced authorized source access exists. |
-| Lexical drift study of `weisheng` and Chinese public-health vocabulary | deferred | After authorized Chinese full-text access or open source subset is confirmed. |
-| OCR-first corpus pipeline | deferred | After item-level PDF/OCR tests on Wellcome and bnAsie. |
+| LoRA/DAPT/QLoRA 比较 | 暂缓 | 真实段落、稳定 benchmark 和小语料形成之后。 |
+| 跨来源生态 RAG 敏感性研究 | 暂缓 | 获得更均衡的合法来源之后。 |
+| `weisheng` 与中文公共卫生词汇漂移 | 暂缓 | 获得授权中文全文或开放子集之后。 |
+| OCR 优先语料管线 | 暂缓 | 先完成 Wellcome 与 bnAsie 的小样本 OCR 质量探针。 |
 
-## Blocked Without Authorization
+## 无授权时阻塞
 
-| Direction | Blocker | Mitigation |
+| 方向 | 阻塞原因 | 缓解方式 |
 |---|---|---|
-| Bulk use of Shen Bao database | Subscription and provider terms; no batch download assumption. | Use only with authorized access and documented terms. |
-| Bulk use of late-Qing periodical full-text databases | Subscription and library no-batch-download notices. | Use manual/authorized samples or seek permission. |
-| ProQuest-style historical newspaper mining | Licensed platform restrictions. | Use institutional terms or alternative open holdings. |
-| Commercial gazetteer full-text mining | Access and reuse terms unclear or restricted. | Use NLC/catalogue image access where permitted; otherwise document as blocked. |
-
+| 《申报》数据库批量使用 | 订阅和供应商条款限制 | 只在有授权且条款允许时使用。 |
+| 晚清期刊全文库批量使用 | 订阅与禁止批量下载提示 | 使用人工/授权样本，或申请许可。 |
+| ProQuest 类历史报纸挖掘 | 平台授权限制 | 使用机构条款或开放替代来源。 |
+| 商业方志全文挖掘 | 访问和复用条款不清 | 优先使用许可明确的开放目录或图像。 |

@@ -1,37 +1,31 @@
-# Recommended Direction
+# 推荐方向
 
-## Primary Direction
+## 主方向
 
-Build a source-grounded pilot benchmark for late-Qing public-health anachronism and historical ignorance, using legally accessible small samples from customs, missionary, and municipal/treaty-port source ecologies.
+建设一个有来源约束的晚清公共卫生时代错置与历史性无知试点评测集。第一批材料应来自可合法小样本跟进的海关、传教士医学和市政/通商口岸来源。
 
-## Working Research Question
+## 工作问题
 
-Can a small, source-grounded benchmark evaluate whether LLM/RAG systems answer late-Qing public-health questions without importing post-1900 facts, modern lexical meanings, unsupported causal/value frames, or unsupported source attributions?
+一个小型、有出处约束的 benchmark 能否评估 LLM/RAG 系统在回答晚清公共卫生问题时，是否避免导入 1900 年后的事实、现代词义、无出处支撑的因果/价值框架和错误来源归属？
 
-## Why This Direction Wins
+## 推荐理由
 
-- It addresses the core digital-humanities problem: historical knowledge boundaries are not only about factual truth, but about date, source ecology, provenance, accessibility, and archival bias.
-- It is feasible for an individual researcher because it can start with a small curated benchmark instead of large model training.
-- It remains valuable if models fail, because error taxonomy and abstention behavior are publishable findings.
-- It naturally integrates T10 methods, T11 source feasibility, and T12 concept definitions.
+这个方向直接回应数字人文问题：历史知识边界不仅是事实真假，还包括时间、来源生态、出处、知识可达性和档案偏差。它可以由个人研究者从小规模可核验材料开始推进，即使模型表现很差，错误分类和拒答行为也仍然有研究价值。
 
-## Minimum Viable Pilot
+## 最小可行试点
 
-1. Select 10-20 source passages from open or permission-compatible customs, missionary, and municipal materials.
-2. Create 30-60 atomic benchmark items across factual, lexical, causal, value, source-attribution, and provenance labels.
-3. Define answer policies: answer with citation, answer with caveat, abstain, or reject anachronism.
-4. Compare three conditions: no-retrieval prompting, source-provided prompting, and a lightweight local retrieval prototype.
-5. Report error taxonomy, abstention calibration, source-population limits, and OCR/provenance constraints.
+1. 从开放或许可兼容来源中选取 10—20 个短段落或元数据记录。
+2. 构建 30—60 条原子题目，覆盖事实、词汇、因果、价值、来源归属和出处不确定性。
+3. 定义回答策略：带引用回答、带限定回答、说明理由后拒答、识别时代错置。
+4. 比较普通提示、提供来源提示和本地轻量检索三种条件。
+5. 报告错误类型、拒答校准、来源群体边界和 OCR/出处限制。
 
-## Viable Alternatives
+## 可行替代方向
 
-- C7 as a source-analysis companion: compare governance/customs and missionary medical knowledge boundaries.
-- C2 as a technical companion: implement historical RAG once the benchmark items exist.
-- C5 as an enabling task: OCR and metadata feasibility should run before any larger corpus plan.
+- 将 C7 作为来源生态分析的伴随研究。
+- 将 C2 作为技术伴随研究。
+- 将 C5 作为 OCR 与元数据可行性支撑任务。
 
-## Deferred Directions
+## 暂缓方向
 
-- C3 should wait for authorized Chinese periodical/newspaper access or a clearly open source subset.
-- C4 should wait for more balanced source-family access.
-- C6 should wait until the benchmark and corpus are stable enough for a meaningful method comparison.
-
+词汇漂移研究需要更多中文全文来源；来源生态敏感性研究需要更均衡的来源；模型适配比较需要稳定 benchmark 和语料之后再做。

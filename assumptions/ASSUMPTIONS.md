@@ -1,13 +1,11 @@
-# Assumptions
+# 假设记录
 
-| Assumption ID | Date | Node | Assumption | Status | Evidence | Risk |
-|---|---|---|---|---|---|---|
-| A-0001 | 2026-07-17 | T00 | The first run can proceed without user confirmation between nodes. | active | `MASTER_PROMPT.md` and user instruction. | Low. |
-| A-0002 | 2026-07-17 | T00 | The source period and cutoff remain provisional until source and evaluation feasibility are tested. | active | `PROJECT_CHARTER.md`. | Medium. |
-| A-0003 | 2026-07-17 | T10 | Historical RAG and benchmark design are more immediately informative than LoRA/DAPT training. | active | T10 literature landscape. | Medium; revisit after T50. |
-| A-0004 | 2026-07-17 | T11 | An accessible first pilot will overrepresent treaty-port, customs, missionary, municipal, and English-language source ecologies. | active | T11 source registry. | High; must be explicit in research framing. |
-| A-0005 | 2026-07-17 | T12 | A multi-label anachronism taxonomy will be more useful than a binary anachronism/not-anachronism label. | active | T12 concept map. | Medium; validate during T41 pilot benchmark. |
-| A-0006 | 2026-07-17 | T30 | Four reachable item-level source pages are sufficient to continue to OCR/text and benchmark design probes. | active | T30 access probe results. | Medium; OCR may still fail. |
-| A-0007 | 2026-07-17 | T31 | Curated snippets are a safer first unit than automatically OCRed pages. | active | T31 OCR metadata probe. | Medium; manual curation is slower but avoids false corpus assumptions. |
-| A-0008 | 2026-07-17 | T41 | A seed benchmark with metadata and post-cutoff controls is useful for engineering validation even before full source-passage extraction. | active | T41 pilot items. | Medium; should not be overclaimed as historical benchmark completion. |
-| A-0009 | 2026-07-17 | T51 | Schema validation plus readiness classification is enough for a first engineering proof of concept. | active | T51 probe output. | Low; later work still needs verified source passages and real retrieval. |
+| 编号 | 日期 | 节点 | 假设 | 状态 | 风险 |
+|---|---|---|---|---|---|
+| A-0001 | 2026-07-17 | T00 | 本轮可不逐步等待确认。 | 已完成 | 低 |
+| A-0002 | 2026-07-17 | T00 | 1880—1899 与 1900 截止点仍是临时设定。 | 有效 | 中 |
+| A-0003 | 2026-07-17 | T10 | benchmark 与 RAG 比 LoRA/DAPT 更适合第一轮。 | 有效 | 中 |
+| A-0004 | 2026-07-17 | T11 | 第一版来源会偏向通商口岸、海关、传教士和市政材料。 | 有效 | 高 |
+| A-0005 | 2026-07-17 | T12 | 多标签时代错置分类优于二分类。 | 有效 | 中 |
+| A-0006 | 2026-07-17 | T31 | 人工核验摘录比假设 OCR 干净更稳妥。 | 有效 | 中 |
+| A-0007 | 2026-07-17 | T51 | schema 校验和就绪分类足以构成第一版工程概念验证。 | 有效 | 低 |

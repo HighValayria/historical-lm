@@ -1,32 +1,31 @@
-# Executive Brief
+# 执行简报
 
-## Bottom Line
+## 核心判断
 
-Late-Qing public-health materials can support an individual-scale, evaluable digital-humanities project, but only if the first project is scoped as a source-grounded benchmark and provenance-aware evaluation of historical knowledge boundaries. The evidence does not support immediate large-scale training or broad claims about all late-Qing people.
+晚清公共卫生材料可以支撑一个个人规模、可评价的数字人文研究项目，但第一阶段应定位为“有出处约束的历史知识边界与时代错置评测”，而不是直接进行大规模训练或宣称重建全部晚清社会的公共卫生知识。
 
-## Recommended Direction
+## 推荐方向
 
-Build a pilot benchmark for late-Qing public-health anachronism and historical ignorance. The benchmark should test whether LLM/RAG systems avoid:
+围绕晚清公共卫生材料构建一个小型试点评测集，重点检验模型或检索增强系统是否会出现以下问题：
 
-- post-1900 factual imports;
-- modernized lexical meanings;
-- teleological causal explanations;
-- present-day value categories presented as actor categories;
-- unsupported source attributions;
-- overgeneralization from narrow source ecologies.
+- 将 1900 年之后的事实、机构或术语倒置到晚清语境；
+- 把晚清词语直接压平成现代公共卫生概念；
+- 用后来的医学理论或现代化叙事解释早期行动；
+- 把今天的价值分类当成历史行动者自己的分类；
+- 引用错误来源或让来源无法支撑原子化主张；
+- 从狭窄的档案群体过度推广到全部晚清人群。
 
-## Feasibility Evidence
+## 可行性证据
 
-- Four high-priority source entry points were reachable in T30.
-- T31 found PDF/download/IIIF or full-text signals for Wellcome, CRL, and bnAsie sources.
-- T40/T41 created a benchmark schema and 12-item pilot seed.
-- T51 validated the pilot seed with 0 schema errors; 10 of 12 items are ready for metadata/post-cutoff/policy scoring, and 2 correctly require source passages before scoring.
+- T30 访问探针显示 4 个高优先级史料入口可访问。
+- T31 显示 Wellcome、CRL 和 bnAsie 页面有 PDF、下载、IIIF 或全文线索。
+- T40/T41 已形成评测规范、结构化模式和 12 条试点题目。
+- T51 本地工程探针复跑通过：12 条题目、0 个结构错误、10 条当前可用于元数据/截止日期/回答策略评分，2 条需等待真实史料段落后再评分。
 
-## Main Constraint
+## 主要限制
 
-The first pilot source ecology overrepresents treaty-port, customs, missionary, municipal, and partly English-language records. This is a manageable scope if explicitly framed, but it cannot represent all late-Qing public-health knowledge.
+第一轮可用史料明显偏向通商口岸、海关、传教士、市政/租界机构，以及部分英文材料。只要研究问题明确限定为这种“来源生态”，这个限制可以被转化为数字人文贡献；但它不能支撑“全部晚清人群”的结论。
 
-## Next Step
+## 下一步
 
-Add 4-8 verified historical passages from open/permission-compatible Wellcome, CRL, and bnAsie items, then run a small prompt-only versus source-provided versus local retrieval comparison.
-
+从 Wellcome、CRL 和 bnAsie 的开放或许可兼容材料中抽取 4—8 条可核验史料段落，然后比较“无检索提示”“直接提供来源提示”和“本地轻量检索”三种条件。

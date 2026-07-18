@@ -1,40 +1,19 @@
-# Concept and Gap Map
+# 概念与缺口地图
 
-## Working Concepts
-
-| Concept | Working definition | Operational signal | Risk or ambiguity | Evidence status |
-|---|---|---|---|---|
-| Historical knowledge boundary | The project-specific limit of what a defined historical actor, source ecology, or model/RAG system may responsibly claim for a specified date. It combines chronology, source circulation, provenance, archival survival, and accessibility. | Every benchmark item should include `target_date`, `source_date`, `source_family`, `audience`, `place`, and `evidence_status`. Answers should be penalized for post-cutoff entities or for presenting inaccessible knowledge as generally available. | A fact can be true today but unavailable or unattested in the target source ecology. | synthesis from temporal NLP, source criticism, and historiography |
-| Knowledge accessibility | Whether a claim could plausibly have been available to a defined community through language, publication channels, institutions, geography, literacy, and professional networks. | Tag the imagined knower: treaty-port physician, missionary, customs officer, Qing official, newspaper reader, merchant, rural patient, etc. Separate global discovery date from local attestation. | Easy-to-digitize foreign-language archives can be mistaken for the whole historical knowledge world. | conceptual inference |
-| Archival bias | Non-random production, survival, cataloguing, digitization, OCR, and retrieval of sources. Archives are not neutral mirrors of the past. | For each item, record creator, institution, genre, digitization path, OCR status, missing groups, and likely overrepresented voices. Stratify evaluation by source family. | Absence from a corpus is not absence from the past. | supported by archival studies and DH source criticism |
-| Historical ignorance | A historically appropriate state of "unknown", "unattested", "not yet discovered", "not locally accessible", or "not supported by this corpus". | Include answer labels: `known`, `uncertain`, `not_attested`, `post_cutoff`, `not_accessible_to_actor`, `insufficient_evidence`. Score calibrated abstention. | Standard QA metrics may wrongly punish historically careful refusal. | conceptual inference from benchmark and historiographic needs |
-| Factual anachronism | Importing later events, discoveries, institutions, names, policies, or technologies into a pre-cutoff answer. | Temporal entity check; cutoff contradiction; post-1900 terms/institutions in actor-level answers. | Modern biomedical correctness can hide historical error. | direct from anachronism taxonomy |
-| Lexical anachronism | Using a word, translation, or semantic field as if its modern meaning were already stable in the target period. | Time-sliced lexicon; first-attestation notes; source-backed translations; flag terms whose meanings changed. | Normalizing `weisheng` as modern "public health" can flatten conceptual change. | supported by late-Qing public-health scholarship |
-| Causal anachronism | Explaining earlier actions by later theories, outcomes, or teleological narratives rather than period-plausible causal frames. | Flag causal chains relying on later biomedical discoveries or modernization endpoints; require source-backed actor explanations. | Some later analytic categories are legitimate if clearly marked as analyst framing. | supported by anti-Whig/presentism concerns |
-| Value anachronism | Attributing present-day moral, scientific, bureaucratic, or policy categories to historical actors without contextual framing. | Separate analyst judgment from actor categories; annotate present-day labels as analytical, not actor-level. | Contextualization should not become moral evasion; benchmark prompts must distinguish analysis from actor voice. | supported by historiographic method |
-| Source misattribution | Attaching an atomic claim to the wrong source, date, author, genre, passage, or source family, or citing a passage that does not support the claim. | Passage-level citation check; source-date consistency; atomic claim support labels. | Fluent citation language can create false confidence. | supported by attribution/NLG literature |
-| Provenance uncertainty | Uncertainty about source origin, date, authorship, edition, custodial path, OCR, transcription, or modern editorial intervention. | Metadata confidence score; edition/date confidence; OCR confidence; provenance caveat required in answer. | Digitization date or library metadata can be mistaken for historical circulation date. | supported by source criticism |
-| Presentism | A broader interpretive habit of reading the past through present categories, endpoints, and priorities. It may be unavoidable as an analytic starting point but must be declared. | Penalize actor-level attribution of present categories; allow explicit present-day meta-analysis when the prompt asks for it. | The research project itself is present-driven, so prompts must state whether they ask for actor-level reconstruction or present-day analysis. | supported by historiography |
-
-## Benchmark Label Schema Draft
-
-| Field | Values | Purpose |
-|---|---|---|
-| `claim_type` | factual, lexical, causal, value, attribution, provenance | Separates error modes that would otherwise collapse into generic wrongness. |
-| `temporal_status` | pre_cutoff_supported, pre_cutoff_uncertain, post_cutoff, mixed, undated | Records relation to 1900-01-01. |
-| `accessibility_status` | accessible_to_named_actor, accessible_to_source_ecology, globally_known_not_local, not_attested, inaccessible | Prevents global historical knowledge from being attributed to all actors. |
-| `source_population` | customs, missionary, municipal, newspaper, periodical, gazetteer, central_archive, secondary | Makes archival population explicit. |
-| `answer_policy` | answer_with_citation, answer_with_caveat, abstain, reject_anachronism | Converts concepts into scoring behavior. |
-
-## Core Concept Sources
-
-| Source ID | Source | Relevance | Verification status |
+| 概念 | 工作定义 | 可操作信号 | 风险 |
 |---|---|---|---|
-| CONCEPT-SKINNER | Quentin Skinner, "Meaning and Understanding in the History of Ideas", DOI: 10.2307/2504188 | Supports attention to historical meaning and context rather than projecting present concepts. | verified by DOI metadata pattern; close reading recommended |
-| CONCEPT-BUTTERFIELD | Herbert Butterfield, *The Whig Interpretation of History* | Supports anti-teleological caution. | public online edition exists; use as historiographic reference |
-| CONCEPT-SCHWARTZ-COOK | Joan M. Schwartz and Terry Cook, "Archives, Records, and Power", DOI: 10.1007/BF02435628 | Supports the claim that archives are shaped by power and are not neutral repositories. | verified by DOI metadata pattern |
-| CONCEPT-HARRIS | Verne Harris, "The Archival Sliver", DOI: 10.1023/A:1020813214144 | Supports archival partiality and survival limitations. | verified by DOI metadata pattern |
-| CONCEPT-PUTNAM | Lara Putnam, "The Transnational and the Text-Searchable", DOI: 10.1093/ahr/121.2.377 | Supports caution that digitized search changes historical practice and visibility. | verified by DOI metadata pattern |
-| CONCEPT-GIBBS-OWENS | Fred Gibbs and Trevor Owens, "The Hermeneutics of Data and Historical Writing", DOI: 10.2307/j.ctv65sx57.18 | Supports interpreting data as constructed evidence rather than raw fact. | verified by DOI metadata pattern |
-| CONCEPT-RASHKIN | Rashkin et al., "Measuring Attribution in Natural Language Generation Models", DOI: 10.1162/coli_a_00486 | Supports passage-level attribution as an evaluation concern. | verified by DOI metadata pattern |
-| CONCEPT-GAO | Gao et al., "Enabling Large Language Models to Generate Text with Citations", DOI: 10.18653/v1/2023.emnlp-main.398 | Supports citation generation and attribution evaluation concerns. | verified by ACL DOI pattern |
+| 历史知识边界 | 某个日期、行动者或来源生态下可以负责任声称的知识范围。 | 记录目标日期、来源日期、来源类型、受众、地点和证据状态。 | 今天为真的事实不一定当时可知。 |
+| 知识可达性 | 某一主张是否可能通过语言、媒介、机构、地理和识字条件进入特定群体。 | 标注通商口岸医生、传教士、海关人员、清廷官员、报纸读者等。 | 外文档案容易被误当成全部中国知识。 |
+| 档案偏差 | 来源生产、保存、编目、数字化、OCR 和检索都不是随机过程。 | 记录创建者、机构、体裁、数字化路径、OCR 状态和缺席群体。 | 语料缺席不等于历史上不存在。 |
+| 历史性无知 | 对“未知、未见于来源、尚未发现、不可达、证据不足”的合理承认。 | 设置 `known`、`uncertain`、`not_attested`、`post_cutoff` 等标签。 | 普通问答指标可能误罚合理拒答。 |
+| 事实时代错置 | 把后来的事件、机构、发现、名称或政策放入更早语境。 | 检查后出实体、日期矛盾和 1900 年后术语。 | 现代医学正确性可能掩盖历史错误。 |
+| 词汇时代错置 | 把晚清词语直接等同于现代词义。 | 记录术语出处、首次见证、翻译说明和语境。 | `weisheng` 不应自动等同现代“公共卫生”。 |
+| 因果时代错置 | 用后来的理论或结果解释早期行动。 | 检查后见因果链和现代化目的论。 | 后来的分析概念只有明示为分析视角时才可用。 |
+| 价值时代错置 | 把今天的道德、科学或政策分类当成历史行动者分类。 | 区分行动者语言和研究者分析语言。 | 语境化不能变成价值逃避。 |
+| 来源误归因 | 主张被归到错误来源、日期、作者、体裁或段落。 | 原子主张与段落/元数据逐项核对。 | 流畅引用可能制造虚假可信度。 |
+| 出处不确定性 | 来源起源、日期、作者、版本、转写或现代编辑介入不明。 | 记录元数据可信度、OCR 可信度和版本说明。 | 数字化日期不能替代历史流通日期。 |
+| 当代主义 | 用今天的问题、分类和终点读取过去。 | 题目必须说明是行动者视角还是今天的分析视角。 | 本项目本身也有当代问题意识，需明示。 |
+
+## Benchmark 标签草案
+
+题目应记录 `claim_type`、`temporal_status`、`accessibility_status`、`source_population` 和 `answer_policy`。这些字段用来把历史问题转化为可评分行为。
