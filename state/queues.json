@@ -13,6 +13,34 @@
       "reason": "High relevance to temporal language modeling and anachronism-aware query framing.",
       "added": "2026-10-03",
       "source": "manual_daily"
+    },
+    {
+      "id": "arxiv:2505.00030",
+      "title": "Can Language Models Represent the Past without Anachronism?",
+      "reason": "Core seed paper for anachronism and historical simulation; directly challenges prompting/fine-tuning assumptions.",
+      "added": "2026-10-03",
+      "source": "manual_daily_coverage_seed_search"
+    },
+    {
+      "id": "arxiv:2606.02991",
+      "title": "Pretraining Language Models on Historical Text",
+      "reason": "Core seed paper for historical LM pretraining, leakage mitigation, and historical benchmark construction.",
+      "added": "2026-10-03",
+      "source": "manual_daily_coverage_seed_search"
+    },
+    {
+      "id": "acl:2026.eacl-long.72",
+      "title": "ExAnte: A Benchmark for Ex-Ante Inference in Large Language Models",
+      "reason": "Core seed paper for cutoff-aware ex-ante reasoning and temporal leakage measurement.",
+      "added": "2026-10-03",
+      "source": "manual_daily_coverage_seed_search"
+    },
+    {
+      "id": "arxiv:2606.18103",
+      "title": "HistoRAG: Embedding Historical Methodology in Retrieval-Augmented Generation Through Critical Technical Practice",
+      "reason": "Core seed paper for historical RAG, source ecology, temporally balanced retrieval, and historiographical design constraints.",
+      "added": "2026-10-03",
+      "source": "manual_daily_coverage_seed_search"
     }
   ],
   "dataset_review": [],
