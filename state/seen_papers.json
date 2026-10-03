@@ -135,6 +135,23 @@
       "relevance": "high",
       "reading_depth": "abstract_read",
       "notes": "Core seed paper now registered in seen_papers; directly relevant to source ecology, temporally balanced retrieval, and historical RAG methodology."
+    },
+    "iclr:2026:tdbench": {
+      "title": "Harnessing Temporal Databases for Systematic Evaluation of Factual Time-Sensitive Question-Answering in LLMs",
+      "normalized_title": "harnessing temporal databases for systematic evaluation of factual time sensitive question answering in llms",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/2cbeff05cd646fcc09f6c3c48ba56f74-Abstract-Conference.html",
+      "doi": null,
+      "arxiv_id": null,
+      "stable_paper_id": "iclr:2026:2cbeff05cd646fcc09f6c3c48ba56f74",
+      "publication_date": "2026",
+      "publication_year": 2026,
+      "first_seen": "2026-10-03",
+      "last_checked": "2026-10-03",
+      "discovery_type": "newly_discovered",
+      "discovery_source": "manual_daily_multi_channel_radar",
+      "relevance": "medium",
+      "reading_depth": "abstract_read",
+      "notes": "Temporal QA benchmark construction from temporal databases; useful for temporal-boundary evaluation methods, but not historical-source-specific."
     }
   }
 }

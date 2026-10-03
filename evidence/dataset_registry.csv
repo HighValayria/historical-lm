@@ -1,1 +1,2 @@
 dataset_id,name,url,status,license,time_range,language,domain,access_mode,relevance,first_seen,last_checked,notes
+tdbench,TDBench,https://proceedings.iclr.cc/paper_files/paper/2026/hash/2cbeff05cd646fcc09f6c3c48ba56f74-Abstract-Conference.html,candidate,unknown,modern/current temporal databases,English,temporal question answering,unknown,medium,2026-10-03,2026-10-03,Temporal database-derived TSQA benchmark; review for method transfer rather than direct historical corpus use.

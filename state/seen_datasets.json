@@ -1,3 +1,13 @@
 {
-  "datasets": {}
+  "datasets": {
+    "tdbench": {
+      "name": "TDBench",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/2cbeff05cd646fcc09f6c3c48ba56f74-Abstract-Conference.html",
+      "first_seen": "2026-10-03",
+      "last_checked": "2026-10-03",
+      "relevance": "medium",
+      "status": "candidate",
+      "notes": "Temporal database-derived TSQA benchmark; relevant to temporal QA methodology, but not specific to late-Qing public-health archives."
+    }
+  }
 }

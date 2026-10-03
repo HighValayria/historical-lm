@@ -43,8 +43,24 @@
       "source": "manual_daily_coverage_seed_search"
     }
   ],
-  "dataset_review": [],
-  "archive_review": [],
+  "dataset_review": [
+    {
+      "id": "tdbench",
+      "title": "TDBench",
+      "reason": "Temporal database-derived TSQA benchmark may inform benchmark generation and temporal-boundary evaluation, even if not directly historical.",
+      "added": "2026-10-03",
+      "source": "manual_daily_multi_channel_radar"
+    }
+  ],
+  "archive_review": [
+    {
+      "id": "SRC-WELLCOME-API",
+      "title": "Wellcome Collection Catalogue API",
+      "reason": "Official catalogue API may improve discovery and metadata access for Wellcome public-health historical sources.",
+      "added": "2026-10-03",
+      "source": "manual_daily_multi_channel_radar"
+    }
+  ],
   "method_review": [
     {
       "id": "arxiv:2608.02985",
@@ -59,7 +75,22 @@
       "reason": "Potentially useful method reference for provenance-aware RAG design.",
       "added": "2026-10-03",
       "source": "manual_daily"
+    },
+    {
+      "id": "docparse-rs",
+      "title": "docparse-rs",
+      "reason": "Document parsing tool with OCR/layout and citation-friendly chunks; potentially useful for scanned PDF and RAG ingestion probes.",
+      "added": "2026-10-03",
+      "source": "manual_daily_multi_channel_radar"
     }
   ],
-  "resource_review": []
+  "resource_review": [
+    {
+      "id": "pageledger",
+      "title": "pageledger",
+      "reason": "Auditable page-level OCR/document extraction ledger may reduce provenance and reproducibility work for historical document processing.",
+      "added": "2026-10-03",
+      "source": "manual_daily_multi_channel_radar"
+    }
+  ]
 }
