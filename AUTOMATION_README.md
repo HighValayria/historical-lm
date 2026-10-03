@@ -30,6 +30,27 @@ C:\Users\33967\AppData\Local\Programs\Python\Python312\python.exe
 
 If a scheduled run is missed, the next run uses `last_five_day` and `last_half_month` in `state/automation_state.json` to decide whether Five-Day or Half-Month work should be caught up.
 
+## Manual runs
+
+Manual runs are available through:
+
+```text
+automation/manual/RUN_DAILY.md
+automation/manual/RUN_FIVE_DAY.md
+automation/manual/RUN_HALF_MONTH.md
+automation/manual/RUN_FULL.md
+```
+
+Each file gives a minimal instruction for forcing one layer, or all layers, without waiting for the normal rolling schedule.
+
+Manual runs default to:
+
+```text
+UPDATE_SCHEDULE=false
+```
+
+That means the work is executed, but the automatic `last_*` cycle dates and run counts are not changed. Set `UPDATE_SCHEDULE=true` only when the manual run should count as the official cycle run.
+
 ## Manual inspection
 
 For future review, check these first:
