@@ -1,6 +1,36 @@
 {
-  "deep_reading": [],
+  "deep_reading": [
+    {
+      "id": "arxiv:2605.14636",
+      "title": "Teaching Large Language Models When Not to Know: Learning Temporal Critique for Ex-Ante Reasoning",
+      "reason": "High relevance to historical ignorance, cutoff-aware verification, and temporal admissibility.",
+      "added": "2026-10-03",
+      "source": "manual_daily"
+    },
+    {
+      "id": "acl:2026.acl-long.590",
+      "title": "A Model of the Language Process",
+      "reason": "High relevance to temporal language modeling and anachronism-aware query framing.",
+      "added": "2026-10-03",
+      "source": "manual_daily"
+    }
+  ],
   "dataset_review": [],
   "archive_review": [],
-  "method_review": []
+  "method_review": [
+    {
+      "id": "arxiv:2608.02985",
+      "title": "Temporal Leakage in LLM Backtesting: Measurement, Validation, and Adjusted Scores",
+      "reason": "Potentially useful evaluation methodology for temporal leakage measurement.",
+      "added": "2026-10-03",
+      "source": "manual_daily"
+    },
+    {
+      "id": "arxiv:2607.22584",
+      "title": "Source-Aware Reranking for Retrieval-Augmented Generation: A Reliability Prior Approach",
+      "reason": "Potentially useful method reference for provenance-aware RAG design.",
+      "added": "2026-10-03",
+      "source": "manual_daily"
+    }
+  ]
 }

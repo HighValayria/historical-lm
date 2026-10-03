@@ -1,3 +1,40 @@
 {
-  "papers": {}
+  "papers": {
+    "arxiv:2608.02985": {
+      "title": "Temporal Leakage in LLM Backtesting: Measurement, Validation, and Adjusted Scores",
+      "url": "https://arxiv.org/abs/2608.02985",
+      "first_seen": "2026-10-03",
+      "last_checked": "2026-10-03",
+      "relevance": "medium",
+      "reading_depth": "abstract_read",
+      "notes": "Newly observed during forced manual Daily; relevant to temporal leakage measurement, but not specific to historical public-health sources."
+    },
+    "arxiv:2605.14636": {
+      "title": "Teaching Large Language Models When Not to Know: Learning Temporal Critique for Ex-Ante Reasoning",
+      "url": "https://arxiv.org/abs/2605.14636",
+      "first_seen": "2026-10-03",
+      "last_checked": "2026-10-03",
+      "relevance": "high",
+      "reading_depth": "abstract_read",
+      "notes": "Newly observed during forced manual Daily; directly relevant to historical ignorance and cutoff-aware admissibility."
+    },
+    "acl:2026.acl-long.590": {
+      "title": "A Model of the Language Process",
+      "url": "https://aclanthology.org/2026.acl-long.590/",
+      "first_seen": "2026-10-03",
+      "last_checked": "2026-10-03",
+      "relevance": "high",
+      "reading_depth": "abstract_read",
+      "notes": "Newly observed during forced manual Daily; directly relevant to temporal language modeling and anachronism."
+    },
+    "arxiv:2607.22584": {
+      "title": "Source-Aware Reranking for Retrieval-Augmented Generation: A Reliability Prior Approach",
+      "url": "https://arxiv.org/abs/2607.22584",
+      "first_seen": "2026-10-03",
+      "last_checked": "2026-10-03",
+      "relevance": "medium",
+      "reading_depth": "abstract_read",
+      "notes": "Newly observed during forced manual Daily; relevant to source-aware retrieval, with limited direct historical-source coverage."
+    }
+  }
 }
