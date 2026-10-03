@@ -4,6 +4,8 @@ You are entering this repository as the daily Codex Automation worker.
 
 Repository files are the authoritative long-term memory. Do not rely on prior chat context.
 
+All generated research reports must be written in Chinese. Keep paper titles, dataset names, source names, identifiers, file paths, and required enum values in their original form when needed, but write summaries, judgments, headings, and explanations in Chinese.
+
 Before acting:
 
 1. Read `AGENTS.md`.

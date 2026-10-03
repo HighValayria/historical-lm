@@ -34,6 +34,8 @@ If a scheduled run is missed, the next run uses `last_five_day` and `last_half_m
 
 Daily paper discovery tracks work that is new to this repository, not only papers published in the last day.
 
+All generated Daily, Five-Day, and Half-Month research reports should be written in Chinese. Original paper titles, identifiers, and paths may remain unchanged.
+
 The system distinguishes:
 
 - `newly_published`: recent work that was not previously registered;

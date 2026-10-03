@@ -8,6 +8,8 @@ Run only when `scripts/check_schedule.py` reports `run_five_day: true`.
 
 Digest the last five days of changes. This layer should not continue open-ended searching.
 
+Five-Day reports must be written in Chinese. Paper titles, dataset names, source names, identifiers, file paths, and required enum values may remain in their original form.
+
 ## Inputs
 
 - recent Daily reports;
@@ -32,7 +34,7 @@ Digest the last five days of changes. This layer should not continue open-ended 
 8. Reassess historical-source feasibility.
 9. Identify better methods if evidence supports them.
 10. Identify new weaknesses in the current design.
-11. Write the Five-Day report to `reports/five_day/YYYY-MM-DD.md`.
+11. Write the Five-Day report in Chinese to `reports/five_day/YYYY-MM-DD.md`.
 12. After a successful Five-Day run, update `last_five_day`, increment `five_day_run_count`, and update `last_successful_run` in `state/automation_state.json`.
 
 ## Protected Contribution Candidates
@@ -47,8 +49,8 @@ Digest the last five days of changes. This layer should not continue open-ended 
 
 Five-Day may recommend changes but must not edit `research_design/CURRENT_RESEARCH_DESIGN.md`.
 
-If design changes are needed, include:
+If design changes are needed, include this Chinese section:
 
 ```text
-## PROPOSED DESIGN CHANGES
+## 拟议研究设计变更
 ```

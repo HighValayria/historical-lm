@@ -8,6 +8,8 @@ Run only when `scripts/check_schedule.py` reports `run_half_month: true`.
 
 Audit the research direction and make formal design updates only when evidence supports them.
 
+Half-Month reports must be written in Chinese. Paper titles, dataset names, source names, identifiers, file paths, and required enum values may remain in their original form.
+
 Half-Month is the only automation layer allowed to change:
 
 - `research_design/CURRENT_RESEARCH_DESIGN.md`;
@@ -45,7 +47,7 @@ Half-Month is the only automation layer allowed to change:
 
 ## Required Actions
 
-1. Write the Half-Month report to `reports/half_month/YYYY-MM-DD.md`.
+1. Write the Half-Month report in Chinese to `reports/half_month/YYYY-MM-DD.md`.
 2. If formal design files are changed, append an entry to `research_design/DESIGN_CHANGELOG.md` with:
 
 ```text

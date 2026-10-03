@@ -6,6 +6,8 @@ Answer only:
 
 > What genuinely new and project-relevant information appeared in the most recent cycle?
 
+Daily reports must be written in Chinese. Paper titles, identifiers, enum values such as `newly_discovered`, and paths may remain in their original form.
+
 Daily Research Radar is not only a publication-date news monitor. For papers, "new" means:
 
 ```text
@@ -86,7 +88,7 @@ This includes papers that were published months or years ago but are first disco
 6. Record reading depth as `title_only`, `abstract_read`, or `full_text_read`.
 7. Add only high-priority or high-relevance paper discoveries to `state/queues.json -> deep_reading`.
 8. Update registry files only when there is concrete information to record.
-9. Write the daily report to `reports/daily/YYYY-MM-DD.md`.
+9. Write the daily report in Chinese to `reports/daily/YYYY-MM-DD.md`.
 10. After a successful Daily run, update `last_daily`, increment `daily_run_count`, and update `last_successful_run` in `state/automation_state.json` when schedule rules allow it.
 
 ## Paper Discovery Semantics
@@ -169,24 +171,24 @@ Low priority:
 
 Daily performs discovery, deduplication, relevance judgment, initial classification, and queueing. Five-Day handles deeper reading, relation to existing research, contribution-risk analysis, and research-graph updates.
 
-## Daily Report Format
+## 日报格式
 
-When papers are present, use these sections:
+当报告包含论文发现时，使用以下中文小节：
 
 ```text
-## Newly Published
+## 近期新发表
 
-## Newly Discovered Existing Work
+## 新发现的既有研究
 
-## Existing Paper Updates
+## 已登记论文更新
 ```
 
-Empty sections may be omitted. Include counts when useful, for example:
+空小节可以省略。必要时加入计数，例如：
 
 ```text
-Newly Published: 2
-Newly Discovered Existing Work: 4
-Existing Paper Updates: 1
+近期新发表：2
+新发现的既有研究：4
+已登记论文更新：1
 ```
 
 During the cold-start phase, `newly_discovered` may be much larger than `newly_published`. This is expected and should fade naturally as `seen_papers.json` and `literature_master.csv` become more complete.
@@ -204,5 +206,5 @@ Daily must not:
 If there is no material update, the report may contain only:
 
 ```text
-No material update.
+无实质更新。
 ```
