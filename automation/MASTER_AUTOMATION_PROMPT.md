@@ -85,4 +85,6 @@ Scheduling is rolling and state-based:
 
 Do not use calendar day-of-month rules.
 
+Daily paper discovery treats "new" as new to this repository's research system, not only newly published in the last 24 hours. Daily must distinguish `newly_published`, `newly_discovered`, and `existing_paper_update` according to `automation/DAILY_PROTOCOL.md`.
+
 Do not perform large-scale training, paid API calls, access-control bypass, unauthorized scraping, or bulk downloading. If a task is blocked, record it and continue with other due work.

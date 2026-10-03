@@ -30,6 +30,18 @@ C:\Users\33967\AppData\Local\Programs\Python\Python312\python.exe
 
 If a scheduled run is missed, the next run uses `last_five_day` and `last_half_month` in `state/automation_state.json` to decide whether Five-Day or Half-Month work should be caught up.
 
+## Daily Research Radar
+
+Daily paper discovery tracks work that is new to this repository, not only papers published in the last day.
+
+The system distinguishes:
+
+- `newly_published`: recent work that was not previously registered;
+- `newly_discovered`: older relevant work first found by this system now;
+- `existing_paper_update`: new information about a paper already in `state/seen_papers.json` or `evidence/literature_master.csv`.
+
+This lets the early automation phase fill historical literature gaps before naturally shifting toward monitoring genuinely recent research.
+
 ## Manual runs
 
 Manual runs are available through:
