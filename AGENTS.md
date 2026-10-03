@@ -78,13 +78,13 @@
 
 不要重复处理已处理过的论文或数据集。
 
-`research_design/RESEARCH_DESIGN.md` 是当前正式研究设计主文档。
+`research_design/RESEARCH_DESIGN.md` 是当前正式研究设计主文档。当前版本由 `research_design/CURRENT.md` 声明，版本历史由 `research_design/VERSION_LOG.md` 记录，历史版本归档在 `research_design/archive/`。
 
 Daily 不得修改 `research_design/RESEARCH_DESIGN.md`；Daily 只记录证据、更新 registry、写报告和加入队列。
 
-Five-Day 只能对 `research_design/RESEARCH_DESIGN.md` 做有限证据 / 状态更新；任何实质更新都必须记录到 `research_design/DESIGN_CHANGELOG.md`。
+Five-Day 不得修改正式研究设计、`CURRENT.md`、`VERSION_LOG.md` 或 `archive/`。Five-Day 只能进行综合并在报告中提出 `PROPOSED DESIGN REVISION`。
 
-Half-Month 是唯一允许正式重构核心研究问题、研究问题组、研究叙事、贡献主张、概念框架、benchmark 设计、实验设计、假设、优先级和拒绝 / 暂缓方向的层级。
+Half-Month 是唯一允许决定是否创建新正式研究设计版本的层级。若需要新版本，必须先冻结当前版本到 `research_design/archive/`，再生成完整新的 `research_design/RESEARCH_DESIGN.md`，更新 `CURRENT.md`，并追加 `VERSION_LOG.md`。
 
 `research_design/contribution_map.md` 和 `research_design/experiment_matrix.csv` 等辅助文件可继续服务结构化自动化；若它们与 `research_design/RESEARCH_DESIGN.md` 冲突，以主文档为准。
 

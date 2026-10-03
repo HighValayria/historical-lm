@@ -56,25 +56,19 @@ Daily 不得修改 `research_design/RESEARCH_DESIGN.md`。Daily 只记录新证�
 research_design/RESEARCH_DESIGN.md
 ```
 
-该文件是当前研究方案的人类可读正式依据。Five-Day 和 Half-Month 必须把它作为最终研究设计汇总入口。
+该文件是当前研究方案的人类可读正式依据。当前版本由 `research_design/CURRENT.md` 声明，版本历史由 `research_design/VERSION_LOG.md` 记录，历史版本归档在 `research_design/archive/`。
 
-`research_design/DESIGN_CHANGELOG.md` 记录对正式研究设计的实质变更。
+`research_design/DESIGN_CHANGELOG.md` 可记录设计变更说明，但不能替代 `VERSION_LOG.md`。
 
-Five-Day 只能更新有限的证据 / 状态区域：
+Daily / Five-Day / Half-Month 权限分离：
 
-- 新证据；
-- 支持 / 反对证据（Evidence For / Against）；
-- 开放问题（Open Questions）；
-- 阻塞项（Blockers）；
-- 下一步研究优先级（Next Research Priorities）；
-- 贡献证据强度状态；
-- 数据源状态；
-- benchmark 成熟度；
-- 候选方法状态。
+- Daily：只收集证据、更新 registry、写报告并加入队列。
+- Five-Day：只做 synthesis + revision proposal，不修改正式研究设计或版本文件。
+- Half-Month：决定 accumulated evidence 是否足以创建新的正式研究设计版本。
 
-Five-Day 对核心研究问题、研究问题组、研究叙事、核心贡献定义或整体实验范式的重大变化，只能提出建议，不能直接实施。
+Five-Day 如果认为研究设计需要变化，只能在 Five-Day 报告中提出 `PROPOSED DESIGN REVISION`。
 
-Half-Month 是唯一允许正式重构核心设计的层级。Half-Month 更新 `research_design/RESEARCH_DESIGN.md` 后，如果保留辅助文件且它们仍然有用，应同步更新。
+Half-Month 若决定创建新版本，必须先冻结当前版本到 `research_design/archive/`，再生成完整新的 `research_design/RESEARCH_DESIGN.md`，更新 `research_design/CURRENT.md`，并追加 `research_design/VERSION_LOG.md`。若证据不足以创建新版本，不得修改当前正式设计。
 
 `research_design/contribution_map.md` 和 `research_design/experiment_matrix.csv` 等辅助文件可以服务自动化；若它们与 `research_design/RESEARCH_DESIGN.md` 冲突，以主文档为准。
 
@@ -105,6 +99,8 @@ UPDATE_SCHEDULE=false
 
 ```text
 reports/half_month/
+research_design/CURRENT.md
 research_design/RESEARCH_DESIGN.md
+research_design/VERSION_LOG.md
 research_design/DESIGN_CHANGELOG.md
 ```

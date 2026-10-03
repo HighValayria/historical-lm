@@ -3,6 +3,7 @@
 ## 1. 快照（Snapshot）
 
 - 最近更新（Last updated）：2026-10-03
+- 当前版本（Version）：v001
 - 更新周期（Updated by cycle）：状态迁移
 - 当前阶段（Current phase）：探索性设计整合与来源约束试点准备
 - 核心主题（Core topic）：晚清公共卫生语境下的历史知识边界、时代错置、历史性无知，以及 LLM / RAG 系统的来源约束评测
@@ -139,6 +140,30 @@
 
 标记为 `needs_source_excerpt` 的题目，在历史证据验证前不得作为可评分题目。
 
+### 当前试点状态（Current Pilot Status）
+
+当前 pilot 已有：
+
+- 12 条 pilot items；
+- 4 条 source records；
+- 10 条当前在结构上可评分的题目；
+- 2 条需要获得已验证真实史料段落后，才能进行实质评分的题目；
+- 最新本地 engineering probe 中的结构 / schema 错误为 0。
+
+这些结果只证明：
+
+- benchmark 数据结构可以运行；
+- schema / pipeline 具备工程可行性；
+- 当前题目中已有一部分可用于元数据、截止日期和回答策略层面的结构性评分。
+
+这些结果不证明：
+
+- benchmark 已经得到历史学验证；
+- taxonomy 已经具有稳定标注一致性；
+- 12 道题已经构成正式研究 benchmark；
+- Historical RAG 已经有效；
+- B0 / B1 / B2 / B3 已经完成正式比较。
+
 ## 10. 实验设计（Experimental Design）
 
 当前候选基线：
@@ -215,7 +240,7 @@
 4. 将试点评测题扩展到 20-30 条，并区分可评分题与 `needs_source_excerpt` 题。
 5. 测试最小本地检索原型能否保留来源引用与出处约束。
 6. 继续 Daily 多通道监测论文、数据集、档案、方法、资源和项目影响。
-7. 下一次 Five-Day 只更新证据强度、blocker、优先级和 registry；核心研究叙事重构保留给 Half-Month。
+7. 下一次 Five-Day 只形成跨类型综合与修订建议；是否创建新的正式研究设计版本由 Half-Month 决定。
 
 ## 16. 拒绝 / 暂缓方向（Rejected / Deferred Directions）
 

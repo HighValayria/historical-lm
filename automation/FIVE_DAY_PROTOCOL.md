@@ -14,7 +14,9 @@ Five-Day 必须综合所有 Daily 通道，不得只总结论文。
 
 Five-Day 必须回答：“这5天的新证据对当前研究设计产生了什么影响？”
 
-正式研究设计主文档是 `research_design/RESEARCH_DESIGN.md`。
+Five-Day 的正式权限是：**synthesis + revision proposal only**。
+
+正式研究设计主文档是 `research_design/RESEARCH_DESIGN.md`。Five-Day 可以读取它，但不得修改它。
 
 ## 输入
 
@@ -28,27 +30,39 @@ Five-Day 必须回答：“这5天的新证据对当前研究设计产生了什�
 - `evidence/literature_master.csv`；
 - `evidence/dataset_registry.csv`；
 - `evidence/source_registry.csv`；
+- `research_design/CURRENT.md`；
 - `research_design/RESEARCH_DESIGN.md`；
-- `research_design/DESIGN_CHANGELOG.md`；
 - 必要时读取辅助结构化文件：`research_design/contribution_map.md`、`research_design/experiment_matrix.csv`。
 
-## 必须执行的动作
+## 可以执行的动作
 
 1. 只深读或复核各类队列中真正高价值的条目。
 2. 复核高价值的数据集、档案、方法和资源队列条目。
 3. 更新 `evidence/literature_master.csv`。
 4. 更新 `evidence/dataset_registry.csv`。
 5. 更新 `evidence/source_registry.csv`。
-6. 将新增工作和资源与当前研究设计进行比较。
-7. 判断当前贡献是否被新文献覆盖或威胁。
-8. 识别可复用的数据、代码、benchmark、工具或档案接口。
-9. 重新评估历史来源可行性。
-10. 在证据支持时识别更合适的方法。
-11. 识别当前设计中的新弱点。
-12. 用中文写入 Five-Day 报告：`reports/five_day/YYYY-MM-DD.md`。
-13. 仅在 Five-Day 允许范围内更新 `research_design/RESEARCH_DESIGN.md`。
-14. 如果对 `research_design/RESEARCH_DESIGN.md` 做了实质更新，向 `research_design/DESIGN_CHANGELOG.md` 追加一条合并的 Five-Day 记录。
+6. 更新 `state/queues.json`。
+7. 将新增工作和资源与当前研究设计进行比较。
+8. 判断当前设计受到什么影响，以及当前贡献是否被新文献覆盖或威胁。
+9. 识别可复用的数据、代码、benchmark、工具或档案接口。
+10. 重新评估历史来源可行性。
+11. 在证据支持时识别更合适的方法。
+12. 识别当前设计中的新弱点。
+13. 用中文写入 Five-Day 报告：`reports/five_day/YYYY-MM-DD.md`。
+14. 如果认为研究设计需要变化，只在 Five-Day 报告中提出 `PROPOSED DESIGN REVISION`。
 15. 成功运行后，仅在调度更新规则允许时，更新 `state/automation_state.json` 中的 `last_five_day`、`five_day_run_count` 和 `last_successful_run`。
+
+## Five-Day 不得执行的动作
+
+Five-Day 不得：
+
+- 修改 `research_design/RESEARCH_DESIGN.md`；
+- 修改 `research_design/CURRENT.md`；
+- 修改 `research_design/VERSION_LOG.md`；
+- 创建新研究设计版本；
+- 修改 `research_design/archive/`；
+- 修改 archive 中的历史版本；
+- 将 proposal 写成正式设计结论。
 
 ## 跨类型问题
 
@@ -69,51 +83,39 @@ Five-Day 必须回答：
 - late-Qing Chinese public health；
 - archive-dependent historical cognition。
 
-## 研究设计变更规则
+## Revision Proposal 规则
 
-Five-Day 可以更新 `research_design/RESEARCH_DESIGN.md`，但只能涉及以下内容：
+如果 Five-Day 判断以下任何部分必须改变，只能提出 proposal，等待 Half-Month 决定是否创建新的正式版本：
 
-- 新证据；
-- 支持 / 反对证据（Evidence For / Against）；
-- 开放问题（Open Questions）；
-- 阻塞项（Blockers）；
-- 下一步研究优先级（Next Research Priorities）；
-- 贡献主张（Contribution Claims）的证据强弱状态；
-- 数据源状态；
-- benchmark 成熟度；
-- 候选方法状态。
-
-Five-Day 不得轻易修改：
-
+- RQ；
+- research story；
+- primary contribution；
+- benchmark framework；
+- experimental paradigm；
+- source strategy；
 - Core Research Question；
-- 研究问题组（Research Questions）；
-- 当前研究叙事（Current Research Story）；
-- 核心贡献定义；
-- 整体实验范式。
+- Research Questions；
+- Current Research Story；
+- Contribution Claims；
+- Conceptual Framework；
+- Benchmark Design；
+- Experimental Design。
 
-如果 Five-Day 判断核心部分需要变化，不得直接写入 `research_design/RESEARCH_DESIGN.md`。必须在 Five-Day 报告中加入以下固定标记：
-
-```text
-PROPOSED MAJOR DESIGN CHANGE
-```
-
-并说明拟议变更，交由 Half-Month 审查。
-
-任何 Five-Day 对 `research_design/RESEARCH_DESIGN.md` 的实质更新，都必须在 `research_design/DESIGN_CHANGELOG.md` 中追加以下格式：
+Five-Day 报告中的 proposal 使用固定标记：
 
 ```text
-Date:
-Cycle:
-Section:
-Previous:
-New:
-Reason:
-Evidence:
-Confidence:
+PROPOSED DESIGN REVISION
 ```
+
+proposal 应说明：
+
+- 建议修改什么；
+- 为什么已有证据支持该建议；
+- 涉及哪些 legacy / Daily / Five-Day 证据；
+- 建议由 Half-Month 审查的优先级。
 
 Five-Day 报告也可以包含以下中文小节：
 
 ```text
-## 拟议研究设计变更
+## 拟议研究设计修订
 ```

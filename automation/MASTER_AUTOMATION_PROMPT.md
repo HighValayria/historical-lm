@@ -6,11 +6,13 @@
 
 所有生成的研究报告和研究文档必须使用中文。论文标题、数据集名称、来源名称、标识符、文件路径和必要枚举值可以在需要时保留原文，但摘要、判断、标题和解释必须写中文。
 
-正式研究设计主文档是 `research_design/RESEARCH_DESIGN.md`。
+正式研究设计主文档是 `research_design/RESEARCH_DESIGN.md`。当前版本由 `research_design/CURRENT.md` 声明，版本历史由 `research_design/VERSION_LOG.md` 记录，历史版本归档在 `research_design/archive/`。
 
 Daily 不得修改 `research_design/RESEARCH_DESIGN.md`；Daily 只增加证据、更新 registry、写报告和加入队列。
 
-Five-Day 和 Half-Month 必须把 `research_design/RESEARCH_DESIGN.md` 作为最终研究设计汇总入口。Five-Day 只能更新有限的证据 / 状态类内容，并且必须把实质变化记录到 `research_design/DESIGN_CHANGELOG.md`。Half-Month 是唯一允许正式重构核心研究问题、研究问题组、研究叙事、贡献主张、概念框架、benchmark 设计、实验设计、假设、优先级和拒绝 / 暂缓方向的层级。
+Five-Day 可以读取 `research_design/RESEARCH_DESIGN.md`，但不得修改正式研究设计、`CURRENT.md`、`VERSION_LOG.md` 或 `archive/`。Five-Day 的权限是 synthesis + revision proposal only；如果认为设计需要改变，只能在 Five-Day 报告中提出 `PROPOSED DESIGN REVISION`。
+
+Half-Month 是唯一允许决定是否创建新正式研究设计版本的层级。若 Half-Month 判断需要新版本，必须先把当前版本冻结归档到 `research_design/archive/`，再生成完整新的 `research_design/RESEARCH_DESIGN.md`，然后更新 `research_design/CURRENT.md` 并追加 `research_design/VERSION_LOG.md`。若证据不足以创建新版本，Half-Month 只输出审计报告，不修改当前版本。
 
 `research_design/contribution_map.md` 和 `research_design/experiment_matrix.csv` 等辅助文件可以保留给自动化使用；若它们与 `research_design/RESEARCH_DESIGN.md` 冲突，以主文档为准。
 
