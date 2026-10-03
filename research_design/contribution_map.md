@@ -1,5 +1,7 @@
 # Contribution Map
 
+This file is an auxiliary structured representation. The authoritative current research design is `research_design/RESEARCH_DESIGN.md`; if this file conflicts with it, `RESEARCH_DESIGN.md` prevails.
+
 ## Primary Direction
 
 Build a source-constrained pilot benchmark for late-Qing public-health anachronism and historical ignorance.

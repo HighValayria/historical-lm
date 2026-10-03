@@ -38,6 +38,8 @@ All generated Daily, Five-Day, and Half-Month research reports should be written
 
 Daily is a multi-channel research radar, not a paper-only search. Every run must check `PAPERS`, `DATASETS`, `ARCHIVES`, `METHODS`, `RESOURCES`, and `PROJECT_IMPACT`, and the report must show whether each channel was checked or blocked. No material update is still a completed channel check.
 
+Daily must not modify `research_design/RESEARCH_DESIGN.md`. Daily only records new evidence, updates registries, writes the Daily report, and queues items for Five-Day.
+
 The system distinguishes:
 
 - `newly_published`: recent work that was not previously registered;
@@ -45,6 +47,36 @@ The system distinguishes:
 - `existing_paper_update`: new information about a paper already in `state/seen_papers.json` or `evidence/literature_master.csv`.
 
 This lets the early automation phase fill historical literature gaps before naturally shifting toward monitoring genuinely recent research.
+
+## Research design state
+
+The authoritative current research design is:
+
+```text
+research_design/RESEARCH_DESIGN.md
+```
+
+This file is the human-readable source of truth for the current research plan. Five-Day and Half-Month must use it as the final research-design summary entry point.
+
+`research_design/DESIGN_CHANGELOG.md` records substantive changes to the authoritative design.
+
+Five-Day may update only limited evidence/status areas:
+
+- new evidence;
+- Evidence For / Against;
+- Open Questions;
+- Blockers;
+- Next Research Priorities;
+- contribution evidence-strength status;
+- data-source status;
+- benchmark maturity;
+- candidate-method status.
+
+Five-Day must propose, not implement, major changes to the core research question, research questions, research story, core contribution definitions, or overall experimental paradigm.
+
+Half-Month is the only layer allowed to formally restructure the core design. After Half-Month updates `research_design/RESEARCH_DESIGN.md`, any retained auxiliary files should be synchronized if they still matter.
+
+Auxiliary files such as `research_design/contribution_map.md` and `research_design/experiment_matrix.csv` may support automation, but if they conflict with `research_design/RESEARCH_DESIGN.md`, the main design document prevails.
 
 ## Manual runs
 
@@ -73,6 +105,6 @@ For future review, check these first:
 
 ```text
 reports/half_month/
-research_design/CURRENT_RESEARCH_DESIGN.md
+research_design/RESEARCH_DESIGN.md
 research_design/DESIGN_CHANGELOG.md
 ```

@@ -10,11 +10,22 @@ Audit the research direction and make formal design updates only when evidence s
 
 Half-Month reports must be written in Chinese. Paper titles, dataset names, source names, identifiers, file paths, and required enum values may remain in their original form.
 
-Half-Month is the only automation layer allowed to change:
+The authoritative research design is `research_design/RESEARCH_DESIGN.md`.
 
-- `research_design/CURRENT_RESEARCH_DESIGN.md`;
-- `research_design/contribution_map.md`;
-- `research_design/experiment_matrix.csv`.
+Half-Month is the only automation layer allowed to formally restructure core research-design sections, including:
+
+- Core Research Question;
+- Research Questions;
+- Current Research Story;
+- Contribution Claims;
+- Conceptual Framework;
+- Benchmark Design;
+- Experimental Design;
+- Hypotheses;
+- Priorities;
+- Rejected / Deferred Directions.
+
+Auxiliary structured files such as `research_design/contribution_map.md` and `research_design/experiment_matrix.csv` may be retained for automation, but `research_design/RESEARCH_DESIGN.md` is authoritative. If auxiliary files conflict with it, the main design document prevails. After Half-Month updates the main document, retained auxiliary files should be synchronized when they still matter.
 
 ## Inputs
 
@@ -25,7 +36,7 @@ Half-Month is the only automation layer allowed to change:
 - `evidence/source_registry.csv`;
 - `state/blockers.json`;
 - `state/queues.json`;
-- `research_design/CURRENT_RESEARCH_DESIGN.md`;
+- `research_design/RESEARCH_DESIGN.md`;
 - `research_design/DESIGN_CHANGELOG.md`;
 - `research_design/contribution_map.md`;
 - `research_design/experiment_matrix.csv`.
@@ -47,12 +58,18 @@ Half-Month is the only automation layer allowed to change:
 
 ## Required Actions
 
-1. Write the Half-Month report in Chinese to `reports/half_month/YYYY-MM-DD.md`.
-2. If formal design files are changed, append an entry to `research_design/DESIGN_CHANGELOG.md` with:
+1. Read the current `research_design/RESEARCH_DESIGN.md`.
+2. Read the last 15 days of Daily reports, Five-Day reports, registries, queues, and blockers.
+3. Re-audit the research question, innovation, data, benchmark, experiment, and priorities.
+4. If evidence supports core changes, update `research_design/RESEARCH_DESIGN.md` so it independently reflects the full current research plan.
+5. If auxiliary structured files are still retained and affected, synchronize them after updating the main design document.
+6. Write the Half-Month report in Chinese to `reports/half_month/YYYY-MM-DD.md`; the report explains why changes were or were not made.
+7. If `research_design/RESEARCH_DESIGN.md` is changed, append entries to `research_design/DESIGN_CHANGELOG.md` with:
 
 ```text
 Date:
-Changed:
+Cycle:
+Section:
 Previous:
 New:
 Reason:
@@ -60,6 +77,8 @@ Evidence:
 Confidence:
 ```
 
-3. After a successful Half-Month run, update `last_half_month`, increment `half_month_run_count`, and update `last_successful_run` in `state/automation_state.json`.
+Half-Month core design changes must be recorded item by item.
+
+8. After a successful Half-Month run, update `last_half_month`, increment `half_month_run_count`, and update `last_successful_run` in `state/automation_state.json` only when schedule-update rules allow it.
 
 Never silently change the research direction.

@@ -12,6 +12,10 @@ Five-Day reports must be written in Chinese. Paper titles, dataset names, source
 
 Five-Day must synthesize across all Daily channels, not only papers.
 
+Five-Day must answer: "这5天的新证据对当前研究设计产生了什么影响？"
+
+The authoritative research design is `research_design/RESEARCH_DESIGN.md`.
+
 ## Inputs
 
 - recent Daily reports;
@@ -24,7 +28,9 @@ Five-Day must synthesize across all Daily channels, not only papers.
 - `evidence/literature_master.csv`;
 - `evidence/dataset_registry.csv`;
 - `evidence/source_registry.csv`;
-- `research_design/CURRENT_RESEARCH_DESIGN.md`.
+- `research_design/RESEARCH_DESIGN.md`;
+- `research_design/DESIGN_CHANGELOG.md`;
+- auxiliary structured files when needed: `research_design/contribution_map.md`, `research_design/experiment_matrix.csv`.
 
 ## Required Actions
 
@@ -40,7 +46,9 @@ Five-Day must synthesize across all Daily channels, not only papers.
 10. Identify better methods if evidence supports them.
 11. Identify new weaknesses in the current design.
 12. Write the Five-Day report in Chinese to `reports/five_day/YYYY-MM-DD.md`.
-13. After a successful Five-Day run, update `last_five_day`, increment `five_day_run_count`, and update `last_successful_run` in `state/automation_state.json`.
+13. Update `research_design/RESEARCH_DESIGN.md` only within the allowed Five-Day scope below.
+14. Append a grouped Five-Day entry to `research_design/DESIGN_CHANGELOG.md` for any substantive update to `research_design/RESEARCH_DESIGN.md`.
+15. After a successful Five-Day run, update `last_five_day`, increment `five_day_run_count`, and update `last_successful_run` in `state/automation_state.json` only when schedule-update rules allow it.
 
 ## Cross-Type Questions
 
@@ -63,9 +71,48 @@ Five-Day must answer:
 
 ## Design Change Rule
 
-Five-Day may recommend changes but must not edit `research_design/CURRENT_RESEARCH_DESIGN.md`.
+Five-Day may update `research_design/RESEARCH_DESIGN.md`, but only for:
 
-If design changes are needed, include this Chinese section:
+- new evidence;
+- Evidence For / Against;
+- Open Questions;
+- Blockers;
+- Next Research Priorities;
+- Contribution Claims evidence-strength status;
+- data-source status;
+- benchmark maturity;
+- candidate-method status.
+
+Five-Day must not lightly change:
+
+- Core Research Question;
+- Research Questions;
+- Current Research Story;
+- core contribution definitions;
+- the overall experimental paradigm.
+
+If Five-Day judges that any core section should change, do not implement that change in `research_design/RESEARCH_DESIGN.md`. Instead, include this exact marker in the Five-Day report:
+
+```text
+PROPOSED MAJOR DESIGN CHANGE
+```
+
+and explain the proposed change for Half-Month review.
+
+Any substantive Five-Day update to `research_design/RESEARCH_DESIGN.md` must append to `research_design/DESIGN_CHANGELOG.md` using:
+
+```text
+Date:
+Cycle:
+Section:
+Previous:
+New:
+Reason:
+Evidence:
+Confidence:
+```
+
+The Five-Day report may also include this Chinese section:
 
 ```text
 ## 拟议研究设计变更

@@ -78,7 +78,15 @@ Before autonomous research work:
 
 Do not repeat previously processed papers or datasets.
 
-Do not modify `CURRENT_RESEARCH_DESIGN.md` except during a due Half-Month audit.
+`research_design/RESEARCH_DESIGN.md` is the authoritative current research design.
+
+Daily must not modify `research_design/RESEARCH_DESIGN.md`; it only records evidence, registry updates, reports, and queues.
+
+Five-Day may update `research_design/RESEARCH_DESIGN.md` only for limited evidence/status changes, and any substantive update must be recorded in `research_design/DESIGN_CHANGELOG.md`.
+
+Half-Month is the only layer allowed to formally restructure the core research question, research questions, research story, contribution claims, conceptual framework, benchmark design, experimental design, hypotheses, priorities, and rejected/deferred directions.
+
+Auxiliary files such as `research_design/contribution_map.md` and `research_design/experiment_matrix.csv` may remain for structured automation support, but if they conflict with `research_design/RESEARCH_DESIGN.md`, the main design document prevails.
 
 Do not perform large-scale training, paid API calls, access-control bypass, or unauthorized scraping.
 

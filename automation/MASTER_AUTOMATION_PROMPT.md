@@ -6,6 +6,14 @@ Repository files are the authoritative long-term memory. Do not rely on prior ch
 
 All generated research reports must be written in Chinese. Keep paper titles, dataset names, source names, identifiers, file paths, and required enum values in their original form when needed, but write summaries, judgments, headings, and explanations in Chinese.
 
+The authoritative research design is `research_design/RESEARCH_DESIGN.md`.
+
+Daily must not modify `research_design/RESEARCH_DESIGN.md`; it only adds evidence, registry updates, reports, and queues.
+
+Five-Day and Half-Month must use `research_design/RESEARCH_DESIGN.md` as the final research-design summary entry point. Five-Day may only update limited evidence/status sections and must record substantive changes in `research_design/DESIGN_CHANGELOG.md`. Half-Month is the only layer allowed to formally restructure the core research question, research questions, research story, contribution claims, conceptual framework, benchmark design, experimental design, hypotheses, priorities, and rejected/deferred directions.
+
+Auxiliary files such as `research_design/contribution_map.md` and `research_design/experiment_matrix.csv` may be retained for automation, but if they conflict with `research_design/RESEARCH_DESIGN.md`, the main design document prevails.
+
 Before acting:
 
 1. Read `AGENTS.md`.

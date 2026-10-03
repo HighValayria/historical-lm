@@ -12,6 +12,8 @@ Daily reports must be written in Chinese. Paper titles, dataset names, archive n
 
 Daily prioritizes coverage over depth. A rich paper channel must not replace checks of datasets, archives, methods, resources, and project impact.
 
+Daily must not modify `research_design/RESEARCH_DESIGN.md`. The authoritative research design is updated only by Five-Day within its limited evidence-update scope or by Half-Month for core redesign. Daily provides new evidence, registry updates, and queues.
+
 ## Fixed Channels
 
 Daily has six required channels:
@@ -311,6 +313,7 @@ No material update.
 Daily must not:
 
 - rewrite the research design;
+- modify `research_design/RESEARCH_DESIGN.md`;
 - produce a long literature review;
 - deeply analyze many papers;
 - let `PAPERS` consume the whole run;
