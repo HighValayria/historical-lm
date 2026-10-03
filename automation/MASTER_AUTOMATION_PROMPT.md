@@ -1,26 +1,26 @@
-# Master Automation Prompt
+# 主自动化 Prompt
 
-You are entering this repository as the daily Codex Automation worker.
+你正在以 Codex Automation worker 身份进入本仓库。
 
-Repository files are the authoritative long-term memory. Do not rely on prior chat context.
+仓库文件是长期记忆的权威来源。不要依赖此前聊天上下文。
 
-All generated research reports must be written in Chinese. Keep paper titles, dataset names, source names, identifiers, file paths, and required enum values in their original form when needed, but write summaries, judgments, headings, and explanations in Chinese.
+所有生成的研究报告和研究文档必须使用中文。论文标题、数据集名称、来源名称、标识符、文件路径和必要枚举值可以在需要时保留原文，但摘要、判断、标题和解释必须写中文。
 
-The authoritative research design is `research_design/RESEARCH_DESIGN.md`.
+正式研究设计主文档是 `research_design/RESEARCH_DESIGN.md`。
 
-Daily must not modify `research_design/RESEARCH_DESIGN.md`; it only adds evidence, registry updates, reports, and queues.
+Daily 不得修改 `research_design/RESEARCH_DESIGN.md`；Daily 只增加证据、更新 registry、写报告和加入队列。
 
-Five-Day and Half-Month must use `research_design/RESEARCH_DESIGN.md` as the final research-design summary entry point. Five-Day may only update limited evidence/status sections and must record substantive changes in `research_design/DESIGN_CHANGELOG.md`. Half-Month is the only layer allowed to formally restructure the core research question, research questions, research story, contribution claims, conceptual framework, benchmark design, experimental design, hypotheses, priorities, and rejected/deferred directions.
+Five-Day 和 Half-Month 必须把 `research_design/RESEARCH_DESIGN.md` 作为最终研究设计汇总入口。Five-Day 只能更新有限的证据 / 状态类内容，并且必须把实质变化记录到 `research_design/DESIGN_CHANGELOG.md`。Half-Month 是唯一允许正式重构核心研究问题、研究问题组、研究叙事、贡献主张、概念框架、benchmark 设计、实验设计、假设、优先级和拒绝 / 暂缓方向的层级。
 
-Auxiliary files such as `research_design/contribution_map.md` and `research_design/experiment_matrix.csv` may be retained for automation, but if they conflict with `research_design/RESEARCH_DESIGN.md`, the main design document prevails.
+`research_design/contribution_map.md` 和 `research_design/experiment_matrix.csv` 等辅助文件可以保留给自动化使用；若它们与 `research_design/RESEARCH_DESIGN.md` 冲突，以主文档为准。
 
-Before acting:
+执行前：
 
-1. Read `AGENTS.md`.
-2. Read `state/automation_state.json`.
-3. Determine the run mode.
+1. 读取 `AGENTS.md`。
+2. 读取 `state/automation_state.json`。
+3. 判断运行模式。
 
-Supported modes:
+支持的模式：
 
 - `AUTO`
 - `DAILY`
@@ -28,48 +28,53 @@ Supported modes:
 - `HALF_MONTH`
 - `FULL`
 
-Default mode is `AUTO`.
+默认模式为 `AUTO`。
 
-`AUTO` uses `state/automation_state.json` and the actual date to decide which layers are due.
+`AUTO` 根据 `state/automation_state.json` 和实际日期判断哪些层级到期。
 
-Manual modes ignore whether the selected layer is due:
+手动模式忽略所选层级是否到期：
 
-- `DAILY` forces Daily only.
-- `FIVE_DAY` forces Five-Day only.
-- `HALF_MONTH` forces Half-Month only.
-- `FULL` forces Daily, then Five-Day, then Half-Month.
+- `DAILY` 只强制运行 Daily。
+- `FIVE_DAY` 只强制运行 Five-Day。
+- `HALF_MONTH` 只强制运行 Half-Month。
+- `FULL` 依次强制运行 Daily、Five-Day、Half-Month。
 
-4. Determine schedule-update behavior.
+4. 判断调度状态更新行为。
 
-Supported value:
+支持的值：
 
 ```text
 UPDATE_SCHEDULE=true|false
 ```
 
-Rules:
+规则：
 
-- In `AUTO`, always update the corresponding `last_*` dates and run counts after each successful due layer.
-- In manual modes with `UPDATE_SCHEDULE=true`, treat the run as a formal cycle run and update the corresponding `last_*` dates and run counts after success.
-- In manual modes with `UPDATE_SCHEDULE=false`, execute the work but do not change the automatic cycle dates or run counts.
-- Default manual behavior is `UPDATE_SCHEDULE=false`.
+- 在 `AUTO` 中，每个到期层级成功运行后，始终更新对应 `last_*` 日期和运行次数。
+- 在手动模式且 `UPDATE_SCHEDULE=true` 时，将本次运行视为正式周期运行，成功后更新对应 `last_*` 日期和运行次数。
+- 在手动模式且 `UPDATE_SCHEDULE=false` 时，只执行任务，不改变自动周期日期或运行次数。
+- 手动模式默认使用 `UPDATE_SCHEDULE=false`。
 
-5. Run:
+5. 运行：
 
 ```bash
 python scripts/check_schedule.py
 ```
 
-If `python` is not available on `PATH`, use the Python runtime bundled with Codex App to run the same script.
-On this machine, `C:\Users\33967\AppData\Local\Programs\Python\Python312\python.exe` is a verified fallback.
+如果 `PATH` 中没有 `python`，使用 Codex App 捆绑的 Python 运行同一脚本。
 
-For manual modes, run the checker with environment variables or equivalent CLI flags, for example:
+本机已验证的 fallback 是：
+
+```text
+C:\Users\33967\AppData\Local\Programs\Python\Python312\python.exe
+```
+
+手动模式可以使用环境变量或等价 CLI 参数运行检查器，例如：
 
 ```bash
 FORCE_MODE=FIVE_DAY UPDATE_SCHEDULE=false python scripts/check_schedule.py
 ```
 
-On Windows PowerShell:
+Windows PowerShell 示例：
 
 ```powershell
 $env:FORCE_MODE = "FIVE_DAY"
@@ -77,26 +82,26 @@ $env:UPDATE_SCHEDULE = "false"
 python scripts/check_schedule.py
 ```
 
-6. Execute the selected layers in this fixed order:
+6. 按固定顺序执行所选层级：
    - Daily
    - Five-Day
    - Half-Month
-7. For each selected layer, read and follow the matching protocol under `automation/`.
-8. Update changed state files only after the corresponding work succeeds and only when the checker reports that the matching `update_*_state` value is `true`.
-9. Commit the repository changes with a concise Git message.
-10. If a remote exists and permissions are available, push the commit.
-11. Do not wait for human confirmation.
+7. 对每个被选中的层级，读取并遵循 `automation/` 下对应协议。
+8. 只有在对应工作成功后，且检查器返回的对应 `update_*_state` 为 `true` 时，才更新状态文件。
+9. 用简洁 Git message 提交仓库变更。
+10. 如果存在 remote 且权限可用，推送提交。
+11. 不等待人工确认。
 
-Scheduling is rolling and state-based:
+调度是滚动且基于状态的：
 
-- Daily runs every automation entry.
-- Five-Day runs when at least 5 actual days have passed since the last successful Five-Day run, or when no previous Five-Day run is recorded.
-- Half-Month runs when at least 15 actual days have passed since the last successful Half-Month run, or when no previous Half-Month run is recorded.
+- Daily 每次自动化入口都运行。
+- Five-Day 在距离上次成功 Five-Day 运行至少 5 个实际日后运行；若没有记录过 Five-Day，也应运行。
+- Half-Month 在距离上次成功 Half-Month 运行至少 15 个实际日后运行；若没有记录过 Half-Month，也应运行。
 
-Do not use calendar day-of-month rules.
+不要使用日历月日期规则。
 
-Daily paper discovery treats "new" as new to this repository's research system, not only newly published in the last 24 hours. Daily must distinguish `newly_published`, `newly_discovered`, and `existing_paper_update` according to `automation/DAILY_PROTOCOL.md`.
+Daily 的论文发现中，“new” 指对本仓库研究系统而言的新发现，而不仅是最近 24 小时内新发表。Daily 必须按 `automation/DAILY_PROTOCOL.md` 区分 `newly_published`、`newly_discovered` 和 `existing_paper_update`。
 
-Daily's first goal is to cover every research-information channel, not to maximize paper discoveries. Execute Daily breadth first: `PAPERS`, `DATASETS`, `ARCHIVES`, `METHODS`, `RESOURCES`, then `PROJECT_IMPACT`. Each channel must be checked at least once before any deepening. If time, context, or quota is limited, reduce depth in all channels rather than completing `PAPERS` deeply and leaving other channels unchecked. Detailed analysis belongs to Five-Day.
+Daily 的首要目标是覆盖每个研究信息通道，而不是最大化论文发现数量。Daily 必须广度优先执行：`PAPERS`、`DATASETS`、`ARCHIVES`、`METHODS`、`RESOURCES`、`PROJECT_IMPACT`。每个通道至少检查一次后，才能加深某个通道。如果时间、上下文或额度有限，应降低所有通道深度，而不是深入完成 `PAPERS` 却遗漏其他通道。详细分析属于 Five-Day。
 
-Do not perform large-scale training, paid API calls, access-control bypass, unauthorized scraping, or bulk downloading. If a task is blocked, record it and continue with other due work.
+不得执行大规模训练、付费 API 调用、绕过访问控制、未授权抓取或批量下载。如果某项任务被阻塞，记录 blocker，并继续处理其他到期工作。

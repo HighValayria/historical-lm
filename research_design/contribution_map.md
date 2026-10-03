@@ -1,22 +1,22 @@
-# Contribution Map
+# 贡献图
 
-This file is an auxiliary structured representation. The authoritative current research design is `research_design/RESEARCH_DESIGN.md`; if this file conflicts with it, `RESEARCH_DESIGN.md` prevails.
+本文档是辅助结构化表示。当前正式研究设计主文档是 `research_design/RESEARCH_DESIGN.md`；若本文档与主文档冲突，以 `RESEARCH_DESIGN.md` 为准。
 
-## Primary Direction
+## 主方向
 
-Build a source-constrained pilot benchmark for late-Qing public-health anachronism and historical ignorance.
+建设一个面向晚清公共卫生时代错置与历史性无知的来源约束试点评测集。
 
-## Contribution Candidates
+## 贡献候选
 
-| Contribution | Current Role | Strength | Notes |
+| 贡献 | 当前角色 | 强度 | 说明 |
 |---|---|---|---|
-| Multi-level anachronism benchmark | Primary evaluation frame | Strong | Covers factual, lexical, causal, value, provenance, and uncertainty errors. |
-| Historical ignorance | Primary conceptual contribution | Strong | Measures whether systems can acknowledge historically unavailable or unsupported knowledge. |
-| Provenance / source ecology | Primary digital-humanities contribution | Strong | Keeps source communities, institutional context, and archival bias visible. |
-| Late-Qing Chinese public health | Domain anchor | Strong | Provides concrete historical stakes and source constraints. |
-| Archive-dependent historical cognition | Interpretive contribution | Medium | Useful once source groups are balanced enough for comparison. |
-| Lightweight adaptation | Deferred technical route | Weak for current stage | Revisit only after benchmark and source feasibility are stable. |
+| 多层级时代错置评测集 | 主要评测框架 | 强 | 覆盖事实、词汇、因果、价值、出处和不确定性错误。 |
+| 历史性无知 | 主要概念贡献 | 强 | 衡量系统能否承认历史上不可得或来源不支撑的知识。 |
+| 出处 / 来源生态 | 主要数字人文贡献 | 强 | 保持来源群体、机构语境和档案偏差的可见性。 |
+| 晚清中国公共卫生 | 领域锚点 | 强 | 提供具体历史问题和来源约束。 |
+| 依赖档案的历史认知 | 解释性贡献 | 中 | 在来源群体足够均衡后，可用于比较不同来源生态。 |
+| 轻量适配 | 暂缓技术路线 | 当前阶段较弱 | 仅在评测集与来源可行性稳定后重新考虑。 |
 
-## Protected Scope
+## 保护范围
 
-The project should remain centered on historically bounded knowledge, source support, and uncertainty. It should not drift into a generic historical chatbot or a broad model-training project.
+项目应继续围绕历史边界知识、来源支撑和不确定性展开，不应漂移为泛化历史聊天机器人或宽泛模型训练项目。

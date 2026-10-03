@@ -1,126 +1,126 @@
-# Research Design
+# 研究设计
 
-## 1. Snapshot
+## 1. 快照（Snapshot）
 
-- Last updated: 2026-10-03
-- Updated by cycle: State migration
-- Current phase: exploratory design consolidation and source-constrained pilot preparation
-- Core topic: late-Qing public-health historical knowledge boundaries, anachronism, historical ignorance, and provenance-constrained evaluation for LLM / RAG systems
-- Current primary contribution: a source-constrained pilot benchmark for late-Qing public-health anachronism and historical ignorance
-- Main blocker: stable, legally usable historical source passages and metadata, especially for Chinese-language late-Qing materials
-- Next milestone: verify a small set of usable source passages and expand the pilot benchmark from seed items toward 20-30 scored items
-- Overall confidence: medium
+- 最近更新（Last updated）：2026-10-03
+- 更新周期（Updated by cycle）：状态迁移
+- 当前阶段（Current phase）：探索性设计整合与来源约束试点准备
+- 核心主题（Core topic）：晚清公共卫生语境下的历史知识边界、时代错置、历史性无知，以及 LLM / RAG 系统的来源约束评测
+- 当前主要贡献（Current primary contribution）：面向晚清公共卫生时代错置与历史性无知的来源约束试点评测集
+- 主要 blocker（Main blocker）：稳定、合法可用的历史来源段落与元数据，尤其是晚清中文材料
+- 下一里程碑（Next milestone）：验证一小组可用来源段落，并将试点评测集从种子题扩展到 20-30 条可评分题目
+- 总体信心（Overall confidence）：中等
 
-This file is the authoritative source for the current research design. Auxiliary structured files may help automation, but if they conflict with this document, this document prevails.
+本文档是当前研究设计的正式主文档。辅助结构化文件可服务自动化流程；若辅助文件与本文档冲突，以本文档为准。
 
-## 2. Research Background
+## 2. 研究背景（Research Background）
 
-The repository explores historically time-consistent language models from a digital-humanities perspective. The initial focus is late-Qing public-health knowledge, historical knowledge boundaries, anachronism, archival bias, Historical RAG, and lightweight parameter adaptation.
+本仓库从数字人文角度探索具有历史时间一致性的语言模型。当前初始重点包括：晚清公共卫生知识、历史知识边界、时代错置、档案偏差、Historical RAG，以及轻量参数适配。
 
-The project asks whether late-Qing public-health materials can support a feasible and evaluable research project about:
+本项目评估晚清公共卫生材料是否足以支撑一个可行、可评测的研究项目，核心议题包括：
 
-- temporal knowledge boundaries;
-- factual, lexical, causal, and value-based anachronism;
-- historical RAG;
-- lightweight parameter adaptation;
-- archival and source bias;
-- historically appropriate uncertainty and ignorance.
+- 时间知识边界；
+- 事实、词汇、因果与价值层面的时代错置；
+- Historical RAG；
+- 轻量参数适配；
+- 档案与来源偏差；
+- 符合历史证据边界的不确定性与无知。
 
-The provisional historical cutoff is 1900-01-01. The preferred source period is approximately 1880-1899. The provisional thematic domain is disease, medicine, hygiene, quarantine, vaccination, water, sanitation, and public governance.
+临时历史截止日期为 1900-01-01。优先来源时段约为 1880-1899。临时主题域包括疾病、医学、卫生、检疫、疫苗接种、水、环境卫生与公共治理。
 
-This stage remains exploratory. Large-scale model training, paid external model API calls, access-control bypass, unauthorized scraping, and bulk downloading are outside the current scope.
+当前阶段仍是探索阶段。大规模模型训练、付费外部模型 API 调用、绕过访问控制、未授权抓取和批量下载均不属于当前范围。
 
-## 3. Core Research Question
+## 3. 核心研究问题（Core Research Question）
 
-Can modern LLM or RAG systems answer late-Qing public-health questions while respecting the historical knowledge boundary of the period?
+现代 LLM 或 RAG 系统能否在回答晚清公共卫生问题时遵守该时期的历史知识边界？
 
-Operationally, can such systems avoid importing post-1900 facts, modern lexical meanings, unsupported causal or value frameworks, false provenance, and unreasonable certainty when the historical record does not support an answer?
+更具体地说，这类系统能否避免引入 1900 年后的事实、现代词义、缺乏来源支撑的因果或价值框架、错误出处归属，以及在历史记录不足时仍表现出不合理的确定性？
 
-## 4. Research Questions
+## 4. 研究问题组（Research Questions）
 
-1. What has already been studied about historical language models, temporal leakage, ex-ante inference, anachronism, Historical RAG, and source-aware retrieval?
-2. What remains underexplored for late-Qing Chinese public-health materials specifically?
-3. Which historical sources are legally accessible, usable, and sufficiently documented for a small pilot benchmark?
-4. How should historical knowledge boundaries and anachronism be operationalized across factual, lexical, causal, value, provenance, and uncertainty dimensions?
-5. What can prompting, source-provided answering, lightweight local RAG, continued pretraining, LoRA, and hybrid methods each plausibly test?
-6. Which direction best balances digital-humanities value, novelty, data feasibility, evaluability, compute feasibility, and robustness to negative results?
-7. What is the minimum viable pilot study?
+1. 关于历史语言模型、temporal leakage、ex-ante inference、时代错置、Historical RAG 与 source-aware retrieval，已有研究已经覆盖了什么？
+2. 针对晚清中国公共卫生材料，哪些问题仍然相对欠研究？
+3. 哪些历史来源在法律和使用条款上可访问、可使用，并且足以支撑小型试点评测集？
+4. 如何在事实、词汇、因果、价值、出处和不确定性维度上操作化历史知识边界与时代错置？
+5. prompting、直接提供来源、轻量本地 RAG、继续预训练、LoRA 与混合方法分别适合检验什么？
+6. 哪个方向最能平衡数字人文价值、新颖性、数据可行性、可评测性、算力可行性，以及负结果的研究价值？
+7. 最小可行试点研究应如何设计？
 
-## 5. Current Research Story
+## 5. 当前研究叙事（Current Research Story）
 
-The current recommended direction is to build a source-constrained pilot benchmark for late-Qing public-health anachronism and historical ignorance.
+当前推荐方向是建设一个面向晚清公共卫生时代错置与历史性无知的来源约束试点评测集。
 
-The research story is not to build a broad historical chatbot or to claim reconstruction of late-Qing public opinion. Instead, it treats historical question answering as a bounded evidentiary task: a model should know when a claim is temporally inadmissible, when a term carries modern meaning, when a causal or value frame is hindsight, when a source does not support the answer, and when the proper response is qualified uncertainty or refusal.
+本研究不是建设泛化历史聊天机器人，也不声称重建晚清公共舆论。它把历史问答视为一个有边界的证据任务：模型需要知道什么时候某个说法在时间上不可接受，什么时候某个术语携带现代含义，什么时候因果或价值框架属于后见解释，什么时候来源不能支撑回答，以及什么时候合适的回答应是限定性不确定或拒答。
 
-The first empirical step is small and auditable: use legally accessible samples from customs, missionary medical, municipal, treaty-port, or comparable historical-source channels; create atomic benchmark items; and compare baseline prompting, source-provided answering, and lightweight local retrieval before considering any adaptation or training route.
+第一步经验工作应保持小而可审计：使用海关、传教士医学、市政、通商口岸或类似来源中的合法可用样本；构建原子化评测题；在考虑任何适配或训练路线之前，先比较普通提示、直接提供来源的回答，以及轻量本地检索。
 
-## 6. Current Contribution Claims
+## 6. 当前贡献主张（Current Contribution Claims）
 
-| Contribution | Current role | Evidence strength | Notes |
+| 贡献方向 | 当前角色 | 证据强度 | 说明 |
 |---|---|---|---|
-| Multi-level anachronism benchmark | Primary evaluation frame | Strong | Covers factual, lexical, causal, value, provenance, and uncertainty errors. |
-| Historical ignorance | Primary conceptual contribution | Strong | Measures whether systems can acknowledge historically unavailable, inaccessible, or unsupported knowledge. |
-| Provenance / source ecology | Primary digital-humanities contribution | Strong | Keeps source communities, institutional context, access, and archival bias visible. |
-| Late-Qing Chinese public health | Domain anchor | Strong | Provides concrete historical stakes and source constraints. |
-| Archive-dependent historical cognition | Interpretive contribution | Medium | Useful once source groups are balanced enough for comparison. |
-| Lightweight adaptation | Deferred technical route | Weak for current stage | Revisit only after benchmark and source feasibility are stable. |
+| 多层级时代错置评测集 | 主要评测框架 | 强 | 覆盖事实、词汇、因果、价值、出处和不确定性错误。 |
+| 历史性无知 | 主要概念贡献 | 强 | 衡量系统能否承认历史上不可得、不可访问或来源不支撑的知识。 |
+| 出处 / 来源生态 | 主要数字人文贡献 | 强 | 保持来源群体、机构语境、访问条件和档案偏差的可见性。 |
+| 晚清中国公共卫生 | 领域锚点 | 强 | 提供具体历史问题和来源约束。 |
+| 依赖档案的历史认知 | 解释性贡献 | 中 | 在来源群体足够均衡后，可用于比较不同来源生态中的可答性。 |
+| 轻量适配 | 暂缓技术路线 | 当前阶段较弱 | 仅在评测集与来源可行性稳定后重新考虑。 |
 
-Protected scope: the project should remain centered on historically bounded knowledge, source support, uncertainty, and source ecology. It should not drift into a generic historical chatbot or a broad model-training project.
+保护范围：项目应继续围绕历史边界知识、来源支撑、不确定性和来源生态展开，不应漂移为泛化历史聊天机器人或宽泛模型训练项目。
 
-## 7. Conceptual Framework
+## 7. 概念框架（Conceptual Framework）
 
-The current framework treats historical consistency as a multi-dimensional relationship between a question, a target date, available sources, source populations, and model answer behavior.
+当前框架将历史一致性视为问题、目标日期、可用来源、来源人群以及模型回答行为之间的多维关系。
 
-Core dimensions:
+核心维度包括：
 
-- temporal admissibility: whether the answer imports knowledge unavailable before the cutoff;
-- factual anachronism: post-cutoff events, institutions, discoveries, or categories;
-- lexical anachronism: modern meanings or translations projected backward;
-- causal anachronism: hindsight causal explanations unsupported by period evidence;
-- value anachronism: present-day normative categories substituted for historical actors' categories without qualification;
-- provenance and source ecology: whether an answer attributes claims to the correct source type, community, date, and evidentiary basis;
-- historical ignorance: whether the system can say that a question is not answerable from the available historical record.
+- 时间可接受性：回答是否引入截止日期之后才可得的知识；
+- 事实时代错置：是否引入后出事件、机构、发现或分类；
+- 词汇时代错置：是否将现代含义或现代翻译投射到历史语境；
+- 因果时代错置：是否使用缺乏同时代证据支撑的后见因果解释；
+- 价值时代错置：是否未加限定地以当代规范分类替代历史行动者分类；
+- 出处与来源生态：回答是否正确说明来源类型、来源群体、日期和证据基础；
+- 历史性无知：系统能否说明某个问题无法从现有历史记录中得到支撑性回答。
 
-Recent Five-Day evidence strengthens the need to distinguish the broad problem of historical anachronism from this project's narrower source-constrained late-Qing public-health evaluation.
+最近 Five-Day 证据强化了一个判断：项目必须把宽泛的历史时代错置问题，与更窄的晚清公共卫生来源约束评测区分开。
 
-## 8. Data and Historical Sources
+## 8. 数据与历史来源（Data and Historical Sources）
 
-Priority source channels already identified:
+已识别的优先来源通道：
 
-- Wellcome customs medical or public-health materials;
-- China Medical Missionary Journal records;
-- Shanghai Municipal Council or treaty-port municipal materials;
-- customs, missionary medical, and municipal / treaty-port sources more generally.
+- Wellcome 中的海关医学或公共卫生材料；
+- China Medical Missionary Journal 相关记录；
+- 上海工部局或通商口岸市政材料；
+- 更广义的海关、传教士医学、市政 / 通商口岸来源。
 
-Current source status:
+当前来源状态：
 
-| Source or channel | Current status | Use in design |
+| 来源或通道 | 当前状态 | 在研究设计中的用途 |
 |---|---|---|
-| Wellcome Collection Catalogue API | Investigating | Potentially reduces discovery and metadata friction; still needs late-Qing public-health query and usage-limit probe. |
-| Customs medical reports / Wellcome-related materials | Candidate | Possible source passages for the pilot benchmark. |
-| CRL China Medical Missionary Journal entries | Candidate | Possible missionary-medical source channel; access and extractability still need verification. |
-| bnAsie Shanghai Municipal Council annual reports | Candidate | Possible municipal / treaty-port source channel; OCR and metadata quality need verification. |
+| Wellcome Collection Catalogue API | 调查中 | 可能降低发现与元数据获取成本；仍需 late-Qing public-health 查询与使用限制探针。 |
+| 海关医学报告 / Wellcome 相关材料 | 候选 | 可作为试点评测集的潜在来源段落。 |
+| CRL China Medical Missionary Journal 条目 | 候选 | 可作为传教士医学来源通道；访问与抽取可行性仍需验证。 |
+| bnAsie 上海工部局年度报告 | 候选 | 可作为市政 / 通商口岸来源通道；OCR 与元数据质量仍需验证。 |
 
-Known source limits:
+已知来源限制：
 
-- current sources cannot represent all late-Qing people;
-- source populations may skew toward treaty ports, customs, missionary, municipal, elite, English-language, digitized, or institutionally preserved material;
-- OCR quality, modern editorial intervention, digitization bias, and access restrictions must be documented;
-- subscription or access-controlled materials may only be used when authorization and terms allow.
+- 当前来源不能代表全部晚清人群；
+- 来源人群可能偏向通商口岸、海关、传教士、市政、精英、英文材料、被数字化材料或机构保存材料；
+- OCR 质量、现代编辑介入、数字化偏差和访问限制必须记录；
+- 订阅或访问受限材料只能在授权与条款允许时使用。
 
-## 9. Benchmark Design
+## 9. Benchmark 设计（Benchmark Design）
 
-Benchmark name: late-Qing public-health historical knowledge boundary pilot benchmark.
+评测集名称：晚清公共卫生历史知识边界试点评测集。
 
-Purpose: evaluate whether LLM or RAG systems avoid post-cutoff facts, modern lexical meanings, unsupported causal or value frameworks, false provenance, and unwarranted certainty when answering late-Qing public-health questions.
+目的：评估 LLM 或 RAG 系统在回答晚清公共卫生问题时，是否能避免引入后出事实、现代词义、无来源支撑的因果或价值框架、错误出处归属和不合理确定性。
 
-Scope:
+范围：
 
-- target period: 1880-01-01 to 1899-12-31;
-- provisional cutoff: 1900-01-01;
-- initial source ecology: customs, missionary medical, and treaty-port municipal materials.
+- 目标时段：1880-01-01 至 1899-12-31；
+- 临时截止日期：1900-01-01；
+- 初始来源生态：海关、传教士医学和通商口岸市政材料。
 
-Allowed item families:
+允许的题目类型：
 
 - `post_cutoff_control`;
 - `metadata_provenance`;
@@ -131,105 +131,105 @@ Allowed item families:
 - `source_misattribution`;
 - `historical_ignorance`.
 
-Minimum viable scale:
+最小可行规模：
 
-- first pilot: 12-20 seed items;
-- next target: 20-30 items;
-- at least 8 items should eventually be supported by real verified source passages.
+- 第一版试点：12-20 条种子题；
+- 下一目标：20-30 条题目；
+- 最终至少应有 8 条题目由真实且已验证的来源段落支撑。
 
-Items with `needs_source_excerpt` should not be treated as scoreable until their historical evidence is verified.
+标记为 `needs_source_excerpt` 的题目，在历史证据验证前不得作为可评分题目。
 
-## 10. Experimental Design
+## 10. 实验设计（Experimental Design）
 
-Current candidate baselines:
+当前候选基线：
 
-| Condition | Name | Status | Current role |
+| 条件 | 名称 | 状态 | 当前角色 |
 |---|---|---|---|
-| B0 | Direct answer | Candidate | Baseline for default model behavior without source constraints. |
-| B1 | Time / role prompt | Candidate | Tests prompt-only temporal control and residual anachronism. |
-| B2 | Oracle historical evidence | Candidate | Tests source-grounded answering without retrieval noise. |
-| B3 | Historical RAG | Candidate | Tests realistic retrieval plus generation after corpus and benchmark stabilize. |
-| B4 | LoRA / DAPT | Deferred | Consider only after B0-B3 and benchmark feasibility are established. |
+| B0 | Direct answer | 候选 | 无来源约束的默认模型行为基线。 |
+| B1 | Time / role prompt | 候选 | 测试仅靠提示进行时间控制后是否仍有时代错置。 |
+| B2 | Oracle historical evidence | 候选 | 测试无检索噪声时的来源支撑回答。 |
+| B3 | Historical RAG | 候选 | 在语料与评测集稳定后，测试现实检索加生成。 |
+| B4 | LoRA / DAPT | 暂缓 | 仅在 B0-B3 和评测集可行性稳定后考虑。 |
 
-Current priority order:
+当前优先顺序：
 
-1. verify real historical materials;
-2. build a small real benchmark;
-3. test annotation and scoring feasibility;
-4. run B0 / B1 / B2 / B3;
-5. decide later whether any adaptation or training is justified.
+1. 验证真实历史材料；
+2. 建立小型真实评测集；
+3. 测试标注与评分可行性；
+4. 运行 B0 / B1 / B2 / B3；
+5. 再决定是否需要任何适配或训练。
 
-The project has not entered formal model experiments.
+项目尚未进入正式模型实验阶段。
 
-## 11. Current Hypotheses
+## 11. 当前假设（Current Hypotheses）
 
-No separate `hypotheses.yaml` currently exists. The current working hypotheses are provisional and should not be treated as confirmed findings:
+当前不存在单独的 `hypotheses.yaml`。以下工作假设仍是临时判断，不应视为已证实结论：
 
-- Source-constrained prompts or retrieval should reduce some factual and provenance errors compared with direct answering.
-- Prompt-only temporal role control is expected to leave residual anachronism.
-- Some questions should require qualified uncertainty or refusal because available period sources do not support a confident answer.
-- Lightweight adaptation should remain deferred until benchmark and source feasibility are stable.
+- 相比直接回答，来源约束提示或检索应能减少部分事实错误和出处错误；
+- 仅靠时间 / 角色提示预计仍会留下时代错置；
+- 部分问题应要求限定性不确定或拒答，因为可用时期来源不能支撑确定回答；
+- 在评测集和来源可行性稳定前，轻量适配应继续暂缓。
 
-## 12. Evidence For / Against
+## 12. 支持 / 反对证据（Evidence For / Against）
 
-Evidence supporting the current design:
+支持当前设计的证据：
 
-- The existing contribution map rates multi-level anachronism, historical ignorance, provenance / source ecology, and late-Qing Chinese public health as strong contribution candidates.
-- The pilot benchmark specification already defines item families, required fields, evidence statuses, answer policies, and scoring dimensions.
-- The recommended direction and minimum viable pilot both converge on a small, source-constrained benchmark rather than a broad training project.
-- The Five-Day synthesis found that Wellcome API may reduce discovery and metadata friction.
+- 既有贡献图将多层级时代错置、历史性无知、出处 / 来源生态、晚清中国公共卫生评为强贡献候选；
+- 试点评测规范已经定义题目类型、必备字段、证据状态、回答策略和评分维度；
+- 推荐方向与最小可行试点均指向小型来源约束评测集，而不是宽泛训练项目；
+- Five-Day 综合发现 Wellcome API 可能降低发现与元数据获取成本。
 
-Evidence creating pressure or risk:
+带来压力或风险的证据：
 
-- Recent work on historical anachronism, historical pretraining, ex-ante inference, and HistoRAG overlaps with broad formulations of the project.
-- A generic claim such as "historical language models can avoid anachronism" is likely too broad.
-- A generic "build Historical RAG" contribution is insufficient without source-constrained evaluation, historical ignorance, and late-Qing public-health specificity.
-- TDBench is useful as a benchmark-construction reference but does not solve late-Qing historical-data availability.
+- 关于历史时代错置、历史预训练、ex-ante inference 和 HistoRAG 的近期工作，与项目的宽泛表述有明显重叠；
+- “历史语言模型能避免时代错置”这类泛化主张可能过宽；
+- 单纯“做 Historical RAG”不足以构成新颖贡献，必须落到来源约束评测、历史性无知和晚清公共卫生具体语境；
+- TDBench 可作为评测集构造参考，但不能解决晚清历史数据可得性。
 
-## 13. Open Questions
+## 13. 开放问题（Open Questions）
 
-- Which legally accessible source passages can support the first scoreable benchmark items?
-- Can the Wellcome Catalogue API and IIIF metadata reliably identify late-Qing public-health materials relevant to customs, missionary medicine, quarantine, hygiene, or sanitation?
-- Are Chinese-language late-Qing public-health sources available in a form compatible with the project without violating access restrictions?
-- How should source populations be described so the benchmark does not overclaim representativeness?
-- Can local lightweight RAG reduce anachronism and false provenance, or does it mainly expose retrieval and OCR limitations?
-- Should historical ignorance be separated into model-capability ignorance and historical-source-ecology uncertainty?
-- When, if ever, would LoRA / DAPT become worth testing?
+- 哪些合法可用来源段落能支撑第一批可评分评测题？
+- Wellcome Catalogue API 和 IIIF 元数据能否稳定识别与海关、传教士医学、检疫、卫生或环境卫生相关的晚清公共卫生材料？
+- 晚清中文公共卫生来源是否能在不违反访问限制的前提下纳入项目？
+- 应如何描述来源人群，避免评测集过度声称代表性？
+- 轻量本地 RAG 能否减少时代错置和错误出处，还是主要暴露检索与 OCR 限制？
+- 是否需要把 historical ignorance 拆分为模型能力边界的无知与历史来源生态中的不确定 / 不可得？
+- LoRA / DAPT 在什么条件下才值得测试？
 
-## 14. Blockers
+## 14. 阻塞项（Blockers）
 
-Current formal blocker file has no active blockers, but the design still depends on resolving practical constraints:
+当前正式 blocker 文件没有活跃 blocker，但研究设计仍依赖以下实际约束的解决：
 
-- stable legally usable historical passages;
-- OCR and transcription quality for scanned or multilingual materials;
-- metadata completeness and stable citations;
-- subscription or platform restrictions for Chinese newspapers, periodicals, or full-text databases;
-- balanced source ecology across customs, missionary, municipal, and Chinese-language materials;
-- avoiding claims that digitized or institutionally preserved material represents all late-Qing actors.
+- 稳定、合法可用的历史段落；
+- 扫描或多语材料的 OCR 与转写质量；
+- 元数据完整性与稳定引用；
+- 中文报纸、期刊或全文数据库的订阅与平台限制；
+- 海关、传教士、市政和中文来源之间的来源生态均衡；
+- 避免声称数字化或机构保存材料能够代表全部晚清行动者。
 
-## 15. Next Research Priorities
+## 15. 下一步研究优先级（Next Research Priorities）
 
-1. Run a small source probe for Wellcome API and one or two candidate public-health queries.
-2. Verify whether candidate records provide usable metadata, IIIF/PDF/image access, dates, and stable identifiers.
-3. Select a small set of source passages or metadata records for benchmark item expansion.
-4. Expand pilot items toward 20-30 items while separating scoreable items from `needs_source_excerpt` items.
-5. Test whether a minimal local retrieval prototype can preserve source citation and provenance constraints.
-6. Continue Daily multi-channel monitoring for papers, datasets, archives, methods, resources, and project impact.
-7. Let the next Five-Day update evidence strength, blockers, priorities, and registries; reserve major research-story restructuring for Half-Month.
+1. 对 Wellcome API 和一两个候选公共卫生查询做小型来源探针。
+2. 验证候选记录是否提供可用元数据、IIIF / PDF / 图像访问、日期和稳定标识符。
+3. 选择一小组来源段落或元数据记录，用于扩展评测题。
+4. 将试点评测题扩展到 20-30 条，并区分可评分题与 `needs_source_excerpt` 题。
+5. 测试最小本地检索原型能否保留来源引用与出处约束。
+6. 继续 Daily 多通道监测论文、数据集、档案、方法、资源和项目影响。
+7. 下一次 Five-Day 只更新证据强度、blocker、优先级和 registry；核心研究叙事重构保留给 Half-Month。
 
-## 16. Rejected / Deferred Directions
+## 16. 拒绝 / 暂缓方向（Rejected / Deferred Directions）
 
-Rejected for the current stage:
+当前阶段拒绝：
 
-- large-scale model training;
-- claiming to represent all late-Qing people;
-- building a commercial historical chatbot;
-- using generated text as historical evidence;
-- bypassing paywalls, authentication, CAPTCHAs, access controls, licensing restrictions, robots policies, or bulk-download restrictions.
+- 大规模模型训练；
+- 声称代表全部晚清人群；
+- 建设商业历史聊天机器人；
+- 使用生成文本作为历史证据；
+- 绕过 paywall、认证、CAPTCHA、访问控制、许可限制、robots policy 或批量下载限制。
 
-Deferred:
+暂缓：
 
-- LoRA / DAPT / QLoRA comparison until real passages, a stable benchmark, and a small corpus exist;
-- cross-source ecology RAG sensitivity until more balanced legal sources are available;
-- `weisheng` and Chinese public-health lexical drift until authorized Chinese full text or open subsets are available;
-- OCR-first corpus pipeline until small Wellcome and bnAsie OCR quality probes are complete.
+- LoRA / DAPT / QLoRA 比较，直到真实段落、稳定评测集和小型语料形成；
+- 跨来源生态 RAG 敏感性研究，直到获得更均衡的合法来源；
+- `weisheng` 与中文公共卫生词汇漂移，直到获得授权中文全文或开放子集；
+- OCR 优先语料管线，直到完成小型 Wellcome 与 bnAsie OCR 质量探针。

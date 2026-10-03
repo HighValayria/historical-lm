@@ -1,11 +1,11 @@
-# Legacy Research Design Pointer
+# 旧研究设计指针
 
-This file is retained only for backward compatibility with older automation runs.
+本文档仅为兼容旧自动化流程而保留。
 
-The authoritative current research design is:
+当前正式研究设计主文档是：
 
 ```text
 research_design/RESEARCH_DESIGN.md
 ```
 
-Do not update this file with new research-design content. Daily must never modify the authoritative research design. Five-Day and Half-Month should use `research_design/RESEARCH_DESIGN.md` according to the current automation protocols.
+不要在本文档中写入新的研究设计内容。Daily 不得修改正式研究设计。Five-Day 与 Half-Month 应按照当前自动化协议使用 `research_design/RESEARCH_DESIGN.md`。

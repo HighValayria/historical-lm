@@ -1,22 +1,22 @@
-# Daily Protocol
+# Daily 协议
 
-## Purpose
+## 目的
 
-Daily Research Radar is a multi-channel research-environment check, not a paper-search task.
+Daily Research Radar 是多通道研究环境检查，不是单纯论文搜索任务。
 
-Daily must answer:
+Daily 必须回答：
 
-> What genuinely new and project-relevant information appeared across the research environment?
+> 今天研究环境中出现了哪些真正新增、且与本项目相关的信息？
 
-Daily reports must be written in Chinese. Paper titles, dataset names, archive names, identifiers, enum values such as `newly_discovered`, and paths may remain in their original form.
+Daily 报告必须使用中文。论文标题、数据集名称、档案名称、标识符、`newly_discovered` 等枚举值和路径可以保留原文。
 
-Daily prioritizes coverage over depth. A rich paper channel must not replace checks of datasets, archives, methods, resources, and project impact.
+Daily 优先保证覆盖面，而不是深度。论文通道很丰富也不能替代对数据集、档案、方法、资源和项目影响的检查。
 
-Daily must not modify `research_design/RESEARCH_DESIGN.md`. The authoritative research design is updated only by Five-Day within its limited evidence-update scope or by Half-Month for core redesign. Daily provides new evidence, registry updates, and queues.
+Daily 不得修改 `research_design/RESEARCH_DESIGN.md`。正式研究设计只能由 Five-Day 在有限证据更新范围内修改，或由 Half-Month 进行核心重构。Daily 只提供新证据、registry 更新和队列。
 
-## Fixed Channels
+## 固定通道
 
-Daily has six required channels:
+Daily 有六个必查通道：
 
 1. `PAPERS`
 2. `DATASETS`
@@ -25,19 +25,19 @@ Daily has six required channels:
 5. `RESOURCES`
 6. `PROJECT_IMPACT`
 
-Daily is complete only after every channel has one of these statuses:
+只有当每个通道都有以下状态之一时，Daily 才算完成：
 
 - `checked_material_update`
 - `checked_no_material_update`
 - `blocked`
 
-Do not use `skipped` or `not_needed`.
+不得使用 `skipped` 或 `not_needed`。
 
-If a channel cannot be checked because of network, access, or environment problems, mark it `blocked`, write the blocker to `state/blockers.json`, and continue with the remaining channels.
+如果某个通道因为网络、访问或环境问题无法检查，将其标记为 `blocked`，把 blocker 写入 `state/blockers.json`，然后继续检查其余通道。
 
-## Breadth-First Strategy
+## 广度优先策略
 
-Daily must check channels in this first-round order:
+Daily 必须按以下第一轮顺序检查通道：
 
 1. `PAPERS`
 2. `DATASETS`
@@ -46,190 +46,190 @@ Daily must check channels in this first-round order:
 5. `RESOURCES`
 6. `PROJECT_IMPACT`
 
-Only after all six channels have been checked may Daily return to a high-value channel for additional exploration.
+只有在六个通道全部检查后，Daily 才能回到某个高价值通道继续加深。
 
-If context, time, or quota is tight, reduce depth in every channel. Do not fully execute `PAPERS` and abandon the other channels.
+如果上下文、时间或额度紧张，应降低每个通道的深度。不得完整深入 `PAPERS` 后放弃其他通道。
 
-Soft budget rule: `PAPERS` should not default to more than about 35% of Daily exploration effort. Do not follow multi-hop citation graphs during Daily; put those into Five-Day queues instead.
+软预算规则：`PAPERS` 默认不应超过 Daily 探索工作量的大约 35%。Daily 不追踪多跳引用图；这类工作应放入 Five-Day 队列。
 
-## Channel 1: PAPERS
+## 通道 1：`PAPERS`
 
-Check for:
+检查：
 
-- newly published papers;
-- newly discovered existing work;
-- new citations of seed papers;
-- seed-paper references not yet registered;
-- existing paper updates;
-- reviews, benchmark papers, and method papers.
+- 近期新发表论文；
+- 新发现的既有工作；
+- seed paper 的新引用；
+- 尚未登记的 seed paper references；
+- 已知论文的新更新；
+- 综述、benchmark 论文和方法论文。
 
-Key themes:
+关键主题：
 
-- historical language model;
-- temporal knowledge;
-- temporal leakage;
-- knowledge cutoff;
-- ex-ante reasoning;
-- anachronism;
-- Historical RAG;
-- provenance;
-- source diversity;
-- digital humanities plus LLM.
+- historical language model；
+- temporal knowledge；
+- temporal leakage；
+- knowledge cutoff；
+- ex-ante reasoning；
+- anachronism；
+- Historical RAG；
+- provenance；
+- source diversity；
+- digital humanities plus LLM。
 
-For papers, "new" means:
+对论文而言，“new” 指：
 
 ```text
 new_to_system = absent from state/seen_papers.json and evidence/literature_master.csv
 ```
 
-This includes papers published months or years ago but first discovered by this system today.
+这包括几个月或几年前发表、但今天第一次被本系统发现的论文。
 
-Classify paper findings as:
+论文发现分类为：
 
-- `newly_published`: recently published, newly posted, newly accepted, or newly public work not previously in this system.
-- `newly_discovered`: older work not previously in this system.
-- `existing_paper_update`: material new information about a known paper.
+- `newly_published`：近期发表、新上线、新接收或新公开，且此前未进入本系统的工作。
+- `newly_discovered`：较早发表但此前未进入本系统的工作。
+- `existing_paper_update`：关于已知论文的实质性新信息。
 
-Deduplicate using this priority:
+去重优先级：
 
-1. DOI;
-2. arXiv ID;
-3. Semantic Scholar, OpenAlex, ACL Anthology, or another stable paper ID;
-4. normalized title.
+1. DOI；
+2. arXiv ID；
+3. Semantic Scholar、OpenAlex、ACL Anthology 或其他稳定 paper ID；
+4. 规范化标题。
 
-High-relevance paper findings go to `state/queues.json -> deep_reading`.
+高相关论文发现进入 `state/queues.json -> deep_reading`。
 
-## Channel 2: DATASETS
+## 通道 2：`DATASETS`
 
-Check datasets independently. A dataset mentioned in a paper does not complete the `DATASETS` channel.
+独立检查数据集。论文中提到某个数据集，并不等于完成 `DATASETS` 通道。
 
-Check for:
+检查：
 
-- new dataset;
-- new benchmark;
-- known dataset new version;
-- new open download;
-- license change;
-- new data fields;
-- historical QA;
-- temporal benchmark;
-- anachronism benchmark;
-- Chinese historical NLP dataset;
-- OCR dataset;
-- provenance / source attribution dataset.
+- 新数据集；
+- 新 benchmark；
+- 已知数据集新版本；
+- 新开放下载；
+- license 变化；
+- 新数据字段；
+- historical QA；
+- temporal benchmark；
+- anachronism benchmark；
+- Chinese historical NLP dataset；
+- OCR dataset；
+- provenance / source attribution dataset。
 
-For each material dataset finding, judge whether it really exists and record, when available:
+对每个实质性数据集发现，判断它是否真实存在，并在可用时记录：
 
-- public access;
-- license;
-- language;
-- time range;
-- domain;
-- fit for the current project.
+- 公开访问情况；
+- license；
+- 语言；
+- 时间范围；
+- 领域；
+- 与当前项目的适配性。
 
-High-relevance dataset findings go to `state/queues.json -> dataset_review`.
+高相关数据集发现进入 `state/queues.json -> dataset_review`。
 
-## Channel 3: ARCHIVES
+## 通道 3：`ARCHIVES`
 
-Check historical sources and digital archives independently.
+独立检查历史来源和数字档案。
 
-Focus on:
+重点关注：
 
-- Wellcome Collection;
-- China Medical Missionary Journal;
-- Chinese Maritime Customs;
-- Shanghai Municipal Council;
-- bnAsie;
-- 晚清期刊数据库;
-- 《申报》;
-- 地方志;
-- 医学期刊;
-- 医学教科书;
-- 海关报告;
-- 市政 / 租界卫生资料;
-- new digitization projects;
-- new OCR access;
-- new APIs;
-- new full-text access;
-- metadata or license changes.
+- Wellcome Collection；
+- China Medical Missionary Journal；
+- Chinese Maritime Customs；
+- Shanghai Municipal Council；
+- bnAsie；
+- 晚清期刊数据库；
+- 《申报》；
+- 地方志；
+- 医学期刊；
+- 医学教科书；
+- 海关报告；
+- 市政 / 租界卫生资料；
+- 新数字化项目；
+- 新 OCR access；
+- 新 API；
+- 新全文访问；
+- metadata 或 license 变化。
 
-This channel asks:
+本通道回答：
 
-> Have historical materials become easier to access or use?
+> 历史材料是否变得更容易访问或使用？
 
-High-relevance archive findings go to `state/queues.json -> archive_review`.
+高相关档案发现进入 `state/queues.json -> archive_review`。
 
-## Channel 4: METHODS
+## 通道 4：`METHODS`
 
-Check methods and tools that may change implementation cost or experiment design.
+检查可能改变实现成本或实验设计的方法与工具。
 
-This can include papers, models, libraries, releases, or open-source implementations.
+这可以包括论文、模型、库、release 或开源实现。
 
-Focus on:
+重点关注：
 
-- historical OCR;
-- document layout parsing;
-- handwritten / printed historical text recognition;
-- embedding;
-- retrieval;
-- reranking;
-- temporal retrieval;
-- provenance-aware retrieval;
-- source attribution;
-- citation grounding;
-- long context;
-- structured extraction;
-- evaluation;
-- uncertainty / abstention.
+- historical OCR；
+- document layout parsing；
+- handwritten / printed historical text recognition；
+- embedding；
+- retrieval；
+- reranking；
+- temporal retrieval；
+- provenance-aware retrieval；
+- source attribution；
+- citation grounding；
+- long context；
+- structured extraction；
+- evaluation；
+- uncertainty / abstention。
 
-If a method is found in `PAPERS`, still answer separately whether it has direct engineering value for this project.
+如果某个方法已经在 `PAPERS` 中发现，仍需单独回答它是否对本项目有直接工程价值。
 
-High-relevance method findings go to `state/queues.json -> method_review`.
+高相关方法发现进入 `state/queues.json -> method_review`。
 
-## Channel 5: RESOURCES
+## 通道 5：`RESOURCES`
 
-Check non-paper research resources:
+检查非论文研究资源：
 
-- GitHub repository;
-- research toolkit;
-- benchmark framework;
-- annotation tool;
-- OCR pipeline;
-- digital humanities platform;
-- corpus browser;
-- archive search interface;
-- citation / provenance tool;
-- dataset processing scripts;
-- research project pages.
+- GitHub repository；
+- research toolkit；
+- benchmark framework；
+- annotation tool；
+- OCR pipeline；
+- digital humanities platform；
+- corpus browser；
+- archive search interface；
+- citation / provenance tool；
+- dataset processing scripts；
+- research project pages。
 
-This channel asks:
+本通道回答：
 
-> Did anything appear that can directly reduce current research work?
+> 是否出现了能直接降低当前研究工作量的东西？
 
-High-relevance resource findings go to `state/queues.json -> resource_review`.
+高相关资源发现进入 `state/queues.json -> resource_review`。
 
-## Channel 6: PROJECT_IMPACT
+## 通道 6：`PROJECT_IMPACT`
 
-This is an independent project-state check based on all findings from the run.
+这是基于本次运行所有发现的独立项目状态检查。
 
-Answer:
+回答：
 
-- Is there direct competing work?
-- Is there a new resource that could resolve a current blocker?
-- Did data feasibility materially change?
-- Does anything need to enter a Five-Day queue?
-- Is any current contribution clearly threatened?
-- Is there a new research opportunity?
+- 是否出现直接竞争工作？
+- 是否有新资源可能解决当前 blocker？
+- 数据可行性是否发生实质变化？
+- 是否有内容需要进入 Five-Day 队列？
+- 是否有当前贡献明显受到威胁？
+- 是否出现新的研究机会？
 
-If there is no project-level impact, write:
+如果没有项目层面影响，写：
 
 ```text
 No project-level impact.
 ```
 
-## Required State Updates
+## 必须更新的状态
 
-After a successful Daily run, update `state/channel_state.json` separately for each checked non-impact channel:
+Daily 成功运行后，为每个已检查的非 impact 通道分别更新 `state/channel_state.json`：
 
 ```json
 {
@@ -240,58 +240,58 @@ After a successful Daily run, update `state/channel_state.json` separately for e
 }
 ```
 
-Update `last_material_update` only when that channel has `checked_material_update`.
+只有当该通道状态为 `checked_material_update` 时，才更新 `last_material_update`。
 
-Update `state/automation_state.json` only when schedule rules allow it.
+仅当调度规则允许时，才更新 `state/automation_state.json`。
 
-## Report Format
+## 报告格式
 
-Every Daily report must use this Chinese structure, even when a channel has no material update:
+每份 Daily 报告必须使用以下中文结构，即使某个通道没有实质更新：
 
 ```markdown
 # Daily Research Radar — YYYY-MM-DD
 
-## 1. Papers
+## 1. 论文
 
-Status:
+状态：
 
 Newly published:
 Newly discovered:
 Existing updates:
 
-Material findings:
+实质发现：
 
-## 2. Datasets / Benchmarks
+## 2. 数据集 / Benchmark
 
-Status:
+状态：
 
-Material findings:
+实质发现：
 
-## 3. Historical Archives / Sources
+## 3. 历史档案 / 来源
 
-Status:
+状态：
 
-Material findings:
+实质发现：
 
-## 4. Methods / Tools
+## 4. 方法 / 工具
 
-Status:
+状态：
 
-Material findings:
+实质发现：
 
-## 5. Research Resources
+## 5. 研究资源
 
-Status:
+状态：
 
-Material findings:
+实质发现：
 
-## 6. Project Impact
+## 6. 项目影响
 
-Impact:
+影响：
 
-Queues updated:
+已更新队列：
 
-## Coverage Check
+## 覆盖检查
 
 - PAPERS: checked / blocked
 - DATASETS: checked / blocked
@@ -301,23 +301,23 @@ Queues updated:
 - PROJECT_IMPACT: checked / blocked
 ```
 
-If a channel has no new finding, write:
+如果某个通道没有新发现，写：
 
 ```text
 Status: checked_no_material_update
 No material update.
 ```
 
-## Limits
+## 限制
 
-Daily must not:
+Daily 不得：
 
-- rewrite the research design;
-- modify `research_design/RESEARCH_DESIGN.md`;
-- produce a long literature review;
-- deeply analyze many papers;
-- let `PAPERS` consume the whole run;
-- skip datasets, archives, methods, resources, or project impact;
-- invent updates when nothing material appeared.
+- 重写研究设计；
+- 修改 `research_design/RESEARCH_DESIGN.md`；
+- 生成长篇文献综述；
+- 深入分析大量论文；
+- 让 `PAPERS` 占用整个运行；
+- 跳过数据集、档案、方法、资源或项目影响；
+- 在没有实质更新时编造更新。
 
-Daily discovers, deduplicates, judges relevance, classifies, and queues. Five-Day performs deeper reading and cross-type synthesis.
+Daily 负责发现、去重、判断相关性、分类和入队。Five-Day 负责更深入阅读和跨类型综合。
