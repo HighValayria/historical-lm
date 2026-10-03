@@ -36,6 +36,8 @@ Daily paper discovery tracks work that is new to this repository, not only paper
 
 All generated Daily, Five-Day, and Half-Month research reports should be written in Chinese. Original paper titles, identifiers, and paths may remain unchanged.
 
+Daily is a multi-channel research radar, not a paper-only search. Every run must check `PAPERS`, `DATASETS`, `ARCHIVES`, `METHODS`, `RESOURCES`, and `PROJECT_IMPACT`, and the report must show whether each channel was checked or blocked. No material update is still a completed channel check.
+
 The system distinguishes:
 
 - `newly_published`: recent work that was not previously registered;

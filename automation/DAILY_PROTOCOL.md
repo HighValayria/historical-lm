@@ -2,196 +2,309 @@
 
 ## Purpose
 
-Answer only:
+Daily Research Radar is a multi-channel research-environment check, not a paper-search task.
 
-> What genuinely new and project-relevant information appeared in the most recent cycle?
+Daily must answer:
 
-Daily reports must be written in Chinese. Paper titles, identifiers, enum values such as `newly_discovered`, and paths may remain in their original form.
+> What genuinely new and project-relevant information appeared across the research environment?
 
-Daily Research Radar is not only a publication-date news monitor. For papers, "new" means:
+Daily reports must be written in Chinese. Paper titles, dataset names, archive names, identifiers, enum values such as `newly_discovered`, and paths may remain in their original form.
+
+Daily prioritizes coverage over depth. A rich paper channel must not replace checks of datasets, archives, methods, resources, and project impact.
+
+## Fixed Channels
+
+Daily has six required channels:
+
+1. `PAPERS`
+2. `DATASETS`
+3. `ARCHIVES`
+4. `METHODS`
+5. `RESOURCES`
+6. `PROJECT_IMPACT`
+
+Daily is complete only after every channel has one of these statuses:
+
+- `checked_material_update`
+- `checked_no_material_update`
+- `blocked`
+
+Do not use `skipped` or `not_needed`.
+
+If a channel cannot be checked because of network, access, or environment problems, mark it `blocked`, write the blocker to `state/blockers.json`, and continue with the remaining channels.
+
+## Breadth-First Strategy
+
+Daily must check channels in this first-round order:
+
+1. `PAPERS`
+2. `DATASETS`
+3. `ARCHIVES`
+4. `METHODS`
+5. `RESOURCES`
+6. `PROJECT_IMPACT`
+
+Only after all six channels have been checked may Daily return to a high-value channel for additional exploration.
+
+If context, time, or quota is tight, reduce depth in every channel. Do not fully execute `PAPERS` and abandon the other channels.
+
+Soft budget rule: `PAPERS` should not default to more than about 35% of Daily exploration effort. Do not follow multi-hop citation graphs during Daily; put those into Five-Day queues instead.
+
+## Channel 1: PAPERS
+
+Check for:
+
+- newly published papers;
+- newly discovered existing work;
+- new citations of seed papers;
+- seed-paper references not yet registered;
+- existing paper updates;
+- reviews, benchmark papers, and method papers.
+
+Key themes:
+
+- historical language model;
+- temporal knowledge;
+- temporal leakage;
+- knowledge cutoff;
+- ex-ante reasoning;
+- anachronism;
+- Historical RAG;
+- provenance;
+- source diversity;
+- digital humanities plus LLM.
+
+For papers, "new" means:
 
 ```text
-new_to_system = the paper is absent from state/seen_papers.json and evidence/literature_master.csv
+new_to_system = absent from state/seen_papers.json and evidence/literature_master.csv
 ```
 
-This includes papers that were published months or years ago but are first discovered by this research system today.
+This includes papers published months or years ago but first discovered by this system today.
 
-## Watch Areas
+Classify paper findings as:
 
-### Papers
+- `newly_published`: recently published, newly posted, newly accepted, or newly public work not previously in this system.
+- `newly_discovered`: older work not previously in this system.
+- `existing_paper_update`: material new information about a known paper.
 
-- historical language model
-- historical LM
-- period-specific language model
-- historical NLP
-- temporal knowledge
-- temporal leakage
-- knowledge cutoff
-- ex-ante reasoning
-- anachronism
-- cultural anachronism
-- temporal consistency
-- Historical RAG
-- historical retrieval augmented generation
-- provenance-aware RAG
-- source-aware RAG
-- source diversity
-- digital humanities LLM
-- computational history LLM
-- historical archives LLM
-
-### Datasets / Benchmarks
-
-- temporal knowledge benchmark
-- historical QA
-- temporal leakage benchmark
-- anachronism benchmark
-- historical text datasets
-- Chinese historical NLP datasets
-- OCR datasets
-- provenance datasets
-
-### Historical Sources
-
-- Wellcome historical collections
-- CRL historical Chinese materials
-- China Medical Missionary Journal
-- Chinese Maritime Customs medical reports
-- Shanghai Municipal Council reports
-- bnAsie
-- 晚清期刊
-- 《申报》
-- 地方志
-- 医学期刊
-- 医学教科书
-- 海关报告
-- 租界/市政卫生资料
-
-### Methods
-
-- historical OCR
-- document parsing
-- historical embedding
-- retrieval
-- reranking
-- provenance
-- source attribution
-- temporal retrieval
-
-## Required Actions
-
-1. Search for both freshness and coverage signals.
-2. Deduplicate against `state/seen_papers.json`, `evidence/literature_master.csv`, `state/seen_datasets.json`, and registry files.
-3. Classify new-to-system papers as `newly_published` or `newly_discovered`.
-4. Classify already-known papers with material new information as `existing_paper_update`.
-5. Assign relevance as `high`, `medium`, or `low`.
-6. Record reading depth as `title_only`, `abstract_read`, or `full_text_read`.
-7. Add only high-priority or high-relevance paper discoveries to `state/queues.json -> deep_reading`.
-8. Update registry files only when there is concrete information to record.
-9. Write the daily report in Chinese to `reports/daily/YYYY-MM-DD.md`.
-10. After a successful Daily run, update `last_daily`, increment `daily_run_count`, and update `last_successful_run` in `state/automation_state.json` when schedule rules allow it.
-
-## Paper Discovery Semantics
-
-Daily must process two kinds of new-to-system papers:
-
-- `newly_published`: recently published, newly posted, newly accepted, or newly public work that was not previously in this system.
-- `newly_discovered`: older work that was not previously in this system and was found through search, citation trails, related work, dataset pages, author pages, project pages, or other research paths.
-
-Do not describe an older paper as a "new paper" merely because it was found today. Use "newly discovered relevant work."
-
-If a paper already exists in `state/seen_papers.json` or `evidence/literature_master.csv`, do not create a new record. If there is material new information, record it as `existing_paper_update`.
-
-Allowed existing-paper updates include:
-
-- new version;
-- new formal publication information;
-- new code;
-- new dataset;
-- new citation information;
-- new reading status;
-- changed relevance judgment.
-
-## Paper Deduplication
-
-Use this identifier priority:
+Deduplicate using this priority:
 
 1. DOI;
 2. arXiv ID;
 3. Semantic Scholar, OpenAlex, ACL Anthology, or another stable paper ID;
 4. normalized title.
 
-Title-only matching is the fallback, not the default.
+High-relevance paper findings go to `state/queues.json -> deep_reading`.
 
-## Search Strategy
+## Channel 2: DATASETS
 
-### Freshness Search
+Check datasets independently. A dataset mentioned in a paper does not complete the `DATASETS` channel.
 
-Use this to discover genuinely recent work, especially:
+Check for:
 
-- last 30 days;
-- recent months;
-- current-year papers.
+- new dataset;
+- new benchmark;
+- known dataset new version;
+- new open download;
+- license change;
+- new data fields;
+- historical QA;
+- temporal benchmark;
+- anachronism benchmark;
+- Chinese historical NLP dataset;
+- OCR dataset;
+- provenance / source attribution dataset.
 
-Focus on historical LM, temporal knowledge, temporal leakage, anachronism, Historical RAG, provenance, digital humanities plus LLMs, historical QA / benchmarks, and late-Qing / Chinese historical NLP.
+For each material dataset finding, judge whether it really exists and record, when available:
 
-### Coverage Search
+- public access;
+- license;
+- language;
+- time range;
+- domain;
+- fit for the current project.
 
-Use this to fill gaps in the research knowledge graph. Coverage search may discover older papers through:
+High-relevance dataset findings go to `state/queues.json -> dataset_review`.
 
-- current keyword searches;
-- seed-paper references;
-- seed-paper citations;
-- high-relevance papers' related work;
-- benchmark references;
-- dataset papers;
-- repeated authors or methods in existing reports;
-- important works surfaced by field surveys.
+## Channel 3: ARCHIVES
 
-Coverage search should be incremental. Do not rescan the entire literature history every day.
+Check historical sources and digital archives independently.
 
-## Paper Priority
+Focus on:
 
-Highest priority:
+- Wellcome Collection;
+- China Medical Missionary Journal;
+- Chinese Maritime Customs;
+- Shanghai Municipal Council;
+- bnAsie;
+- 晚清期刊数据库;
+- 《申报》;
+- 地方志;
+- 医学期刊;
+- 医学教科书;
+- 海关报告;
+- 市政 / 租界卫生资料;
+- new digitization projects;
+- new OCR access;
+- new APIs;
+- new full-text access;
+- metadata or license changes.
 
-1. recent publication plus high relevance;
-2. older work that directly challenges or covers the current contribution;
-3. older work with a clear citation relationship to a core seed paper;
-4. older work that fills an obvious gap in the current literature matrix.
+This channel asks:
 
-Medium priority:
+> Have historical materials become easier to access or use?
 
-5. work strongly related to the research design but not a core competing work;
-6. work that provides a reusable dataset, benchmark, method, or historical source.
+High-relevance archive findings go to `state/queues.json -> archive_review`.
 
-Low priority:
+## Channel 4: METHODS
 
-7. keyword overlap only;
-8. weak connection to the core question.
+Check methods and tools that may change implementation cost or experiment design.
 
-Daily performs discovery, deduplication, relevance judgment, initial classification, and queueing. Five-Day handles deeper reading, relation to existing research, contribution-risk analysis, and research-graph updates.
+This can include papers, models, libraries, releases, or open-source implementations.
 
-## 日报格式
+Focus on:
 
-当报告包含论文发现时，使用以下中文小节：
+- historical OCR;
+- document layout parsing;
+- handwritten / printed historical text recognition;
+- embedding;
+- retrieval;
+- reranking;
+- temporal retrieval;
+- provenance-aware retrieval;
+- source attribution;
+- citation grounding;
+- long context;
+- structured extraction;
+- evaluation;
+- uncertainty / abstention.
+
+If a method is found in `PAPERS`, still answer separately whether it has direct engineering value for this project.
+
+High-relevance method findings go to `state/queues.json -> method_review`.
+
+## Channel 5: RESOURCES
+
+Check non-paper research resources:
+
+- GitHub repository;
+- research toolkit;
+- benchmark framework;
+- annotation tool;
+- OCR pipeline;
+- digital humanities platform;
+- corpus browser;
+- archive search interface;
+- citation / provenance tool;
+- dataset processing scripts;
+- research project pages.
+
+This channel asks:
+
+> Did anything appear that can directly reduce current research work?
+
+High-relevance resource findings go to `state/queues.json -> resource_review`.
+
+## Channel 6: PROJECT_IMPACT
+
+This is an independent project-state check based on all findings from the run.
+
+Answer:
+
+- Is there direct competing work?
+- Is there a new resource that could resolve a current blocker?
+- Did data feasibility materially change?
+- Does anything need to enter a Five-Day queue?
+- Is any current contribution clearly threatened?
+- Is there a new research opportunity?
+
+If there is no project-level impact, write:
 
 ```text
-## 近期新发表
-
-## 新发现的既有研究
-
-## 已登记论文更新
+No project-level impact.
 ```
 
-空小节可以省略。必要时加入计数，例如：
+## Required State Updates
+
+After a successful Daily run, update `state/channel_state.json` separately for each checked non-impact channel:
+
+```json
+{
+  "PAPERS": {
+    "last_checked": "YYYY-MM-DD",
+    "last_material_update": "YYYY-MM-DD or null"
+  }
+}
+```
+
+Update `last_material_update` only when that channel has `checked_material_update`.
+
+Update `state/automation_state.json` only when schedule rules allow it.
+
+## Report Format
+
+Every Daily report must use this Chinese structure, even when a channel has no material update:
+
+```markdown
+# Daily Research Radar — YYYY-MM-DD
+
+## 1. Papers
+
+Status:
+
+Newly published:
+Newly discovered:
+Existing updates:
+
+Material findings:
+
+## 2. Datasets / Benchmarks
+
+Status:
+
+Material findings:
+
+## 3. Historical Archives / Sources
+
+Status:
+
+Material findings:
+
+## 4. Methods / Tools
+
+Status:
+
+Material findings:
+
+## 5. Research Resources
+
+Status:
+
+Material findings:
+
+## 6. Project Impact
+
+Impact:
+
+Queues updated:
+
+## Coverage Check
+
+- PAPERS: checked / blocked
+- DATASETS: checked / blocked
+- ARCHIVES: checked / blocked
+- METHODS: checked / blocked
+- RESOURCES: checked / blocked
+- PROJECT_IMPACT: checked / blocked
+```
+
+If a channel has no new finding, write:
 
 ```text
-近期新发表：2
-新发现的既有研究：4
-已登记论文更新：1
+Status: checked_no_material_update
+No material update.
 ```
-
-During the cold-start phase, `newly_discovered` may be much larger than `newly_published`. This is expected and should fade naturally as `seen_papers.json` and `literature_master.csv` become more complete.
 
 ## Limits
 
@@ -199,12 +312,9 @@ Daily must not:
 
 - rewrite the research design;
 - produce a long literature review;
-- deeply analyze dozens of papers;
-- rerun old papers or datasets;
+- deeply analyze many papers;
+- let `PAPERS` consume the whole run;
+- skip datasets, archives, methods, resources, or project impact;
 - invent updates when nothing material appeared.
 
-If there is no material update, the report may contain only:
-
-```text
-无实质更新。
-```
+Daily discovers, deduplicates, judges relevance, classifies, and queues. Five-Day performs deeper reading and cross-type synthesis.

@@ -89,4 +89,6 @@ Do not use calendar day-of-month rules.
 
 Daily paper discovery treats "new" as new to this repository's research system, not only newly published in the last 24 hours. Daily must distinguish `newly_published`, `newly_discovered`, and `existing_paper_update` according to `automation/DAILY_PROTOCOL.md`.
 
+Daily's first goal is to cover every research-information channel, not to maximize paper discoveries. Execute Daily breadth first: `PAPERS`, `DATASETS`, `ARCHIVES`, `METHODS`, `RESOURCES`, then `PROJECT_IMPACT`. Each channel must be checked at least once before any deepening. If time, context, or quota is limited, reduce depth in all channels rather than completing `PAPERS` deeply and leaving other channels unchecked. Detailed analysis belongs to Five-Day.
+
 Do not perform large-scale training, paid API calls, access-control bypass, unauthorized scraping, or bulk downloading. If a task is blocked, record it and continue with other due work.
