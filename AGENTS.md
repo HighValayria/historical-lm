@@ -64,3 +64,22 @@ The final report must distinguish:
 - rejected directions;
 - blocked directions;
 - next autonomous tasks.
+
+## Autonomous Research Automation
+
+This repository contains a persistent 1-day / 5-day / 15-day research automation.
+
+Before autonomous research work:
+
+1. Read `state/automation_state.json`.
+2. Run `scripts/check_schedule.py`.
+3. Read the corresponding protocol under `automation/`.
+4. Treat repository state as authoritative memory.
+
+Do not repeat previously processed papers or datasets.
+
+Do not modify `CURRENT_RESEARCH_DESIGN.md` except during a due Half-Month audit.
+
+Do not perform large-scale training, paid API calls, access-control bypass, or unauthorized scraping.
+
+If an individual task is blocked, record it and continue.

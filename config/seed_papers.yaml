@@ -1,0 +1,49 @@
+seed_papers:
+  - title: "Pretraining Language Models on Historical Text"
+    tags:
+      - historical_lm
+      - temporal_boundary
+
+  - title: "ExAnte"
+    tags:
+      - temporal_leakage
+      - ex_ante
+
+  - title: "HistoRAG"
+    tags:
+      - historical_rag
+
+  - title: "Can Language Models Represent the Past without Anachronism?"
+    tags:
+      - anachronism
+      - historical_simulation
+
+  - title: "Time Waits for No One! Analysis and Challenges of Temporal Misalignment"
+    tags:
+      - temporal_misalignment
+      - temporal_boundary
+
+  - title: "Temporal Effects on Pre-trained Models for Language Processing Tasks"
+    tags:
+      - temporal_effects
+      - evaluation
+
+  - title: "Time-Aware Language Models as Temporal Knowledge Bases"
+    tags:
+      - temporal_knowledge
+      - probing
+
+  - title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
+    tags:
+      - rag
+      - retrieval
+
+  - title: "Don't Stop Pretraining: Adapt Language Models to Domains and Tasks"
+    tags:
+      - domain_adaptation
+      - continued_pretraining
+
+  - title: "LoRA: Low-Rank Adaptation of Large Language Models"
+    tags:
+      - lightweight_adaptation
+      - lora

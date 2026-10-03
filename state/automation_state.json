@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "last_daily": null,
+  "last_five_day": null,
+  "last_half_month": null,
+  "daily_run_count": 0,
+  "five_day_run_count": 0,
+  "half_month_run_count": 0,
+  "last_successful_run": null
+}

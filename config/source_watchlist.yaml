@@ -1,0 +1,31 @@
+sources:
+
+  - name: Wellcome Collection
+    category: historical_archive
+    priority: high
+
+  - name: China Medical Missionary Journal
+    category: medical_periodical
+    priority: high
+
+  - name: Chinese Maritime Customs medical reports
+    category: customs_public_health
+    priority: high
+
+  - name: Shanghai Municipal Council reports
+    category: municipal_public_health
+    priority: high
+
+  - name: bnAsie
+    category: historical_archive
+    priority: medium
+
+  - name: Shen Bao
+    category: Chinese_newspaper
+    priority: high
+    likely_access_constraint: true
+
+  - name: Late Qing periodical databases
+    category: Chinese_periodicals
+    priority: high
+    likely_access_constraint: true

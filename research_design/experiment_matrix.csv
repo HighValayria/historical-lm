@@ -1,0 +1,6 @@
+condition_id,name,input_context,expected_use,status,notes
+B0,Direct answer,None,Baseline for default model behavior,candidate,No source constraints.
+B1,Time / role prompt,Historical date and role instruction,Test prompt-only temporal control,candidate,Expected to reveal residual anachronism.
+B2,Oracle historical evidence,Curated source passage and metadata,Test source-grounded answering without retrieval noise,candidate,Requires small verified benchmark.
+B3,Historical RAG,Retriever-selected historical evidence,Test realistic retrieval plus generation,candidate,Run only after source corpus and benchmark are stable.
+B4,LoRA / DAPT,Adapted model or continued pretraining,Deferred adaptation comparison,deferred,Consider only after B0-B3 and benchmark feasibility are established.

@@ -1,0 +1,37 @@
+historical_models:
+  - historical language model
+  - historical LM
+  - period-specific language model
+  - historical NLP
+  - diachronic language model
+
+temporal:
+  - temporal knowledge LLM
+  - temporal leakage LLM
+  - knowledge cutoff language model
+  - ex-ante reasoning LLM
+  - temporal consistency LLM
+
+anachronism:
+  - anachronism language model
+  - cultural anachronism AI
+  - historical anachronism LLM
+
+historical_rag:
+  - historical RAG
+  - historical retrieval augmented generation
+  - provenance aware RAG
+  - source aware RAG
+  - source diversity RAG
+
+digital_humanities:
+  - digital humanities large language model
+  - computational history LLM
+  - historical archives LLM
+
+datasets:
+  - historical QA dataset
+  - temporal knowledge benchmark
+  - temporal leakage benchmark
+  - anachronism benchmark
+  - Chinese historical NLP dataset
