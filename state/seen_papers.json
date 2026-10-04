@@ -152,6 +152,40 @@
       "relevance": "medium",
       "reading_depth": "abstract_read",
       "notes": "Temporal QA benchmark construction from temporal databases; useful for temporal-boundary evaluation methods, but not historical-source-specific."
+    },
+    "arxiv:2608.07917": {
+      "title": "TongGuOCR: A Layout-Aware and Token-Augmented OCR MLLM for Chinese Historical Documents",
+      "normalized_title": "tongguocr a layout aware and token augmented ocr mllm for chinese historical documents",
+      "url": "https://arxiv.org/abs/2608.07917",
+      "doi": "10.48550/arXiv.2608.07917",
+      "arxiv_id": "2608.07917",
+      "stable_paper_id": null,
+      "publication_date": "2026-08-08",
+      "publication_year": 2026,
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04",
+      "discovery_type": "newly_published",
+      "discovery_source": "daily_multi_channel_radar",
+      "relevance": "medium",
+      "reading_depth": "abstract_read",
+      "notes": "Recent OCR MLLM paper for Chinese historical documents; relevant to OCR feasibility and rare-glyph/layout risks, but not directly late-Qing public-health content."
+    },
+    "arxiv:2605.11960": {
+      "title": "Chronicles-OCR: A Cross-Temporal Perception Benchmark for the Evolutionary Trajectory of Chinese Characters",
+      "normalized_title": "chronicles ocr a cross temporal perception benchmark for the evolutionary trajectory of chinese characters",
+      "url": "https://arxiv.org/abs/2605.11960",
+      "doi": "10.48550/arXiv.2605.11960",
+      "arxiv_id": "2605.11960",
+      "stable_paper_id": null,
+      "publication_date": "2026-05-12",
+      "publication_year": 2026,
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04",
+      "discovery_type": "newly_discovered",
+      "discovery_source": "daily_multi_channel_radar",
+      "relevance": "medium",
+      "reading_depth": "abstract_read",
+      "notes": "Chinese-character cross-temporal visual benchmark, revised 2026-09-28; useful for thinking about glyph/time variation and OCR/VLLM perception, not direct public-health evidence."
     }
   }
 }

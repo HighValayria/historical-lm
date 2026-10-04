@@ -1,7 +1,21 @@
 {
-  "deep_reading": [],
-  "dataset_review": [],
-  "archive_review": [],
-  "method_review": [],
-  "resource_review": []
+  "deep_reading": [
+    "arxiv:2608.07917",
+    "arxiv:2605.11960"
+  ],
+  "dataset_review": [
+    "chronicles_ocr",
+    "m5hisdoc"
+  ],
+  "archive_review": [
+    "SRC-WELLCOME-CUSTOMS-EPITOME-1884",
+    "SRC-IA-CMMJ-1889-1890"
+  ],
+  "method_review": [
+    "tongguocr"
+  ],
+  "resource_review": [
+    "wellcome_item_viewer",
+    "internet_archive_ocr_downloads"
+  ]
 }

@@ -8,6 +8,24 @@
       "relevance": "medium",
       "status": "candidate",
       "notes": "Temporal database-derived TSQA benchmark; relevant to temporal QA methodology, but not specific to late-Qing public-health archives."
+    },
+    "chronicles_ocr": {
+      "name": "Chronicles-OCR",
+      "url": "https://arxiv.org/abs/2605.11960",
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04",
+      "relevance": "medium",
+      "status": "candidate",
+      "notes": "Cross-temporal Chinese character perception benchmark with public GitHub link in the paper; useful for OCR/VLLM perception assumptions, not a late-Qing public-health corpus."
+    },
+    "m5hisdoc": {
+      "name": "M5HisDoc",
+      "url": "https://github.com/HCIILAB/M5HisDoc",
+      "first_seen": "2026-10-04",
+      "last_checked": "2026-10-04",
+      "relevance": "medium",
+      "status": "candidate_restricted",
+      "notes": "Chinese historical document analysis benchmark; access requires manual application and non-commercial research terms, so it is a method benchmark candidate rather than directly usable project data."
     }
   }
 }
