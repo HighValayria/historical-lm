@@ -186,6 +186,40 @@
       "relevance": "medium",
       "reading_depth": "abstract_read",
       "notes": "Chinese-character cross-temporal visual benchmark, revised 2026-09-28; useful for thinking about glyph/time variation and OCR/VLLM perception, not direct public-health evidence."
+    },
+    "arxiv:2606.05804": {
+      "title": "Can LLMs Be Constrained to the Past? Improving Knowledge Cutoff through Recall-Based Prompting",
+      "normalized_title": "can llms be constrained to the past improving knowledge cutoff through recall based prompting",
+      "url": "https://arxiv.org/abs/2606.05804",
+      "doi": "10.48550/arXiv.2606.05804",
+      "arxiv_id": "2606.05804",
+      "stable_paper_id": null,
+      "publication_date": "2026-06-04",
+      "publication_year": 2026,
+      "first_seen": "2026-10-05",
+      "last_checked": "2026-10-05",
+      "discovery_type": "newly_discovered",
+      "discovery_source": "daily_multi_channel_radar",
+      "relevance": "high",
+      "reading_depth": "abstract_read",
+      "notes": "Directly relevant to prompted knowledge cutoffs, temporal leakage control, and multi-cutoff event benchmarking; method should be tested as a no-training baseline for late-Qing historical ignorance."
+    },
+    "cvf:Sheng_2026_CVPR": {
+      "title": "MCHDoc: A Comprehensive Benchmark for Reading Multi-Carrier Chinese Historical Documents",
+      "normalized_title": "mchdoc a comprehensive benchmark for reading multi carrier chinese historical documents",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Sheng_MCHDoc_A_Comprehensive_Benchmark_for_Reading_Multi-Carrier_Chinese_Historical_Documents_CVPR_2026_paper.html",
+      "doi": null,
+      "arxiv_id": null,
+      "stable_paper_id": "cvf:Sheng_2026_CVPR",
+      "publication_date": "2026-06",
+      "publication_year": 2026,
+      "first_seen": "2026-10-05",
+      "last_checked": "2026-10-05",
+      "discovery_type": "newly_discovered",
+      "discovery_source": "daily_multi_channel_radar",
+      "relevance": "medium",
+      "reading_depth": "abstract_read",
+      "notes": "CVPR 2026 benchmark for reading Chinese historical documents across multiple carriers; relevant to OCR/VLM feasibility and post-correction, not a late-Qing public-health corpus."
     }
   }
 }

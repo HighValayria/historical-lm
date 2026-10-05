@@ -1,21 +1,29 @@
 {
   "deep_reading": [
     "arxiv:2608.07917",
-    "arxiv:2605.11960"
+    "arxiv:2605.11960",
+    "arxiv:2606.05804",
+    "cvf:Sheng_2026_CVPR"
   ],
   "dataset_review": [
     "chronicles_ocr",
-    "m5hisdoc"
+    "m5hisdoc",
+    "mchdoc"
   ],
   "archive_review": [
     "SRC-WELLCOME-CUSTOMS-EPITOME-1884",
-    "SRC-IA-CMMJ-1889-1890"
+    "SRC-IA-CMMJ-1889-1890",
+    "SRC-SINICA-CUSTOMS-MEDICAL-REPORTS"
   ],
   "method_review": [
-    "tongguocr"
+    "tongguocr",
+    "recall_based_knowledge_cutoff_prompting",
+    "mchdoc_post_correction_tasks"
   ],
   "resource_review": [
     "wellcome_item_viewer",
-    "internet_archive_ocr_downloads"
+    "internet_archive_ocr_downloads",
+    "sinica_customs_medical_reports_database",
+    "mchdoc_github_release_watch"
   ]
 }

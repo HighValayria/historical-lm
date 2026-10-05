@@ -26,6 +26,15 @@
       "relevance": "medium",
       "status": "candidate_restricted",
       "notes": "Chinese historical document analysis benchmark; access requires manual application and non-commercial research terms, so it is a method benchmark candidate rather than directly usable project data."
+    },
+    "mchdoc": {
+      "name": "MCHDoc",
+      "url": "https://github.com/blackprotoss/MCHDoc",
+      "first_seen": "2026-10-05",
+      "last_checked": "2026-10-05",
+      "relevance": "medium",
+      "status": "candidate_code_stub",
+      "notes": "CVPR 2026 benchmark for multi-carrier Chinese historical document reading; GitHub repository is public and MIT-licensed but currently appears to contain only README/LICENSE, so dataset availability remains unverified."
     }
   }
 }

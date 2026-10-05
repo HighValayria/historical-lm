@@ -27,3 +27,7 @@
 ## 2026-07-18 报告中文化
 
 应用户要求，已将报告性生成结果改为中文，并新增 `reports/中文化说明.md`。机器字段名、脚本、URL 和原始文献/来源题名保留原样，以免破坏校验和出处追踪。
+
+## 2026-10-05 Daily 自动化
+
+AUTO 调度确认仅 Daily 到期，Five-Day 与 Half-Month 未到期。完成六通道广度检查，新增登记 `arxiv:2606.05804`、`cvf:Sheng_2026_CVPR`、`mchdoc` 和 `SRC-SINICA-CUSTOMS-MEDICAL-REPORTS`，并写入 `reports/daily/2026-10-05.md`。本轮未修改正式研究设计。
