@@ -220,6 +220,40 @@
       "relevance": "medium",
       "reading_depth": "abstract_read",
       "notes": "CVPR 2026 benchmark for reading Chinese historical documents across multiple carriers; relevant to OCR/VLM feasibility and post-correction, not a late-Qing public-health corpus."
+    },
+    "acl:2026.findings-acl.1514": {
+      "title": "On the Cultural Anachronism and Temporal Reasoning in Vision Language Models",
+      "normalized_title": "on the cultural anachronism and temporal reasoning in vision language models",
+      "url": "https://aclanthology.org/2026.findings-acl.1514/",
+      "doi": "10.18653/v1/2026.findings-acl.1514",
+      "arxiv_id": null,
+      "stable_paper_id": "acl:2026.findings-acl.1514",
+      "publication_date": "2026-07",
+      "publication_year": 2026,
+      "first_seen": "2026-10-06",
+      "last_checked": "2026-10-06",
+      "discovery_type": "newly_discovered",
+      "discovery_source": "daily_multi_channel_radar",
+      "relevance": "high",
+      "reading_depth": "abstract_read",
+      "notes": "Introduces cultural anachronism and TAB-VLM over Indian cultural artifacts; not late-Qing public health, but directly useful for anachronism taxonomy and non-Western cultural-heritage evaluation design."
+    },
+    "arxiv:2607.08143": {
+      "title": "ICDAR 2026 HIPE-OCRepair Competition on LLM-Assisted OCR Post-Correction for Historical Documents",
+      "normalized_title": "icdar 2026 hipe ocrepair competition on llm assisted ocr post correction for historical documents",
+      "url": "https://arxiv.org/abs/2607.08143",
+      "doi": "10.48550/arXiv.2607.08143",
+      "arxiv_id": "2607.08143",
+      "stable_paper_id": null,
+      "publication_date": "2026-07-09",
+      "publication_year": 2026,
+      "first_seen": "2026-10-06",
+      "last_checked": "2026-10-06",
+      "discovery_type": "newly_discovered",
+      "discovery_source": "daily_multi_channel_radar",
+      "relevance": "high",
+      "reading_depth": "abstract_read",
+      "notes": "ICDAR 2026 competition report for LLM-assisted OCR post-correction; relevant to OCR debt, hallucination/over-correction, unit-level evaluation, and public benchmark/scorer design."
     }
   }
 }

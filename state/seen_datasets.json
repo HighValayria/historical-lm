@@ -35,6 +35,24 @@
       "relevance": "medium",
       "status": "candidate_code_stub",
       "notes": "CVPR 2026 benchmark for multi-carrier Chinese historical document reading; GitHub repository is public and MIT-licensed but currently appears to contain only README/LICENSE, so dataset availability remains unverified."
+    },
+    "hipe_ocrepair_bench_2026": {
+      "name": "HIPE-OCRepair-Bench 2026",
+      "url": "https://github.com/hipe-eval/HIPE-OCRepair-2026-data",
+      "first_seen": "2026-10-06",
+      "last_checked": "2026-10-06",
+      "relevance": "high",
+      "status": "candidate_open_research_use",
+      "notes": "Unified multilingual OCR post-correction benchmark for historical newspapers and printed works; not Chinese, but highly relevant for OCR post-correction evaluation, provenance metadata, and over-correction risk."
+    },
+    "tab_vlm": {
+      "name": "Temporal Anachronism Benchmark for Vision-Language Models (TAB-VLM)",
+      "url": "https://aclanthology.org/2026.findings-acl.1514/",
+      "first_seen": "2026-10-06",
+      "last_checked": "2026-10-06",
+      "relevance": "medium",
+      "status": "candidate_supplementary_material",
+      "notes": "ACL paper reports 600 questions over 1,600 Indian cultural artifacts across six categories; useful as an anachronism benchmark reference, but public access is via supplementary material and needs later verification."
     }
   }
 }

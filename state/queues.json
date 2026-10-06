@@ -3,27 +3,36 @@
     "arxiv:2608.07917",
     "arxiv:2605.11960",
     "arxiv:2606.05804",
-    "cvf:Sheng_2026_CVPR"
+    "cvf:Sheng_2026_CVPR",
+    "acl:2026.findings-acl.1514",
+    "arxiv:2607.08143"
   ],
   "dataset_review": [
     "chronicles_ocr",
     "m5hisdoc",
-    "mchdoc"
+    "mchdoc",
+    "hipe_ocrepair_bench_2026",
+    "tab_vlm"
   ],
   "archive_review": [
     "SRC-WELLCOME-CUSTOMS-EPITOME-1884",
     "SRC-IA-CMMJ-1889-1890",
-    "SRC-SINICA-CUSTOMS-MEDICAL-REPORTS"
+    "SRC-SINICA-CUSTOMS-MEDICAL-REPORTS",
+    "SRC-YALE-CMMJ-BOOKREADER-OIDS"
   ],
   "method_review": [
     "tongguocr",
     "recall_based_knowledge_cutoff_prompting",
-    "mchdoc_post_correction_tasks"
+    "mchdoc_post_correction_tasks",
+    "hipe_ocrepair_unit_scoring",
+    "tab_vlm_cultural_anachronism_taxonomy"
   ],
   "resource_review": [
     "wellcome_item_viewer",
     "internet_archive_ocr_downloads",
     "sinica_customs_medical_reports_database",
-    "mchdoc_github_release_watch"
+    "mchdoc_github_release_watch",
+    "hipe_ocrepair_data_repo",
+    "hipe_ocrepair_scorer"
   ]
 }
