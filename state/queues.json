@@ -5,14 +5,16 @@
     "arxiv:2606.05804",
     "cvf:Sheng_2026_CVPR",
     "acl:2026.findings-acl.1514",
-    "arxiv:2607.08143"
+    "arxiv:2607.08143",
+    "arxiv:2608.27169"
   ],
   "dataset_review": [
     "chronicles_ocr",
     "m5hisdoc",
     "mchdoc",
     "hipe_ocrepair_bench_2026",
-    "tab_vlm"
+    "tab_vlm",
+    "ancient_bench"
   ],
   "archive_review": [
     "SRC-WELLCOME-CUSTOMS-EPITOME-1884",
@@ -25,7 +27,8 @@
     "recall_based_knowledge_cutoff_prompting",
     "mchdoc_post_correction_tasks",
     "hipe_ocrepair_unit_scoring",
-    "tab_vlm_cultural_anachronism_taxonomy"
+    "tab_vlm_cultural_anachronism_taxonomy",
+    "ancient_bench_transcription_protocol"
   ],
   "resource_review": [
     "wellcome_item_viewer",
@@ -33,6 +36,7 @@
     "sinica_customs_medical_reports_database",
     "mchdoc_github_release_watch",
     "hipe_ocrepair_data_repo",
-    "hipe_ocrepair_scorer"
+    "hipe_ocrepair_scorer",
+    "ancient_bench_repository"
   ]
 }

@@ -254,6 +254,23 @@
       "relevance": "high",
       "reading_depth": "abstract_read",
       "notes": "ICDAR 2026 competition report for LLM-assisted OCR post-correction; relevant to OCR debt, hallucination/over-correction, unit-level evaluation, and public benchmark/scorer design."
+    },
+    "arxiv:2608.27169": {
+      "title": "Ancient-Bench: A Comprehensive Multi-millennial, Multi-medium, and Multi-script Benchmark for Ancient Chinese Artifact Text Recognition",
+      "normalized_title": "ancient bench a comprehensive multi millennial multi medium and multi script benchmark for ancient chinese artifact text recognition",
+      "url": "https://arxiv.org/abs/2608.27169",
+      "doi": null,
+      "arxiv_id": "2608.27169",
+      "stable_paper_id": null,
+      "publication_date": null,
+      "publication_year": 2026,
+      "first_seen": "2026-10-07",
+      "last_checked": "2026-10-07",
+      "discovery_type": "newly_discovered",
+      "discovery_source": "daily_multi_channel_radar",
+      "relevance": "medium",
+      "reading_depth": "abstract_read",
+      "notes": "EMNLP 2026 paper and official repository describe a 2,700-image Chinese historical artifact OCR benchmark with explicit transcription/reading-order normalization; method-transfer reference, not late-Qing public-health content."
     }
   }
 }

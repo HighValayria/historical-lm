@@ -35,3 +35,7 @@ AUTO 调度确认仅 Daily 到期，Five-Day 与 Half-Month 未到期。完成�
 ## 2026-10-06 Daily 自动化
 
 AUTO 调度确认仅 Daily 到期，Five-Day 与 Half-Month 未到期。完成六通道广度检查，新增登记 `acl:2026.findings-acl.1514`、`arxiv:2607.08143`、`hipe_ocrepair_bench_2026`、`tab_vlm` 和 `SRC-YALE-CMMJ-BOOKREADER-OIDS`，并写入 `reports/daily/2026-10-06.md`。本轮未修改正式研究设计。
+
+## 2026-10-07 Daily 自动化
+
+AUTO 调度确认仅 Daily 到期，Five-Day 与 Half-Month 未到期。完成六通道广度检查，新增登记 `arxiv:2608.27169` 与 `ancient_bench`，并将其显式转录、字符与版面层级标准化协议列入方法和资源复核队列。档案通道未发现可改变现有晚清公共卫生语料可行性的新增开放材料。本轮未修改正式研究设计。
