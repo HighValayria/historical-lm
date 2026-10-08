@@ -9,3 +9,4 @@
 | T12-CONCEPTS | `evidence/concept_map.md` | 概念综合 | 2026-07-17 | 历史知识边界包括时间、可达性、出处、档案偏差和历史性无知。 | benchmark 必须区分多类时代错置并奖励合理拒答。 | 综合推断 | 中 | 标签需通过试点标注修订。 |
 | T31-OCR-METADATA | `probes/ocr/ocr_metadata_probe_results.json` | 探针结果 | 2026-07-17 | Wellcome、CRL、bnAsie 有不同程度文本跟进信号；海关入口需人工导航。 | 第一版不要假设已有干净 OCR 语料。 | 直接探针 | 中 | 还未测 OCR 准确率。 |
 | T51-ENGINEERING | `prototypes/min_engineering_probe/probe_results.json` | 工程探针 | 2026-07-17 | 12 条试点题校验 0 错误，10 条可评分，2 条需真实段落。 | 当前 seed 足以支持下一轮工程扩展。 | 直接脚本输出 | 低 | 检索只是词项重叠原型。 |
+| RES-HIST-CHINESE-OCR-BENCH | `https://github.com/wwei2024/historical-chinese-ocr-benchmark` | 公开代码仓库 | 2026-10-08 | README 指定繁体竖排历史印刷书 OCR 比较、CER 计分，并明确严肃评测需人工核验真值。 | 后续 OCR 小样本探针应固定阅读顺序、保存原始输出并使用人工核验参考文本；不能将模型输出作为真值。 | 直接 | 中 | 仓库未见明确许可证、来源元数据或晚清公共卫生样本；仅作方法参考。 |

@@ -28,7 +28,8 @@
     "mchdoc_post_correction_tasks",
     "hipe_ocrepair_unit_scoring",
     "tab_vlm_cultural_anachronism_taxonomy",
-    "ancient_bench_transcription_protocol"
+    "ancient_bench_transcription_protocol",
+    "historical_chinese_ocr_benchmark_cer_protocol"
   ],
   "resource_review": [
     "wellcome_item_viewer",
@@ -37,6 +38,7 @@
     "mchdoc_github_release_watch",
     "hipe_ocrepair_data_repo",
     "hipe_ocrepair_scorer",
-    "ancient_bench_repository"
+    "ancient_bench_repository",
+    "historical_chinese_ocr_benchmark_repository"
   ]
 }
