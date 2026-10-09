@@ -271,6 +271,23 @@
       "relevance": "medium",
       "reading_depth": "abstract_read",
       "notes": "EMNLP 2026 paper and official repository describe a 2,700-image Chinese historical artifact OCR benchmark with explicit transcription/reading-order normalization; method-transfer reference, not late-Qing public-health content."
+    },
+    "edbt:2026.65": {
+      "title": "HistoricRAG: Evidence-Centered Newspaper Retrieval for Misinformation-Resilient Question Answering",
+      "normalized_title": "historicrag evidence centered newspaper retrieval for misinformation resilient question answering",
+      "url": "https://openproceedings.org/2026/conf/edbt/paper-321.pdf",
+      "doi": "10.48786/edbt.2026.65",
+      "arxiv_id": null,
+      "stable_paper_id": "edbt:2026.65",
+      "publication_date": "2026-03-24",
+      "publication_year": 2026,
+      "first_seen": "2026-10-09",
+      "last_checked": "2026-10-09",
+      "discovery_type": "newly_discovered",
+      "discovery_source": "daily_multi_channel_radar",
+      "relevance": "medium",
+      "reading_depth": "full_paper_read",
+      "notes": "EDBT demonstration over OCR-processed Swiss newspapers. It preserves answer-to-scan provenance and temporal/geographic browsing, but does not evaluate late-Qing public health, historical ignorance, or multi-level anachronism; its GPT-4.1 mini implementation is out of scope for the no-paid-API pilot."
     }
   }
 }
