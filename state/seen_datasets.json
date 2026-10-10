@@ -62,6 +62,15 @@
       "relevance": "medium",
       "status": "candidate_academic_research_only",
       "notes": "Official repository provides direct Hugging Face access to 2,700 annotated images spanning 1200 BCE-1911, with WYSIWYG transcription and reading-order rules. Academic research only; original institutional-image terms still apply."
+    },
+    "ancientdoc": {
+      "name": "AncientDoc",
+      "url": "https://github.com/bytedance/AncientDoc",
+      "first_seen": "2026-10-10",
+      "last_checked": "2026-10-10",
+      "relevance": "medium",
+      "status": "candidate_open_cc0_claimed",
+      "notes": "Official README describes a CC0 dataset with five tasks from page-level OCR to knowledge/linguistic-variant QA, 14 categories, 100+ books and about 3,000 pages. It includes Qing material but has no demonstrated late-Qing public-health subset or passage-level provenance suitability; verify item-level source provenance before any reuse."
     }
   }
 }
