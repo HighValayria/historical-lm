@@ -9,7 +9,8 @@
     "SRC-WELLCOME-CUSTOMS-EPITOME-1884",
     "SRC-IA-CMMJ-1889-1890",
     "SRC-SINICA-CUSTOMS-MEDICAL-REPORTS",
-    "SRC-YALE-CMMJ-BOOKREADER-OIDS"
+    "SRC-YALE-CMMJ-BOOKREADER-OIDS",
+    "SRC-DDB-CMCS-MEDICAL-1890-ISS38-39"
   ],
   "method_review": [
     "recall_based_knowledge_cutoff_prompting",
