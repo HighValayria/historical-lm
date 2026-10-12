@@ -305,6 +305,40 @@
       "relevance": "medium",
       "reading_depth": "abstract_read",
       "notes": "ACL Findings 2026 paper for AncientDoc. It supplies a Chinese ancient-document VLM benchmark spanning OCR through knowledge reasoning; it is a method-transfer reference, not a late-Qing public-health corpus or a substitute for source-grounded historical-ignorance evaluation."
+    },
+    "acl:2026.nlp4dh-1.1": {
+      "title": "From OCR to Analysis: Tracking Correction Provenance in Digital Humanities Pipelines",
+      "normalized_title": "from ocr to analysis tracking correction provenance in digital humanities pipelines",
+      "url": "https://aclanthology.org/2026.nlp4dh-1.1/",
+      "doi": "10.18653/v1/2026.nlp4dh-1.1",
+      "arxiv_id": null,
+      "stable_paper_id": "acl:2026.nlp4dh-1.1",
+      "publication_date": "2026-07",
+      "publication_year": 2026,
+      "first_seen": "2026-10-12",
+      "last_checked": "2026-10-12",
+      "discovery_type": "newly_discovered",
+      "discovery_source": "daily_multi_channel_radar",
+      "relevance": "high",
+      "reading_depth": "abstract_read",
+      "notes": "NLP4DH 2026 paper proposes span-level OCR-correction provenance (edit type, correction source, confidence, revision state) and shows correction paths can alter downstream entities and interpretations. Direct method-transfer evidence for preserving raw OCR, correction lineage and uncertainty in the late-Qing pilot; it is not a Chinese or public-health corpus."
+    },
+    "acl:2026.nlp4dh-1.6": {
+      "title": "Data Contamination in Neural Hieroglyphic Translation: A Reproducibility Study",
+      "normalized_title": "data contamination in neural hieroglyphic translation a reproducibility study",
+      "url": "https://aclanthology.org/2026.nlp4dh-1.6/",
+      "doi": "10.18653/v1/2026.nlp4dh-1.6",
+      "arxiv_id": null,
+      "stable_paper_id": "acl:2026.nlp4dh-1.6",
+      "publication_date": "2026-07",
+      "publication_year": 2026,
+      "first_seen": "2026-10-12",
+      "last_checked": "2026-10-12",
+      "discovery_type": "newly_discovered",
+      "discovery_source": "daily_multi_channel_radar",
+      "relevance": "high",
+      "reading_depth": "abstract_read",
+      "notes": "NLP4DH 2026 reproducibility study finds document-level decontamination insufficient where target text recurs across records. Its target-level overlap audit is directly relevant to a small historical benchmark, but the hieroglyphic-to-German task does not establish results for late-Qing Chinese public health."
     }
   }
 }

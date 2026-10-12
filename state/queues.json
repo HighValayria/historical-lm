@@ -1,5 +1,8 @@
 {
-  "deep_reading": [],
+  "deep_reading": [
+    "acl:2026.nlp4dh-1.1",
+    "acl:2026.nlp4dh-1.6"
+  ],
   "dataset_review": [
     "m5hisdoc",
     "mchdoc",
@@ -15,7 +18,9 @@
   "method_review": [
     "recall_based_knowledge_cutoff_prompting",
     "hipe_ocrepair_unit_scoring",
-    "historical_chinese_ocr_benchmark_cer_protocol"
+    "historical_chinese_ocr_benchmark_cer_protocol",
+    "ocr_correction_provenance_span_schema",
+    "historical_benchmark_target_level_dedup_audit"
   ],
   "resource_review": [
     "sinica_customs_medical_reports_database",
