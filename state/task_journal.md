@@ -75,3 +75,4 @@
 - 验证：新自动化单元测试14项全部通过；原Data Feasibility验证PASS，原Research Validity验证18/18 PASS，仍确认无模型输出。
 - Blocker：B-0003与B-0005保持active；B-0006因当前路径及既有完成提交得到解决。
 - App日程：既有“每日自动化迭代”已原位更新并启用，保持每天09:00，project ID不变，`cwds`已核验为当前仓库；没有创建重复Automation。
+- Git：主迁移提交`b7d083b`已成功快进推送到`origin/main`；无强制推送或历史重写。
