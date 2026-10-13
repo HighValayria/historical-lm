@@ -1,18 +1,10 @@
 # 第一次使用
 
-这是“晚清公共卫生历史语言模型探索”项目的最小启动包。
+项目名称：LLM Historical Anachronism。
 
-你只需要：
+1. 用 Codex 打开仓库根目录。
+2. 读取 `README.md`、`AGENTS.md`、`PROJECT_CHARTER.md` 和 `research_design/RESEARCH_DESIGN.md`。
+3. 运行 `python scripts/check_schedule.py`，按仓库自动化协议处理到期任务。
+4. 主动任务从 `state/NEXT_RUN_BACKLOG.yaml` 的A10/A11开始；旧晚清入口位于 `legacy/late_qing/README.md`。
 
-1. 将整个目录放到本地，例如：
-   `D:\Projects\historical-lm-exploration`
-2. 在该目录初始化 Git：
-   `git init`
-3. 使用 Codex 打开该目录。
-4. 把下面这句话作为第一次任务发送给 Codex：
-
-   `请完整读取 AGENTS.md、PROJECT_CHARTER.md、.agent/PLANS.md、state/graph.yaml、state/config.yaml、state/run_state.json 和 MASTER_PROMPT.md，然后按照 MASTER_PROMPT.md 开始第一轮自主探索。不要等待逐步确认。`
-
-第一次运行时，Codex应自行创建其余目录、任务文件、证据表、日志和报告。
-
-不要在最开始手工创建大量空文件。只有当Agent真正需要某项产物时，再由它创建并记录用途。
+不要重新初始化Git，不要移动或覆盖冻结实验资产，不要把尚未运行的方法写成已取得效果。

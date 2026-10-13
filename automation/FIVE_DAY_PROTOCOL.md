@@ -77,11 +77,12 @@ Five-Day 必须回答：
 
 ## 受保护的贡献候选
 
-- historical ignorance；
-- provenance / source ecology；
-- multi-level anachronism；
-- late-Qing Chinese public health；
-- archive-dependent historical cognition。
+- historical / temporal anachronism as the primary scientific problem；
+- chronology- and actor-access-grounded evaluation；
+- M1 time-conditioned parameter adaptation；
+- M2 temporal retrieval and future-information filtering；
+- M3 anachronism verification；
+- provenance / epistemic calibration as control dimensions。
 
 ## Revision Proposal 规则
 

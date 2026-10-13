@@ -16,18 +16,18 @@ For every task node, maintain the following fields:
 - Changed assumptions
 - Follow-up tasks
 
-Plan from broad landscape to narrow probes:
+For the active LLM Historical Anachronism program, plan from construct validity to method selection:
 
-1. map the research landscape;
-2. map sources and access;
-3. define concepts and evaluation targets;
-4. generate candidate research questions;
-5. score and select candidates;
-6. conduct small data, benchmark, and engineering probes;
-7. synthesize evidence;
-8. generate the next task graph.
+1. define anachronism constructs, evidence thresholds and counterexamples;
+2. map direct method competitors and reusable implementations;
+3. construct independently dated cross-domain cases;
+4. run controlled model baselines;
+5. probe M1 parameter adaptation, M2 temporal retrieval and M3 verification agents;
+6. compare routes on shared outcomes, costs and stopping criteria;
+7. select and deepen one primary thesis method;
+8. generate the next evidence-dependent task graph.
 
-Do not over-plan implementation before data and evaluation feasibility are known.
+Do not over-plan implementation before the error and evaluation are demonstrated. Legacy late-Qing data work is activated only when it directly supports chronology evidence or a selected method.
 
 Dynamic tasks may be created when:
 

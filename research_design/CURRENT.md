@@ -1,9 +1,9 @@
 # Current Research Design
 
-Version: v001
+Version: v002
 Status: active
-Initialized from: existing exploratory research artifacts
-Updated: 2026-10-03
+Initialized from: user-approved anachronism project migration and RVP construct audit
+Updated: 2026-10-13
 
 Current design:
 

@@ -1,37 +1,40 @@
-historical_models:
-  - historical language model
-  - historical LM
-  - period-specific language model
-  - historical NLP
-  - diachronic language model
+problem_definition:
+  - historical anachronism large language model
+  - temporal anachronism LLM
+  - future knowledge leakage historical reasoning
+  - knowledge availability cutoff language model
+  - hindsight bias language model history
 
-temporal:
-  - temporal knowledge LLM
-  - temporal leakage LLM
-  - knowledge cutoff language model
-  - ex-ante reasoning LLM
-  - temporal consistency LLM
+evaluation:
+  - anachronism benchmark language model
+  - ex ante reasoning benchmark LLM
+  - temporal knowledge boundary evaluation
+  - actor knowledge accessibility historical benchmark
+  - temporal misalignment language model evaluation
 
-anachronism:
-  - anachronism language model
-  - cultural anachronism AI
-  - historical anachronism LLM
+parameter_adaptation:
+  - time conditioned language model LoRA
+  - temporal instruction tuning language model
+  - diachronic language model adaptation
+  - temporal knowledge editing language model
+  - continued pretraining historical language model
 
-historical_rag:
-  - historical RAG
-  - historical retrieval augmented generation
-  - provenance aware RAG
-  - source aware RAG
-  - source diversity RAG
+temporal_rag:
+  - temporal RAG knowledge validity interval
+  - time aware retrieval augmented generation
+  - future information filtering retrieval
+  - event time document time retrieval
+  - provenance aware historical RAG
 
-digital_humanities:
-  - digital humanities large language model
-  - computational history LLM
-  - historical archives LLM
+agent_verification:
+  - temporal claim verification agent
+  - fact checking knowledge date language model
+  - agentic verification temporal consistency
+  - self correction anachronism language model
+  - claim decomposition historical verification
 
-datasets:
-  - historical QA dataset
-  - temporal knowledge benchmark
-  - temporal leakage benchmark
-  - anachronism benchmark
-  - Chinese historical NLP dataset
+controls:
+  - epistemic calibration retrieval augmented generation
+  - source attribution historical question answering
+  - abstention temporal question answering
+  - benchmark contamination temporal knowledge

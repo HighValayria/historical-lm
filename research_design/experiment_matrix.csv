@@ -1,6 +1,10 @@
-condition_id,name,input_context,expected_use,status,notes
-B0,Direct answer,None,Baseline for default model behavior,candidate,No source constraints.
-B1,Time / role prompt,Historical date and role instruction,Test prompt-only temporal control,candidate,Expected to reveal residual anachronism.
-B2,Oracle historical evidence,Curated source passage and metadata,Test source-grounded answering without retrieval noise,candidate,Requires small verified benchmark.
-B3,Historical RAG,Retriever-selected historical evidence,Test realistic retrieval plus generation,candidate,Run only after source corpus and benchmark are stable.
-B4,LoRA / DAPT,Adapted model or continued pretraining,Deferred adaptation comparison,deferred,Consider only after B0-B3 and benchmark feasibility are established.
+condition_id,family,time_constraint,evidence_or_retrieval,adaptation_or_verification,purpose,status
+P0,baseline,none,none,none,default model behavior,planned
+P1,baseline,explicit cutoff,none,none,prompt-only temporal control,planned
+O0,oracle,none,verified chronology evidence,none,oracle evidence effect without time prompt,planned
+O1,oracle,explicit cutoff,verified chronology evidence,none,time and evidence interaction,planned
+R0,retrieval,question time only,ordinary retrieval,none,ordinary RAG comparison,planned
+R1,retrieval,explicit cutoff,temporal filtering or reranking,none,test future-information filtering,planned
+M1,parameter,explicit time representation,none,LoRA/SFT or justified DAPT/CPT,test time-conditioned adaptation,candidate
+M2,system,explicit cutoff,temporal RAG,none,test time-aware retrieval and generation,candidate
+M3,system,explicit cutoff,verification evidence,claim-checking agent,test detection and correction,candidate

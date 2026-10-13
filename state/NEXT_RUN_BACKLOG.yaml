@@ -1,116 +1,114 @@
-run_id: exploration-002-proposed
+run_id: anachronism-methods-001
 objective: >
-  将第一轮 seed benchmark 扩展为带真实史料段落支撑的试点评测集，
-  并在不训练模型、不调用付费 API 的条件下比较普通提示、直接提供来源和本地轻量检索。
+  建立跨领域历史时代错置的最小可信评测，运行可控模型Baseline，
+  并以共同评价标准完成M1/M2/M3最小方法原型，从实证结果选择硕士论文主路线。
 
 nodes:
-  N00:
-    title: 核查来源使用条款与段落抽取计划
+  A10:
+    title: 时代错置问题定义与标签边界
     depends_on: []
-    objective: 在抽取段落前复核 Wellcome、CRL 与 bnAsie 条款。
+    objective: 固化知识存在、行动者可达、档案记载和模型使用四层定义及反例。
     expected_artifacts:
-      - reports/next/source_use_review.md
+      - research/problem_definition/ANACHRONISM_DEFINITION.md
+      - research/taxonomy/ANACHRONISM_TAXONOMY.md
     completion_criteria:
-      - 每个候选来源都有访问与复用说明。
+      - 每类标签都有正例、反例、不可判定规则和证据门槛。
     stopping_criteria:
-      - 如果条款禁止目标用途，停止使用该来源。
+      - 核心类别无法由独立复核者区分时先合并类别。
 
-  N01:
-    title: 抽取可核验试点段落
-    depends_on: [N00]
-    objective: 从许可兼容来源抽取 4—8 条短段落。
-    expected_artifacts:
-      - data/processed/pilot_passages.jsonl
-      - reports/next/passage_extraction_report.md
-    completion_criteria:
-      - 至少 4 条段落具备完整元数据。
-    stopping_criteria:
-      - 如果没有来源允许合法抽取，则停止。
-
-  N02:
-    title: 测试 PDF/OCR 质量
-    depends_on: [N00]
-    objective: 对 Wellcome 与 bnAsie 候选 PDF 做小样本文本抽取。
-    expected_artifacts:
-      - reports/next/ocr_quality_report.md
-    completion_criteria:
-      - 至少两个来源条目完成 OCR/文本质量分级。
-    stopping_criteria:
-      - 条款或质量不满足时停止批量化。
-
-  N03:
-    title: 扩展 passage-grounded benchmark
-    depends_on: [N01]
-    objective: 添加真实段落支撑的事实、词汇、因果、价值和归因题目。
-    expected_artifacts:
-      - benchmarks/pilot/pilot_items_v0_2.jsonl
-    completion_criteria:
-      - 至少 20 条题目，其中至少 8 条由真实段落支撑。
-    stopping_criteria:
-      - 如果标签无法稳定应用，先修订指南。
-
-  N04:
-    title: 标注一致性干运行
-    depends_on: [N03]
-    objective: 检查时代错置标签是否可稳定使用。
-    expected_artifacts:
-      - reports/next/annotation_dry_run.md
-    completion_criteria:
-      - 主要分歧类型被记录并修订指南。
-    stopping_criteria:
-      - 核心标签持续模糊时停止扩展。
-
-  N05:
-    title: 增加来源类型感知检索与日期权威路由
-    depends_on: [N03]
-    objective: 改进 T51 原型，避免截止日期控制题错误检索历史来源。
-    expected_artifacts:
-      - prototypes/min_engineering_probe/probe_v0_2.py
-    completion_criteria:
-      - 原型能验证扩展 benchmark 并按题型路由。
-    stopping_criteria:
-      - 字段不足时先更新 schema。
-
-  N06:
-    title: 无训练条件下的提示/来源/RAG 比较
-    depends_on: [N03, N05]
-    objective: 比较普通提示、直接提供来源和本地检索条件。
-    expected_artifacts:
-      - reports/next/no_training_comparison.md
-    completion_criteria:
-      - 至少 10 条题目在至少两种条件下完成评估。
-    stopping_criteria:
-      - 不进行付费 API 调用或大规模训练。
-
-  N07:
-    title: 中文来源授权访问评估
+  A11:
+    title: 方法与直接竞争工作调查
     depends_on: []
-    objective: 判断《申报》、晚清期刊或方志全文能否合法使用。
+    objective: 调查时间条件化、temporal RAG、时间知识编辑与验证Agent的直接相关方法和开源实现。
     expected_artifacts:
-      - reports/next/chinese_source_access_assessment.md
+      - research/literature/METHOD_LANDSCAPE.md
+      - research/literature/method_matrix.csv
     completion_criteria:
-      - 每个候选中文来源被分类为授权、仅手工、阻塞或未知。
+      - M1/M2/M3各有直接基线、公开实现状态、数据需求和差异化风险。
     stopping_criteria:
-      - 不绕过认证、付费墙、验证码或禁止批量下载规则。
+      - 连续三轮检索无实质新增时停止扩展。
 
-  N08:
-    title: 公共卫生词汇时代错置术语表
-    depends_on: [N01, N07]
-    objective: 建立 `weisheng`、检疫、接种、鼠疫、卫生等词的来源见证表。
+  A12:
+    title: 跨领域年代证据卡
+    depends_on: [A10]
+    objective: 建立10—15个具有独立年代和行动者范围证据的案例。
     expected_artifacts:
-      - evidence/term_registry.md
+      - data/chronology/cases_v0_1.jsonl
+      - reports/chronology_case_audit.md
     completion_criteria:
-      - 至少 10 个术语或词义具备来源状态记录。
+      - 至少10个独立命题，覆盖三个时期或截止点、三个领域，并有双人核验包。
     stopping_criteria:
-      - 无一手见证时停止该词条。
+      - 年代或可达性争议无法在预算内裁决时标不可判定并换例。
 
-  N09:
-    title: 下一轮综合与试点报告
-    depends_on: [N02, N04, N06]
-    objective: 综合段落抽取、OCR、标注一致性和无训练评测结果。
+  A20:
+    title: 最小可信时代错置评测
+    depends_on: [A10, A12]
+    objective: 从年代卡生成低泄漏、可判定且按命题分组的最小评测。
     expected_artifacts:
-      - reports/next/PILOT_REPORT.md
+      - data/benchmarks/anachronism_mvp.jsonl
+      - reports/anachronism_mvp_validation.md
     completion_criteria:
-      - 下一步研究决策有证据支撑。
+      - 每题可追溯到年代卡；直接时代错置标签经独立复核。
     stopping_criteria:
-      - 证据足够或所有数据路线阻塞时停止。
+      - 提示泄漏或标签分歧持续无法控制时不扩大题量。
+
+  A21:
+    title: 可控模型接口与Baseline
+    depends_on: [A20]
+    objective: 在明确授权和模型版本条件下运行P0/P1/O0/O1，并视语料状态加入R0。
+    expected_artifacts:
+      - experiments/baselines/config.json
+      - experiments/baselines/raw_responses.jsonl
+      - reports/baseline_behavior_report.md
+    completion_criteria:
+      - 完整原始输出、模型版本、参数和多维评分；按独立命题报告。
+    stopping_criteria:
+      - 接口权限、费用或模型版本不明确时只保留执行适配器。
+
+  A30:
+    title: M1时间条件化参数适配最小原型
+    depends_on: [A11, A21]
+    objective: 用小规模LoRA/SFT探针测试时间条件化是否优于Prompt且不破坏跨时期切换。
+    expected_artifacts:
+      - experiments/method_prototypes/m1_parameter_adaptation/
+      - reports/method_feasibility_m1.md
+    completion_criteria:
+      - 至少一个普通SFT/LoRA对照和一个时间条件消融；资源与负面效应可测。
+    stopping_criteria:
+      - 需要超出个人资源的大规模训练或效果只能由答案记忆解释。
+
+  A31:
+    title: M2时间感知检索最小原型
+    depends_on: [A11, A20]
+    objective: 比较普通检索与时间过滤/重排对未来信息泄漏和最终回答的影响。
+    expected_artifacts:
+      - experiments/method_prototypes/m2_temporal_rag/
+      - reports/method_feasibility_m2.md
+    completion_criteria:
+      - 分开报告检索召回、未来证据泄漏与生成错误。
+    stopping_criteria:
+      - 时间元数据无法可靠建立或过滤使召回不可接受。
+
+  A32:
+    title: M3时代错置验证Agent最小原型
+    depends_on: [A11, A21]
+    objective: 比较固定验证流水线与Agent对时间敏感主张的检测和修正。
+    expected_artifacts:
+      - experiments/method_prototypes/m3_agent_verification/
+      - reports/method_feasibility_m3.md
+    completion_criteria:
+      - 记录检测、证据、修正、误报、调用和延迟；具有非Agent对照。
+    stopping_criteria:
+      - 级联错误或成本高于修正收益。
+
+  A40:
+    title: 主方法路线选择
+    depends_on: [A30, A31, A32]
+    objective: 按错误覆盖、效果、成本、可复现性与原创性选择一条主路线和必要辅助模块。
+    expected_artifacts:
+      - reports/METHOD_ROUTE_DECISION.md
+      - research_design/PROPOSED_METHOD_REVISION.md
+    completion_criteria:
+      - 选择由共同实验和停止条件支持，而非由代码量或预设偏好决定。
+    stopping_criteria:
+      - 若三条路线均未显示可复现价值，回到问题定义或数据有效性而非强选方法。

@@ -1,6 +1,16 @@
 # 研究设计迁移映射
 
-本文档记录当前 `v001` 研究设计主文档中的主要部分来自哪些既有研究成果。它不是新的研究迁移，也不引入新的研究结论。
+本文档原本记录 `v001` 设计来源。v001 已归档；当前 v002 的主要迁移依据新增如下。本表只说明出处，不替代正式研究设计。
+
+| v002 design decision | Evidence |
+|---|---|
+| Historical anachronism becomes the primary problem | user-approved repository migration; `reports/research_validity_pilot/RESEARCH_VALIDITY_BASELINE_PILOT_REPORT.md` |
+| Method/system innovation becomes the contribution target | user thesis constraint; `PROJECT_CHARTER.md` |
+| Benchmark becomes measurement infrastructure | RVP construct audit: one direct temporal item, zero strict intrusion items |
+| Late-Qing public health becomes a legacy scenario | Data Feasibility assets plus RVP direction mismatch |
+| M1/M2/M3 proceed as minimal competing probes | `research_design/RESEARCH_DESIGN.md`; no real baseline yet, so no route is preselected |
+
+## v001 source map
 
 | Current design section | Legacy evidence |
 |---|---|

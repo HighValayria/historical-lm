@@ -4,6 +4,8 @@
 
 仓库文件是长期记忆的权威来源。不要依赖此前聊天上下文。
 
+当前项目是 LLM Historical Anachronism。主要科学问题是历史/时间时代错置，主要贡献目标是方法或系统创新；M1参数适配、M2时间检索和M3验证Agent是候选路线。Benchmark是测量工具，晚清公共卫生是Legacy场景。主动任务以 `state/NEXT_RUN_BACKLOG.yaml` 和 v002 正式研究设计为准，不得默认恢复旧的晚清语料扩张计划。
+
 所有生成的研究报告和研究文档必须使用中文。论文标题、数据集名称、来源名称、标识符、文件路径和必要枚举值可以在需要时保留原文，但摘要、判断、标题和解释必须写中文。
 
 正式研究设计主文档是 `research_design/RESEARCH_DESIGN.md`。当前版本由 `research_design/CURRENT.md` 声明，版本历史由 `research_design/VERSION_LOG.md` 记录，历史版本归档在 `research_design/archive/`。

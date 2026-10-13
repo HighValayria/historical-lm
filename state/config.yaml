@@ -1,12 +1,18 @@
 project:
-  provisional_cutoff: "1900-01-01"
-  provisional_source_period:
-    start: "1880-01-01"
-    end: "1899-12-31"
-  provisional_domain: "late-Qing public health"
+  name: "LLM Historical Anachronism"
+  primary_problem: "historical and temporal anachronism in language models"
+  contribution_target: "model or system method"
+  fixed_period: null
+  fixed_domain: null
+  legacy_scenarios:
+    - "late-Qing public health"
+  candidate_methods:
+    - "time-conditioned parameter adaptation"
+    - "temporal or historical RAG"
+    - "anachronism verification agent"
 
 run:
-  mode: "autonomous_exploration"
+  mode: "research_and_method_feasibility"
   ask_for_confirmation_between_nodes: false
   allow_dynamic_nodes: true
   max_dynamic_nodes: 12
@@ -21,11 +27,12 @@ budgets:
 
 candidate_scoring:
   dimensions:
-    - digital_humanities_value
-    - novelty
-    - data_feasibility
-    - evaluation_clarity
-    - compute_feasibility
+    - anachronism_error_coverage
+    - method_novelty
+    - causal_evaluation_clarity
+    - data_and_chronology_feasibility
+    - compute_and_interface_feasibility
+    - reproducibility
     - value_if_results_are_negative
   scale_min: 1
   scale_max: 5

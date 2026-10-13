@@ -1,31 +1,31 @@
-sources:
-
-  - name: Wellcome Collection
-    category: historical_archive
+active_sources:
+  - name: authoritative event and discovery chronologies
+    category: chronology_evidence
+    priority: high
+  - name: standards and institutional history records
+    category: institution_and_policy_dates
+    priority: high
+  - name: dated primary publications with stable identifiers
+    category: primary_attestation
+    priority: high
+  - name: history-of-science and concept-history scholarship
+    category: independent_chronology_review
+    priority: high
+  - name: temporal QA and knowledge-editing datasets
+    category: benchmark_candidate
+    priority: high
+  - name: corpora with event time and publication time metadata
+    category: temporal_retrieval_corpus
     priority: high
 
-  - name: China Medical Missionary Journal
-    category: medical_periodical
-    priority: high
-
-  - name: Chinese Maritime Customs medical reports
-    category: customs_public_health
-    priority: high
-
-  - name: Shanghai Municipal Council reports
-    category: municipal_public_health
-    priority: high
-
-  - name: bnAsie
-    category: historical_archive
-    priority: medium
-
-  - name: Shen Bao
-    category: Chinese_newspaper
-    priority: high
-    likely_access_constraint: true
-
-  - name: Late Qing periodical databases
-    category: Chinese_periodicals
-    priority: high
-    likely_access_constraint: true
+legacy_sources:
+  status: on_demand_only
+  activation_rule: direct_support_for_chronology_card_or_method_stress_test
+  entries:
+    - Wellcome Collection
+    - China Medical Missionary Journal
+    - Chinese Maritime Customs medical reports
+    - Shanghai Municipal Council reports
+    - bnAsie
+    - Shen Bao
+    - Late Qing periodical databases

@@ -1,57 +1,45 @@
-# Project charter
+# Project Charter — LLM Historical Anachronism
 
-## Working title
+## 项目使命
 
-From time cutoff to historical knowledge boundaries: exploratory research on late-Qing public-health language models.
+研究大语言模型在明确历史截止点和信息可用条件下为何会引入未来知识、后出事件、后世概念或后见解释，并设计能够被对照实验验证的模型或系统缓解方法。
 
-## Overall objective
+## 主要科学问题
 
-Determine whether late-Qing public-health materials can support a feasible, evaluable, and digitally humanistic research project about:
+如何表示和约束知识的历史有效时间，使模型既不使用目标时点之后的信息，也不把“世界上已经存在”误写成“目标行动者已经知道”，同时对无法核验的内容保持可校准的不确定性？
 
-- temporal knowledge boundaries;
-- factual, lexical, causal, and value-based anachronism;
-- historical RAG;
-- lightweight parameter adaptation;
-- archival and source bias;
-- historically appropriate uncertainty and ignorance.
+## 贡献优先级
 
-## Current assumptions
+1. **主要贡献：方法与系统。**目标是形成时间条件化参数适配、时间感知检索、时代错置验证 Agent 或其必要组合中的一项可复现方法贡献。
+2. **测量基础：最小可信 Benchmark。**Benchmark 用于发现缺陷、比较方法和执行消融，不以题目数量本身作为主要贡献。
+3. **支撑模块：来源忠实性与认识论校准。**用于保证方法没有以错误归因、虚假证据或过度拒答换取表面时间一致性。
+4. **历史场景：多时期、多地域、多语言、多领域。**项目不固定于晚清中国或公共卫生；晚清资产作为首个已开发场景保留。
 
-- The provisional historical cutoff is 1900-01-01.
-- The preferred source period is approximately 1880–1899.
-- The provisional thematic domain is disease, medicine, hygiene, quarantine, vaccination, water, sanitation, and public governance.
-- The project should remain feasible for an individual researcher.
-- Large-scale pretraining from scratch is outside the initial scope.
-- Negative findings may still constitute valuable research outcomes.
+## 候选方法
 
-## Questions the exploration must answer
+- M1：时间条件化 LoRA/SFT；必要时探索小规模 DAPT/CPT。
+- M2：带文档时间、事件时间、知识有效时间和未来信息过滤的 Temporal/Historical RAG。
+- M3：对生成主张进行检测、年代查证、证据竞争、修正或拒答的验证 Agent。
 
-1. What has already been studied?
-2. What remains genuinely underexplored?
-3. Which historical sources are actually accessible and usable?
-4. How should historical knowledge boundaries and anachronism be operationalized?
-5. What can prompting, RAG, continued pretraining, LoRA, and hybrid methods each achieve?
-6. Which candidate topic has the best balance of digital-humanities value, novelty, data feasibility, evaluability, compute feasibility, and robustness to negative results?
-7. What is the minimum viable pilot study?
+三条路线并行进行低成本可行性探针。未取得真实行为证据前不锁定架构，不要求全部实现。
 
-## Non-goals
+## 研究原则
 
-- Claiming to reconstruct the thoughts of all people in late-Qing China.
-- Building a commercial historical chatbot.
-- Training a multi-billion-parameter model from random initialization.
-- Producing a definitive thesis proposal before evidence collection.
-- Using generated text as a substitute for historical sources.
+- 时代错置标签必须具有独立年代依据；档案缺失不等于知识不存在。
+- 知识存在、行动者可达、档案记载和模型使用是四个不同变量。
+- 原始证据、转录、解释、Prompt、输出和评分保持可追溯与版本化。
+- 对照实验独立操控时间约束、证据可用性、检索和方法组件。
+- 负结果、适用边界和方法失效模式是合格研究产出。
+- 不把任何模型当作历史证据或独立史学裁决者。
 
-## Expected first-round deliverables
+## 范围与约束
 
-- literature landscape;
-- concept and gap map;
-- historical source registry;
-- data access and OCR feasibility report;
-- anachronism taxonomy;
-- at least three candidate topics with scores;
-- one recommended direction;
-- minimum viable experiment;
-- small pilot benchmark specification or dataset;
-- final exploratory report;
-- next-run task graph.
+- 不从头预训练大型模型；大规模训练须在另行资源与风险评估后决定。
+- 不调用未经授权或费用不明的外部模型接口。
+- 不绕过付费墙、认证、CAPTCHA、访问控制、许可或批量下载限制。
+- 不声称某个历史数据集代表整个时期或全部人群。
+- 不因新方向覆盖、删除或重写冻结的晚清实验资产与历史报告。
+
+## 当前阶段
+
+当前阶段是 Research & Method Feasibility：先建立严格问题定义、10—15个年代案例、最小可信评测和可控 Baseline，再用小型原型比较 M1/M2/M3。尚未产生任何方法效果结论。

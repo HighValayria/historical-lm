@@ -52,10 +52,10 @@ Half-Month 必须首先回答：
 3. 哪些贡献正在增强？
 4. 哪些贡献正在减弱？
 5. 数据可行性是否发生变化？
-6. Historical RAG 是否仍是合适路线？
-7. benchmark 分类是否需要调整？
-8. historical ignorance 是否仍值得作为主要贡献？
-9. provenance / source ecology 是否应进一步强化？
+6. M1/M2/M3中哪条路线得到真实Baseline和最小原型支持？
+7. benchmark 分类和年代证据门槛是否需要调整？
+8. 方法贡献是否区别于普通SFT、普通RAG或通用事实核验？
+9. provenance / epistemic calibration 是否作为控制维度得到充分保留？
 10. 是否已有足够证据启动真实试点实验？
 11. 未来 15 天自动化应聚焦什么？
 12. 是否已有足够证据创建新的正式研究设计版本？

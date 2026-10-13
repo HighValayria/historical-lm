@@ -50,3 +50,33 @@ nodes:
   RVP-2026-10-13:
     title: Research Validity and Baseline Pilot
     depends_on: [DFP-2026-10-13]
+  ARM-2026-10-13:
+    title: Migrate repository to LLM Historical Anachronism
+    depends_on: [RVP-2026-10-13]
+  A10:
+    title: Define historical anachronism constructs and labels
+    depends_on: [ARM-2026-10-13]
+  A11:
+    title: Map competing methods and implementations
+    depends_on: [ARM-2026-10-13]
+  A12:
+    title: Build cross-domain chronology evidence cards
+    depends_on: [A10]
+  A20:
+    title: Build minimum credible anachronism evaluation
+    depends_on: [A10, A12]
+  A21:
+    title: Run controlled model baselines
+    depends_on: [A20]
+  A30:
+    title: Probe time-conditioned parameter adaptation
+    depends_on: [A11, A21]
+  A31:
+    title: Probe temporal retrieval
+    depends_on: [A11, A20]
+  A32:
+    title: Probe anachronism verification agent
+    depends_on: [A11, A21]
+  A40:
+    title: Select the primary method route
+    depends_on: [A30, A31, A32]

@@ -1,0 +1,34 @@
+{
+  "captured_at": "2026-10-13",
+  "source_commit": "1a3119aeb75f858bcf82a29bb21606cc67d94886",
+  "deep_reading": [
+    "acl:2026.nlp4dh-1.1",
+    "acl:2026.nlp4dh-1.6"
+  ],
+  "dataset_review": [
+    "m5hisdoc",
+    "mchdoc",
+    "hipe_ocrepair_bench_2026"
+  ],
+  "archive_review": [
+    "SRC-WELLCOME-CUSTOMS-EPITOME-1884",
+    "SRC-IA-CMMJ-1889-1890",
+    "SRC-SINICA-CUSTOMS-MEDICAL-REPORTS",
+    "SRC-YALE-CMMJ-BOOKREADER-OIDS",
+    "SRC-DDB-CMCS-MEDICAL-1890-ISS38-39"
+  ],
+  "method_review": [
+    "recall_based_knowledge_cutoff_prompting",
+    "hipe_ocrepair_unit_scoring",
+    "historical_chinese_ocr_benchmark_cer_protocol",
+    "ocr_correction_provenance_span_schema",
+    "historical_benchmark_target_level_dedup_audit",
+    "historical_rag_page_inventory_provenance_template"
+  ],
+  "resource_review": [
+    "sinica_customs_medical_reports_database",
+    "mchdoc_github_release_watch",
+    "hipe_ocrepair_scorer",
+    "rag_eval_historical_newspapers_schema_review"
+  ]
+}

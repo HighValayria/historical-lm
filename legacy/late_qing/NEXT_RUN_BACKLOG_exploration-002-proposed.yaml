@@ -1,0 +1,46 @@
+run_id: exploration-002-proposed
+status: superseded_by_anachronism_methods_program
+superseded_on: "2026-10-13"
+original_objective: >
+  将第一轮 seed benchmark 扩展为带真实史料段落支撑的试点评测集，
+  并在不训练模型、不调用付费 API 的条件下比较普通提示、直接提供来源和本地轻量检索。
+reactivation_rule: >
+  仅当具体任务直接提供年代证据卡、跨来源验证或所选方法的压力测试时，
+  才将相应节点重新登记到 active backlog；不得整批恢复。
+
+nodes:
+  N00:
+    title: 核查来源使用条款与段落抽取计划
+    original_status: superseded
+  N01:
+    title: 抽取可核验试点段落
+    original_status: superseded
+  N02:
+    title: 测试 PDF/OCR 质量
+    original_status: superseded
+  N03:
+    title: 扩展 passage-grounded benchmark
+    original_status: superseded
+  N04:
+    title: 标注一致性干运行
+    original_status: reusable_if_chronology_backed
+  N05:
+    title: 增加来源类型感知检索与日期权威路由
+    original_status: reusable_for_M2_if_reframed
+  N06:
+    title: 无训练条件下的提示/来源/RAG比较
+    original_status: reusable_for_baseline_if_reframed
+  N07:
+    title: 中文来源授权访问评估
+    original_status: legacy_on_demand
+  N08:
+    title: 公共卫生词汇时代错置术语表
+    original_status: legacy_on_demand
+  N09:
+    title: 下一轮综合与试点报告
+    original_status: superseded
+
+original_full_definition:
+  source_commit: "1a3119aeb75f858bcf82a29bb21606cc67d94886"
+  source_path: state/NEXT_RUN_BACKLOG.yaml
+  recovery: "git show pre-anachronism-migration-20261013:state/NEXT_RUN_BACKLOG.yaml"

@@ -6,7 +6,7 @@
       "date": "2026-07-17",
       "node": "T11",
       "severity": "medium",
-      "status": "active",
+      "status": "legacy_active",
       "summary": "Subscription and bulk-download limits affect Shenbao, late-Qing periodical databases, ProQuest-like newspaper collections and some commercial gazetteer databases.",
       "mitigation": "Use open samples; obtain authorization and record terms before use."
     },
@@ -15,7 +15,7 @@
       "date": "2026-10-13",
       "node": "DFP-A",
       "severity": "medium",
-      "status": "active",
+      "status": "legacy_active",
       "summary": "The bnAsie SMC 1898/1899 catalogue exposes a PDF link but no clear item-level open licence; the site footer says All Rights Reserved.",
       "mitigation": "Exclude content until written reuse terms are clarified or an openly licensed version is found."
     },
@@ -26,14 +26,14 @@
       "severity": "medium",
       "status": "active",
       "summary": "No controlled local model command or configured authorized model interface was detected for reproducible B0/B1/B2 runs.",
-      "mitigation": "Use the frozen 60-packet prompt set once a versioned local or authorized interface is available."
+      "mitigation": "Obtain a versioned local or explicitly authorized interface; reuse the adapter for the new minimum anachronism baseline before method development."
     },
     {
       "id": "B-0004",
       "date": "2026-10-13",
       "node": "DFP-C",
       "severity": "high",
-      "status": "active",
+      "status": "legacy_active",
       "summary": "The 20 trial items have only single-pass page verification, no independent historical adjudication, and only 11 evidence-independence groups.",
       "mitigation": "Perform blind second review, historical cross-checking and disagreement adjudication before treating the set as a benchmark."
     },

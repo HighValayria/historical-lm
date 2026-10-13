@@ -47,3 +47,11 @@
 - Artifacts: audit/revision, 72 hashed packets, annotation/scoring guides, blind-review packets, chronology-gap registry, inference adapter, status and direction/final reports.
 - Validation: Python compilation passed; 18 automated invariant checks passed; dry run selected four packets without network requests or output creation.
 - Remaining risks: independent review is absent, strict temporal construct is underrepresented, source ecology remains narrow, and no real model behavior has been observed.
+
+## 2026-10-13 Anachronism Repository Migration
+
+- Stage: S0 scope reset plus repository/infrastructure migration.
+- Active packet: `plan/task-packets/ANACHRONISM_REPOSITORY_MIGRATION.md`.
+- Confirmed scope: computer-science master's thesis, direction A as the primary scientific problem, method innovation as the intended contribution, and late-Qing public health as a preserved legacy scenario rather than the project boundary.
+- Preflight facts: local `main` starts at `1a3119a` and is 27 commits ahead of `origin/main`; GitHub repository is `HighValayria/historical-lm`, default branch `main`, and the authenticated account has admin/push permission; target GitHub name and target local directory are both currently absent.
+- Safety gate: protect the pre-migration commit with a tag, preserve/ignore machine-local Obsidian state, push the pre-migration history, then make research-direction and infrastructure commits before attempting the final directory rename.

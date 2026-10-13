@@ -38,6 +38,8 @@ Daily 的论文发现跟踪的是对本仓库而言的新发现，而不只是�
 
 Daily 是多通道研究雷达，不是单纯论文搜索。每次运行必须检查 `PAPERS`、`DATASETS`、`ARCHIVES`、`METHODS`、`RESOURCES` 和 `PROJECT_IMPACT`，并在报告中显示每个通道已检查或被阻塞。没有实质更新也仍然是一次完成的通道检查。
 
+自 v002 起，主动雷达优先服务时代错置问题定义和M1/M2/M3方法选择。晚清公共卫生与OCR属于Legacy/支撑通道，只有直接产生年代证据卡、行动者传播证据或方法压力测试时才进入主动队列。
+
 Daily 不得修改 `research_design/RESEARCH_DESIGN.md`。Daily 只记录新证据、更新 registry、写 Daily 报告并加入 Five-Day 队列。
 
 系统区分：

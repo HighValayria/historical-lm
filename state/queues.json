@@ -1,32 +1,22 @@
 {
-  "deep_reading": [
-    "acl:2026.nlp4dh-1.1",
-    "acl:2026.nlp4dh-1.6"
-  ],
-  "dataset_review": [
-    "m5hisdoc",
-    "mchdoc",
-    "hipe_ocrepair_bench_2026"
-  ],
-  "archive_review": [
-    "SRC-WELLCOME-CUSTOMS-EPITOME-1884",
-    "SRC-IA-CMMJ-1889-1890",
-    "SRC-SINICA-CUSTOMS-MEDICAL-REPORTS",
-    "SRC-YALE-CMMJ-BOOKREADER-OIDS",
-    "SRC-DDB-CMCS-MEDICAL-1890-ISS38-39"
-  ],
+  "deep_reading": [],
+  "dataset_review": [],
+  "archive_review": [],
   "method_review": [
-    "recall_based_knowledge_cutoff_prompting",
-    "hipe_ocrepair_unit_scoring",
-    "historical_chinese_ocr_benchmark_cer_protocol",
-    "ocr_correction_provenance_span_schema",
-    "historical_benchmark_target_level_dedup_audit",
-    "historical_rag_page_inventory_provenance_template"
+    "recall_based_knowledge_cutoff_prompting"
   ],
-  "resource_review": [
-    "sinica_customs_medical_reports_database",
-    "mchdoc_github_release_watch",
-    "hipe_ocrepair_scorer",
-    "rag_eval_historical_newspapers_schema_review"
-  ]
+  "resource_review": [],
+  "program_tasks": [
+    "A10_anachronism_definition",
+    "A11_method_landscape",
+    "A12_chronology_cases",
+    "A20_minimum_evaluation",
+    "A21_controlled_baseline",
+    "A30_M1_probe",
+    "A31_M2_probe",
+    "A32_M3_probe",
+    "A40_route_selection"
+  ],
+  "legacy_queue_archive": "legacy/late_qing/queues_at_migration.json",
+  "policy": "Legacy archive/OCR items are reactivated only when they directly support a chronology card or selected method stress test."
 }
