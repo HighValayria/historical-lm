@@ -11,6 +11,32 @@
         "state/research_backlog.json"
       ],
       "note": "Framework migration only; no Daily, Tactical, Synthesis, Audit, research, or experiment stage was executed."
+    },
+    {
+      "event_key": "manual-daily-20261013T224500+0800:daily:start",
+      "run_id": "manual-daily-20261013T224500+0800",
+      "stage": "daily",
+      "action": "start",
+      "timestamp": "2026-10-13T22:37:00+08:00",
+      "checkpoint": "Manual Daily started; FORCE_MODE=DAILY; UPDATE_SCHEDULE=false; A1 selected; no Scheduled Automation trigger."
+    },
+    {
+      "event_key": "manual-daily-20261013T224500+0800:daily:finish",
+      "run_id": "manual-daily-20261013T224500+0800",
+      "stage": "daily",
+      "action": "finish",
+      "result": "success",
+      "timestamp": "2026-10-13T22:44:39+08:00",
+      "checkpoint": "Manual Daily completed: six channels recorded and A1 accepted; not a Scheduled Automation trigger.",
+      "artifacts": [
+        "reports/daily/2026-10-13-manual-daily-test.md",
+        "research/literature/METHOD_LANDSCAPE.md",
+        "research/literature/method_matrix.csv",
+        "reports/nodes/A1-2026-10-13.md"
+      ],
+      "errors": [],
+      "acceptance_passed": true,
+      "schedule_updated": false
     }
   ]
 }

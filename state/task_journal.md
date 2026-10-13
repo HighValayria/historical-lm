@@ -76,3 +76,12 @@
 - Blocker：B-0003与B-0005保持active；B-0006因当前路径及既有完成提交得到解决。
 - App日程：既有“每日自动化迭代”已原位更新并启用，保持每天09:00，project ID不变，`cwds`已核验为当前仓库；没有创建重复Automation。
 - Git：主迁移提交`b7d083b`已成功快进推送到`origin/main`；无强制推送或历史重写。
+
+## 2026-10-13 — Manual Daily Test / A1
+
+- 运行：手动 `FORCE_MODE=DAILY`、`UPDATE_SCHEDULE=false`；不是 Scheduled Automation 触发，只执行 Daily。
+- 六通道：PAPERS、DATASETS、METHODS、RESOURCES、PROJECT_IMPACT 有实质更新；ARCHIVES 已检查但无实质更新。
+- 任务：领取并完成 A1；用 8 项一手来源建立 `METHOD_LANDSCAPE.md` 与 `method_matrix.csv`，区分作者报告、范围限制和本项目推断。
+- 决策变化：后续 Prompt 基线需含 Recall-Based Prompting；M2 重点收窄到命题级 cutoff admissibility；M3 必须与 TCFT 明确区分。未修改正式研究设计。
+- 限制：没有真实模型实验；数据集许可、revision 和条目级时间出处仍需采用前核验；严格验证时代错置题仍为 0。
+- 调度：手动执行不更新 `state/automation_state.json`，未执行 Tactical、Synthesis 或 Audit。

@@ -80,6 +80,24 @@
       "relevance": "medium",
       "status": "candidate_method_template",
       "notes": "Public MIT repository provides small historical-newspaper RAG evaluation scenarios with page inventories, stable Library of Congress identifiers, page URLs and PDF/JP2/XML/TXT file references; content is sourced from Chronicling America. It is English and out of the late-Qing/public-health target domain, and the actual page files are not included, so it is an engineering/provenance template rather than project corpus data."
+    },
+    "time_unlearn": {
+      "name": "Can Prompts Rewind Time evaluation subsets",
+      "url": "https://github.com/gxx27/time_unlearn",
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-13",
+      "relevance": "high",
+      "status": "candidate_version_sensitive",
+      "notes": "Official repository exposes factual, semantic and counterfactual subsets and states that low-quality samples were removed on 2025-09-16. License type and exact evaluation revision require freezing before reuse."
+    },
+    "evolvebench": {
+      "name": "EvolveBench",
+      "url": "https://github.com/zzysjtuiwct/EvolveBench",
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-13",
+      "relevance": "high",
+      "status": "candidate_public_repo_license_unverified",
+      "notes": "ACL paper links an official public code/data repository for a five-dimensional evolving-knowledge benchmark. Repository license and item-level temporal provenance were not verified in this bounded scan."
     }
   }
 }

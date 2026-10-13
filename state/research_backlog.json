@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T00:00:00+08:00",
+  "updated_at": "2026-10-13T22:44:27+08:00",
   "scheduler": {
     "max_tasks_per_daily_run": 3,
     "max_total_minutes_per_daily_run": 90,
-    "last_claimed_track": null,
+    "last_claimed_track": "A",
     "selection_policy": "Resume a safe running task; otherwise choose the lowest numeric priority with satisfied dependencies, preferring the track not claimed last when priorities tie."
   },
   "tasks": [
@@ -23,12 +23,25 @@
         "research/literature/METHOD_LANDSCAPE.md",
         "research/literature/method_matrix.csv"
       ],
-      "resource_budget": {"max_minutes_per_attempt": 90, "max_sources_per_attempt": 8, "paid_api": false},
-      "status": "ready",
-      "evidence_paths": [],
+      "resource_budget": {
+        "max_minutes_per_attempt": 90,
+        "max_sources_per_attempt": 8,
+        "paid_api": false
+      },
+      "status": "completed",
+      "evidence_paths": [
+        "research/literature/METHOD_LANDSCAPE.md",
+        "research/literature/method_matrix.csv",
+        "reports/daily/2026-10-13-manual-daily-test.md",
+        "reports/nodes/A1-2026-10-13.md"
+      ],
       "blockers": [],
-      "attempt_count": 0,
-      "checkpoint": {"safe_to_resume": false, "summary": "not started"}
+      "attempt_count": 1,
+      "checkpoint": {
+        "updated_at": "2026-10-13T22:44:27+08:00",
+        "summary": "Eight-primary-source competitor matrix completed; artifacts validated; acceptance criteria passed.",
+        "safe_to_resume": false
+      }
     },
     {
       "task_id": "A2",
@@ -45,19 +58,28 @@
         "data/chronology/CHRONOLOGY_CARD_SCHEMA.md",
         "data/chronology/chronology_card.schema.json"
       ],
-      "resource_budget": {"max_minutes_per_attempt": 60, "max_files_changed": 4, "paid_api": false},
+      "resource_budget": {
+        "max_minutes_per_attempt": 60,
+        "max_files_changed": 4,
+        "paid_api": false
+      },
       "status": "ready",
       "evidence_paths": [],
       "blockers": [],
       "attempt_count": 0,
-      "checkpoint": {"safe_to_resume": false, "summary": "not started"}
+      "checkpoint": {
+        "safe_to_resume": false,
+        "summary": "not started"
+      }
     },
     {
       "task_id": "A3",
       "track": "A",
       "objective": "从独立年代证据卡中筛选10至15个高可信对象，形成严格时代截止评测试点和构念审计。",
       "priority": 2,
-      "dependencies": ["A2"],
+      "dependencies": [
+        "A2"
+      ],
       "acceptance_criteria": [
         "按底层事件或命题分组，提示变体不得跨训练测试拆分",
         "区分显式错置、隐性后见、普通事实错误和无法判定",
@@ -67,12 +89,19 @@
         "data/benchmarks/anachronism_pilot.jsonl",
         "reports/anachronism_pilot_construct_audit.md"
       ],
-      "resource_budget": {"max_minutes_per_attempt": 90, "max_cases_per_attempt": 5, "paid_api": false},
+      "resource_budget": {
+        "max_minutes_per_attempt": 90,
+        "max_cases_per_attempt": 5,
+        "paid_api": false
+      },
       "status": "proposed",
       "evidence_paths": [],
       "blockers": [],
       "attempt_count": 0,
-      "checkpoint": {"safe_to_resume": false, "summary": "waiting for A2"}
+      "checkpoint": {
+        "safe_to_resume": false,
+        "summary": "waiting for A2"
+      }
     },
     {
       "task_id": "B1",
@@ -89,19 +118,28 @@
         "reports/engineering_reuse_audit.md",
         "experiments/baselines/README.md"
       ],
-      "resource_budget": {"max_minutes_per_attempt": 75, "max_files_changed": 8, "model_calls": 0},
+      "resource_budget": {
+        "max_minutes_per_attempt": 75,
+        "max_files_changed": 8,
+        "model_calls": 0
+      },
       "status": "ready",
       "evidence_paths": [],
       "blockers": [],
       "attempt_count": 0,
-      "checkpoint": {"safe_to_resume": false, "summary": "not started"}
+      "checkpoint": {
+        "safe_to_resume": false,
+        "summary": "not started"
+      }
     },
     {
       "task_id": "B2",
       "track": "B",
       "objective": "准备可记录模型版本、参数、Prompt、原始输出和多维评分的最小Baseline框架及自动测试。",
       "priority": 2,
-      "dependencies": ["B1"],
+      "dependencies": [
+        "B1"
+      ],
       "acceptance_criteria": [
         "支持时间约束Prompt、普通RAG与时间过滤RAG的配置占位",
         "无授权接口时只验证干运行且绝不生成伪模型输出",
@@ -111,19 +149,31 @@
         "experiments/baselines/config.schema.json",
         "tests/test_baseline_scaffold.py"
       ],
-      "resource_budget": {"max_minutes_per_attempt": 90, "model_calls": 0, "large_downloads": false},
+      "resource_budget": {
+        "max_minutes_per_attempt": 90,
+        "model_calls": 0,
+        "large_downloads": false
+      },
       "status": "proposed",
       "evidence_paths": [],
-      "blockers": ["B-0003: no authorized versioned model interface for real runs"],
+      "blockers": [
+        "B-0003: no authorized versioned model interface for real runs"
+      ],
       "attempt_count": 0,
-      "checkpoint": {"safe_to_resume": false, "summary": "waiting for B1; dry-run work remains possible"}
+      "checkpoint": {
+        "safe_to_resume": false,
+        "summary": "waiting for B1; dry-run work remains possible"
+      }
     },
     {
       "task_id": "B3",
       "track": "B",
       "objective": "形成2至3个方法创新假设，逐项连接失败机制、竞争方法、数据需求、最小实验和证伪条件。",
       "priority": 2,
-      "dependencies": ["A1", "B1"],
+      "dependencies": [
+        "A1",
+        "B1"
+      ],
       "acceptance_criteria": [
         "每个假设含可观察失败机制和明确可证伪条件",
         "最小实验包含普通Prompt或普通RAG等直接对照与消融",
@@ -133,12 +183,19 @@
         "research/hypotheses/METHOD_HYPOTHESES.md",
         "research_design/experiment_matrix.csv"
       ],
-      "resource_budget": {"max_minutes_per_attempt": 75, "max_hypotheses": 3, "model_calls": 0},
+      "resource_budget": {
+        "max_minutes_per_attempt": 75,
+        "max_hypotheses": 3,
+        "model_calls": 0
+      },
       "status": "proposed",
       "evidence_paths": [],
       "blockers": [],
       "attempt_count": 0,
-      "checkpoint": {"safe_to_resume": false, "summary": "waiting for A1 and B1"}
+      "checkpoint": {
+        "safe_to_resume": false,
+        "summary": "waiting for A1 and B1"
+      }
     }
   ]
 }

@@ -2,7 +2,20 @@
   "version": 1,
   "current_run_id": null,
   "stages": {
-    "daily": {},
+    "daily": {
+      "run_id": "manual-daily-20261013T224500+0800",
+      "status": "completed",
+      "checkpoint": "Manual Daily completed: six channels recorded and A1 accepted; not a Scheduled Automation trigger.",
+      "started_at": "2026-10-13T22:37:00+08:00",
+      "finished_at": "2026-10-13T22:44:39+08:00",
+      "artifacts": [
+        "reports/daily/2026-10-13-manual-daily-test.md",
+        "research/literature/METHOD_LANDSCAPE.md",
+        "research/literature/method_matrix.csv",
+        "reports/nodes/A1-2026-10-13.md"
+      ],
+      "errors": []
+    },
     "tactical": {},
     "synthesis": {},
     "audit": {}
