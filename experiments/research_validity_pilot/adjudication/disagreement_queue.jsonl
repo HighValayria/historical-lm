@@ -1,0 +1,12 @@
+{"review_id": "TR-001", "passage_id": "PASS-CMMJ-1889-0080-A", "priority": "high", "review_reasons": ["digits_or_dates", "medical_terms"], "status": "awaiting_independent_reviewer"}
+{"review_id": "TR-002", "passage_id": "PASS-WC-1884-0031-A", "priority": "high", "review_reasons": ["digits_or_dates"], "status": "awaiting_independent_reviewer"}
+{"review_id": "TR-003", "passage_id": "PASS-CMMJ-1889-0083-A", "priority": "high", "review_reasons": ["medical_terms"], "status": "awaiting_independent_reviewer"}
+{"review_id": "TR-004", "passage_id": "PASS-CMMJ-1890-0442-A", "priority": "high", "review_reasons": ["medical_terms", "speaker_identity_missing_from_isolated_passage"], "status": "awaiting_independent_reviewer"}
+{"review_id": "TR-005", "passage_id": "PASS-CMMJ-1890-0437-A", "priority": "high", "review_reasons": ["medical_terms"], "status": "awaiting_independent_reviewer"}
+{"review_id": "TR-006", "passage_id": "PASS-WC-1884-0049-A", "priority": "standard", "review_reasons": ["routine_second_pass"], "status": "awaiting_independent_reviewer"}
+{"review_id": "TR-007", "passage_id": "PASS-CMMJ-1889-0035-A", "priority": "high", "review_reasons": ["digits_or_dates", "medical_terms"], "status": "awaiting_independent_reviewer"}
+{"review_id": "TR-008", "passage_id": "PASS-WC-1884-0044-A", "priority": "high", "review_reasons": ["medical_terms"], "status": "awaiting_independent_reviewer"}
+{"review_id": "TR-009", "passage_id": "PASS-CMMJ-1890-0439-A", "priority": "high", "review_reasons": ["digits_or_dates", "medical_terms"], "status": "awaiting_independent_reviewer"}
+{"review_id": "TR-010", "passage_id": "PASS-CMMJ-1889-0086-A", "priority": "high", "review_reasons": ["digits_or_dates", "medical_terms", "known_5807_vs_6807_ocr_conflict"], "status": "awaiting_independent_reviewer"}
+{"review_id": "TR-011", "passage_id": "PASS-WC-1884-0026-A", "priority": "standard", "review_reasons": ["routine_second_pass"], "status": "awaiting_independent_reviewer"}
+{"review_id": "TR-012", "passage_id": "PASS-WC-1884-0033-A", "priority": "high", "review_reasons": ["digits_or_dates"], "status": "awaiting_independent_reviewer"}

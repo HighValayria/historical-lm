@@ -1,0 +1,17 @@
+{
+  "experiment_id": "RVP-E0-E1-E2-E3-v2",
+  "status": "configured_not_executed",
+  "model": "REPLACE_WITH_EXACT_MODEL_ID",
+  "model_revision": "REPLACE_IF_AVAILABLE",
+  "base_url": "http://127.0.0.1:11434/v1",
+  "endpoint_type": "openai_compatible_chat_completions",
+  "generation": {
+    "temperature": 0.0,
+    "max_tokens": 500,
+    "seed": 20261013
+  },
+  "conditions": ["E0", "E1", "E2", "E3"],
+  "packet_file": "experiments/research_validity_pilot/factorial/prompt_packets_v2.jsonl",
+  "raw_output_file": "experiments/research_validity_pilot/model_runs/raw_responses.jsonl",
+  "notes": "Example only. Running requires an explicitly authorized, identifiable endpoint."
+}

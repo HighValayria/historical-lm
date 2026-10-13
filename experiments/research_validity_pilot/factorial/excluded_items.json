@@ -1,0 +1,12 @@
+[
+  {
+    "item_id": "DFP-Q007",
+    "reason": "Requires page image plus raw OCR and is not comparable in the text-only factorial.",
+    "recommended_track": "separate_multimodal_ocr_control"
+  },
+  {
+    "item_id": "DFP-Q012",
+    "reason": "The isolated passage does not identify the speaker; surrounding context must be added before attribution scoring.",
+    "recommended_track": "expand_source_context_then_reaudit"
+  }
+]

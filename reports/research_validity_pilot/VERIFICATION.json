@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "checks": 18,
+  "failed": 0,
+  "details": [
+    {
+      "check": "frozen_inputs_unchanged",
+      "passed": true,
+      "detail": "4 files match recorded SHA-256"
+    },
+    {
+      "check": "audit_has_20_unique_items",
+      "passed": true,
+      "detail": "20"
+    },
+    {
+      "check": "audit_expected_dispositions",
+      "passed": true,
+      "detail": "{'control_only': 7, 'usable_directly': 10, 'temporarily_unsuitable': 1, 'needs_revision': 2}"
+    },
+    {
+      "check": "strict_temporal_count",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "check": "revised_items_preserve_parents",
+      "passed": true,
+      "detail": "20"
+    },
+    {
+      "check": "balanced_factorial",
+      "passed": true,
+      "detail": "{'E1': 18, 'E3': 18, 'E2': 18, 'E0': 18}"
+    },
+    {
+      "check": "four_cells_per_item",
+      "passed": true,
+      "detail": "18 items"
+    },
+    {
+      "check": "prompt_hashes",
+      "passed": true,
+      "detail": "72 canonical hashes"
+    },
+    {
+      "check": "time_clause_only_in_E1_E3",
+      "passed": true,
+      "detail": "condition clause invariant"
+    },
+    {
+      "check": "oracle_only_in_E2_E3",
+      "passed": true,
+      "detail": "condition Oracle invariant"
+    },
+    {
+      "check": "oracle_reference_fields",
+      "passed": true,
+      "detail": "evidence ids match cells"
+    },
+    {
+      "check": "no_oracle_annotation_leakage",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "expected_exclusions",
+      "passed": true,
+      "detail": "['DFP-Q007', 'DFP-Q012']"
+    },
+    {
+      "check": "scoring_ledger_rows",
+      "passed": true,
+      "detail": "72"
+    },
+    {
+      "check": "blind_review_packets",
+      "passed": true,
+      "detail": "12 passages, 20 items, 0 complete"
+    },
+    {
+      "check": "chronology_labels_withheld",
+      "passed": true,
+      "detail": "4 gaps"
+    },
+    {
+      "check": "no_fabricated_model_results",
+      "passed": true,
+      "detail": "0 outputs; raw response file absent"
+    },
+    {
+      "check": "dry_run_did_not_write",
+      "passed": true,
+      "detail": "dry-run output absent"
+    }
+  ]
+}

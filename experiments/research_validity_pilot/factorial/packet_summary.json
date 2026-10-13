@@ -1,0 +1,13 @@
+{
+  "eligible_items": 18,
+  "excluded_items": 2,
+  "prompt_packets": 72,
+  "condition_counts": {
+    "E1": 18,
+    "E3": 18,
+    "E2": 18,
+    "E0": 18
+  },
+  "independence_groups": 11,
+  "seed": 20261013
+}

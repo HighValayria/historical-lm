@@ -47,3 +47,6 @@ nodes:
   DFP-2026-10-13:
     title: Data Feasibility Pilot with real historical pages
     depends_on: [T62]
+  RVP-2026-10-13:
+    title: Research Validity and Baseline Pilot
+    depends_on: [DFP-2026-10-13]

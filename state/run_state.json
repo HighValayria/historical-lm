@@ -17,11 +17,12 @@
     "T60",
     "T61",
     "T62",
-    "DFP-2026-10-13"
+    "DFP-2026-10-13",
+    "RVP-2026-10-13"
   ],
   "running_nodes": [],
   "blocked_nodes": [],
   "skipped_nodes": [],
-  "dynamic_nodes_created": 1,
-  "last_updated": "2026-10-13T23:30:00+08:00"
+  "dynamic_nodes_created": 2,
+  "last_updated": "2026-10-13T23:55:00+08:00"
 }

@@ -1,0 +1,25 @@
+{
+  "items": 20,
+  "dispositions": {
+    "control_only": 7,
+    "usable_directly": 10,
+    "temporarily_unsuitable": 1,
+    "needs_revision": 2
+  },
+  "primary_constructs": {
+    "historical_fact_reading_comprehension": 8,
+    "evidence_insufficiency_and_epistemic_calibration": 3,
+    "historical_claim_vs_modern_fact_distinction": 2,
+    "ocr_image_evidence_fidelity": 1,
+    "source_and_speaker_attribution": 2,
+    "evidence_fidelity_and_qualification": 1,
+    "publication_observation_cutoff_time_distinction": 1,
+    "evidence_fidelity_and_causal_strength": 1,
+    "archive_population_and_source_scope_control": 1
+  },
+  "direct_historical_boundary_or_anachronism": 1,
+  "ordinary_reading_controls": 7,
+  "factorial_eligible": 18,
+  "independence_groups": 11,
+  "high_or_very_high_cue_risk": 9
+}

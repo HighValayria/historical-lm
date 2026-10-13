@@ -1,0 +1,16 @@
+# Task Packet: Research Validity & Baseline Pilot
+
+- Node ID: RVP-2026-10-13
+- Stage: S3 experiment redesign plus S5 validity review
+- Scope: audit the 20 frozen development items, separate ordinary source comprehension from genuinely temporal/historical-boundary measurement, construct an interpretable 2×2 E0/E1/E2/E3 protocol, prepare independent adjudication, and execute models only if a controlled non-paid interface exists.
+- Dependencies: `DFP-2026-10-13`, especially the frozen benchmark, evidence bank, verified passages, source/page manifests, model-evaluation packet and final feasibility report.
+- Files to read: `PROJECT_CHARTER.md`, `.agent/PLANS.md`, formal research design, current benchmark/evidence/prompt files, blocker and run state, and the prior pilot report.
+- Files allowed to edit: `experiments/research_validity_pilot/`, `scripts/research_validity_pilot/`, `reports/research_validity_pilot/`, planning/review files, blocker state, task journals and dynamic-node state. Existing `experiments/data_feasibility_pilot/` artifacts are read-only inputs.
+- Required skills: paper-orchestration, experiment-results-planning, verification.
+- Evidence/data inputs: 20 original items, 12 evidence passages, 14 page records, 60 historical B0/B1/B2 packets. Model output is admissible only if provider/model/version/parameters and complete raw response are recorded.
+- Required artifacts: frozen-input manifest; item-by-item research-capability audit; revised items saved separately; E0/E1/E2/E3 protocol and hashed packets; multi-dimensional scoring schema; independent-review packet and disagreement queue; resumable inference adapter; model-run status; direction reassessment and final report.
+- Rejection checks: do not relabel ordinary reading items as anachronism; do not infer historical nonexistence from corpus absence; do not put gold answers, normalized paraphrases or caution notes into Oracle prompts; do not collapse metrics to a single score; do not count repeated evidence as independent; do not treat same-model rechecking as independent review; do not call paid or unknown-quota APIs; do not fabricate outputs.
+- Validation commands: JSON/JSONL/CSV parse; original-file SHA-256 check; audit coverage 20/20; unique item/prompt identifiers; exactly four packets per revised item; Oracle/non-Oracle contrast checks; gold-leakage checks; referential-integrity checks; inference dry-run/resume test; script compilation; git diff review.
+- Completion criteria: all 20 items audited with explicit primary construct and disposition; strict count of genuinely direct temporal/knowledge-boundary items justified; factorial protocol generated without answer leakage; independent scoring dimensions and evidence requirements documented; model execution truthfully reported; research directions ranked from current evidence.
+- Stopping criteria: no controlled inference interface; no independent chronology for an anachronism label; source-specific question cannot be made comparable across evidence conditions without changing its construct.
+- Risks: construct underrepresentation; source-specific cold-recall confounded with temporal knowledge; Oracle availability confounded with question wording; same-evidence item dependence; unverified chronology; English institutional-archive bias.

@@ -1,0 +1,36 @@
+{
+  "schema_version": "RVP-score-v1",
+  "composite_score_allowed": false,
+  "required_identity_fields": [
+    "packet_id",
+    "item_id",
+    "condition",
+    "independence_group",
+    "model_identifier",
+    "model_revision",
+    "annotator_id",
+    "review_level"
+  ],
+  "dimensions": {
+    "source_fact_accuracy": ["2", "1", "0", "NA"],
+    "temporal_boundary_status": ["compliant", "violation", "unscorable", "NA"],
+    "source_attribution": ["2", "1", "0", "NA"],
+    "evidence_fidelity": ["2", "1", "0", "NA"],
+    "unsupported_content": ["none", "minor", "major", "NA"],
+    "epistemic_calibration": ["2", "1", "0", "NA"],
+    "claim_truth_separation": ["2", "1", "0", "NA"],
+    "abstention_behavior": ["appropriate", "under_abstention", "over_abstention", "NA"]
+  },
+  "required_error_support": [
+    "error_span",
+    "evidence_reference",
+    "rationale",
+    "adjudication_status"
+  ],
+  "temporal_violation_extra_support": [
+    "chronology_record_id",
+    "chronology_source",
+    "cutoff_date",
+    "actor_access_assessment"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "frozen_at_commit": "b06656f",
+  "frozen_inputs": [
+    {
+      "path": "experiments/data_feasibility_pilot/benchmark/benchmark_items.jsonl",
+      "bytes": 12277,
+      "sha256": "a005282b18567ddc0bf398b24504fdf35f30f6cc350999e559c7e2cdf5456d6a"
+    },
+    {
+      "path": "experiments/data_feasibility_pilot/benchmark/evidence_bank.jsonl",
+      "bytes": 21011,
+      "sha256": "c0814892f6ddfdc3bed9f244a7b36608639dedce9c2767e065db7f32e6187b1e"
+    },
+    {
+      "path": "experiments/data_feasibility_pilot/model_eval/prompt_packets.jsonl",
+      "bytes": 42736,
+      "sha256": "665523c3b8fa62ed1332eb0ba0a82c83d6c3f0811e8b04f6ed156a19c717ca6b"
+    },
+    {
+      "path": "experiments/data_feasibility_pilot/model_eval/evaluation_rubric.md",
+      "bytes": 1406,
+      "sha256": "0b9864ce7575f224ed216257510b6ef230c39ef42c5a69377e7a18622807be19"
+    }
+  ],
+  "policy": "Original files are read-only; all revisions use new paths and parent_item_id."
+}

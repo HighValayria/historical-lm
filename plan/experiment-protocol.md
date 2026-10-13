@@ -39,3 +39,11 @@
 - Positive claims may concern technical access, traceability, observed extraction quality, and whether sampled pages can support specific item types.
 - The pilot cannot claim population representativeness or historical nonexistence from corpus absence.
 
+## Research Validity & Baseline Pilot addendum (2026-10-13)
+
+- Preserve B0/B1/B2 as historical artifacts. The new primary design is E0/E1/E2/E3: time cutoff absent/present crossed with verified Oracle absent/present.
+- E1/E3 receive the same cutoff clause; E2/E3 receive the same evidence block. Questions, model and decoding remain fixed.
+- The main text factorial contains 18 items and 72 packets. Q007 is a separate image/OCR control; Q012 awaits speaker context.
+- Report eight scoring dimensions separately. A temporal violation requires independent chronology and actor-access evidence; Oracle silence is not a temporal label.
+- Analyze paired transitions by the 11 evidence-independence groups. Current results are descriptive; no model run exists.
+

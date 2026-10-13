@@ -1,0 +1,46 @@
+{
+  "primary_validity_items": [
+    "DFP-Q002",
+    "DFP-Q004",
+    "DFP-Q008",
+    "DFP-Q013",
+    "DFP-Q015",
+    "DFP-Q017",
+    "DFP-Q018",
+    "DFP-Q020"
+  ],
+  "reading_controls": [
+    "DFP-Q001",
+    "DFP-Q003",
+    "DFP-Q005",
+    "DFP-Q019"
+  ],
+  "strict_temporal_items": [
+    "DFP-Q017"
+  ],
+  "all_factorial_eligible": [
+    "DFP-Q001",
+    "DFP-Q002",
+    "DFP-Q003",
+    "DFP-Q004",
+    "DFP-Q005",
+    "DFP-Q006",
+    "DFP-Q008",
+    "DFP-Q009",
+    "DFP-Q010",
+    "DFP-Q011",
+    "DFP-Q013",
+    "DFP-Q014",
+    "DFP-Q015",
+    "DFP-Q016",
+    "DFP-Q017",
+    "DFP-Q018",
+    "DFP-Q019",
+    "DFP-Q020"
+  ],
+  "excluded_from_text_factorial": [
+    "DFP-Q007",
+    "DFP-Q012"
+  ],
+  "selection_note": "Primary set uses one item per evidence group where possible and is descriptive, not a confirmatory benchmark."
+}

@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-10-13",
+  "status": "configured_not_executed",
+  "controlled_interface_detected": false,
+  "commands_checked": {
+    "ollama": false,
+    "llama-server": false,
+    "lmstudio": false,
+    "llamafile": false
+  },
+  "credential_variable_names_detected": [],
+  "paid_or_unknown_quota_calls_made": 0,
+  "real_model_outputs": 0,
+  "dry_run_packets_validated": 4,
+  "reason": "No controlled local command or explicitly authorized identifiable interface was available."
+}

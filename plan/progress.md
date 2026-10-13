@@ -22,3 +22,28 @@
 - DFP-C complete as a development artifact: 20 page-grounded trial items in 11 evidence-independence groups.
 - DFP-D configured only: 60 B0/B1/B2 prompt packets and a human rubric were generated; no model outputs or scores exist because no controlled local/authorized interface was present.
 - DFP-E complete: recommend a narrower, institution- and source-bounded benchmark/behavior study before Historical RAG or model adaptation.
+
+## 2026-10-13 Research Validity & Baseline Pilot
+
+- Stage: S3 experiment redesign plus S5 validity review.
+- Active packet: `plan/task-packets/RESEARCH_VALIDITY_BASELINE_PILOT.md`.
+- Inputs are frozen at the Data Feasibility Pilot state (`b06656f`); the original 20 items and B0/B1/B2 packets will not be overwritten.
+- Current gates: item construct audit, factorial-prompt validity, adjudication design, then controlled-interface check. Model execution is conditional rather than assumed.
+
+### Completion update
+
+- Audited 20/20 items: 10 directly usable for source/epistemic research, 2 need revision, 7 are controls and 1 is unsuitable for the text-only main experiment.
+- Only Q017 directly tests a historical time/knowledge-boundary distinction; no current item has enough independent chronology to label post-cutoff knowledge intrusion.
+- Generated and verified 72 E0/E1/E2/E3 packets for 18 eligible items; Q007 and Q012 are excluded with explicit reasons.
+- Prepared 12 blind passage tasks, 20 blind item tasks, a disagreement queue and eight-dimensional scoring ledger. Independent reviews completed: 0.
+- Added a resumable OpenAI-compatible runner. No controlled local/authorized interface was detected; real model outputs remain 0.
+- Direction decision: source fidelity and epistemic calibration is the evidence-supported primary path; chronology-backed anachronism is a small extension; joint modeling is conditional on observed failures.
+
+### Capability-use audit
+
+- Required and used: `using-research-writing` routed the task; `paper-orchestration` produced the task packet, progress record, spec/quality reviews and traceability updates; `experiment-results-planning` enforced construct-to-metric separation and the 2×2 design; `verification` required rerunnable structural checks before completion claims.
+- Inputs actually used: frozen 20 items, 12 evidence records/verified passages, 14 page records, prior 60 B0/B1/B2 packets/rubric, prior report and state files.
+- Intentionally unused: literature search, new archive downloads, document-generation and visualization skills; this task required internal validity auditing and no new evidence acquisition or plot was justified.
+- Artifacts: audit/revision, 72 hashed packets, annotation/scoring guides, blind-review packets, chronology-gap registry, inference adapter, status and direction/final reports.
+- Validation: Python compilation passed; 18 automated invariant checks passed; dry run selected four packets without network requests or output creation.
+- Remaining risks: independent review is absent, strict temporal construct is underrepresented, source ecology remains narrow, and no real model behavior has been observed.

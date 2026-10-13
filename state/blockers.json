@@ -36,6 +36,15 @@
       "status": "active",
       "summary": "The 20 trial items have only single-pass page verification, no independent historical adjudication, and only 11 evidence-independence groups.",
       "mitigation": "Perform blind second review, historical cross-checking and disagreement adjudication before treating the set as a benchmark."
+    },
+    {
+      "id": "B-0005",
+      "date": "2026-10-13",
+      "node": "RVP-A",
+      "severity": "high",
+      "status": "active",
+      "summary": "The current 20-item set contains only one direct historical-time item and no item with sufficient independent chronology to label post-cutoff knowledge intrusion.",
+      "mitigation": "Build a small dedicated suite only after chronology, cutoff, actor-access and cross-source evidence cards are independently checked."
     }
   ]
 }

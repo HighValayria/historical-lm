@@ -10,3 +10,15 @@
 
 All tables must be generated from real manifests or explicitly marked as pending. No mock numerical results are permitted in the final pilot report.
 
+## Research Validity Pilot tables
+
+| Table | Rows | Purpose | Source |
+|---|---:|---|---|
+| Item construct audit | 20 | primary/secondary construct, leakage, fairness, dependence and disposition | `audit/item_audit.csv` |
+| Factorial packet inventory | 72 | E0/E1/E2/E3 prompt hashes and factor flags | `factorial/prompt_packets_v2.jsonl` |
+| Blind transcription review | 12 | second-pass review without prior transcription labels | `adjudication/blind_transcription_tasks.jsonl` |
+| Blind item review | 20 | answerability, construct and acceptable-answer review | `adjudication/blind_item_tasks.jsonl` |
+| Scoring ledger | 72 empty rows | independent dimension scores; remains empty until real outputs | `model_runs/scoring_ledger.csv` |
+
+No baseline-results table is authorized until raw model responses and annotator records exist.
+
