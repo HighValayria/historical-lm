@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "events": [
+    {
+      "event_key": "scheduler-migration-2026-10-13",
+      "action": "migration",
+      "timestamp": "2026-10-13T00:00:00+08:00",
+      "result": "completed",
+      "artifacts": [
+        "state/automation_state.json",
+        "state/research_backlog.json"
+      ],
+      "note": "Framework migration only; no Daily, Tactical, Synthesis, Audit, research, or experiment stage was executed."
+    }
+  ]
+}

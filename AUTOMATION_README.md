@@ -1,108 +1,81 @@
-# 自动化说明
+# 自主科研自动化说明
 
-## 初始设置
+## Codex App 每日 Automation
 
-1. 打开 Codex App。
-2. 打开本仓库。
-3. 创建一个每天 09:00 运行的 Automation。
-4. 使用以下 Automation prompt：
+仓库内部只需要一个每天运行的 Codex App Automation。建议保留既有时区与每日触发时间，Prompt 更新为：
 
 ```text
-读取 automation/MASTER_AUTOMATION_PROMPT.md，
-按照其中定义的滚动1天—5天—15天周期，
-继续本项目的无人研究任务。
-以仓库状态为准，不等待人工确认。
+打开仓库后读取 automation/MASTER_AUTOMATION_PROMPT.md，按仓库状态执行
+Daily Execution + 3-Day Tactical Review + 7-Day Research Synthesis +
+14-Day Strategic Audit。以 state/ 为权威记忆，不等待逐项确认。
 ```
 
-## 运行环境要求
+本次已通过 Codex App 原位更新既有“每日自动化迭代”，没有创建重复日程。它保持每天09:00、`Asia/Shanghai`项目环境，状态为`ACTIVE`，项目与工作目录均指向`D:\Resources\llm-historical-anachronism`。如未来重新导入仓库或删除Automation，再使用上文Prompt恢复。
 
-本仓库面向 Codex App Scheduled Automation 设计，不需要单独的 OpenAI API 自动化管线。
+## 调度模型
 
-调度环境应提供可运行 `python scripts/check_schedule.py` 的 `python` 命令。如果 `PATH` 中没有 `python`，使用 Codex App 捆绑的 Python 运行同一脚本。
+`python scripts/check_schedule.py` 只读 `state/automation_state.json` 并输出运行计划：
 
-本机迁移也已用以下 Python 路径验证：
+- Daily：每次入口都运行；
+- Tactical：距离上次成功满3天；
+- Synthesis：距离上次成功满7天；
+- Audit：距离上次成功满14天。
 
-```text
-C:\Users\33967\AppData\Local\Programs\Python\Python312\python.exe
+到期顺序固定为 Daily → Tactical → Synthesis → Audit。迁移锚点为 `2026-10-13T00:00:00+08:00`；新阶段首次分别不早于10月16日、20日、27日。旧 Five-Day/Half-Month 的日期和报告完整保留，但不会冒充新阶段成功。漏跑后每阶段只运行一次当前到期工作，不逐日追赶。
+
+只有交付物存在且验收成功时，`scripts/record_automation_result.py` 才能更新该阶段的 `last_successful`。失败、中断或手动 `UPDATE_SCHEDULE=false` 都不推进周期。相同 `run_id + stage + action` 的重试是幂等 no-op。
+
+## Research Backlog
+
+权威执行队列是 `state/research_backlog.json`。每个任务包含目标、Track、依赖、验收、产物、资源预算、状态、证据、blocker、attempt 和 checkpoint。`state/NEXT_RUN_BACKLOG.yaml` 继续保留 A10—A40 研究拓扑，不作为第二套运行状态。
+
+常用只读命令：
+
+```powershell
+python scripts/manage_research_backlog.py validate
+python scripts/manage_research_backlog.py next
 ```
 
-## 恢复机制
+Daily 优先恢复可安全续跑的 running 任务，否则领取依赖满足的最高优先级 ready 任务。每次最多3项、总计最多90分钟。任务产物存在且验收通过后才能 completed；`refresh`在依赖完成后提升proposed任务，失败任务只有记录新修复路径后才可`retry`，连续失败两次且没有新修复路径时转blocked。
 
-如果某次计划运行错过，下一次运行会使用 `state/automation_state.json` 中的 `last_five_day` 和 `last_half_month` 判断是否需要补跑 Five-Day 或 Half-Month。
+## 手动入口
 
-## Daily Research Radar
-
-Daily 的论文发现跟踪的是对本仓库而言的新发现，而不只是最近一天发表的论文。
-
-所有生成的 Daily、Five-Day 和 Half-Month 研究报告都应使用中文。原始论文标题、标识符和路径可以保留原文。
-
-Daily 是多通道研究雷达，不是单纯论文搜索。每次运行必须检查 `PAPERS`、`DATASETS`、`ARCHIVES`、`METHODS`、`RESOURCES` 和 `PROJECT_IMPACT`，并在报告中显示每个通道已检查或被阻塞。没有实质更新也仍然是一次完成的通道检查。
-
-自 v002 起，主动雷达优先服务时代错置问题定义和M1/M2/M3方法选择。晚清公共卫生与OCR属于Legacy/支撑通道，只有直接产生年代证据卡、行动者传播证据或方法压力测试时才进入主动队列。
-
-Daily 不得修改 `research_design/RESEARCH_DESIGN.md`。Daily 只记录新证据、更新 registry、写 Daily 报告并加入 Five-Day 队列。
-
-系统区分：
-
-- `newly_published`：近期出现且此前未登记的工作；
-- `newly_discovered`：本系统今天第一次发现的较早相关工作；
-- `existing_paper_update`：关于已存在于 `state/seen_papers.json` 或 `evidence/literature_master.csv` 中论文的新信息。
-
-这允许自动化早期先补齐历史文献欠账，随后自然转向监测真正近期研究。
-
-## 研究设计状态
-
-当前正式研究设计主文档是：
+入口位于 `automation/manual/`，支持：
 
 ```text
-research_design/RESEARCH_DESIGN.md
+FORCE_MODE=AUTO|DAILY|TACTICAL|SYNTHESIS|AUDIT|FULL
+UPDATE_SCHEDULE=true|false
 ```
 
-该文件是当前研究方案的人类可读正式依据。当前版本由 `research_design/CURRENT.md` 声明，版本历史由 `research_design/VERSION_LOG.md` 记录，历史版本归档在 `research_design/archive/`。
+手动默认 `UPDATE_SCHEDULE=false`。`FIVE_DAY` 明确映射到新的 Synthesis，`HALF_MONTH` 明确映射到新的 Audit；它们不再表示5日或15日周期。
 
-`research_design/DESIGN_CHANGELOG.md` 可记录设计变更说明，但不能替代 `VERSION_LOG.md`。
+示例：
 
-Daily / Five-Day / Half-Month 权限分离：
-
-- Daily：只收集证据、更新 registry、写报告并加入队列。
-- Five-Day：只做 synthesis + revision proposal，不修改正式研究设计或版本文件。
-- Half-Month：决定 accumulated evidence 是否足以创建新的正式研究设计版本。
-
-Five-Day 如果认为研究设计需要变化，只能在 Five-Day 报告中提出 `PROPOSED DESIGN REVISION`。
-
-Half-Month 若决定创建新版本，必须先冻结当前版本到 `research_design/archive/`，再生成完整新的 `research_design/RESEARCH_DESIGN.md`，更新 `research_design/CURRENT.md`，并追加 `research_design/VERSION_LOG.md`。若证据不足以创建新版本，不得修改当前正式设计。
-
-`research_design/contribution_map.md` 和 `research_design/experiment_matrix.csv` 等辅助文件可以服务自动化；若它们与 `research_design/RESEARCH_DESIGN.md` 冲突，以主文档为准。
-
-## 手动运行
-
-手动运行入口：
-
-```text
-automation/manual/RUN_DAILY.md
-automation/manual/RUN_FIVE_DAY.md
-automation/manual/RUN_HALF_MONTH.md
-automation/manual/RUN_FULL.md
+```powershell
+python scripts/check_schedule.py --force-mode TACTICAL --update-schedule false
+python scripts/check_schedule.py --force-mode FULL --update-schedule true
 ```
 
-每个文件都提供一个最简指令，用于在不等待正常滚动调度的情况下强制运行一个层级或全部层级。
+## 状态、报告与恢复
 
-手动运行默认使用：
+- `state/automation_state.json`：独立周期的成功时间与次数；
+- `state/research_execution_state.json`：当前阶段 checkpoint、开始/结束、状态、产物和错误；
+- `state/execution_history.json`：幂等运行事件；
+- `state/research_backlog.json`：研究任务状态；
+- `state/human_decisions.json`：低频人工决定及简报节奏；
+- `reports/daily/`、`tactical/`、`synthesis/`、`audit/`：阶段报告；
+- `reports/research_briefs/`：前3周每7天一次，达到明确稳定性门槛后每14天一次的人工简报。
 
-```text
-UPDATE_SCHEDULE=false
-```
+中断后先读取 `research_execution_state.json` 和 backlog checkpoint。不要手工伪造成功时间；修复后用新 `run_id` 重跑失败阶段。运行状态表示已落盘进度，不保证 Codex App 在另一个独立 worktree 运行时实时显示文件。
 
-这意味着任务会执行，但自动 `last_*` 周期日期和运行次数不会改变。只有当手动运行应计为正式周期运行时，才设置 `UPDATE_SCHEDULE=true`。
+## 权限边界
 
-## 人工检查
+Daily、Tactical 不得修改正式研究设计；Synthesis 只能提出 `PROPOSED DESIGN REVISION`；Audit 才能依据既有冻结—新建—更新索引—追加日志规则决定正式升级。核心研究方向变化进入 `needs_review`。所有周期均禁止付费 API、大规模训练/下载、绕过访问控制和伪造模型结果。
 
-未来检查时优先查看：
+## 本地验证
 
-```text
-reports/half_month/
-research_design/CURRENT.md
-research_design/RESEARCH_DESIGN.md
-research_design/VERSION_LOG.md
-research_design/DESIGN_CHANGELOG.md
+```powershell
+python -m unittest discover -s tests -v
+python scripts/check_schedule.py --now 2026-10-13T12:00:00+08:00
+python scripts/manage_research_backlog.py validate
 ```

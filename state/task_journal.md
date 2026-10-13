@@ -64,3 +64,14 @@
 - GitHub：原仓库已原地重命名为 `HighValayria/llm-historical-anachronism`，默认分支保留为`main`，Description/Topics与origin已更新。
 - 完整性：Data Feasibility与Research Validity验证均通过；关键冻结资产哈希保持一致。
 - 阻塞：Windows因当前Codex工作区占用拒绝本地目录改名；没有创建副本或伪称完成。B-0006记录一次性改名脚本和自动化重绑定步骤。
+
+## 2026-10-13 — ARS-2026-10-13
+
+- 状态：自主科研调度与任务管理框架迁移完成；本次未运行研究巡检、论文检索、Baseline、模型调用或训练。
+- 调度：从旧1/5/15迁移为Daily/3-Day Tactical/7-Day Synthesis/14-Day Audit；旧成功记录完整保存在`legacy_migration`，新阶段从迁移锚点起算，没有伪造成功报告。
+- Backlog：建立`state/research_backlog.json`，包含A1—A3与B1—B3、依赖、验收、预算、attempt和checkpoint；当前ready为A1、A2、B1。
+- 恢复：新增独立阶段运行状态、幂等事件历史和成功后才推进日程的记录脚本；失败或中断不更新`last_successful`。
+- 兼容：旧`FIVE_DAY`和`HALF_MONTH`分别显式映射到`SYNTHESIS`和`AUDIT`；旧协议、报告和研究资产未删除。
+- 验证：新自动化单元测试14项全部通过；原Data Feasibility验证PASS，原Research Validity验证18/18 PASS，仍确认无模型输出。
+- Blocker：B-0003与B-0005保持active；B-0006因当前路径及既有完成提交得到解决。
+- App日程：既有“每日自动化迭代”已原位更新并启用，保持每天09:00，project ID不变，`cwds`已核验为当前仓库；没有创建重复Automation。

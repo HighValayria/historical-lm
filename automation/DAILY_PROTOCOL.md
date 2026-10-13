@@ -1,311 +1,41 @@
-# Daily 协议
+# Daily Execution 协议
 
-## 目的
+## 目标与验收
 
-Daily Research Radar 是多通道研究环境检查，不是单纯论文搜索任务。
+每次自动化入口均执行 Daily。它由“六通道轻量巡检 + 有界 backlog 执行”组成；每天可以没有新发现，但如存在可执行任务，必须实际推进至少一个微任务。
 
-Daily 必须回答：
+Daily 成功需同时满足：
 
-> 今天研究环境中出现了哪些真正新增、且与本项目相关的信息？
+1. `PAPERS`、`DATASETS`、`ARCHIVES`、`METHODS`、`RESOURCES`、`PROJECT_IMPACT` 均记录为 `checked_material_update`、`checked_no_material_update` 或 `blocked`；
+2. 对新增关键结论保存可验证来源，或明确记录没有实质更新；
+3. 用 `scripts/manage_research_backlog.py next` 选择任务；存在 eligible 任务时保存一个有界交付物或可恢复 checkpoint；
+4. 写入或幂等更新 `reports/daily/YYYY-MM-DD.md`，追加 `state/task_journal.md`；
+5. 报告、registry、backlog 与 checkpoint 一致。
 
-Daily 报告必须使用中文。论文标题、数据集名称、档案名称、标识符、`newly_discovered` 等枚举值和路径可以保留原文。
+## 执行规则
 
-Daily 优先保证覆盖面，而不是深度。论文通道很丰富也不能替代对数据集、档案、方法、资源和项目影响的检查。
+- 广度优先依次检查六通道；完成首轮后才可加深。`PAPERS` 默认不超过巡检工作量约35%。
+- 优先直接时代错置评测、时间条件化/知识编辑、Temporal RAG、年代验证、选择性验证Agent与可校准拒答。Legacy/OCR 仅在解除年代证据或方法 blocker 时进入主动队列。
+- 优先恢复 `running + checkpoint.safe_to_resume=true`；否则选择最高优先级、依赖满足的 `ready` 任务。单次最多3个任务、总计最多90分钟。
+- 两条 Track 都需持续推进；同优先级时任务管理器偏向上次未领取的 Track。
+- 任务只有预期产物存在、验收条件实际通过，才可标记 completed。失败后记录原因；第二次失败且没有新修复路径时标记 blocked。
+- Daily 不修改正式研究设计或版本文件，不执行需要用户授权的决定。
 
-Daily 不得修改 `research_design/RESEARCH_DESIGN.md`。正式研究设计只能由 Five-Day 在有限证据更新范围内修改，或由 Half-Month 进行核心重构。Daily 只提供新证据、registry 更新和队列。
+## 各通道保留检查项
 
-## 固定通道
+- `PAPERS`：同时检查近期发表、首次发现的旧工作、seed引用与已知论文更新；按`newly_published`、`newly_discovered`、`existing_paper_update`分类。依次用DOI、arXiv ID、稳定论文ID、规范化标题去重，高相关项进入deep-reading队列。
+- `DATASETS`：独立核验Benchmark/数据集是否真实存在、公开状态、license、语言、年代、领域、字段与适配性；论文提及不等于数据集通道已完成。
+- `ARCHIVES`：核验机构目录、馆藏范围、稳定标识符、访问与许可条件；目录可见不等于正文可用，单一档案缺失不证明知识不存在。
+- `METHODS`：检查时间条件化、knowledge cutoff、Temporal/Historical RAG、知识编辑、claim verification、Agent与去污染工具；记录代码可得性、环境需求和能否改变方法选择。
+- `RESOURCES`：检查官方项目页、代码库、数据卡、模型卡、工具链与合规资源；不得把资源存在误写成已在本项目验证。
+- `PROJECT_IMPACT`：明确新信息对研究问题、评测、数据、方法、资源、风险和优先级是`material`、`limited`还是`none`。
 
-Daily 有六个必查通道：
+## 必须维护的既有状态
 
-1. `PAPERS`
-2. `DATASETS`
-3. `ARCHIVES`
-4. `METHODS`
-5. `RESOURCES`
-6. `PROJECT_IMPACT`
+仅在有实际变化时更新`state/seen_papers.json`、`state/seen_datasets.json`、`state/queues.json`、`state/channel_state.json`、`state/blockers.json`及`evidence/`下相应registry。所有登记保留来源链接/标识符、日期、来源类型、直接支持或推断和不确定性。不要重复处理已登记论文或数据集。
 
-只有当每个通道都有以下状态之一时，Daily 才算完成：
+Daily报告至少包含六通道结果、覆盖检查、实际推进的backlog任务、产物/checkpoint、限制与项目影响。没有新内容时如实写`checked_no_material_update`，不得用冗长摘要填充空缺。
 
-- `checked_material_update`
-- `checked_no_material_update`
-- `blocked`
+## 事件触发
 
-不得使用 `skipped` 或 `not_needed`。
-
-如果某个通道因为网络、访问或环境问题无法检查，将其标记为 `blocked`，把 blocker 写入 `state/blockers.json`，然后继续检查其余通道。
-
-## 广度优先策略
-
-Daily 必须按以下第一轮顺序检查通道：
-
-1. `PAPERS`
-2. `DATASETS`
-3. `ARCHIVES`
-4. `METHODS`
-5. `RESOURCES`
-6. `PROJECT_IMPACT`
-
-只有在六个通道全部检查后，Daily 才能回到某个高价值通道继续加深。
-
-如果上下文、时间或额度紧张，应降低每个通道的深度。不得完整深入 `PAPERS` 后放弃其他通道。
-
-软预算规则：`PAPERS` 默认不应超过 Daily 探索工作量的大约 35%。Daily 不追踪多跳引用图；这类工作应放入 Five-Day 队列。
-
-### 新主线优先级（2026-10-13 起）
-
-主动研究优先寻找能改变时代错置问题定义、Baseline或M1/M2/M3方法选择的证据。默认加深顺序为：直接时代错置评测与竞争工作、时间条件化或知识编辑、temporal RAG与未来信息过滤、claim/agent verification、可校准拒答和方法评价，随后才是单域史料或OCR。
-
-晚清公共卫生、历史OCR和档案来源只有在提供严格年代案例、行动者传播证据、跨来源验证、方法压力测试或解除已选路线的实际blocker时，才进入active队列。不得把新增同类页数视为新主线的主要进展。
-
-## 通道 1：`PAPERS`
-
-检查：
-
-- 近期新发表论文；
-- 新发现的既有工作；
-- seed paper 的新引用；
-- 尚未登记的 seed paper references；
-- 已知论文的新更新；
-- 综述、benchmark 论文和方法论文。
-
-关键主题：
-
-- historical language model；
-- temporal knowledge；
-- temporal leakage；
-- knowledge cutoff；
-- ex-ante reasoning；
-- anachronism；
-- Historical RAG；
-- provenance；
-- source diversity；
-- digital humanities plus LLM。
-
-对论文而言，“new” 指：
-
-```text
-new_to_system = absent from state/seen_papers.json and evidence/literature_master.csv
-```
-
-这包括几个月或几年前发表、但今天第一次被本系统发现的论文。
-
-论文发现分类为：
-
-- `newly_published`：近期发表、新上线、新接收或新公开，且此前未进入本系统的工作。
-- `newly_discovered`：较早发表但此前未进入本系统的工作。
-- `existing_paper_update`：关于已知论文的实质性新信息。
-
-去重优先级：
-
-1. DOI；
-2. arXiv ID；
-3. Semantic Scholar、OpenAlex、ACL Anthology 或其他稳定 paper ID；
-4. 规范化标题。
-
-高相关论文发现进入 `state/queues.json -> deep_reading`。
-
-## 通道 2：`DATASETS`
-
-独立检查数据集。论文中提到某个数据集，并不等于完成 `DATASETS` 通道。
-
-检查：
-
-- 新数据集；
-- 新 benchmark；
-- 已知数据集新版本；
-- 新开放下载；
-- license 变化；
-- 新数据字段；
-- historical QA；
-- temporal benchmark；
-- anachronism benchmark；
-- Chinese historical NLP dataset；
-- OCR dataset；
-- provenance / source attribution dataset。
-
-对每个实质性数据集发现，判断它是否真实存在，并在可用时记录：
-
-- 公开访问情况；
-- license；
-- 语言；
-- 时间范围；
-- 领域；
-- 与当前项目的适配性。
-
-高相关数据集发现进入 `state/queues.json -> dataset_review`。
-
-## 通道 3：`ARCHIVES`
-
-独立检查历史来源和数字档案。
-
-重点关注能够提供可靠年代、事件、制度、发现、术语形成或知识传播证据的跨时期档案、时间线、权威数据库和数字化项目；同时监测文档时间、事件时间、知识有效时间、来源许可和稳定标识符。晚清来源保留在Legacy watchlist，但不再拥有默认优先级。
-
-本通道回答：
-
-> 历史材料是否变得更容易访问或使用？
-
-高相关档案发现进入 `state/queues.json -> archive_review`。
-
-## 通道 4：`METHODS`
-
-检查可能改变实现成本或实验设计的方法与工具。
-
-这可以包括论文、模型、库、release 或开源实现。
-
-重点关注：
-
-- historical OCR；
-- document layout parsing；
-- handwritten / printed historical text recognition；
-- embedding；
-- retrieval；
-- reranking；
-- temporal retrieval；
-- provenance-aware retrieval；
-- source attribution；
-- citation grounding；
-- long context；
-- structured extraction；
-- evaluation；
-- uncertainty / abstention。
-
-如果某个方法已经在 `PAPERS` 中发现，仍需单独回答它是否对本项目有直接工程价值。
-
-高相关方法发现进入 `state/queues.json -> method_review`。
-
-## 通道 5：`RESOURCES`
-
-检查非论文研究资源：
-
-- GitHub repository；
-- research toolkit；
-- benchmark framework；
-- annotation tool；
-- OCR pipeline；
-- digital humanities platform；
-- corpus browser；
-- archive search interface；
-- citation / provenance tool；
-- dataset processing scripts；
-- research project pages。
-
-本通道回答：
-
-> 是否出现了能直接降低当前研究工作量的东西？
-
-高相关资源发现进入 `state/queues.json -> resource_review`。
-
-## 通道 6：`PROJECT_IMPACT`
-
-这是基于本次运行所有发现的独立项目状态检查。
-
-回答：
-
-- 是否出现直接竞争工作？
-- 是否有新资源可能解决当前 blocker？
-- 数据可行性是否发生实质变化？
-- 是否有内容需要进入 Five-Day 队列？
-- 是否有当前贡献明显受到威胁？
-- 是否出现新的研究机会？
-
-如果没有项目层面影响，写：
-
-```text
-No project-level impact.
-```
-
-## 必须更新的状态
-
-Daily 成功运行后，为每个已检查的非 impact 通道分别更新 `state/channel_state.json`：
-
-```json
-{
-  "PAPERS": {
-    "last_checked": "YYYY-MM-DD",
-    "last_material_update": "YYYY-MM-DD or null"
-  }
-}
-```
-
-只有当该通道状态为 `checked_material_update` 时，才更新 `last_material_update`。
-
-仅当调度规则允许时，才更新 `state/automation_state.json`。
-
-## 报告格式
-
-每份 Daily 报告必须使用以下中文结构，即使某个通道没有实质更新：
-
-```markdown
-# Daily Research Radar — YYYY-MM-DD
-
-## 1. 论文
-
-状态：
-
-Newly published:
-Newly discovered:
-Existing updates:
-
-实质发现：
-
-## 2. 数据集 / Benchmark
-
-状态：
-
-实质发现：
-
-## 3. 历史档案 / 来源
-
-状态：
-
-实质发现：
-
-## 4. 方法 / 工具
-
-状态：
-
-实质发现：
-
-## 5. 研究资源
-
-状态：
-
-实质发现：
-
-## 6. 项目影响
-
-影响：
-
-已更新队列：
-
-## 覆盖检查
-
-- PAPERS: checked / blocked
-- DATASETS: checked / blocked
-- ARCHIVES: checked / blocked
-- METHODS: checked / blocked
-- RESOURCES: checked / blocked
-- PROJECT_IMPACT: checked / blocked
-```
-
-如果某个通道没有新发现，写：
-
-```text
-Status: checked_no_material_update
-No material update.
-```
-
-## 限制
-
-Daily 不得：
-
-- 重写研究设计；
-- 修改 `research_design/RESEARCH_DESIGN.md`；
-- 生成长篇文献综述；
-- 深入分析大量论文；
-- 让 `PAPERS` 占用整个运行；
-- 跳过数据集、档案、方法、资源或项目影响；
-- 在没有实质更新时编造更新。
-
-Daily 负责发现、去重、判断相关性、分类和入队。Five-Day 负责更深入阅读和跨类型综合。
+如发现竞争方法覆盖核心贡献、金标准失效、严重泄漏、关键 Baseline 异常或研究条件重大变化，在当日报告中新增 `URGENT RESEARCH EVENT`，更新风险和 backlog；需要授权的事项进入 `state/human_decisions.json`，但继续独立安全工作。

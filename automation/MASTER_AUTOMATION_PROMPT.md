@@ -1,111 +1,38 @@
-# 主自动化 Prompt
+# 自主科研主自动化 Prompt
 
-你正在以 Codex Automation worker 身份进入本仓库。
+你正在以 Codex Automation worker 身份进入本仓库。仓库文件是长期记忆的权威来源，不依赖旧聊天上下文。
 
-仓库文件是长期记忆的权威来源。不要依赖此前聊天上下文。
+项目主线是 LLM 历史时代错置及缓解方法；方法或系统创新优先，Benchmark 是测量工具，晚清公共卫生是保留的 Legacy 场景。不得把旧20题改称严格时代错置 Benchmark；严格验证题数仍为0，真实模型实验仍为0，除非后续产物独立改变这些事实。
 
-当前项目是 LLM Historical Anachronism。主要科学问题是历史/时间时代错置，主要贡献目标是方法或系统创新；M1参数适配、M2时间检索和M3验证Agent是候选路线。Benchmark是测量工具，晚清公共卫生是Legacy场景。主动任务以 `state/NEXT_RUN_BACKLOG.yaml` 和 v002 正式研究设计为准，不得默认恢复旧的晚清语料扩张计划。
+## 启动顺序
 
-所有生成的研究报告和研究文档必须使用中文。论文标题、数据集名称、来源名称、标识符、文件路径和必要枚举值可以在需要时保留原文，但摘要、判断、标题和解释必须写中文。
+1. 读取 `AGENTS.md`、`PROJECT_CHARTER.md`、`.agent/PLANS.md`、`state/config.yaml`、`state/run_state.json`、`state/automation_state.json`。
+2. 运行 `python scripts/check_schedule.py`，读取返回的 `ordered_stages`。
+3. 按 `daily → tactical → synthesis → audit` 顺序执行入选阶段；每阶段先读取对应协议。
+4. 每阶段开始前用 `scripts/record_automation_result.py start` 建立 checkpoint；结束时只有交付物存在且验收通过，才以 `finish --result success --acceptance-passed true` 记录。
+5. `AUTO` 中成功阶段更新日程；手动模式默认不更新，只有 `UPDATE_SCHEDULE=true` 且阶段成功才更新。
+6. 失败或中断不得更新 `last_successful`。记录错误和 checkpoint，继续其他独立且安全的到期阶段。
 
-正式研究设计主文档是 `research_design/RESEARCH_DESIGN.md`。当前版本由 `research_design/CURRENT.md` 声明，版本历史由 `research_design/VERSION_LOG.md` 记录，历史版本归档在 `research_design/archive/`。
+支持 `FORCE_MODE=AUTO|DAILY|TACTICAL|SYNTHESIS|AUDIT|FULL`。兼容别名 `FIVE_DAY→SYNTHESIS`、`HALF_MONTH→AUDIT` 会在检查器输出中显式标明，不得静默改变语义。手动默认 `UPDATE_SCHEDULE=false`。
 
-Daily 不得修改 `research_design/RESEARCH_DESIGN.md`；Daily 只增加证据、更新 registry、写报告和加入队列。
+## 共同边界
 
-Five-Day 可以读取 `research_design/RESEARCH_DESIGN.md`，但不得修改正式研究设计、`CURRENT.md`、`VERSION_LOG.md` 或 `archive/`。Five-Day 的权限是 synthesis + revision proposal only；如果认为设计需要改变，只能在 Five-Day 报告中提出 `PROPOSED DESIGN REVISION`。
+- 所有新报告使用中文；原始标题、标识符和必要枚举值可保留原文。
+- 不调用付费 API，不大规模下载或训练，不绕过访问控制，不虚构模型输出或年代证据。
+- 不覆盖原始数据、历史报告、冻结设计归档或用户未提交修改。
+- 幂等运行：同一 `run_id + stage + action` 只能记录一次；同日重试更新既有当日报告或使用唯一运行标识，不重复创建等价任务。
+- 重要事件可在本次运行内触发专项分析、风险标记和 backlog 调整，但不会扩大正式研究设计修改权限。
+- Git 提交只包含本次运行相关文件；remote 可用时正常推送，不得把失败推送写成已同步。
 
-Half-Month 是唯一允许决定是否创建新正式研究设计版本的层级。若 Half-Month 判断需要新版本，必须先把当前版本冻结归档到 `research_design/archive/`，再生成完整新的 `research_design/RESEARCH_DESIGN.md`，然后更新 `research_design/CURRENT.md` 并追加 `research_design/VERSION_LOG.md`。若证据不足以创建新版本，Half-Month 只输出审计报告，不修改当前版本。
+## 研究设计权限
 
-`research_design/contribution_map.md` 和 `research_design/experiment_matrix.csv` 等辅助文件可以保留给自动化使用；若它们与 `research_design/RESEARCH_DESIGN.md` 冲突，以主文档为准。
+- Daily、Tactical：不得修改 `research_design/RESEARCH_DESIGN.md`、`CURRENT.md`、`VERSION_LOG.md` 或 `archive/`。
+- Synthesis：只能提出 `PROPOSED DESIGN REVISION`，不得修改正式设计及版本文件。
+- Audit：是唯一可决定正式版本升级的自动阶段。升级前必须冻结当前完整版本到 `archive/`，再创建完整新版、更新 `CURRENT.md` 并追加 `VERSION_LOG.md`。证据不足则不升级。
+- 改变已确定的核心研究方向必须进入 `state/human_decisions.json` 的 `needs_review`，不得自主转向。
 
-执行前：
+## 运行预算与人工审阅
 
-1. 读取 `AGENTS.md`。
-2. 读取 `state/automation_state.json`。
-3. 判断运行模式。
+遵守 `state/research_backlog.json -> scheduler` 的任务数与时间上限。优先恢复安全 checkpoint，否则领取依赖满足的最高优先级 ready 任务；连续两次失败且无新修复手段时标记 blocked 并转做其他任务。
 
-支持的模式：
-
-- `AUTO`
-- `DAILY`
-- `FIVE_DAY`
-- `HALF_MONTH`
-- `FULL`
-
-默认模式为 `AUTO`。
-
-`AUTO` 根据 `state/automation_state.json` 和实际日期判断哪些层级到期。
-
-手动模式忽略所选层级是否到期：
-
-- `DAILY` 只强制运行 Daily。
-- `FIVE_DAY` 只强制运行 Five-Day。
-- `HALF_MONTH` 只强制运行 Half-Month。
-- `FULL` 依次强制运行 Daily、Five-Day、Half-Month。
-
-4. 判断调度状态更新行为。
-
-支持的值：
-
-```text
-UPDATE_SCHEDULE=true|false
-```
-
-规则：
-
-- 在 `AUTO` 中，每个到期层级成功运行后，始终更新对应 `last_*` 日期和运行次数。
-- 在手动模式且 `UPDATE_SCHEDULE=true` 时，将本次运行视为正式周期运行，成功后更新对应 `last_*` 日期和运行次数。
-- 在手动模式且 `UPDATE_SCHEDULE=false` 时，只执行任务，不改变自动周期日期或运行次数。
-- 手动模式默认使用 `UPDATE_SCHEDULE=false`。
-
-5. 运行：
-
-```bash
-python scripts/check_schedule.py
-```
-
-如果 `PATH` 中没有 `python`，使用 Codex App 捆绑的 Python 运行同一脚本。
-
-本机已验证的 fallback 是：
-
-```text
-C:\Users\33967\AppData\Local\Programs\Python\Python312\python.exe
-```
-
-手动模式可以使用环境变量或等价 CLI 参数运行检查器，例如：
-
-```bash
-FORCE_MODE=FIVE_DAY UPDATE_SCHEDULE=false python scripts/check_schedule.py
-```
-
-Windows PowerShell 示例：
-
-```powershell
-$env:FORCE_MODE = "FIVE_DAY"
-$env:UPDATE_SCHEDULE = "false"
-python scripts/check_schedule.py
-```
-
-6. 按固定顺序执行所选层级：
-   - Daily
-   - Five-Day
-   - Half-Month
-7. 对每个被选中的层级，读取并遵循 `automation/` 下对应协议。
-8. 只有在对应工作成功后，且检查器返回的对应 `update_*_state` 为 `true` 时，才更新状态文件。
-9. 用简洁 Git message 提交仓库变更。
-10. 如果存在 remote 且权限可用，推送提交。
-11. 不等待人工确认。
-
-调度是滚动且基于状态的：
-
-- Daily 每次自动化入口都运行。
-- Five-Day 在距离上次成功 Five-Day 运行至少 5 个实际日后运行；若没有记录过 Five-Day，也应运行。
-- Half-Month 在距离上次成功 Half-Month 运行至少 15 个实际日后运行；若没有记录过 Half-Month，也应运行。
-
-不要使用日历月日期规则。
-
-Daily 的论文发现中，“new” 指对本仓库研究系统而言的新发现，而不仅是最近 24 小时内新发表。Daily 必须按 `automation/DAILY_PROTOCOL.md` 区分 `newly_published`、`newly_discovered` 和 `existing_paper_update`。
-
-Daily 的首要目标是覆盖每个研究信息通道，而不是最大化论文发现数量。Daily 必须广度优先执行：`PAPERS`、`DATASETS`、`ARCHIVES`、`METHODS`、`RESOURCES`、`PROJECT_IMPACT`。每个通道至少检查一次后，才能加深某个通道。如果时间、上下文或额度有限，应降低所有通道深度，而不是深入完成 `PAPERS` 却遗漏其他通道。详细分析属于 Five-Day。
-
-不得执行大规模训练、付费 API 调用、绕过访问控制、未授权抓取或批量下载。如果某项任务被阻塞，记录 blocker，并继续处理其他到期工作。
+最初三周每7天生成一次 `reports/research_briefs/` 简报；只有满足 `state/human_decisions.json` 的稳定性门槛后才改为14天。简报最多提出三个需要用户决策的问题；用户不回复时继续非阻塞工作。

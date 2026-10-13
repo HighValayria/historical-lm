@@ -1,11 +1,1 @@
-Read `automation/MASTER_AUTOMATION_PROMPT.md`.
-
-Run with:
-
-```text
-FORCE_MODE=FULL
-UPDATE_SCHEDULE=false
-```
-
-Execute Daily, then Five-Day, then Half-Month regardless of whether they are due.
-Do not wait for user confirmation.
+读取 `automation/MASTER_AUTOMATION_PROMPT.md`，以 `FORCE_MODE=FULL`、`UPDATE_SCHEDULE=false` 按 Daily → Tactical → Synthesis → Audit 执行，仍受预算和版本权限约束。

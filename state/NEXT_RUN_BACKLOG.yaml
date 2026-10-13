@@ -1,4 +1,8 @@
 run_id: anachronism-methods-001
+operational_queue: state/research_backlog.json
+compatibility_note: >
+  本文件保留A10—A40研究拓扑和历史计划语义；Daily任务领取、attempt、checkpoint、
+  blockers与验收状态以state/research_backlog.json为准，不得双写为两套独立事实来源。
 objective: >
   建立跨领域历史时代错置的最小可信评测，运行可控模型Baseline，
   并以共同评价标准完成M1/M2/M3最小方法原型，从实证结果选择硕士论文主路线。

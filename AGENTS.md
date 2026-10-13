@@ -69,24 +69,28 @@
 
 ## 自主研究自动化
 
-本仓库包含一个持久的 1 天 / 5 天 / 15 天研究自动化。
+本仓库包含一个持久的 Daily Execution / 3-Day Tactical Review / 7-Day Research Synthesis / 14-Day Strategic Audit 研究自动化。
 
 在进行自主研究工作前：
 
 1. 读取 `state/automation_state.json`。
 2. 运行 `scripts/check_schedule.py`。
-3. 读取 `automation/` 下对应协议。
+3. 读取 `state/research_backlog.json` 和 `automation/` 下对应协议。
 4. 将仓库状态视为权威记忆。
 
 不要重复处理已处理过的论文或数据集。
 
 `research_design/RESEARCH_DESIGN.md` 是当前正式研究设计主文档。当前版本由 `research_design/CURRENT.md` 声明，版本历史由 `research_design/VERSION_LOG.md` 记录，历史版本归档在 `research_design/archive/`。
 
-Daily 不得修改 `research_design/RESEARCH_DESIGN.md`；Daily 只记录证据、更新 registry、写报告和加入队列。
+Daily 不得修改 `research_design/RESEARCH_DESIGN.md`；Daily 只记录证据、更新 registry、写报告和推进有界 backlog 微任务。
 
-Five-Day 不得修改正式研究设计、`CURRENT.md`、`VERSION_LOG.md` 或 `archive/`。Five-Day 只能进行综合并在报告中提出 `PROPOSED DESIGN REVISION`。
+Tactical 不得修改正式研究设计，只能审计任务验收、失败、阻塞、证据状态、资源和短期优先级。
 
-Half-Month 是唯一允许决定是否创建新正式研究设计版本的层级。若需要新版本，必须先冻结当前版本到 `research_design/archive/`，再生成完整新的 `research_design/RESEARCH_DESIGN.md`，更新 `CURRENT.md`，并追加 `VERSION_LOG.md`。
+Synthesis 不得修改正式研究设计、`CURRENT.md`、`VERSION_LOG.md` 或 `archive/`。Synthesis 只能进行综合并在报告中提出 `PROPOSED DESIGN REVISION`。
+
+Audit 是唯一允许决定是否创建新正式研究设计版本的自动层级。若需要新版本，必须先冻结当前版本到 `research_design/archive/`，再生成完整新的 `research_design/RESEARCH_DESIGN.md`，更新 `CURRENT.md`，并追加 `VERSION_LOG.md`。
+
+旧 `FIVE_DAY` 与 `HALF_MONTH` 手动入口分别是 `SYNTHESIS` 与 `AUDIT` 的显式兼容别名；不得将旧成功时间当作新周期已经成功。失败或中断不得更新对应 `last_successful`。
 
 `research_design/contribution_map.md` 和 `research_design/experiment_matrix.csv` 等辅助文件可继续服务结构化自动化；若它们与 `research_design/RESEARCH_DESIGN.md` 冲突，以主文档为准。
 

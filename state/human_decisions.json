@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "review_cadence": {
+    "initial_interval_days": 7,
+    "initial_period_weeks": 3,
+    "stable_interval_days": 14,
+    "stable": false,
+    "stability_criteria": {
+      "minimum_consecutive_completed_tasks": 4,
+      "minimum_acceptance_rate": 0.8,
+      "maximum_major_errors_in_window": 0
+    }
+  },
+  "pending": [],
+  "resolved": [],
+  "policy": "Only decisions requiring user authority enter pending. Non-blocking safe work continues without a reply."
+}

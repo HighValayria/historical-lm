@@ -1,10 +1,47 @@
 {
-  "version": 1,
-  "last_daily": "2026-10-13",
-  "last_five_day": "2026-10-09",
-  "last_half_month": "2026-10-04",
-  "daily_run_count": 10,
-  "five_day_run_count": 2,
-  "half_month_run_count": 1,
-  "last_successful_run": "2026-10-13"
+  "version": 2,
+  "timezone": "Asia/Shanghai",
+  "schedule_anchor": "2026-10-13T00:00:00+08:00",
+  "stages": {
+    "daily": {
+      "interval_days": 1,
+      "last_successful": "2026-10-13T00:00:00+08:00",
+      "run_count": 10,
+      "not_before": "2026-10-13T00:00:00+08:00"
+    },
+    "tactical": {
+      "interval_days": 3,
+      "last_successful": null,
+      "run_count": 0,
+      "not_before": "2026-10-16T00:00:00+08:00"
+    },
+    "synthesis": {
+      "interval_days": 7,
+      "last_successful": null,
+      "run_count": 0,
+      "not_before": "2026-10-20T00:00:00+08:00"
+    },
+    "audit": {
+      "interval_days": 14,
+      "last_successful": null,
+      "run_count": 0,
+      "not_before": "2026-10-27T00:00:00+08:00"
+    }
+  },
+  "last_successful_run": "2026-10-13T00:00:00+08:00",
+  "legacy_migration": {
+    "source_version": 1,
+    "migrated_at": "2026-10-13T00:00:00+08:00",
+    "old_1_5_15_state": {
+      "version": 1,
+      "last_daily": "2026-10-13",
+      "last_five_day": "2026-10-09",
+      "last_half_month": "2026-10-04",
+      "daily_run_count": 10,
+      "five_day_run_count": 2,
+      "half_month_run_count": 1,
+      "last_successful_run": "2026-10-13"
+    },
+    "policy": "Daily history is preserved. Five-Day and Half-Month history remains audit evidence only and does not seed the new Tactical, Synthesis, or Audit success clocks."
+  }
 }

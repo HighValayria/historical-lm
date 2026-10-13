@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "current_run_id": null,
+  "stages": {
+    "daily": {},
+    "tactical": {},
+    "synthesis": {},
+    "audit": {}
+  },
+  "note": "Empty stage objects mean the new scheduler has not run that stage; they are not successful runs."
+}

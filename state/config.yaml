@@ -18,12 +18,29 @@ run:
   max_dynamic_nodes: 12
   continue_after_blocker: true
   require_git_commits: true
+  backlog_path: "state/research_backlog.json"
+  execution_state_path: "state/research_execution_state.json"
+
+automation:
+  timezone: "Asia/Shanghai"
+  stage_order: [daily, tactical, synthesis, audit]
+  intervals_days:
+    daily: 1
+    tactical: 3
+    synthesis: 7
+    audit: 14
+  max_tasks_per_daily_run: 3
+  max_total_minutes_per_daily_run: 90
+  manual_update_schedule_default: false
+  success_required_to_advance_schedule: true
 
 budgets:
   large_model_training_allowed: false
   paid_external_model_api_allowed: false
   bypass_access_controls_allowed: false
   exhaustive_web_scraping_allowed: false
+  model_calls_during_framework_tests: 0
+  large_downloads_during_framework_tests: false
 
 candidate_scoring:
   dimensions:

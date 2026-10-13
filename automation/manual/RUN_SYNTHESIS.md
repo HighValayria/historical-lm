@@ -1,0 +1,1 @@
+读取 `automation/MASTER_AUTOMATION_PROMPT.md`，以 `FORCE_MODE=SYNTHESIS`、`UPDATE_SCHEDULE=false` 仅执行 Synthesis。

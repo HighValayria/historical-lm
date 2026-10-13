@@ -51,9 +51,14 @@
       "date": "2026-10-13",
       "node": "ARM-2026-10-13",
       "severity": "medium",
-      "status": "active",
+      "status": "resolved",
       "summary": "The running Codex workspace holds the source directory open, so Windows rejected the final local directory rename. The GitHub repository, origin URL and repository contents have already migrated.",
-      "mitigation": "After closing this Codex workspace, run scripts/complete_local_path_migration.ps1 from D:\\Resources with -Execute, reopen the new project path, and retarget the paused Codex automation."
+      "mitigation": "The local repository is now at D:\\Resources\\llm-historical-anachronism. The Codex App daily Automation prompt/path still requires a user-visible configuration check.",
+      "resolved_at": "2026-10-13T00:00:00+08:00",
+      "resolution_evidence": [
+        "current workspace path D:\\Resources\\llm-historical-anachronism",
+        "git commit 7ca6f60: docs: record successful local repository migration"
+      ]
     }
   ]
 }

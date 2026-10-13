@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "updated_at": "2026-10-13T00:00:00+08:00",
+  "scheduler": {
+    "max_tasks_per_daily_run": 3,
+    "max_total_minutes_per_daily_run": 90,
+    "last_claimed_track": null,
+    "selection_policy": "Resume a safe running task; otherwise choose the lowest numeric priority with satisfied dependencies, preferring the track not claimed last when priorities tie."
+  },
+  "tasks": [
+    {
+      "task_id": "A1",
+      "track": "A",
+      "objective": "核验核心时代错置、时间回溯、Temporal RAG、时间知识编辑与后见之明竞争工作的真实方法、数据、结果和创新边界。",
+      "priority": 1,
+      "dependencies": [],
+      "acceptance_criteria": [
+        "每项关键结论可追溯到原论文或官方项目页",
+        "矩阵区分方法、数据、报告结果、局限和本项目差异化风险",
+        "不得把自动摘要当作已核验证据"
+      ],
+      "expected_artifacts": [
+        "research/literature/METHOD_LANDSCAPE.md",
+        "research/literature/method_matrix.csv"
+      ],
+      "resource_budget": {"max_minutes_per_attempt": 90, "max_sources_per_attempt": 8, "paid_api": false},
+      "status": "ready",
+      "evidence_paths": [],
+      "blockers": [],
+      "attempt_count": 0,
+      "checkpoint": {"safe_to_resume": false, "summary": "not started"}
+    },
+    {
+      "task_id": "A2",
+      "track": "A",
+      "objective": "设计跨时期、跨领域的年代证据卡模式，显式区分事件、发表、首次记载、传播及行动者可达时间。",
+      "priority": 1,
+      "dependencies": [],
+      "acceptance_criteria": [
+        "模式包含来源类型、直接支持或推断、不确定性与偏差字段",
+        "明确 knowledge existence、actor access、archival record、model use 四层",
+        "提供 unknown 和 unverified 的合法状态及校验规则"
+      ],
+      "expected_artifacts": [
+        "data/chronology/CHRONOLOGY_CARD_SCHEMA.md",
+        "data/chronology/chronology_card.schema.json"
+      ],
+      "resource_budget": {"max_minutes_per_attempt": 60, "max_files_changed": 4, "paid_api": false},
+      "status": "ready",
+      "evidence_paths": [],
+      "blockers": [],
+      "attempt_count": 0,
+      "checkpoint": {"safe_to_resume": false, "summary": "not started"}
+    },
+    {
+      "task_id": "A3",
+      "track": "A",
+      "objective": "从独立年代证据卡中筛选10至15个高可信对象，形成严格时代截止评测试点和构念审计。",
+      "priority": 2,
+      "dependencies": ["A2"],
+      "acceptance_criteria": [
+        "按底层事件或命题分组，提示变体不得跨训练测试拆分",
+        "区分显式错置、隐性后见、普通事实错误和无法判定",
+        "仅证据充分对象可标为 verified，严格验证题数不得从旧20题继承"
+      ],
+      "expected_artifacts": [
+        "data/benchmarks/anachronism_pilot.jsonl",
+        "reports/anachronism_pilot_construct_audit.md"
+      ],
+      "resource_budget": {"max_minutes_per_attempt": 90, "max_cases_per_attempt": 5, "paid_api": false},
+      "status": "proposed",
+      "evidence_paths": [],
+      "blockers": [],
+      "attempt_count": 0,
+      "checkpoint": {"safe_to_resume": false, "summary": "waiting for A2"}
+    },
+    {
+      "task_id": "B1",
+      "track": "B",
+      "objective": "审计已有实验、评测与推理脚本的复用边界，提出并实现低风险的最小兼容改造。",
+      "priority": 1,
+      "dependencies": [],
+      "acceptance_criteria": [
+        "逐项记录可复用、需改造和不可复用组件及依据",
+        "任何改造均有轻量本地测试且不调用模型",
+        "保留旧20题、原始输出和历史审计不变"
+      ],
+      "expected_artifacts": [
+        "reports/engineering_reuse_audit.md",
+        "experiments/baselines/README.md"
+      ],
+      "resource_budget": {"max_minutes_per_attempt": 75, "max_files_changed": 8, "model_calls": 0},
+      "status": "ready",
+      "evidence_paths": [],
+      "blockers": [],
+      "attempt_count": 0,
+      "checkpoint": {"safe_to_resume": false, "summary": "not started"}
+    },
+    {
+      "task_id": "B2",
+      "track": "B",
+      "objective": "准备可记录模型版本、参数、Prompt、原始输出和多维评分的最小Baseline框架及自动测试。",
+      "priority": 2,
+      "dependencies": ["B1"],
+      "acceptance_criteria": [
+        "支持时间约束Prompt、普通RAG与时间过滤RAG的配置占位",
+        "无授权接口时只验证干运行且绝不生成伪模型输出",
+        "原始输出和评分派生物分离保存"
+      ],
+      "expected_artifacts": [
+        "experiments/baselines/config.schema.json",
+        "tests/test_baseline_scaffold.py"
+      ],
+      "resource_budget": {"max_minutes_per_attempt": 90, "model_calls": 0, "large_downloads": false},
+      "status": "proposed",
+      "evidence_paths": [],
+      "blockers": ["B-0003: no authorized versioned model interface for real runs"],
+      "attempt_count": 0,
+      "checkpoint": {"safe_to_resume": false, "summary": "waiting for B1; dry-run work remains possible"}
+    },
+    {
+      "task_id": "B3",
+      "track": "B",
+      "objective": "形成2至3个方法创新假设，逐项连接失败机制、竞争方法、数据需求、最小实验和证伪条件。",
+      "priority": 2,
+      "dependencies": ["A1", "B1"],
+      "acceptance_criteria": [
+        "每个假设含可观察失败机制和明确可证伪条件",
+        "最小实验包含普通Prompt或普通RAG等直接对照与消融",
+        "假设不得表述为已验证结果或最终论文题目"
+      ],
+      "expected_artifacts": [
+        "research/hypotheses/METHOD_HYPOTHESES.md",
+        "research_design/experiment_matrix.csv"
+      ],
+      "resource_budget": {"max_minutes_per_attempt": 75, "max_hypotheses": 3, "model_calls": 0},
+      "status": "proposed",
+      "evidence_paths": [],
+      "blockers": [],
+      "attempt_count": 0,
+      "checkpoint": {"safe_to_resume": false, "summary": "waiting for A1 and B1"}
+    }
+  ]
+}
