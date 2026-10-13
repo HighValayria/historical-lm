@@ -1,0 +1,14 @@
+{
+  "run_id": "data-feasibility-pilot-2026-10-13",
+  "node_id": "DFP-2026-10-13",
+  "status": "complete_with_blocked_model_execution",
+  "phases": {
+    "A_source_access": "complete",
+    "B_text_quality": "complete_for_purposive_sample",
+    "C_evidence_and_items": "complete_as_development_pilot",
+    "D_model_experiment": "configured_not_executed",
+    "E_scope_reassessment": "complete"
+  },
+  "verification": "PASS",
+  "last_updated": "2026-10-13T23:30:00+08:00"
+}

@@ -1,0 +1,201 @@
+{
+  "method": "character-level Levenshtein distance after whitespace collapse; verified snippets only",
+  "limitations": [
+    "small purposive sample",
+    "single visual verification pass",
+    "punctuation and typographic normalization count as edits",
+    "not a whole-page or whole-document OCR accuracy estimate"
+  ],
+  "passages": 12,
+  "verified_characters": 3706,
+  "micro_character_error_rate": 0.013491635186184566,
+  "per_passage": [
+    {
+      "passage_id": "PASS-CMMJ-1889-0035-A",
+      "page_id": "CMMJ-1889-PDF-0035",
+      "raw_chars": 311,
+      "verified_chars": 311,
+      "edit_distance": 1,
+      "character_error_rate": 0.003215434083601286
+    },
+    {
+      "passage_id": "PASS-CMMJ-1889-0080-A",
+      "page_id": "CMMJ-1889-PDF-0080",
+      "raw_chars": 382,
+      "verified_chars": 382,
+      "edit_distance": 1,
+      "character_error_rate": 0.002617801047120419
+    },
+    {
+      "passage_id": "PASS-CMMJ-1889-0083-A",
+      "page_id": "CMMJ-1889-PDF-0083",
+      "raw_chars": 358,
+      "verified_chars": 356,
+      "edit_distance": 2,
+      "character_error_rate": 0.0056179775280898875
+    },
+    {
+      "passage_id": "PASS-CMMJ-1889-0086-A",
+      "page_id": "CMMJ-1889-PDF-0086",
+      "raw_chars": 326,
+      "verified_chars": 345,
+      "edit_distance": 30,
+      "character_error_rate": 0.08695652173913043
+    },
+    {
+      "passage_id": "PASS-CMMJ-1890-0437-A",
+      "page_id": "CMMJ-1890-PDF-0437",
+      "raw_chars": 207,
+      "verified_chars": 207,
+      "edit_distance": 2,
+      "character_error_rate": 0.00966183574879227
+    },
+    {
+      "passage_id": "PASS-CMMJ-1890-0439-A",
+      "page_id": "CMMJ-1890-PDF-0439",
+      "raw_chars": 242,
+      "verified_chars": 242,
+      "edit_distance": 0,
+      "character_error_rate": 0.0
+    },
+    {
+      "passage_id": "PASS-CMMJ-1890-0442-A",
+      "page_id": "CMMJ-1890-PDF-0442",
+      "raw_chars": 308,
+      "verified_chars": 308,
+      "edit_distance": 0,
+      "character_error_rate": 0.0
+    },
+    {
+      "passage_id": "PASS-WC-1884-0026-A",
+      "page_id": "WC-CUSTOMS-1884-LEAF-0026",
+      "raw_chars": 284,
+      "verified_chars": 283,
+      "edit_distance": 2,
+      "character_error_rate": 0.007067137809187279
+    },
+    {
+      "passage_id": "PASS-WC-1884-0031-A",
+      "page_id": "WC-CUSTOMS-1884-LEAF-0031",
+      "raw_chars": 360,
+      "verified_chars": 357,
+      "edit_distance": 7,
+      "character_error_rate": 0.0196078431372549
+    },
+    {
+      "passage_id": "PASS-WC-1884-0033-A",
+      "page_id": "WC-CUSTOMS-1884-LEAF-0033",
+      "raw_chars": 346,
+      "verified_chars": 346,
+      "edit_distance": 2,
+      "character_error_rate": 0.005780346820809248
+    },
+    {
+      "passage_id": "PASS-WC-1884-0044-A",
+      "page_id": "WC-CUSTOMS-1884-LEAF-0044",
+      "raw_chars": 374,
+      "verified_chars": 373,
+      "edit_distance": 1,
+      "character_error_rate": 0.002680965147453083
+    },
+    {
+      "passage_id": "PASS-WC-1884-0049-A",
+      "page_id": "WC-CUSTOMS-1884-LEAF-0049",
+      "raw_chars": 197,
+      "verified_chars": 196,
+      "edit_distance": 2,
+      "character_error_rate": 0.01020408163265306
+    }
+  ],
+  "selected_page_ocr": {
+    "pages": 14,
+    "characters": 47479,
+    "whitespace_words": 7956,
+    "by_page": [
+      {
+        "page_id": "CMMJ-1889-PDF-0035",
+        "source_id": "IA-CMMJ-1889-1890",
+        "ocr_chars": 2606,
+        "ocr_words_whitespace": 435
+      },
+      {
+        "page_id": "CMMJ-1889-PDF-0080",
+        "source_id": "IA-CMMJ-1889-1890",
+        "ocr_chars": 2997,
+        "ocr_words_whitespace": 505
+      },
+      {
+        "page_id": "CMMJ-1889-PDF-0081",
+        "source_id": "IA-CMMJ-1889-1890",
+        "ocr_chars": 2498,
+        "ocr_words_whitespace": 430
+      },
+      {
+        "page_id": "CMMJ-1889-PDF-0083",
+        "source_id": "IA-CMMJ-1889-1890",
+        "ocr_chars": 3277,
+        "ocr_words_whitespace": 540
+      },
+      {
+        "page_id": "CMMJ-1889-PDF-0086",
+        "source_id": "IA-CMMJ-1889-1890",
+        "ocr_chars": 2750,
+        "ocr_words_whitespace": 444
+      },
+      {
+        "page_id": "CMMJ-1890-PDF-0437",
+        "source_id": "IA-CMMJ-1889-1890",
+        "ocr_chars": 3108,
+        "ocr_words_whitespace": 521
+      },
+      {
+        "page_id": "CMMJ-1890-PDF-0439",
+        "source_id": "IA-CMMJ-1889-1890",
+        "ocr_chars": 2859,
+        "ocr_words_whitespace": 502
+      },
+      {
+        "page_id": "CMMJ-1890-PDF-0442",
+        "source_id": "IA-CMMJ-1889-1890",
+        "ocr_chars": 3210,
+        "ocr_words_whitespace": 528
+      },
+      {
+        "page_id": "WC-CUSTOMS-1884-LEAF-0026",
+        "source_id": "WELLCOME-B20416179-1884",
+        "ocr_chars": 4091,
+        "ocr_words_whitespace": 670
+      },
+      {
+        "page_id": "WC-CUSTOMS-1884-LEAF-0027",
+        "source_id": "WELLCOME-B20416179-1884",
+        "ocr_chars": 4091,
+        "ocr_words_whitespace": 709
+      },
+      {
+        "page_id": "WC-CUSTOMS-1884-LEAF-0031",
+        "source_id": "WELLCOME-B20416179-1884",
+        "ocr_chars": 4042,
+        "ocr_words_whitespace": 690
+      },
+      {
+        "page_id": "WC-CUSTOMS-1884-LEAF-0033",
+        "source_id": "WELLCOME-B20416179-1884",
+        "ocr_chars": 3751,
+        "ocr_words_whitespace": 598
+      },
+      {
+        "page_id": "WC-CUSTOMS-1884-LEAF-0044",
+        "source_id": "WELLCOME-B20416179-1884",
+        "ocr_chars": 4034,
+        "ocr_words_whitespace": 672
+      },
+      {
+        "page_id": "WC-CUSTOMS-1884-LEAF-0049",
+        "source_id": "WELLCOME-B20416179-1884",
+        "ocr_chars": 4165,
+        "ocr_words_whitespace": 712
+      }
+    ]
+  }
+}

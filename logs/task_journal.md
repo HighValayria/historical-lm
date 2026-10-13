@@ -47,3 +47,13 @@ AUTO 调度确认仅 Daily 到期，Five-Day 与 Half-Month 未到期。完成�
 ## 2026-10-09 Daily 与 Five-Day 自动化
 
 AUTO 调度确认 Daily 与 Five-Day 到期，Half-Month 未到期。Daily 完成六通道广度检查，新增登记 `edbt:2026.65` HistoricRAG；该论文的原始扫描件随答案呈现模式强化出处审计，但其瑞士报纸语料、任务边界与付费模型实现均不进入本项目试点。Five-Day 消化 2026-10-05 至 2026-10-09 的新增证据并清理已完成的深读队列；保留仅直接服务 N00—N07 的来源、许可、OCR 和无训练基线复核项。未修改正式研究设计，也不提出正式设计修订。
+
+## 2026-10-13 — Data Feasibility Pilot
+
+- 完成 DFP-A：实际取得 Internet Archive CMMJ 1889—1890 和 Wellcome 1884 海关医务汇编的公共领域文件；bnAsie 上海工部局报告因许可不明只保留目录元数据。
+- 完成 DFP-B：建立 14 页的图像—OCR—页码关系，形成 12 个单次视觉核验段落；发现表格数字 5,807 被 OCR 误为 6,807。
+- 完成 DFP-C：形成 12 个证据单元、20 道开发题和 11 个证据独立组。
+- DFP-D 仅完成配置：生成 60 个 B0/B1/B2 Prompt packet 和人工评分表；没有模型接口，因此没有模型输出或分数。
+- 完成 DFP-E：建议优先做来源边界明确的 Benchmark/行为研究，中文材料与时间覆盖作为下一轮核心增量，RAG 与训练后置。
+- 验证：73 个 raw/processed 文件的 SHA-256、页面/段落/题项引用和 Prompt 哈希检查全部通过。
+- 新增 blocker：bnAsie 权限、模型接口、独立史学裁决；已同步 `BLOCKERS.md` 与 `state/blockers.json`。

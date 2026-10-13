@@ -1,0 +1,1444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v2#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v2# http://www.loc.gov/standards/alto/alto.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>b20416179_abbyy.xml</fileName>
+    </sourceImageInformation>
+    <OCRProcessing ID="OCR_1">
+      <preProcessingStep>
+        <processingDateTime>2015-01-28T06:13:58</processingDateTime>
+        <processingAgency>intranda GmbH, www.intranda.com</processingAgency>
+        <processingSoftware>
+          <softwareCreator>intranda GmbH, Germany</softwareCreator>
+          <softwareName>intranda OCR Module for TaskManager</softwareName>
+          <softwareVersion>1.0r42</softwareVersion>
+        </processingSoftware>
+      </preProcessingStep>
+      <ocrProcessingStep>
+        <processingSoftware>
+          <softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+          <softwareName>FineReader Engine</softwareName>
+          <softwareVersion>10</softwareVersion>
+        </processingSoftware>
+      </ocrProcessingStep>
+    </OCRProcessing>
+  </Description>
+  <Layout>
+    <Page PHYSICAL_IMG_NR="50" ID="PAGE_50" WIDTH="2604" HEIGHT="3701">
+      <TopMargin ID="TopMargin_1" HPOS="305" VPOS="390" WIDTH="1436" HEIGHT="37">
+        <TextBlock ID="TextBlock_233" HPOS="305" VPOS="390" WIDTH="1436" HEIGHT="37">
+          <TextLine ID="TextLine_1748" HPOS="984" VPOS="393" WIDTH="757" HEIGHT="32">
+            <String ID="Word_20431" HPOS="984" VPOS="395" WIDTH="196" HEIGHT="29" CONTENT="EPITOME" />
+            <SP ID="SP_18688" HPOS="1180" VPOS="395" WIDTH="32" HEIGHT="0" />
+            <String ID="Word_20432" HPOS="1212" VPOS="395" WIDTH="56" HEIGHT="29" CONTENT="OF" />
+            <SP ID="SP_18689" HPOS="1268" VPOS="393" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20433" HPOS="1298" VPOS="393" WIDTH="204" HEIGHT="32" CONTENT="MEDICAL" />
+            <SP ID="SP_18690" HPOS="1502" VPOS="393" WIDTH="31" HEIGHT="0" />
+            <String ID="Word_20434" HPOS="1533" VPOS="393" WIDTH="208" HEIGHT="30" CONTENT="REPORTS." />
+          </TextLine>
+          <TextLine ID="TextLine_1747" HPOS="305" VPOS="390" WIDTH="51" HEIGHT="37">
+            <String ID="Word_20430" HPOS="305" VPOS="390" WIDTH="51" HEIGHT="37" CONTENT="26" />
+          </TextLine>
+        </TextBlock>
+      </TopMargin>
+      <PrintSpace ID="PrintSpace_51" HPOS="294" VPOS="1038" WIDTH="2143" HEIGHT="2250">
+        <TextBlock ID="TextBlock_230" HPOS="292" VPOS="488" WIDTH="2145" HEIGHT="550">
+          <TextLine ID="TextLine_1749" HPOS="307" VPOS="495" WIDTH="2118" HEIGHT="53">
+            <String ID="Word_20435" HPOS="307" VPOS="503" WIDTH="226" HEIGHT="34" CONTENT="vnderneailt" />
+            <SP ID="SP_18691" HPOS="533" VPOS="499" WIDTH="24" HEIGHT="0" />
+            <String ID="Word_20436" HPOS="557" VPOS="499" WIDTH="64" HEIGHT="37" CONTENT="the" />
+            <SP ID="SP_18692" HPOS="621" VPOS="499" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20437" HPOS="639" VPOS="499" WIDTH="420" HEIGHT="37" CONTENT="houses—converting" />
+            <SP ID="SP_18693" HPOS="1059" VPOS="499" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20438" HPOS="1087" VPOS="499" WIDTH="30" HEIGHT="36" CONTENT="it" />
+            <SP ID="SP_18694" HPOS="1117" VPOS="499" WIDTH="26" HEIGHT="0" />
+            <String ID="Word_20439" HPOS="1143" VPOS="499" WIDTH="89" HEIGHT="36" CONTENT="thus" />
+            <SP ID="SP_18695" HPOS="1232" VPOS="498" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20440" HPOS="1260" VPOS="498" WIDTH="81" HEIGHT="36" CONTENT="into" />
+            <SP ID="SP_18696" HPOS="1341" VPOS="498" WIDTH="24" HEIGHT="0" />
+            <String ID="Word_20441" HPOS="1365" VPOS="510" WIDTH="23" HEIGHT="24" CONTENT="a" />
+            <SP ID="SP_18697" HPOS="1388" VPOS="498" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20442" HPOS="1407" VPOS="498" WIDTH="220" HEIGHT="37" CONTENT="fever-trap." />
+            <SP ID="SP_18698" HPOS="1627" VPOS="496" WIDTH="56" HEIGHT="0" />
+            <String ID="Word_20443" HPOS="1683" VPOS="496" WIDTH="78" HEIGHT="36" CONTENT="Not" />
+            <SP ID="SP_18699" HPOS="1761" VPOS="496" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20444" HPOS="1780" VPOS="508" WIDTH="156" HEIGHT="25" CONTENT="content" />
+            <SP ID="SP_18700" HPOS="1936" VPOS="495" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20445" HPOS="1957" VPOS="495" WIDTH="91" HEIGHT="37" CONTENT="with" />
+            <SP ID="SP_18701" HPOS="2048" VPOS="495" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20446" HPOS="2067" VPOS="508" WIDTH="22" HEIGHT="23" CONTENT="a" />
+            <SP ID="SP_18702" HPOS="2089" VPOS="495" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20447" HPOS="2109" VPOS="495" WIDTH="145" HEIGHT="49" CONTENT="perfect" />
+            <SP ID="SP_18703" HPOS="2254" VPOS="495" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20448" HPOS="2274" VPOS="508" WIDTH="151" HEIGHT="24" CONTENT="surface" />
+          </TextLine>
+          <TextLine ID="TextLine_1750" HPOS="308" VPOS="556" WIDTH="2116" HEIGHT="53">
+            <String ID="Word_20449" HPOS="308" VPOS="560" WIDTH="195" HEIGHT="49" CONTENT="drainage," />
+            <SP ID="SP_18704" HPOS="503" VPOS="560" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20450" HPOS="523" VPOS="561" WIDTH="90" HEIGHT="36" CONTENT="they" />
+            <SP ID="SP_18705" HPOS="613" VPOS="559" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20451" HPOS="632" VPOS="559" WIDTH="227" HEIGHT="37" CONTENT="introduced" />
+            <SP ID="SP_18706" HPOS="859" VPOS="559" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20452" HPOS="886" VPOS="559" WIDTH="85" HEIGHT="37" CONTENT="that" />
+            <SP ID="SP_18707" HPOS="971" VPOS="559" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20453" HPOS="989" VPOS="560" WIDTH="125" HEIGHT="36" CONTENT="which" />
+            <SP ID="SP_18708" HPOS="1114" VPOS="560" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20454" HPOS="1141" VPOS="560" WIDTH="33" HEIGHT="36" CONTENT="is" />
+            <SP ID="SP_18709" HPOS="1174" VPOS="559" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20455" HPOS="1194" VPOS="559" WIDTH="215" HEIGHT="36" CONTENT="dangerous" />
+            <SP ID="SP_18710" HPOS="1409" VPOS="559" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20456" HPOS="1439" VPOS="561" WIDTH="41" HEIGHT="33" CONTENT="at" />
+            <SP ID="SP_18711" HPOS="1480" VPOS="558" WIDTH="26" HEIGHT="0" />
+            <String ID="Word_20457" HPOS="1506" VPOS="558" WIDTH="49" HEIGHT="36" CONTENT="its" />
+            <SP ID="SP_18712" HPOS="1555" VPOS="558" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20458" HPOS="1583" VPOS="558" WIDTH="88" HEIGHT="36" CONTENT="best" />
+            <SP ID="SP_18713" HPOS="1671" VPOS="557" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20459" HPOS="1699" VPOS="557" WIDTH="78" HEIGHT="36" CONTENT="and" />
+            <SP ID="SP_18714" HPOS="1777" VPOS="557" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20460" HPOS="1797" VPOS="557" WIDTH="140" HEIGHT="48" CONTENT="deadly" />
+            <SP ID="SP_18715" HPOS="1937" VPOS="557" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20461" HPOS="1956" VPOS="560" WIDTH="39" HEIGHT="33" CONTENT="at" />
+            <SP ID="SP_18716" HPOS="1995" VPOS="556" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20462" HPOS="2013" VPOS="556" WIDTH="50" HEIGHT="37" CONTENT="its" />
+            <SP ID="SP_18717" HPOS="2063" VPOS="556" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20463" HPOS="2081" VPOS="560" WIDTH="131" HEIGHT="41" CONTENT="worst," />
+            <SP ID="SP_18718" HPOS="2212" VPOS="556" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20464" HPOS="2232" VPOS="556" WIDTH="152" HEIGHT="49" CONTENT="namely" />
+            <SP ID="SP_18719" HPOS="2384" VPOS="556" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20465" HPOS="2403" VPOS="570" WIDTH="21" HEIGHT="22" CONTENT="a" />
+          </TextLine>
+          <TextLine ID="TextLine_1751" HPOS="309" VPOS="616" WIDTH="2116" HEIGHT="54">
+            <String ID="Word_20466" HPOS="309" VPOS="626" WIDTH="145" HEIGHT="33" CONTENT="system" />
+            <SP ID="SP_18720" HPOS="454" VPOS="623" WIDTH="26" HEIGHT="0" />
+            <String ID="Word_20467" HPOS="480" VPOS="623" WIDTH="42" HEIGHT="35" CONTENT="of" />
+            <SP ID="SP_18721" HPOS="522" VPOS="621" WIDTH="26" HEIGHT="0" />
+            <String ID="Word_20468" HPOS="548" VPOS="621" WIDTH="260" HEIGHT="37" CONTENT="drainage—a" />
+            <SP ID="SP_18722" HPOS="808" VPOS="624" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20469" HPOS="835" VPOS="624" WIDTH="142" HEIGHT="45" CONTENT="system" />
+            <SP ID="SP_18723" HPOS="977" VPOS="620" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20470" HPOS="1007" VPOS="620" WIDTH="39" HEIGHT="38" CONTENT="of" />
+            <SP ID="SP_18724" HPOS="1046" VPOS="620" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20471" HPOS="1076" VPOS="620" WIDTH="182" HEIGHT="37" CONTENT="drainage" />
+            <SP ID="SP_18725" HPOS="1258" VPOS="619" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20472" HPOS="1277" VPOS="619" WIDTH="160" HEIGHT="37" CONTENT="without" />
+            <SP ID="SP_18726" HPOS="1437" VPOS="619" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20473" HPOS="1456" VPOS="632" WIDTH="22" HEIGHT="23" CONTENT="a" />
+            <SP ID="SP_18727" HPOS="1478" VPOS="618" WIDTH="17" HEIGHT="0" />
+            <String ID="Word_20474" HPOS="1495" VPOS="618" WIDTH="79" HEIGHT="44" CONTENT="fall," />
+            <SP ID="SP_18728" HPOS="1574" VPOS="618" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20475" HPOS="1594" VPOS="630" WIDTH="43" HEIGHT="24" CONTENT="or" />
+            <SP ID="SP_18729" HPOS="1637" VPOS="617" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20476" HPOS="1656" VPOS="617" WIDTH="108" HEIGHT="37" CONTENT="three" />
+            <SP ID="SP_18730" HPOS="1764" VPOS="616" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20477" HPOS="1792" VPOS="616" WIDTH="78" HEIGHT="37" CONTENT="feet" />
+            <SP ID="SP_18731" HPOS="1870" VPOS="616" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20478" HPOS="1898" VPOS="616" WIDTH="40" HEIGHT="37" CONTENT="of" />
+            <SP ID="SP_18732" HPOS="1938" VPOS="616" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20479" HPOS="1968" VPOS="617" WIDTH="69" HEIGHT="36" CONTENT="fall" />
+            <SP ID="SP_18733" HPOS="2037" VPOS="616" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20480" HPOS="2065" VPOS="616" WIDTH="156" HEIGHT="37" CONTENT="divided" />
+            <SP ID="SP_18734" HPOS="2221" VPOS="616" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20481" HPOS="2248" VPOS="629" WIDTH="92" HEIGHT="24" CONTENT="over" />
+            <SP ID="SP_18735" HPOS="2340" VPOS="616" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20482" HPOS="2359" VPOS="616" WIDTH="66" HEIGHT="36" CONTENT="the" />
+          </TextLine>
+          <TextLine ID="TextLine_1752" HPOS="310" VPOS="677" WIDTH="2115" HEIGHT="54">
+            <String ID="Word_20483" HPOS="310" VPOS="686" WIDTH="141" HEIGHT="45" CONTENT="system" />
+            <SP ID="SP_18736" HPOS="451" VPOS="686" WIDTH="17" HEIGHT="0" />
+            <String ID="Word_20484" HPOS="468" VPOS="699" WIDTH="11" HEIGHT="30" CONTENT=";" />
+            <SP ID="SP_18737" HPOS="479" VPOS="682" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20485" HPOS="509" VPOS="682" WIDTH="127" HEIGHT="36" CONTENT="drains" />
+            <SP ID="SP_18738" HPOS="636" VPOS="682" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20486" HPOS="656" VPOS="682" WIDTH="129" HEIGHT="36" CONTENT="whose" />
+            <SP ID="SP_18739" HPOS="785" VPOS="682" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20487" HPOS="805" VPOS="684" WIDTH="121" HEIGHT="34" CONTENT="outlet" />
+            <SP ID="SP_18740" HPOS="926" VPOS="681" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20488" HPOS="944" VPOS="681" WIDTH="61" HEIGHT="36" CONTENT="for" />
+            <SP ID="SP_18741" HPOS="1005" VPOS="681" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20489" HPOS="1034" VPOS="694" WIDTH="114" HEIGHT="23" CONTENT="many" />
+            <SP ID="SP_18742" HPOS="1148" VPOS="680" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20490" HPOS="1167" VPOS="680" WIDTH="155" HEIGHT="36" CONTENT="months" />
+            <SP ID="SP_18743" HPOS="1322" VPOS="679" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20491" HPOS="1350" VPOS="679" WIDTH="41" HEIGHT="37" CONTENT="of" />
+            <SP ID="SP_18744" HPOS="1391" VPOS="679" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20492" HPOS="1418" VPOS="680" WIDTH="63" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_18745" HPOS="1481" VPOS="680" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20493" HPOS="1508" VPOS="692" WIDTH="93" HEIGHT="35" CONTENT="year" />
+            <SP ID="SP_18746" HPOS="1601" VPOS="677" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20494" HPOS="1619" VPOS="677" WIDTH="32" HEIGHT="38" CONTENT="is" />
+            <SP ID="SP_18747" HPOS="1651" VPOS="677" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20495" HPOS="1670" VPOS="678" WIDTH="121" HEIGHT="37" CONTENT="below" />
+            <SP ID="SP_18748" HPOS="1791" VPOS="678" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20496" HPOS="1810" VPOS="678" WIDTH="66" HEIGHT="37" CONTENT="the" />
+            <SP ID="SP_18749" HPOS="1876" VPOS="678" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20497" HPOS="1895" VPOS="678" WIDTH="97" HEIGHT="37" CONTENT="level" />
+            <SP ID="SP_18750" HPOS="1992" VPOS="677" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20498" HPOS="2012" VPOS="677" WIDTH="40" HEIGHT="37" CONTENT="of" />
+            <SP ID="SP_18751" HPOS="2052" VPOS="677" WIDTH="26" HEIGHT="0" />
+            <String ID="Word_20499" HPOS="2078" VPOS="678" WIDTH="65" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_18752" HPOS="2143" VPOS="677" WIDTH="22" HEIGHT="0" />
+            <String ID="Word_20500" HPOS="2165" VPOS="677" WIDTH="260" HEIGHT="48" CONTENT="surrounding" />
+          </TextLine>
+          <TextLine ID="TextLine_1753" HPOS="310" VPOS="737" WIDTH="2114" HEIGHT="53">
+            <String ID="Word_20501" HPOS="310" VPOS="748" WIDTH="143" HEIGHT="31" CONTENT="water;" />
+            <SP ID="SP_18753" HPOS="453" VPOS="743" WIDTH="32" HEIGHT="0" />
+            <String ID="Word_20502" HPOS="485" VPOS="743" WIDTH="128" HEIGHT="36" CONTENT="drains" />
+            <SP ID="SP_18754" HPOS="613" VPOS="743" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20503" HPOS="640" VPOS="743" WIDTH="111" HEIGHT="35" CONTENT="made" />
+            <SP ID="SP_18755" HPOS="751" VPOS="742" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20504" HPOS="779" VPOS="742" WIDTH="41" HEIGHT="36" CONTENT="of" />
+            <SP ID="SP_18756" HPOS="820" VPOS="742" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20505" HPOS="847" VPOS="755" WIDTH="141" HEIGHT="35" CONTENT="porous" />
+            <SP ID="SP_18757" HPOS="988" VPOS="742" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20506" HPOS="1015" VPOS="742" WIDTH="142" HEIGHT="36" CONTENT="bricks," />
+            <SP ID="SP_18758" HPOS="1157" VPOS="741" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20507" HPOS="1178" VPOS="745" WIDTH="162" HEIGHT="32" CONTENT="without" />
+            <SP ID="SP_18759" HPOS="1340" VPOS="740" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20508" HPOS="1367" VPOS="740" WIDTH="237" HEIGHT="44" CONTENT="ventilation," />
+            <SP ID="SP_18760" HPOS="1604" VPOS="740" WIDTH="22" HEIGHT="0" />
+            <String ID="Word_20509" HPOS="1626" VPOS="743" WIDTH="135" HEIGHT="44" CONTENT="except" />
+            <SP ID="SP_18761" HPOS="1761" VPOS="737" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20510" HPOS="1788" VPOS="737" WIDTH="61" HEIGHT="38" CONTENT="for" />
+            <SP ID="SP_18762" HPOS="1849" VPOS="737" WIDTH="26" HEIGHT="0" />
+            <String ID="Word_20511" HPOS="1875" VPOS="739" WIDTH="66" HEIGHT="37" CONTENT="the" />
+            <SP ID="SP_18763" HPOS="1941" VPOS="738" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20512" HPOS="1969" VPOS="738" WIDTH="338" HEIGHT="38" CONTENT="communications" />
+            <SP ID="SP_18764" HPOS="2307" VPOS="738" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20513" HPOS="2335" VPOS="738" WIDTH="89" HEIGHT="36" CONTENT="with" />
+          </TextLine>
+          <TextLine ID="TextLine_1754" HPOS="309" VPOS="802" WIDTH="686" HEIGHT="49">
+            <String ID="Word_20514" HPOS="309" VPOS="804" WIDTH="139" HEIGHT="37" CONTENT="houses" />
+            <SP ID="SP_18765" HPOS="448" VPOS="804" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20515" HPOS="466" VPOS="804" WIDTH="76" HEIGHT="36" CONTENT="and" />
+            <SP ID="SP_18766" HPOS="542" VPOS="804" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20516" HPOS="562" VPOS="803" WIDTH="337" HEIGHT="47" CONTENT="streets.'—(XXI." />
+            <SP ID="SP_18767" HPOS="899" VPOS="802" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20517" HPOS="918" VPOS="802" WIDTH="77" HEIGHT="49" CONTENT="41.)" />
+          </TextLine>
+          <TextLine ID="TextLine_1755" HPOS="386" VPOS="859" WIDTH="2041" HEIGHT="49">
+            <String ID="Word_20518" HPOS="386" VPOS="865" WIDTH="56" HEIGHT="36" CONTENT="At" />
+            <SP ID="SP_18768" HPOS="442" VPOS="865" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20519" HPOS="461" VPOS="878" WIDTH="21" HEIGHT="24" CONTENT="a" />
+            <SP ID="SP_18769" HPOS="482" VPOS="864" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20520" HPOS="502" VPOS="864" WIDTH="106" HEIGHT="37" CONTENT="short" />
+            <SP ID="SP_18770" HPOS="608" VPOS="864" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20521" HPOS="636" VPOS="865" WIDTH="170" HEIGHT="35" CONTENT="distance" />
+            <SP ID="SP_18771" HPOS="806" VPOS="863" WIDTH="31" HEIGHT="0" />
+            <String ID="Word_20522" HPOS="837" VPOS="863" WIDTH="157" HEIGHT="37" CONTENT="behind," />
+            <SP ID="SP_18772" HPOS="994" VPOS="863" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20523" HPOS="1015" VPOS="877" WIDTH="22" HEIGHT="22" CONTENT="a" />
+            <SP ID="SP_18773" HPOS="1037" VPOS="863" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20524" HPOS="1056" VPOS="863" WIDTH="84" HEIGHT="36" CONTENT="wall" />
+            <SP ID="SP_18774" HPOS="1140" VPOS="862" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20525" HPOS="1170" VPOS="862" WIDTH="186" HEIGHT="37" CONTENT="stretches" />
+            <SP ID="SP_18775" HPOS="1356" VPOS="861" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20526" HPOS="1386" VPOS="861" WIDTH="173" HEIGHT="37" CONTENT="between" />
+            <SP ID="SP_18776" HPOS="1559" VPOS="861" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20527" HPOS="1589" VPOS="861" WIDTH="66" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_18777" HPOS="1655" VPOS="861" WIDTH="35" HEIGHT="0" />
+            <String ID="Word_20528" HPOS="1690" VPOS="864" WIDTH="72" HEIGHT="33" CONTENT="two" />
+            <SP ID="SP_18778" HPOS="1762" VPOS="860" WIDTH="32" HEIGHT="0" />
+            <String ID="Word_20529" HPOS="1794" VPOS="860" WIDTH="135" HEIGHT="38" CONTENT="rivers," />
+            <SP ID="SP_18779" HPOS="1929" VPOS="860" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20530" HPOS="1948" VPOS="861" WIDTH="77" HEIGHT="36" CONTENT="and" />
+            <SP ID="SP_18780" HPOS="2025" VPOS="860" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20531" HPOS="2055" VPOS="860" WIDTH="40" HEIGHT="36" CONTENT="in" />
+            <SP ID="SP_18781" HPOS="2095" VPOS="860" WIDTH="32" HEIGHT="0" />
+            <String ID="Word_20532" HPOS="2127" VPOS="863" WIDTH="83" HEIGHT="34" CONTENT="that" />
+            <SP ID="SP_18782" HPOS="2210" VPOS="859" WIDTH="33" HEIGHT="0" />
+            <String ID="Word_20533" HPOS="2243" VPOS="859" WIDTH="184" HEIGHT="37" CONTENT="direction" />
+          </TextLine>
+          <TextLine ID="TextLine_1756" HPOS="613" VPOS="921" WIDTH="1811" HEIGHT="51">
+            <String ID="Word_20534" HPOS="613" VPOS="924" WIDTH="171" HEIGHT="37" CONTENT="encloses" />
+            <SP ID="SP_18783" HPOS="784" VPOS="924" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20535" HPOS="814" VPOS="924" WIDTH="95" HEIGHT="37" CONTENT="both" />
+            <SP ID="SP_18784" HPOS="909" VPOS="924" WIDTH="32" HEIGHT="0" />
+            <String ID="Word_20536" HPOS="941" VPOS="924" WIDTH="64" HEIGHT="37" CONTENT="the" />
+            <SP ID="SP_18785" HPOS="1005" VPOS="923" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20537" HPOS="1035" VPOS="923" WIDTH="76" HEIGHT="37" CONTENT="city" />
+            <SP ID="SP_18786" HPOS="1111" VPOS="923" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20538" HPOS="1130" VPOS="923" WIDTH="76" HEIGHT="36" CONTENT="and" />
+            <SP ID="SP_18787" HPOS="1206" VPOS="923" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20539" HPOS="1235" VPOS="937" WIDTH="22" HEIGHT="22" CONTENT="a" />
+            <SP ID="SP_18788" HPOS="1257" VPOS="922" WIDTH="34" HEIGHT="0" />
+            <String ID="Word_20540" HPOS="1291" VPOS="922" WIDTH="263" HEIGHT="37" CONTENT="considerable" />
+            <SP ID="SP_18789" HPOS="1554" VPOS="922" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20541" HPOS="1583" VPOS="934" WIDTH="108" HEIGHT="37" CONTENT="piece" />
+            <SP ID="SP_18790" HPOS="1691" VPOS="921" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20542" HPOS="1721" VPOS="921" WIDTH="41" HEIGHT="37" CONTENT="of" />
+            <SP ID="SP_18791" HPOS="1762" VPOS="921" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20543" HPOS="1790" VPOS="921" WIDTH="104" HEIGHT="45" CONTENT="land," />
+            <SP ID="SP_18792" HPOS="1894" VPOS="921" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20544" HPOS="1923" VPOS="921" WIDTH="154" HEIGHT="38" CONTENT="divided" />
+            <SP ID="SP_18793" HPOS="2077" VPOS="921" WIDTH="31" HEIGHT="0" />
+            <String ID="Word_20545" HPOS="2108" VPOS="922" WIDTH="79" HEIGHT="35" CONTENT="into" />
+            <SP ID="SP_18794" HPOS="2187" VPOS="921" WIDTH="34" HEIGHT="0" />
+            <String ID="Word_20546" HPOS="2221" VPOS="921" WIDTH="203" HEIGHT="47" CONTENT="vegetable" />
+          </TextLine>
+          <TextLine ID="TextLine_1757" HPOS="369" VPOS="966" WIDTH="2053" HEIGHT="67">
+            <String ID="Word_20547" HPOS="369" VPOS="966" WIDTH="103" HEIGHT="26" CONTENT="Agncu" />
+            <SP ID="SP_18795" HPOS="472" VPOS="966" WIDTH="15" HEIGHT="0" />
+            <String ID="Word_20548" HPOS="487" VPOS="967" WIDTH="66" HEIGHT="26" CONTENT="bure." />
+            <SP ID="SP_18796" HPOS="553" VPOS="967" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20549" HPOS="611" VPOS="985" WIDTH="176" HEIGHT="48" CONTENT="gar(jengi" />
+            <SP ID="SP_18797" HPOS="787" VPOS="985" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20550" HPOS="843" VPOS="985" WIDTH="121" HEIGHT="36" CONTENT="These" />
+            <SP ID="SP_18798" HPOS="964" VPOS="984" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20551" HPOS="984" VPOS="984" WIDTH="100" HEIGHT="49" CONTENT="plots" />
+            <SP ID="SP_18799" HPOS="1084" VPOS="984" WIDTH="17" HEIGHT="0" />
+            <String ID="Word_20552" HPOS="1101" VPOS="997" WIDTH="65" HEIGHT="23" CONTENT="are" />
+            <SP ID="SP_18800" HPOS="1166" VPOS="983" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20553" HPOS="1185" VPOS="983" WIDTH="168" HEIGHT="37" CONTENT="watered" />
+            <SP ID="SP_18801" HPOS="1353" VPOS="983" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20554" HPOS="1372" VPOS="987" WIDTH="38" HEIGHT="33" CONTENT="at" />
+            <SP ID="SP_18802" HPOS="1410" VPOS="984" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20555" HPOS="1429" VPOS="984" WIDTH="52" HEIGHT="35" CONTENT="all" />
+            <SP ID="SP_18803" HPOS="1481" VPOS="984" WIDTH="14" HEIGHT="0" />
+            <String ID="Word_20556" HPOS="1495" VPOS="984" WIDTH="116" HEIGHT="36" CONTENT="hours" />
+            <SP ID="SP_18804" HPOS="1611" VPOS="983" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20557" HPOS="1632" VPOS="983" WIDTH="40" HEIGHT="36" CONTENT="of" />
+            <SP ID="SP_18805" HPOS="1672" VPOS="983" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20558" HPOS="1691" VPOS="983" WIDTH="65" HEIGHT="37" CONTENT="the" />
+            <SP ID="SP_18806" HPOS="1756" VPOS="983" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20559" HPOS="1776" VPOS="983" WIDTH="74" HEIGHT="36" CONTENT="day" />
+            <SP ID="SP_18807" HPOS="1850" VPOS="983" WIDTH="15" HEIGHT="0" />
+            <String ID="Word_20560" HPOS="1865" VPOS="983" WIDTH="91" HEIGHT="36" CONTENT="with" />
+            <SP ID="SP_18808" HPOS="1956" VPOS="983" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20561" HPOS="1976" VPOS="997" WIDTH="21" HEIGHT="22" CONTENT="a" />
+            <SP ID="SP_18809" HPOS="1997" VPOS="982" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20562" HPOS="2015" VPOS="982" WIDTH="83" HEIGHT="37" CONTENT="rich" />
+            <SP ID="SP_18810" HPOS="2098" VPOS="982" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20563" HPOS="2116" VPOS="982" WIDTH="123" HEIGHT="49" CONTENT="liquid" />
+            <SP ID="SP_18811" HPOS="2239" VPOS="982" WIDTH="14" HEIGHT="0" />
+            <String ID="Word_20564" HPOS="2253" VPOS="994" WIDTH="169" HEIGHT="31" CONTENT="manure," />
+          </TextLine>
+        </TextBlock>
+        <TextBlock ID="TextBlock_231" HPOS="2406" VPOS="1056" WIDTH="31" HEIGHT="26">
+          <TextLine ID="TextLine_1758" HPOS="2409" VPOS="1056" WIDTH="17" HEIGHT="22">
+            <String ID="Word_20565" HPOS="2409" VPOS="1056" WIDTH="17" HEIGHT="22" CONTENT="s" />
+          </TextLine>
+        </TextBlock>
+        <TextBlock ID="TextBlock_232" HPOS="294" VPOS="1038" WIDTH="2143" HEIGHT="2250">
+          <TextLine ID="TextLine_1759" HPOS="313" VPOS="1041" WIDTH="2090" HEIGHT="53">
+            <String ID="Word_20566" HPOS="313" VPOS="1050" WIDTH="216" HEIGHT="33" CONTENT="consisting" />
+            <SP ID="SP_18812" HPOS="529" VPOS="1045" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20567" HPOS="548" VPOS="1045" WIDTH="39" HEIGHT="37" CONTENT="of" />
+            <SP ID="SP_18813" HPOS="587" VPOS="1045" WIDTH="31" HEIGHT="0" />
+            <String ID="Word_20568" HPOS="618" VPOS="1045" WIDTH="65" HEIGHT="37" CONTENT="the" />
+            <SP ID="SP_18814" HPOS="683" VPOS="1045" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20569" HPOS="710" VPOS="1045" WIDTH="205" HEIGHT="48" CONTENT="night-soil" />
+            <SP ID="SP_18815" HPOS="915" VPOS="1045" WIDTH="32" HEIGHT="0" />
+            <String ID="Word_20570" HPOS="947" VPOS="1045" WIDTH="40" HEIGHT="36" CONTENT="of" />
+            <SP ID="SP_18816" HPOS="987" VPOS="1045" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20571" HPOS="1005" VPOS="1045" WIDTH="64" HEIGHT="37" CONTENT="the" />
+            <SP ID="SP_18817" HPOS="1069" VPOS="1045" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20572" HPOS="1098" VPOS="1049" WIDTH="76" HEIGHT="43" CONTENT="city" />
+            <SP ID="SP_18818" HPOS="1174" VPOS="1044" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20573" HPOS="1204" VPOS="1044" WIDTH="245" HEIGHT="49" CONTENT="population;" />
+            <SP ID="SP_18819" HPOS="1449" VPOS="1044" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20574" HPOS="1479" VPOS="1044" WIDTH="76" HEIGHT="36" CONTENT="and" />
+            <SP ID="SP_18820" HPOS="1555" VPOS="1043" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20575" HPOS="1584" VPOS="1043" WIDTH="207" HEIGHT="49" CONTENT="according" />
+            <SP ID="SP_18821" HPOS="1791" VPOS="1043" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20576" HPOS="1820" VPOS="1048" WIDTH="39" HEIGHT="32" CONTENT="to" />
+            <SP ID="SP_18822" HPOS="1859" VPOS="1043" WIDTH="32" HEIGHT="0" />
+            <String ID="Word_20577" HPOS="1891" VPOS="1043" WIDTH="65" HEIGHT="38" CONTENT="Dr." />
+            <SP ID="SP_18823" HPOS="1956" VPOS="1043" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20578" HPOS="1977" VPOS="1043" WIDTH="134" HEIGHT="37" CONTENT="Reid's" />
+            <SP ID="SP_18824" HPOS="2111" VPOS="1043" WIDTH="31" HEIGHT="0" />
+            <String ID="Word_20579" HPOS="2142" VPOS="1044" WIDTH="158" HEIGHT="47" CONTENT="Report," />
+            <SP ID="SP_18825" HPOS="2300" VPOS="1044" WIDTH="24" HEIGHT="0" />
+            <String ID="Word_20580" HPOS="2324" VPOS="1044" WIDTH="10" HEIGHT="17" CONTENT="f" />
+            <SP ID="SP_18826" HPOS="2334" VPOS="1041" WIDTH="15" HEIGHT="0" />
+            <String ID="Word_20581" HPOS="2349" VPOS="1041" WIDTH="54" HEIGHT="37" CONTENT="thi" />
+          </TextLine>
+          <TextLine ID="TextLine_1760" HPOS="310" VPOS="1103" WIDTH="2115" HEIGHT="53">
+            <String ID="Word_20582" HPOS="310" VPOS="1107" WIDTH="189" HEIGHT="45" CONTENT="effectual," />
+            <SP ID="SP_18827" HPOS="499" VPOS="1106" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20583" HPOS="519" VPOS="1106" WIDTH="215" HEIGHT="50" CONTENT="profitable," />
+            <SP ID="SP_18828" HPOS="734" VPOS="1106" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20584" HPOS="754" VPOS="1106" WIDTH="71" HEIGHT="36" CONTENT="but" />
+            <SP ID="SP_18829" HPOS="825" VPOS="1106" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20585" HPOS="845" VPOS="1110" WIDTH="98" HEIGHT="33" CONTENT="most" />
+            <SP ID="SP_18830" HPOS="943" VPOS="1106" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20586" HPOS="963" VPOS="1106" WIDTH="265" HEIGHT="36" CONTENT="disagreeable" />
+            <SP ID="SP_18831" HPOS="1228" VPOS="1105" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20587" HPOS="1248" VPOS="1105" WIDTH="156" HEIGHT="37" CONTENT="method" />
+            <SP ID="SP_18832" HPOS="1404" VPOS="1105" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20588" HPOS="1423" VPOS="1105" WIDTH="40" HEIGHT="36" CONTENT="of" />
+            <SP ID="SP_18833" HPOS="1463" VPOS="1105" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20589" HPOS="1490" VPOS="1105" WIDTH="177" HEIGHT="37" CONTENT="utilizing" />
+            <SP ID="SP_18834" HPOS="1667" VPOS="1105" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20590" HPOS="1687" VPOS="1105" WIDTH="65" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_18835" HPOS="1752" VPOS="1104" WIDTH="33" HEIGHT="0" />
+            <String ID="Word_20591" HPOS="1785" VPOS="1104" WIDTH="204" HEIGHT="49" CONTENT="night-soil" />
+            <SP ID="SP_18836" HPOS="1989" VPOS="1104" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20592" HPOS="2009" VPOS="1117" WIDTH="122" HEIGHT="24" CONTENT="seems" />
+            <SP ID="SP_18837" HPOS="2131" VPOS="1104" WIDTH="32" HEIGHT="0" />
+            <String ID="Word_20593" HPOS="2163" VPOS="1104" WIDTH="90" HEIGHT="36" CONTENT="here" />
+            <SP ID="SP_18838" HPOS="2253" VPOS="1103" WIDTH="32" HEIGHT="0" />
+            <String ID="Word_20594" HPOS="2285" VPOS="1103" WIDTH="140" HEIGHT="37" CONTENT="devoid" />
+          </TextLine>
+          <TextLine ID="TextLine_1761" HPOS="311" VPOS="1164" WIDTH="2113" HEIGHT="53">
+            <String ID="Word_20595" HPOS="311" VPOS="1168" WIDTH="41" HEIGHT="37" CONTENT="of" />
+            <SP ID="SP_18839" HPOS="352" VPOS="1167" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20596" HPOS="371" VPOS="1167" WIDTH="142" HEIGHT="37" CONTENT="special" />
+            <SP ID="SP_18840" HPOS="513" VPOS="1167" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20597" HPOS="532" VPOS="1167" WIDTH="75" HEIGHT="37" CONTENT="evil" />
+            <SP ID="SP_18841" HPOS="607" VPOS="1167" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20598" HPOS="626" VPOS="1179" WIDTH="278" HEIGHT="24" CONTENT="consequences" />
+            <SP ID="SP_18842" HPOS="904" VPOS="1170" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20599" HPOS="923" VPOS="1170" WIDTH="38" HEIGHT="33" CONTENT="to" />
+            <SP ID="SP_18843" HPOS="961" VPOS="1166" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20600" HPOS="988" VPOS="1166" WIDTH="141" HEIGHT="45" CONTENT="health," />
+            <SP ID="SP_18844" HPOS="1129" VPOS="1165" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20601" HPOS="1150" VPOS="1165" WIDTH="348" HEIGHT="38" CONTENT="notwithstanding" />
+            <SP ID="SP_18845" HPOS="1498" VPOS="1165" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20602" HPOS="1525" VPOS="1166" WIDTH="85" HEIGHT="37" CONTENT="that" />
+            <SP ID="SP_18846" HPOS="1610" VPOS="1166" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20603" HPOS="1629" VPOS="1166" WIDTH="110" HEIGHT="36" CONTENT="those" />
+            <SP ID="SP_18847" HPOS="1739" VPOS="1165" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20604" HPOS="1767" VPOS="1165" WIDTH="178" HEIGHT="50" CONTENT="engaged" />
+            <SP ID="SP_18848" HPOS="1945" VPOS="1165" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20605" HPOS="1963" VPOS="1165" WIDTH="41" HEIGHT="37" CONTENT="in" />
+            <SP ID="SP_18849" HPOS="2004" VPOS="1165" WIDTH="31" HEIGHT="0" />
+            <String ID="Word_20606" HPOS="2035" VPOS="1165" WIDTH="64" HEIGHT="37" CONTENT="the" />
+            <SP ID="SP_18850" HPOS="2099" VPOS="1165" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20607" HPOS="2119" VPOS="1170" WIDTH="147" HEIGHT="32" CONTENT="culture" />
+            <SP ID="SP_18851" HPOS="2266" VPOS="1164" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20608" HPOS="2287" VPOS="1164" WIDTH="41" HEIGHT="37" CONTENT="of" />
+            <SP ID="SP_18852" HPOS="2328" VPOS="1164" WIDTH="31" HEIGHT="0" />
+            <String ID="Word_20609" HPOS="2359" VPOS="1164" WIDTH="65" HEIGHT="36" CONTENT="the" />
+          </TextLine>
+          <TextLine ID="TextLine_1762" HPOS="310" VPOS="1226" WIDTH="1479" HEIGHT="51">
+            <String ID="Word_20610" HPOS="310" VPOS="1228" WIDTH="222" HEIGHT="49" CONTENT="vegetables" />
+            <SP ID="SP_18853" HPOS="532" VPOS="1228" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20611" HPOS="552" VPOS="1228" WIDTH="216" HEIGHT="48" CONTENT="constantly" />
+            <SP ID="SP_18854" HPOS="768" VPOS="1228" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20612" HPOS="786" VPOS="1228" WIDTH="144" HEIGHT="36" CONTENT="respire" />
+            <SP ID="SP_18855" HPOS="930" VPOS="1228" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20613" HPOS="949" VPOS="1241" WIDTH="21" HEIGHT="22" CONTENT="a" />
+            <SP ID="SP_18856" HPOS="970" VPOS="1227" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20614" HPOS="988" VPOS="1227" WIDTH="136" HEIGHT="48" CONTENT="highly" />
+            <SP ID="SP_18857" HPOS="1124" VPOS="1227" WIDTH="15" HEIGHT="0" />
+            <String ID="Word_20615" HPOS="1139" VPOS="1227" WIDTH="149" HEIGHT="49" CONTENT="impure" />
+            <SP ID="SP_18858" HPOS="1288" VPOS="1227" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20616" HPOS="1307" VPOS="1226" WIDTH="389" HEIGHT="50" CONTENT="atmosphere.'—(II." />
+            <SP ID="SP_18859" HPOS="1696" VPOS="1226" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20617" HPOS="1716" VPOS="1226" WIDTH="73" HEIGHT="48" CONTENT="44.)" />
+          </TextLine>
+          <TextLine ID="TextLine_1763" HPOS="388" VPOS="1286" WIDTH="2036" HEIGHT="51">
+            <String ID="Word_20618" HPOS="388" VPOS="1288" WIDTH="79" HEIGHT="36" CONTENT="The" />
+            <SP ID="SP_18860" HPOS="467" VPOS="1287" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20619" HPOS="486" VPOS="1287" WIDTH="275" HEIGHT="49" CONTENT="water-supply" />
+            <SP ID="SP_18861" HPOS="761" VPOS="1287" WIDTH="17" HEIGHT="0" />
+            <String ID="Word_20620" HPOS="778" VPOS="1287" WIDTH="32" HEIGHT="36" CONTENT="is" />
+            <SP ID="SP_18862" HPOS="810" VPOS="1287" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20621" HPOS="831" VPOS="1287" WIDTH="130" HEIGHT="36" CONTENT="drawn" />
+            <SP ID="SP_18863" HPOS="961" VPOS="1287" WIDTH="24" HEIGHT="0" />
+            <String ID="Word_20622" HPOS="985" VPOS="1287" WIDTH="128" HEIGHT="47" CONTENT="(1871)" />
+            <SP ID="SP_18864" HPOS="1113" VPOS="1287" WIDTH="24" HEIGHT="0" />
+            <String ID="Word_20623" HPOS="1137" VPOS="1287" WIDTH="100" HEIGHT="37" CONTENT="from" />
+            <SP ID="SP_18865" HPOS="1237" VPOS="1287" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20624" HPOS="1266" VPOS="1288" WIDTH="66" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_18866" HPOS="1332" VPOS="1288" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20625" HPOS="1362" VPOS="1288" WIDTH="146" HEIGHT="49" CONTENT="muddy" />
+            <SP ID="SP_18867" HPOS="1508" VPOS="1288" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20626" HPOS="1535" VPOS="1288" WIDTH="110" HEIGHT="37" CONTENT="river." />
+            <SP ID="SP_18868" HPOS="1645" VPOS="1288" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20627" HPOS="1702" VPOS="1288" WIDTH="141" HEIGHT="36" CONTENT="Before" />
+            <SP ID="SP_18869" HPOS="1843" VPOS="1287" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20628" HPOS="1872" VPOS="1287" WIDTH="119" HEIGHT="37" CONTENT="being" />
+            <SP ID="SP_18870" HPOS="1991" VPOS="1287" WIDTH="31" HEIGHT="0" />
+            <String ID="Word_20629" HPOS="2022" VPOS="1287" WIDTH="97" HEIGHT="37" CONTENT="used" />
+            <SP ID="SP_18871" HPOS="2119" VPOS="1286" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20630" HPOS="2148" VPOS="1286" WIDTH="61" HEIGHT="38" CONTENT="for" />
+            <SP ID="SP_18872" HPOS="2209" VPOS="1286" WIDTH="32" HEIGHT="0" />
+            <String ID="Word_20631" HPOS="2241" VPOS="1286" WIDTH="183" HEIGHT="49" CONTENT="drinking" />
+          </TextLine>
+          <TextLine ID="TextLine_1764" HPOS="612" VPOS="1347" WIDTH="1813" HEIGHT="49">
+            <String ID="Word_20632" HPOS="612" VPOS="1361" WIDTH="184" HEIGHT="35" CONTENT="purposes" />
+            <SP ID="SP_18873" HPOS="796" VPOS="1348" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20633" HPOS="815" VPOS="1348" WIDTH="31" HEIGHT="37" CONTENT="it" />
+            <SP ID="SP_18874" HPOS="846" VPOS="1348" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20634" HPOS="864" VPOS="1348" WIDTH="34" HEIGHT="37" CONTENT="is" />
+            <SP ID="SP_18875" HPOS="898" VPOS="1348" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20635" HPOS="918" VPOS="1348" WIDTH="254" HEIGHT="48" CONTENT="precipitated" />
+            <SP ID="SP_18876" HPOS="1172" VPOS="1348" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20636" HPOS="1190" VPOS="1349" WIDTH="92" HEIGHT="36" CONTENT="with" />
+            <SP ID="SP_18877" HPOS="1282" VPOS="1349" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20637" HPOS="1310" VPOS="1349" WIDTH="115" HEIGHT="45" CONTENT="alum," />
+            <SP ID="SP_18878" HPOS="1425" VPOS="1349" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20638" HPOS="1446" VPOS="1349" WIDTH="91" HEIGHT="37" CONTENT="then" />
+            <SP ID="SP_18879" HPOS="1537" VPOS="1348" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20639" HPOS="1556" VPOS="1348" WIDTH="138" HEIGHT="38" CONTENT="heated" />
+            <SP ID="SP_18880" HPOS="1694" VPOS="1348" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20640" HPOS="1721" VPOS="1349" WIDTH="73" HEIGHT="36" CONTENT="and" />
+            <SP ID="SP_18881" HPOS="1794" VPOS="1348" WIDTH="22" HEIGHT="0" />
+            <String ID="Word_20641" HPOS="1816" VPOS="1348" WIDTH="163" HEIGHT="37" CONTENT="filtered." />
+            <SP ID="SP_18882" HPOS="1979" VPOS="1348" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20642" HPOS="2035" VPOS="1348" WIDTH="126" HEIGHT="36" CONTENT="These" />
+            <SP ID="SP_18883" HPOS="2161" VPOS="1347" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20643" HPOS="2180" VPOS="1347" WIDTH="245" HEIGHT="49" CONTENT="precautions" />
+          </TextLine>
+          <TextLine ID="TextLine_1765" HPOS="413" VPOS="1388" WIDTH="93" HEIGHT="28">
+            <String ID="Word_20644" HPOS="413" VPOS="1388" WIDTH="93" HEIGHT="28" CONTENT="Water" />
+          </TextLine>
+          <TextLine ID="TextLine_1766" HPOS="611" VPOS="1408" WIDTH="1813" HEIGHT="50">
+            <String ID="Word_20645" HPOS="611" VPOS="1422" WIDTH="65" HEIGHT="26" CONTENT="are" />
+            <SP ID="SP_18884" HPOS="676" VPOS="1408" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20646" HPOS="694" VPOS="1408" WIDTH="170" HEIGHT="37" CONTENT="needful," />
+            <SP ID="SP_18885" HPOS="864" VPOS="1408" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20647" HPOS="884" VPOS="1409" WIDTH="166" HEIGHT="36" CONTENT="because" />
+            <SP ID="SP_18886" HPOS="1050" VPOS="1409" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20648" HPOS="1070" VPOS="1409" WIDTH="40" HEIGHT="36" CONTENT="of" />
+            <SP ID="SP_18887" HPOS="1110" VPOS="1409" WIDTH="24" HEIGHT="0" />
+            <String ID="Word_20649" HPOS="1134" VPOS="1409" WIDTH="297" HEIGHT="38" CONTENT="contamination" />
+            <SP ID="SP_18888" HPOS="1431" VPOS="1409" WIDTH="33" HEIGHT="0" />
+            <String ID="Word_20650" HPOS="1464" VPOS="1411" WIDTH="53" HEIGHT="36" CONTENT="by" />
+            <SP ID="SP_18889" HPOS="1517" VPOS="1410" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20651" HPOS="1535" VPOS="1410" WIDTH="66" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_18890" HPOS="1601" VPOS="1409" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20652" HPOS="1628" VPOS="1409" WIDTH="129" HEIGHT="37" CONTENT="refuse" />
+            <SP ID="SP_18891" HPOS="1757" VPOS="1409" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20653" HPOS="1777" VPOS="1409" WIDTH="40" HEIGHT="37" CONTENT="of" />
+            <SP ID="SP_18892" HPOS="1817" VPOS="1409" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20654" HPOS="1847" VPOS="1409" WIDTH="65" HEIGHT="37" CONTENT="the" />
+            <SP ID="SP_18893" HPOS="1912" VPOS="1409" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20655" HPOS="1932" VPOS="1409" WIDTH="77" HEIGHT="48" CONTENT="city" />
+            <SP ID="SP_18894" HPOS="2009" VPOS="1409" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20656" HPOS="2027" VPOS="1409" WIDTH="133" HEIGHT="37" CONTENT="above," />
+            <SP ID="SP_18895" HPOS="2160" VPOS="1408" WIDTH="23" HEIGHT="0" />
+            <String ID="Word_20657" HPOS="2183" VPOS="1408" WIDTH="76" HEIGHT="37" CONTENT="and" />
+            <SP ID="SP_18896" HPOS="2259" VPOS="1408" WIDTH="31" HEIGHT="0" />
+            <String ID="Word_20658" HPOS="2290" VPOS="1408" WIDTH="40" HEIGHT="36" CONTENT="of" />
+            <SP ID="SP_18897" HPOS="2330" VPOS="1408" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20659" HPOS="2360" VPOS="1408" WIDTH="64" HEIGHT="36" CONTENT="the" />
+          </TextLine>
+          <TextLine ID="TextLine_1767" HPOS="312" VPOS="1469" WIDTH="2110" HEIGHT="49">
+            <String ID="Word_20660" HPOS="312" VPOS="1482" WIDTH="201" HEIGHT="25" CONTENT="enormous" />
+            <SP ID="SP_18898" HPOS="513" VPOS="1469" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20661" HPOS="540" VPOS="1469" WIDTH="92" HEIGHT="36" CONTENT="boat" />
+            <SP ID="SP_18899" HPOS="632" VPOS="1469" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20662" HPOS="660" VPOS="1470" WIDTH="224" HEIGHT="48" CONTENT="population" />
+            <SP ID="SP_18900" HPOS="884" VPOS="1470" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20663" HPOS="904" VPOS="1470" WIDTH="125" HEIGHT="48" CONTENT="living" />
+            <SP ID="SP_18901" HPOS="1029" VPOS="1470" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20664" HPOS="1056" VPOS="1483" WIDTH="49" HEIGHT="24" CONTENT="on" />
+            <SP ID="SP_18902" HPOS="1105" VPOS="1470" WIDTH="26" HEIGHT="0" />
+            <String ID="Word_20665" HPOS="1131" VPOS="1470" WIDTH="67" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_18903" HPOS="1198" VPOS="1470" WIDTH="22" HEIGHT="0" />
+            <String ID="Word_20666" HPOS="1220" VPOS="1470" WIDTH="103" HEIGHT="36" CONTENT="Han." />
+            <SP ID="SP_18904" HPOS="1323" VPOS="1470" WIDTH="67" HEIGHT="0" />
+            <String ID="Word_20667" HPOS="1390" VPOS="1472" WIDTH="10" HEIGHT="18" CONTENT="'" />
+            <SP ID="SP_18905" HPOS="1400" VPOS="1470" WIDTH="16" HEIGHT="0" />
+            <String ID="Word_20668" HPOS="1416" VPOS="1470" WIDTH="361" HEIGHT="37" CONTENT="Notwithstanding" />
+            <SP ID="SP_18906" HPOS="1777" VPOS="1470" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20669" HPOS="1804" VPOS="1470" WIDTH="109" HEIGHT="37" CONTENT="these" />
+            <SP ID="SP_18907" HPOS="1913" VPOS="1470" WIDTH="25" HEIGHT="0" />
+            <String ID="Word_20670" HPOS="1938" VPOS="1470" WIDTH="257" HEIGHT="48" CONTENT="precautions," />
+            <SP ID="SP_18908" HPOS="2195" VPOS="1469" WIDTH="25" HEIGHT="0" />
+            <String ID="Word_20671" HPOS="2220" VPOS="1469" WIDTH="202" HEIGHT="37" CONTENT="dysentery" />
+          </TextLine>
+          <TextLine ID="TextLine_1768" HPOS="309" VPOS="1530" WIDTH="1226" HEIGHT="49">
+            <String ID="Word_20672" HPOS="309" VPOS="1531" WIDTH="40" HEIGHT="36" CONTENT="in" />
+            <SP ID="SP_18909" HPOS="349" VPOS="1531" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20673" HPOS="368" VPOS="1534" WIDTH="157" HEIGHT="33" CONTENT="autumn" />
+            <SP ID="SP_18910" HPOS="525" VPOS="1530" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20674" HPOS="546" VPOS="1530" WIDTH="133" HEIGHT="37" CONTENT="affects" />
+            <SP ID="SP_18911" HPOS="679" VPOS="1530" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20675" HPOS="697" VPOS="1531" WIDTH="96" HEIGHT="36" CONTENT="both" />
+            <SP ID="SP_18912" HPOS="793" VPOS="1531" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20676" HPOS="812" VPOS="1531" WIDTH="148" HEIGHT="36" CONTENT="natives" />
+            <SP ID="SP_18913" HPOS="960" VPOS="1531" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20677" HPOS="981" VPOS="1531" WIDTH="77" HEIGHT="36" CONTENT="and" />
+            <SP ID="SP_18914" HPOS="1058" VPOS="1531" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20678" HPOS="1076" VPOS="1531" WIDTH="363" HEIGHT="48" CONTENT="foreigners.'—(II." />
+            <SP ID="SP_18915" HPOS="1439" VPOS="1531" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20679" HPOS="1459" VPOS="1532" WIDTH="76" HEIGHT="46" CONTENT="45.)" />
+          </TextLine>
+          <TextLine ID="TextLine_1769" HPOS="388" VPOS="1590" WIDTH="2037" HEIGHT="51">
+            <String ID="Word_20680" HPOS="388" VPOS="1591" WIDTH="47" HEIGHT="36" CONTENT="In" />
+            <SP ID="SP_18916" HPOS="435" VPOS="1590" WIDTH="31" HEIGHT="0" />
+            <String ID="Word_20681" HPOS="466" VPOS="1590" WIDTH="108" HEIGHT="45" CONTENT="1871," />
+            <SP ID="SP_18917" HPOS="574" VPOS="1590" WIDTH="36" HEIGHT="0" />
+            <String ID="Word_20682" HPOS="610" VPOS="1591" WIDTH="64" HEIGHT="37" CONTENT="the" />
+            <SP ID="SP_18918" HPOS="674" VPOS="1591" WIDTH="36" HEIGHT="0" />
+            <String ID="Word_20683" HPOS="710" VPOS="1591" WIDTH="205" HEIGHT="49" CONTENT="European" />
+            <SP ID="SP_18919" HPOS="915" VPOS="1591" WIDTH="35" HEIGHT="0" />
+            <String ID="Word_20684" HPOS="950" VPOS="1592" WIDTH="227" HEIGHT="49" CONTENT="population" />
+            <SP ID="SP_18920" HPOS="1177" VPOS="1592" WIDTH="37" HEIGHT="0" />
+            <String ID="Word_20685" HPOS="1214" VPOS="1593" WIDTH="39" HEIGHT="36" CONTENT="of" />
+            <SP ID="SP_18921" HPOS="1253" VPOS="1593" WIDTH="37" HEIGHT="0" />
+            <String ID="Word_20686" HPOS="1290" VPOS="1593" WIDTH="192" HEIGHT="44" CONTENT="Hankow," />
+            <SP ID="SP_18922" HPOS="1482" VPOS="1593" WIDTH="38" HEIGHT="0" />
+            <String ID="Word_20687" HPOS="1520" VPOS="1593" WIDTH="190" HEIGHT="36" CONTENT="although" />
+            <SP ID="SP_18923" HPOS="1710" VPOS="1593" WIDTH="36" HEIGHT="0" />
+            <String ID="Word_20688" HPOS="1746" VPOS="1596" WIDTH="209" HEIGHT="33" CONTENT="somewhat" />
+            <SP ID="SP_18924" HPOS="1955" VPOS="1592" WIDTH="37" HEIGHT="0" />
+            <String ID="Word_20689" HPOS="1992" VPOS="1592" WIDTH="246" HEIGHT="48" CONTENT="fluctuating," />
+            <SP ID="SP_18925" HPOS="2238" VPOS="1592" WIDTH="38" HEIGHT="0" />
+            <String ID="Word_20690" HPOS="2276" VPOS="1592" WIDTH="149" HEIGHT="48" CONTENT="usually" />
+          </TextLine>
+          <TextLine ID="TextLine_1770" HPOS="310" VPOS="1652" WIDTH="2118" HEIGHT="50">
+            <String ID="Word_20691" HPOS="310" VPOS="1652" WIDTH="193" HEIGHT="48" CONTENT="averaged" />
+            <SP ID="SP_18926" HPOS="503" VPOS="1652" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20692" HPOS="524" VPOS="1652" WIDTH="72" HEIGHT="35" CONTENT="110" />
+            <SP ID="SP_18927" HPOS="596" VPOS="1652" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20693" HPOS="615" VPOS="1652" WIDTH="139" HEIGHT="37" CONTENT="adults," />
+            <SP ID="SP_18928" HPOS="754" VPOS="1652" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20694" HPOS="775" VPOS="1653" WIDTH="76" HEIGHT="36" CONTENT="and" />
+            <SP ID="SP_18929" HPOS="851" VPOS="1652" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20695" HPOS="878" VPOS="1652" WIDTH="99" HEIGHT="37" CONTENT="from" />
+            <SP ID="SP_18930" HPOS="977" VPOS="1652" WIDTH="23" HEIGHT="0" />
+            <String ID="Word_20696" HPOS="1000" VPOS="1654" WIDTH="46" HEIGHT="36" CONTENT="10" />
+            <SP ID="SP_18931" HPOS="1046" VPOS="1654" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20697" HPOS="1067" VPOS="1657" WIDTH="38" HEIGHT="33" CONTENT="to" />
+            <SP ID="SP_18932" HPOS="1105" VPOS="1654" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20698" HPOS="1125" VPOS="1654" WIDTH="49" HEIGHT="35" CONTENT="20" />
+            <SP ID="SP_18933" HPOS="1174" VPOS="1653" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20699" HPOS="1194" VPOS="1653" WIDTH="184" HEIGHT="37" CONTENT="children." />
+            <SP ID="SP_18934" HPOS="1378" VPOS="1653" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20700" HPOS="1433" VPOS="1653" WIDTH="66" HEIGHT="37" CONTENT="All" />
+            <SP ID="SP_18935" HPOS="1499" VPOS="1653" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20701" HPOS="1518" VPOS="1667" WIDTH="97" HEIGHT="23" CONTENT="were" />
+            <SP ID="SP_18936" HPOS="1615" VPOS="1654" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20702" HPOS="1633" VPOS="1654" WIDTH="40" HEIGHT="36" CONTENT="in" />
+            <SP ID="SP_18937" HPOS="1673" VPOS="1654" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20703" HPOS="1701" VPOS="1667" WIDTH="90" HEIGHT="35" CONTENT="easy" />
+            <SP ID="SP_18938" HPOS="1791" VPOS="1653" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20704" HPOS="1810" VPOS="1653" WIDTH="311" HEIGHT="37" CONTENT="circumstances," />
+            <SP ID="SP_18939" HPOS="2121" VPOS="1653" WIDTH="22" HEIGHT="0" />
+            <String ID="Word_20705" HPOS="2143" VPOS="1653" WIDTH="77" HEIGHT="36" CONTENT="and" />
+            <SP ID="SP_18940" HPOS="2220" VPOS="1653" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20706" HPOS="2247" VPOS="1653" WIDTH="181" HEIGHT="48" CONTENT="engaged" />
+          </TextLine>
+          <TextLine ID="TextLine_1771" HPOS="368" VPOS="1713" WIDTH="2060" HEIGHT="66">
+            <String ID="Word_20707" HPOS="368" VPOS="1753" WIDTH="31" HEIGHT="25" CONTENT="^" />
+            <SP ID="SP_18941" HPOS="399" VPOS="1728" WIDTH="16" HEIGHT="0" />
+            <String ID="Word_20708" HPOS="514" VPOS="1755" WIDTH="9" HEIGHT="23" CONTENT="^" />
+            <SP ID="SP_18942" HPOS="523" VPOS="1713" WIDTH="17" HEIGHT="0" />
+            <String ID="Word_20709" HPOS="612" VPOS="1713" WIDTH="39" HEIGHT="38" CONTENT="in" />
+            <SP ID="SP_18943" HPOS="651" VPOS="1713" WIDTH="32" HEIGHT="0" />
+            <String ID="Word_20710" HPOS="683" VPOS="1713" WIDTH="136" HEIGHT="37" CONTENT="indoor" />
+            <SP ID="SP_18944" HPOS="819" VPOS="1713" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20711" HPOS="848" VPOS="1714" WIDTH="257" HEIGHT="49" CONTENT="occupations." />
+            <SP ID="SP_18945" HPOS="1105" VPOS="1714" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20712" HPOS="1160" VPOS="1714" WIDTH="224" HEIGHT="49" CONTENT="According" />
+            <SP ID="SP_18946" HPOS="1384" VPOS="1714" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20713" HPOS="1402" VPOS="1718" WIDTH="39" HEIGHT="33" CONTENT="to" />
+            <SP ID="SP_18947" HPOS="1441" VPOS="1715" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20714" HPOS="1468" VPOS="1715" WIDTH="68" HEIGHT="36" CONTENT="Dr." />
+            <SP ID="SP_18948" HPOS="1536" VPOS="1715" WIDTH="23" HEIGHT="0" />
+            <String ID="Word_20715" HPOS="1559" VPOS="1715" WIDTH="112" HEIGHT="46" CONTENT="Reid," />
+            <SP ID="SP_18949" HPOS="1671" VPOS="1714" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20716" HPOS="1691" VPOS="1714" WIDTH="187" HEIGHT="37" CONTENT="although" />
+            <SP ID="SP_18950" HPOS="1878" VPOS="1714" WIDTH="33" HEIGHT="0" />
+            <String ID="Word_20717" HPOS="1911" VPOS="1714" WIDTH="66" HEIGHT="37" CONTENT="the" />
+            <SP ID="SP_18951" HPOS="1977" VPOS="1714" WIDTH="34" HEIGHT="0" />
+            <String ID="Word_20718" HPOS="2011" VPOS="1718" WIDTH="256" HEIGHT="33" CONTENT="temperature" />
+            <SP ID="SP_18952" HPOS="2267" VPOS="1714" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20719" HPOS="2297" VPOS="1714" WIDTH="40" HEIGHT="37" CONTENT="of" />
+            <SP ID="SP_18953" HPOS="2337" VPOS="1714" WIDTH="26" HEIGHT="0" />
+            <String ID="Word_20720" HPOS="2363" VPOS="1714" WIDTH="65" HEIGHT="37" CONTENT="the" />
+          </TextLine>
+          <TextLine ID="TextLine_1772" HPOS="610" VPOS="1773" WIDTH="1818" HEIGHT="51">
+            <String ID="Word_20721" HPOS="610" VPOS="1773" WIDTH="57" HEIGHT="36" CONTENT="air" />
+            <SP ID="SP_18954" HPOS="667" VPOS="1773" WIDTH="17" HEIGHT="0" />
+            <String ID="Word_20722" HPOS="684" VPOS="1773" WIDTH="33" HEIGHT="37" CONTENT="is" />
+            <SP ID="SP_18955" HPOS="717" VPOS="1773" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20723" HPOS="736" VPOS="1774" WIDTH="72" HEIGHT="37" CONTENT="but" />
+            <SP ID="SP_18956" HPOS="808" VPOS="1774" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20724" HPOS="826" VPOS="1774" WIDTH="98" HEIGHT="37" CONTENT="little" />
+            <SP ID="SP_18957" HPOS="924" VPOS="1774" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20725" HPOS="944" VPOS="1775" WIDTH="123" HEIGHT="37" CONTENT="below" />
+            <SP ID="SP_18958" HPOS="1067" VPOS="1775" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20726" HPOS="1087" VPOS="1775" WIDTH="85" HEIGHT="37" CONTENT="that" />
+            <SP ID="SP_18959" HPOS="1172" VPOS="1775" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20727" HPOS="1191" VPOS="1775" WIDTH="41" HEIGHT="37" CONTENT="of" />
+            <SP ID="SP_18960" HPOS="1232" VPOS="1775" WIDTH="25" HEIGHT="0" />
+            <String ID="Word_20728" HPOS="1257" VPOS="1776" WIDTH="66" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_18961" HPOS="1323" VPOS="1776" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20729" HPOS="1342" VPOS="1776" WIDTH="104" HEIGHT="48" CONTENT="body" />
+            <SP ID="SP_18962" HPOS="1446" VPOS="1776" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20730" HPOS="1466" VPOS="1776" WIDTH="143" HEIGHT="36" CONTENT="during" />
+            <SP ID="SP_18963" HPOS="1609" VPOS="1776" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20731" HPOS="1627" VPOS="1776" WIDTH="67" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_18964" HPOS="1694" VPOS="1776" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20732" HPOS="1714" VPOS="1789" WIDTH="169" HEIGHT="23" CONTENT="summer" />
+            <SP ID="SP_18965" HPOS="1883" VPOS="1788" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20733" HPOS="1902" VPOS="1788" WIDTH="148" HEIGHT="24" CONTENT="season," />
+            <SP ID="SP_18966" HPOS="2050" VPOS="1776" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20734" HPOS="2071" VPOS="1776" WIDTH="78" HEIGHT="36" CONTENT="and" />
+            <SP ID="SP_18967" HPOS="2149" VPOS="1775" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20735" HPOS="2169" VPOS="1775" WIDTH="169" HEIGHT="38" CONTENT="exercise" />
+            <SP ID="SP_18968" HPOS="2338" VPOS="1775" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20736" HPOS="2357" VPOS="1788" WIDTH="71" HEIGHT="23" CONTENT="can" />
+          </TextLine>
+          <TextLine ID="TextLine_1773" HPOS="311" VPOS="1834" WIDTH="2116" HEIGHT="52">
+            <String ID="Word_20737" HPOS="311" VPOS="1834" WIDTH="88" HEIGHT="48" CONTENT="only" />
+            <SP ID="SP_18969" HPOS="399" VPOS="1834" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20738" HPOS="426" VPOS="1835" WIDTH="48" HEIGHT="35" CONTENT="be" />
+            <SP ID="SP_18970" HPOS="474" VPOS="1834" WIDTH="32" HEIGHT="0" />
+            <String ID="Word_20739" HPOS="506" VPOS="1834" WIDTH="113" HEIGHT="37" CONTENT="taken" />
+            <SP ID="SP_18971" HPOS="619" VPOS="1834" WIDTH="33" HEIGHT="0" />
+            <String ID="Word_20740" HPOS="652" VPOS="1848" WIDTH="48" HEIGHT="23" CONTENT="on" />
+            <SP ID="SP_18972" HPOS="700" VPOS="1848" WIDTH="36" HEIGHT="0" />
+            <String ID="Word_20741" HPOS="736" VPOS="1849" WIDTH="22" HEIGHT="22" CONTENT="a" />
+            <SP ID="SP_18973" HPOS="758" VPOS="1836" WIDTH="26" HEIGHT="0" />
+            <String ID="Word_20742" HPOS="784" VPOS="1836" WIDTH="147" HEIGHT="36" CONTENT="limited" />
+            <SP ID="SP_18974" HPOS="931" VPOS="1836" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20743" HPOS="960" VPOS="1837" WIDTH="114" HEIGHT="36" CONTENT="scale," />
+            <SP ID="SP_18975" HPOS="1074" VPOS="1837" WIDTH="38" HEIGHT="0" />
+            <String ID="Word_20744" HPOS="1112" VPOS="1850" WIDTH="22" HEIGHT="23" CONTENT="a" />
+            <SP ID="SP_18976" HPOS="1134" VPOS="1837" WIDTH="31" HEIGHT="0" />
+            <String ID="Word_20745" HPOS="1165" VPOS="1837" WIDTH="263" HEIGHT="38" CONTENT="considerable" />
+            <SP ID="SP_18977" HPOS="1428" VPOS="1837" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20746" HPOS="1457" VPOS="1840" WIDTH="157" HEIGHT="33" CONTENT="amount" />
+            <SP ID="SP_18978" HPOS="1614" VPOS="1836" WIDTH="45" HEIGHT="0" />
+            <String ID="Word_20747" HPOS="1659" VPOS="1836" WIDTH="39" HEIGHT="37" CONTENT="of" />
+            <SP ID="SP_18979" HPOS="1698" VPOS="1836" WIDTH="35" HEIGHT="0" />
+            <String ID="Word_20748" HPOS="1733" VPOS="1836" WIDTH="329" HEIGHT="49" CONTENT="heat-producing" />
+            <SP ID="SP_18980" HPOS="2062" VPOS="1836" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20749" HPOS="2092" VPOS="1837" WIDTH="77" HEIGHT="36" CONTENT="and" />
+            <SP ID="SP_18981" HPOS="2169" VPOS="1837" WIDTH="39" HEIGHT="0" />
+            <String ID="Word_20750" HPOS="2208" VPOS="1837" WIDTH="219" HEIGHT="37" CONTENT="reparative" />
+          </TextLine>
+          <TextLine ID="TextLine_1774" HPOS="311" VPOS="1896" WIDTH="2116" HEIGHT="51">
+            <String ID="Word_20751" HPOS="311" VPOS="1896" WIDTH="174" HEIGHT="37" CONTENT="material" />
+            <SP ID="SP_18982" HPOS="485" VPOS="1896" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20752" HPOS="504" VPOS="1910" WIDTH="86" HEIGHT="35" CONTENT="may" />
+            <SP ID="SP_18983" HPOS="590" VPOS="1897" WIDTH="16" HEIGHT="0" />
+            <String ID="Word_20753" HPOS="606" VPOS="1897" WIDTH="105" HEIGHT="48" CONTENT="daily" />
+            <SP ID="SP_18984" HPOS="711" VPOS="1897" WIDTH="13" HEIGHT="0" />
+            <String ID="Word_20754" HPOS="724" VPOS="1898" WIDTH="49" HEIGHT="36" CONTENT="be" />
+            <SP ID="SP_18985" HPOS="773" VPOS="1898" WIDTH="25" HEIGHT="0" />
+            <String ID="Word_20755" HPOS="798" VPOS="1899" WIDTH="208" HEIGHT="36" CONTENT="consumed" />
+            <SP ID="SP_18986" HPOS="1006" VPOS="1899" WIDTH="14" HEIGHT="0" />
+            <String ID="Word_20756" HPOS="1020" VPOS="1904" WIDTH="93" HEIGHT="31" CONTENT="with" />
+            <SP ID="SP_18987" HPOS="1113" VPOS="1898" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20757" HPOS="1132" VPOS="1898" WIDTH="209" HEIGHT="38" CONTENT="wonderful" />
+            <SP ID="SP_18988" HPOS="1341" VPOS="1898" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20758" HPOS="1360" VPOS="1897" WIDTH="327" HEIGHT="50" CONTENT="impunity.—(II." />
+            <SP ID="SP_18989" HPOS="1687" VPOS="1897" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20759" HPOS="1708" VPOS="1898" WIDTH="61" HEIGHT="45" CONTENT="45," />
+            <SP ID="SP_18990" HPOS="1769" VPOS="1897" WIDTH="14" HEIGHT="0" />
+            <String ID="Word_20760" HPOS="1783" VPOS="1897" WIDTH="75" HEIGHT="47" CONTENT="46.)" />
+            <SP ID="SP_18991" HPOS="1858" VPOS="1896" WIDTH="59" HEIGHT="0" />
+            <String ID="Word_20761" HPOS="1917" VPOS="1896" WIDTH="221" HEIGHT="38" CONTENT="Adverting" />
+            <SP ID="SP_18992" HPOS="2138" VPOS="1896" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20762" HPOS="2156" VPOS="1902" WIDTH="38" HEIGHT="32" CONTENT="to" />
+            <SP ID="SP_18993" HPOS="2194" VPOS="1898" WIDTH="14" HEIGHT="0" />
+            <String ID="Word_20763" HPOS="2208" VPOS="1898" WIDTH="65" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_18994" HPOS="2273" VPOS="1898" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20764" HPOS="2291" VPOS="1910" WIDTH="136" HEIGHT="37" CONTENT="preva-" />
+          </TextLine>
+          <TextLine ID="TextLine_1775" HPOS="311" VPOS="1957" WIDTH="2117" HEIGHT="50">
+            <String ID="Word_20765" HPOS="311" VPOS="1957" WIDTH="106" HEIGHT="37" CONTENT="lence" />
+            <SP ID="SP_18995" HPOS="417" VPOS="1957" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20766" HPOS="436" VPOS="1957" WIDTH="39" HEIGHT="36" CONTENT="of" />
+            <SP ID="SP_18996" HPOS="475" VPOS="1957" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20767" HPOS="494" VPOS="1957" WIDTH="152" HEIGHT="49" CONTENT="leprosy" />
+            <SP ID="SP_18997" HPOS="646" VPOS="1957" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20768" HPOS="667" VPOS="1971" WIDTH="143" HEIGHT="36" CONTENT="among" />
+            <SP ID="SP_18998" HPOS="810" VPOS="1959" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20769" HPOS="830" VPOS="1959" WIDTH="65" HEIGHT="37" CONTENT="the" />
+            <SP ID="SP_18999" HPOS="895" VPOS="1959" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20770" HPOS="914" VPOS="1972" WIDTH="136" HEIGHT="35" CONTENT="poorer" />
+            <SP ID="SP_19000" HPOS="1050" VPOS="1960" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20771" HPOS="1070" VPOS="1960" WIDTH="142" HEIGHT="36" CONTENT="classes" />
+            <SP ID="SP_19001" HPOS="1212" VPOS="1959" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20772" HPOS="1232" VPOS="1959" WIDTH="39" HEIGHT="37" CONTENT="of" />
+            <SP ID="SP_19002" HPOS="1271" VPOS="1958" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20773" HPOS="1300" VPOS="1958" WIDTH="164" HEIGHT="38" CONTENT="Chinese" />
+            <SP ID="SP_19003" HPOS="1464" VPOS="1958" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20774" HPOS="1483" VPOS="1959" WIDTH="100" HEIGHT="36" CONTENT="from" />
+            <SP ID="SP_19004" HPOS="1583" VPOS="1959" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20775" HPOS="1604" VPOS="1959" WIDTH="64" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_19005" HPOS="1668" VPOS="1958" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20776" HPOS="1686" VPOS="1958" WIDTH="289" HEIGHT="48" CONTENT="neighbouring" />
+            <SP ID="SP_19006" HPOS="1975" VPOS="1958" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20777" HPOS="2005" VPOS="1959" WIDTH="181" HEIGHT="37" CONTENT="districts," />
+            <SP ID="SP_19007" HPOS="2186" VPOS="1959" WIDTH="22" HEIGHT="0" />
+            <String ID="Word_20778" HPOS="2208" VPOS="1959" WIDTH="77" HEIGHT="37" CONTENT="and" />
+            <SP ID="SP_19008" HPOS="2285" VPOS="1959" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20779" HPOS="2304" VPOS="1963" WIDTH="39" HEIGHT="32" CONTENT="to" />
+            <SP ID="SP_19009" HPOS="2343" VPOS="1959" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20780" HPOS="2363" VPOS="1959" WIDTH="65" HEIGHT="36" CONTENT="the" />
+          </TextLine>
+          <TextLine ID="TextLine_1776" HPOS="312" VPOS="2018" WIDTH="2112" HEIGHT="51">
+            <String ID="Word_20781" HPOS="312" VPOS="2018" WIDTH="274" HEIGHT="37" CONTENT="circumstance" />
+            <SP ID="SP_19010" HPOS="586" VPOS="2018" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20782" HPOS="615" VPOS="2018" WIDTH="85" HEIGHT="37" CONTENT="that" />
+            <SP ID="SP_19011" HPOS="700" VPOS="2018" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20783" HPOS="729" VPOS="2019" WIDTH="66" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_19012" HPOS="795" VPOS="2019" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20784" HPOS="823" VPOS="2019" WIDTH="147" HEIGHT="37" CONTENT="disease" />
+            <SP ID="SP_19013" HPOS="970" VPOS="2019" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20785" HPOS="989" VPOS="2021" WIDTH="33" HEIGHT="35" CONTENT="is" />
+            <SP ID="SP_19014" HPOS="1022" VPOS="2021" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20786" HPOS="1041" VPOS="2021" WIDTH="212" HEIGHT="36" CONTENT="attributed" />
+            <SP ID="SP_19015" HPOS="1253" VPOS="2021" WIDTH="32" HEIGHT="0" />
+            <String ID="Word_20787" HPOS="1285" VPOS="2024" WIDTH="40" HEIGHT="32" CONTENT="to" />
+            <SP ID="SP_19016" HPOS="1325" VPOS="2020" WIDTH="32" HEIGHT="0" />
+            <String ID="Word_20788" HPOS="1357" VPOS="2020" WIDTH="101" HEIGHT="36" CONTENT="their" />
+            <SP ID="SP_19017" HPOS="1458" VPOS="2020" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20789" HPOS="1488" VPOS="2032" WIDTH="102" HEIGHT="24" CONTENT="state" />
+            <SP ID="SP_19018" HPOS="1590" VPOS="2020" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20790" HPOS="1609" VPOS="2020" WIDTH="40" HEIGHT="36" CONTENT="of" />
+            <SP ID="SP_19019" HPOS="1649" VPOS="2020" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20791" HPOS="1679" VPOS="2023" WIDTH="161" HEIGHT="46" CONTENT="poverty" />
+            <SP ID="SP_19020" HPOS="1840" VPOS="2019" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20792" HPOS="1870" VPOS="2019" WIDTH="76" HEIGHT="36" CONTENT="and" />
+            <SP ID="SP_19021" HPOS="1946" VPOS="2019" WIDTH="31" HEIGHT="0" />
+            <String ID="Word_20793" HPOS="1977" VPOS="2019" WIDTH="197" HEIGHT="50" CONTENT="hardship," />
+            <SP ID="SP_19022" HPOS="2174" VPOS="2019" WIDTH="22" HEIGHT="0" />
+            <String ID="Word_20794" HPOS="2196" VPOS="2021" WIDTH="47" HEIGHT="36" CONTENT="he" />
+            <SP ID="SP_19023" HPOS="2243" VPOS="2021" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20795" HPOS="2273" VPOS="2021" WIDTH="126" HEIGHT="36" CONTENT="writes" />
+            <SP ID="SP_19024" HPOS="2399" VPOS="2021" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20796" HPOS="2418" VPOS="2035" WIDTH="6" HEIGHT="21" CONTENT=":" />
+          </TextLine>
+          <TextLine ID="TextLine_1777" HPOS="314" VPOS="2078" WIDTH="2114" HEIGHT="52">
+            <String ID="Word_20797" HPOS="314" VPOS="2081" WIDTH="10" HEIGHT="17" CONTENT="'" />
+            <SP ID="SP_19025" HPOS="324" VPOS="2078" WIDTH="16" HEIGHT="0" />
+            <String ID="Word_20798" HPOS="340" VPOS="2078" WIDTH="48" HEIGHT="36" CONTENT="In" />
+            <SP ID="SP_19026" HPOS="388" VPOS="2078" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20799" HPOS="407" VPOS="2079" WIDTH="98" HEIGHT="36" CONTENT="their" />
+            <SP ID="SP_19027" HPOS="505" VPOS="2079" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20800" HPOS="524" VPOS="2079" WIDTH="125" HEIGHT="37" CONTENT="better" />
+            <SP ID="SP_19028" HPOS="649" VPOS="2079" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20801" HPOS="669" VPOS="2080" WIDTH="94" HEIGHT="48" CONTENT="days" />
+            <SP ID="SP_19029" HPOS="763" VPOS="2080" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20802" HPOS="783" VPOS="2080" WIDTH="65" HEIGHT="37" CONTENT="the" />
+            <SP ID="SP_19030" HPOS="848" VPOS="2080" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20803" HPOS="868" VPOS="2081" WIDTH="182" HEIGHT="36" CONTENT="ordinary" />
+            <SP ID="SP_19031" HPOS="1050" VPOS="2081" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20804" HPOS="1070" VPOS="2081" WIDTH="78" HEIGHT="36" CONTENT="diet" />
+            <SP ID="SP_19032" HPOS="1148" VPOS="2081" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20805" HPOS="1167" VPOS="2081" WIDTH="41" HEIGHT="37" CONTENT="of" />
+            <SP ID="SP_19033" HPOS="1208" VPOS="2081" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20806" HPOS="1235" VPOS="2081" WIDTH="64" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_19034" HPOS="1299" VPOS="2081" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20807" HPOS="1318" VPOS="2081" WIDTH="206" HEIGHT="36" CONTENT="labouring" />
+            <SP ID="SP_19035" HPOS="1524" VPOS="2081" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20808" HPOS="1544" VPOS="2081" WIDTH="143" HEIGHT="36" CONTENT="classes" />
+            <SP ID="SP_19036" HPOS="1687" VPOS="2080" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20809" HPOS="1708" VPOS="2080" WIDTH="160" HEIGHT="37" CONTENT="consists" />
+            <SP ID="SP_19037" HPOS="1868" VPOS="2080" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20810" HPOS="1889" VPOS="2080" WIDTH="39" HEIGHT="36" CONTENT="of" />
+            <SP ID="SP_19038" HPOS="1928" VPOS="2080" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20811" HPOS="1955" VPOS="2093" WIDTH="22" HEIGHT="22" CONTENT="a" />
+            <SP ID="SP_19039" HPOS="1977" VPOS="2081" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20812" HPOS="1996" VPOS="2081" WIDTH="131" HEIGHT="47" CONTENT="pound" />
+            <SP ID="SP_19040" HPOS="2127" VPOS="2081" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20813" HPOS="2148" VPOS="2082" WIDTH="76" HEIGHT="35" CONTENT="and" />
+            <SP ID="SP_19041" HPOS="2224" VPOS="2082" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20814" HPOS="2244" VPOS="2095" WIDTH="22" HEIGHT="22" CONTENT="a" />
+            <SP ID="SP_19042" HPOS="2266" VPOS="2081" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20815" HPOS="2285" VPOS="2081" WIDTH="85" HEIGHT="36" CONTENT="half" />
+            <SP ID="SP_19043" HPOS="2370" VPOS="2081" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20816" HPOS="2388" VPOS="2082" WIDTH="40" HEIGHT="35" CONTENT="of" />
+          </TextLine>
+          <TextLine ID="TextLine_1778" HPOS="456" VPOS="2141" WIDTH="1970" HEIGHT="63">
+            <String ID="Word_20817" HPOS="456" VPOS="2178" WIDTH="9" HEIGHT="26" CONTENT="^" />
+            <SP ID="SP_19044" HPOS="465" VPOS="2154" WIDTH="22" HEIGHT="0" />
+            <String ID="Word_20818" HPOS="509" VPOS="2182" WIDTH="8" HEIGHT="22" CONTENT="f" />
+            <SP ID="SP_19045" HPOS="517" VPOS="2152" WIDTH="16" HEIGHT="0" />
+            <String ID="Word_20819" HPOS="617" VPOS="2152" WIDTH="118" HEIGHT="35" CONTENT="green" />
+            <SP ID="SP_19046" HPOS="735" VPOS="2152" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20820" HPOS="764" VPOS="2153" WIDTH="43" HEIGHT="23" CONTENT="or" />
+            <SP ID="SP_19047" HPOS="807" VPOS="2143" WIDTH="25" HEIGHT="0" />
+            <String ID="Word_20821" HPOS="832" VPOS="2143" WIDTH="209" HEIGHT="47" CONTENT="preserved" />
+            <SP ID="SP_19048" HPOS="1041" VPOS="2142" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20822" HPOS="1068" VPOS="2142" WIDTH="225" HEIGHT="48" CONTENT="vegetables" />
+            <SP ID="SP_19049" HPOS="1293" VPOS="2142" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20823" HPOS="1320" VPOS="2142" WIDTH="193" HEIGHT="48" CONTENT="prepared" />
+            <SP ID="SP_19050" HPOS="1513" VPOS="2142" WIDTH="26" HEIGHT="0" />
+            <String ID="Word_20824" HPOS="1539" VPOS="2142" WIDTH="94" HEIGHT="36" CONTENT="with" />
+            <SP ID="SP_19051" HPOS="1633" VPOS="2142" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20825" HPOS="1663" VPOS="2155" WIDTH="22" HEIGHT="22" CONTENT="a" />
+            <SP ID="SP_19052" HPOS="1685" VPOS="2141" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20826" HPOS="1713" VPOS="2141" WIDTH="97" HEIGHT="36" CONTENT="little" />
+            <SP ID="SP_19053" HPOS="1810" VPOS="2141" WIDTH="33" HEIGHT="0" />
+            <String ID="Word_20827" HPOS="1843" VPOS="2141" WIDTH="61" HEIGHT="36" CONTENT="oil," />
+            <SP ID="SP_19054" HPOS="1904" VPOS="2141" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20828" HPOS="1934" VPOS="2141" WIDTH="75" HEIGHT="36" CONTENT="and" />
+            <SP ID="SP_19055" HPOS="2009" VPOS="2141" WIDTH="36" HEIGHT="0" />
+            <String ID="Word_20829" HPOS="2045" VPOS="2155" WIDTH="22" HEIGHT="22" CONTENT="a" />
+            <SP ID="SP_19056" HPOS="2067" VPOS="2143" WIDTH="37" HEIGHT="0" />
+            <String ID="Word_20830" HPOS="2104" VPOS="2143" WIDTH="212" HEIGHT="35" CONTENT="somewhat" />
+            <SP ID="SP_19057" HPOS="2316" VPOS="2143" WIDTH="36" HEIGHT="0" />
+            <String ID="Word_20831" HPOS="2352" VPOS="2143" WIDTH="74" HEIGHT="35" CONTENT="less" />
+          </TextLine>
+          <TextLine ID="TextLine_1779" HPOS="615" VPOS="2202" WIDTH="1811" HEIGHT="49">
+            <String ID="Word_20832" HPOS="615" VPOS="2202" WIDTH="175" HEIGHT="47" CONTENT="quantity" />
+            <SP ID="SP_19058" HPOS="790" VPOS="2202" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20833" HPOS="809" VPOS="2202" WIDTH="39" HEIGHT="36" CONTENT="of" />
+            <SP ID="SP_19059" HPOS="848" VPOS="2202" WIDTH="26" HEIGHT="0" />
+            <String ID="Word_20834" HPOS="874" VPOS="2203" WIDTH="160" HEIGHT="36" CONTENT="inferior" />
+            <SP ID="SP_19060" HPOS="1034" VPOS="2203" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20835" HPOS="1053" VPOS="2203" WIDTH="78" HEIGHT="37" CONTENT="rice" />
+            <SP ID="SP_19061" HPOS="1131" VPOS="2203" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20836" HPOS="1160" VPOS="2203" WIDTH="109" HEIGHT="48" CONTENT="daily." />
+            <SP ID="SP_19062" HPOS="1269" VPOS="2203" WIDTH="56" HEIGHT="0" />
+            <String ID="Word_20837" HPOS="1325" VPOS="2203" WIDTH="94" HEIGHT="35" CONTENT="Fish" />
+            <SP ID="SP_19063" HPOS="1419" VPOS="2203" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20838" HPOS="1438" VPOS="2203" WIDTH="32" HEIGHT="35" CONTENT="is" />
+            <SP ID="SP_19064" HPOS="1470" VPOS="2203" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20839" HPOS="1499" VPOS="2203" WIDTH="89" HEIGHT="48" CONTENT="only" />
+            <SP ID="SP_19065" HPOS="1588" VPOS="2202" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20840" HPOS="1608" VPOS="2202" WIDTH="254" HEIGHT="48" CONTENT="occasionally" />
+            <SP ID="SP_19066" HPOS="1862" VPOS="2202" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20841" HPOS="1882" VPOS="2202" WIDTH="191" HEIGHT="49" CONTENT="partaken" />
+            <SP ID="SP_19067" HPOS="2073" VPOS="2202" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20842" HPOS="2101" VPOS="2203" WIDTH="52" HEIGHT="36" CONTENT="of," />
+            <SP ID="SP_19068" HPOS="2153" VPOS="2203" WIDTH="22" HEIGHT="0" />
+            <String ID="Word_20843" HPOS="2175" VPOS="2203" WIDTH="76" HEIGHT="36" CONTENT="and" />
+            <SP ID="SP_19069" HPOS="2251" VPOS="2203" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20844" HPOS="2278" VPOS="2203" WIDTH="91" HEIGHT="36" CONTENT="then" />
+            <SP ID="SP_19070" HPOS="2369" VPOS="2203" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20845" HPOS="2387" VPOS="2203" WIDTH="39" HEIGHT="36" CONTENT="in" />
+          </TextLine>
+          <TextLine ID="TextLine_1780" HPOS="314" VPOS="2260" WIDTH="2115" HEIGHT="52">
+            <String ID="Word_20846" HPOS="314" VPOS="2272" WIDTH="92" HEIGHT="35" CONTENT="very" />
+            <SP ID="SP_19071" HPOS="406" VPOS="2260" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20847" HPOS="426" VPOS="2260" WIDTH="109" HEIGHT="36" CONTENT="small" />
+            <SP ID="SP_19072" HPOS="535" VPOS="2260" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20848" HPOS="555" VPOS="2262" WIDTH="187" HEIGHT="47" CONTENT="quantity." />
+            <SP ID="SP_19073" HPOS="742" VPOS="2262" WIDTH="56" HEIGHT="0" />
+            <String ID="Word_20849" HPOS="798" VPOS="2263" WIDTH="103" HEIGHT="37" CONTENT="Pork" />
+            <SP ID="SP_19074" HPOS="901" VPOS="2263" WIDTH="26" HEIGHT="0" />
+            <String ID="Word_20850" HPOS="927" VPOS="2264" WIDTH="77" HEIGHT="36" CONTENT="and" />
+            <SP ID="SP_19075" HPOS="1004" VPOS="2264" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20851" HPOS="1022" VPOS="2264" WIDTH="89" HEIGHT="36" CONTENT="beef" />
+            <SP ID="SP_19076" HPOS="1111" VPOS="2264" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20852" HPOS="1129" VPOS="2277" WIDTH="64" HEIGHT="23" CONTENT="are" />
+            <SP ID="SP_19077" HPOS="1193" VPOS="2264" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20853" HPOS="1220" VPOS="2264" WIDTH="128" HEIGHT="37" CONTENT="tasted" />
+            <SP ID="SP_19078" HPOS="1348" VPOS="2264" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20854" HPOS="1368" VPOS="2264" WIDTH="90" HEIGHT="36" CONTENT="only" />
+            <SP ID="SP_19079" HPOS="1458" VPOS="2264" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20855" HPOS="1477" VPOS="2276" WIDTH="93" HEIGHT="24" CONTENT="once" />
+            <SP ID="SP_19080" HPOS="1570" VPOS="2276" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20856" HPOS="1598" VPOS="2277" WIDTH="52" HEIGHT="23" CONTENT="or." />
+            <SP ID="SP_19081" HPOS="1650" VPOS="2263" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20857" HPOS="1668" VPOS="2263" WIDTH="107" HEIGHT="36" CONTENT="twice" />
+            <SP ID="SP_19082" HPOS="1775" VPOS="2263" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20858" HPOS="1795" VPOS="2276" WIDTH="22" HEIGHT="23" CONTENT="a" />
+            <SP ID="SP_19083" HPOS="1817" VPOS="2276" WIDTH="17" HEIGHT="0" />
+            <String ID="Word_20859" HPOS="1834" VPOS="2277" WIDTH="100" HEIGHT="35" CONTENT="year." />
+            <SP ID="SP_19084" HPOS="1934" VPOS="2263" WIDTH="55" HEIGHT="0" />
+            <String ID="Word_20860" HPOS="1989" VPOS="2263" WIDTH="80" HEIGHT="36" CONTENT="The" />
+            <SP ID="SP_19085" HPOS="2069" VPOS="2263" WIDTH="23" HEIGHT="0" />
+            <String ID="Word_20861" HPOS="2092" VPOS="2264" WIDTH="132" HEIGHT="36" CONTENT="winter" />
+            <SP ID="SP_19086" HPOS="2224" VPOS="2264" WIDTH="32" HEIGHT="0" />
+            <String ID="Word_20862" HPOS="2256" VPOS="2270" WIDTH="173" HEIGHT="42" CONTENT="clothing" />
+          </TextLine>
+          <TextLine ID="TextLine_1781" HPOS="315" VPOS="2320" WIDTH="2115" HEIGHT="53">
+            <String ID="Word_20863" HPOS="315" VPOS="2321" WIDTH="76" HEIGHT="35" CONTENT="and" />
+            <SP ID="SP_19087" HPOS="391" VPOS="2320" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20864" HPOS="418" VPOS="2320" WIDTH="139" HEIGHT="38" CONTENT="houses" />
+            <SP ID="SP_19088" HPOS="557" VPOS="2320" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20865" HPOS="585" VPOS="2335" WIDTH="64" HEIGHT="24" CONTENT="are" />
+            <SP ID="SP_19089" HPOS="649" VPOS="2335" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20866" HPOS="676" VPOS="2336" WIDTH="48" HEIGHT="23" CONTENT="on" />
+            <SP ID="SP_19090" HPOS="724" VPOS="2336" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20867" HPOS="743" VPOS="2337" WIDTH="22" HEIGHT="23" CONTENT="a" />
+            <SP ID="SP_19091" HPOS="765" VPOS="2337" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20868" HPOS="783" VPOS="2337" WIDTH="72" HEIGHT="36" CONTENT="par" />
+            <SP ID="SP_19092" HPOS="855" VPOS="2325" WIDTH="26" HEIGHT="0" />
+            <String ID="Word_20869" HPOS="881" VPOS="2325" WIDTH="92" HEIGHT="36" CONTENT="with" />
+            <SP ID="SP_19093" HPOS="973" VPOS="2325" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20870" HPOS="1001" VPOS="2325" WIDTH="65" HEIGHT="37" CONTENT="the" />
+            <SP ID="SP_19094" HPOS="1066" VPOS="2325" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20871" HPOS="1094" VPOS="2325" WIDTH="78" HEIGHT="37" CONTENT="diet" />
+            <SP ID="SP_19095" HPOS="1172" VPOS="2325" WIDTH="14" HEIGHT="0" />
+            <String ID="Word_20872" HPOS="1186" VPOS="2341" WIDTH="11" HEIGHT="30" CONTENT=";" />
+            <SP ID="SP_19096" HPOS="1197" VPOS="2326" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20873" HPOS="1227" VPOS="2326" WIDTH="66" HEIGHT="35" CONTENT="the" />
+            <SP ID="SP_19097" HPOS="1293" VPOS="2325" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20874" HPOS="1312" VPOS="2325" WIDTH="142" HEIGHT="36" CONTENT="former" />
+            <SP ID="SP_19098" HPOS="1454" VPOS="2324" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20875" HPOS="1475" VPOS="2324" WIDTH="116" HEIGHT="37" CONTENT="made" />
+            <SP ID="SP_19099" HPOS="1591" VPOS="2324" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20876" HPOS="1618" VPOS="2324" WIDTH="40" HEIGHT="37" CONTENT="of" />
+            <SP ID="SP_19100" HPOS="1658" VPOS="2324" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20877" HPOS="1685" VPOS="2328" WIDTH="129" HEIGHT="32" CONTENT="cotton" />
+            <SP ID="SP_19101" HPOS="1814" VPOS="2324" WIDTH="25" HEIGHT="0" />
+            <String ID="Word_20878" HPOS="1839" VPOS="2324" WIDTH="116" HEIGHT="46" CONTENT="cloth," />
+            <SP ID="SP_19102" HPOS="1955" VPOS="2324" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20879" HPOS="1984" VPOS="2324" WIDTH="194" HEIGHT="36" CONTENT="affording" />
+            <SP ID="SP_19103" HPOS="2178" VPOS="2324" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20880" HPOS="2196" VPOS="2337" WIDTH="23" HEIGHT="23" CONTENT="a" />
+            <SP ID="SP_19104" HPOS="2219" VPOS="2325" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20881" HPOS="2238" VPOS="2325" WIDTH="85" HEIGHT="36" CONTENT="thin" />
+            <SP ID="SP_19105" HPOS="2323" VPOS="2325" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20882" HPOS="2353" VPOS="2326" WIDTH="77" HEIGHT="35" CONTENT="and" />
+          </TextLine>
+          <TextLine ID="TextLine_1782" HPOS="313" VPOS="2381" WIDTH="2115" HEIGHT="54">
+            <String ID="Word_20883" HPOS="313" VPOS="2381" WIDTH="229" HEIGHT="37" CONTENT="insufficient" />
+            <SP ID="SP_19106" HPOS="542" VPOS="2381" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20884" HPOS="571" VPOS="2385" WIDTH="236" HEIGHT="46" CONTENT="protection;" />
+            <SP ID="SP_19107" HPOS="807" VPOS="2386" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20885" HPOS="836" VPOS="2386" WIDTH="66" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_19108" HPOS="902" VPOS="2386" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20886" HPOS="920" VPOS="2386" WIDTH="127" HEIGHT="37" CONTENT="latter," />
+            <SP ID="SP_19109" HPOS="1047" VPOS="2386" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20887" HPOS="1067" VPOS="2400" WIDTH="21" HEIGHT="22" CONTENT="a" />
+            <SP ID="SP_19110" HPOS="1088" VPOS="2387" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20888" HPOS="1107" VPOS="2387" WIDTH="198" HEIGHT="36" CONTENT="congeries" />
+            <SP ID="SP_19111" HPOS="1305" VPOS="2386" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20889" HPOS="1326" VPOS="2386" WIDTH="40" HEIGHT="36" CONTENT="of" />
+            <SP ID="SP_19112" HPOS="1366" VPOS="2386" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20890" HPOS="1394" VPOS="2386" WIDTH="111" HEIGHT="36" CONTENT="filthy" />
+            <SP ID="SP_19113" HPOS="1505" VPOS="2385" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20891" HPOS="1534" VPOS="2385" WIDTH="92" HEIGHT="37" CONTENT="mud" />
+            <SP ID="SP_19114" HPOS="1626" VPOS="2385" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20892" HPOS="1645" VPOS="2385" WIDTH="131" HEIGHT="37" CONTENT="cabins" />
+            <SP ID="SP_19115" HPOS="1776" VPOS="2385" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20893" HPOS="1797" VPOS="2390" WIDTH="90" HEIGHT="33" CONTENT="with" />
+            <SP ID="SP_19116" HPOS="1887" VPOS="2385" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20894" HPOS="1907" VPOS="2385" WIDTH="298" HEIGHT="37" CONTENT="accumulations" />
+            <SP ID="SP_19117" HPOS="2205" VPOS="2385" WIDTH="24" HEIGHT="0" />
+            <String ID="Word_20895" HPOS="2229" VPOS="2386" WIDTH="40" HEIGHT="37" CONTENT="of" />
+            <SP ID="SP_19118" HPOS="2269" VPOS="2386" WIDTH="31" HEIGHT="0" />
+            <String ID="Word_20896" HPOS="2300" VPOS="2398" WIDTH="128" HEIGHT="25" CONTENT="excre-" />
+          </TextLine>
+          <TextLine ID="TextLine_1783" HPOS="317" VPOS="2442" WIDTH="757" HEIGHT="53">
+            <String ID="Word_20897" HPOS="317" VPOS="2446" WIDTH="103" HEIGHT="32" CONTENT="ment" />
+            <SP ID="SP_19119" HPOS="420" VPOS="2442" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20898" HPOS="438" VPOS="2442" WIDTH="39" HEIGHT="35" CONTENT="in" />
+            <SP ID="SP_19120" HPOS="477" VPOS="2442" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20899" HPOS="497" VPOS="2443" WIDTH="100" HEIGHT="36" CONTENT="close" />
+            <SP ID="SP_19121" HPOS="597" VPOS="2443" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20900" HPOS="616" VPOS="2445" WIDTH="362" HEIGHT="49" CONTENT="proximity.'—(II." />
+            <SP ID="SP_19122" HPOS="978" VPOS="2446" WIDTH="23" HEIGHT="0" />
+            <String ID="Word_20901" HPOS="1001" VPOS="2447" WIDTH="73" HEIGHT="48" CONTENT="55.)" />
+          </TextLine>
+          <TextLine ID="TextLine_1784" HPOS="391" VPOS="2502" WIDTH="2039" HEIGHT="54">
+            <String ID="Word_20902" HPOS="391" VPOS="2502" WIDTH="253" HEIGHT="49" CONTENT="Throughout" />
+            <SP ID="SP_19123" HPOS="644" VPOS="2502" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20903" HPOS="672" VPOS="2506" WIDTH="65" HEIGHT="35" CONTENT="the" />
+            <SP ID="SP_19124" HPOS="737" VPOS="2506" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20904" HPOS="765" VPOS="2519" WIDTH="93" HEIGHT="36" CONTENT="year" />
+            <SP ID="SP_19125" HPOS="858" VPOS="2507" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20905" HPOS="888" VPOS="2507" WIDTH="126" HEIGHT="37" CONTENT="ended" />
+            <SP ID="SP_19126" HPOS="1014" VPOS="2507" WIDTH="34" HEIGHT="0" />
+            <String ID="Word_20906" HPOS="1048" VPOS="2507" WIDTH="93" HEIGHT="37" CONTENT="30th" />
+            <SP ID="SP_19127" HPOS="1141" VPOS="2507" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20907" HPOS="1169" VPOS="2507" WIDTH="243" HEIGHT="49" CONTENT="September," />
+            <SP ID="SP_19128" HPOS="1412" VPOS="2506" WIDTH="35" HEIGHT="0" />
+            <String ID="Word_20908" HPOS="1447" VPOS="2506" WIDTH="111" HEIGHT="39" CONTENT="1871," />
+            <SP ID="SP_19129" HPOS="1558" VPOS="2506" WIDTH="36" HEIGHT="0" />
+            <String ID="Word_20909" HPOS="1594" VPOS="2507" WIDTH="65" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_19130" HPOS="1659" VPOS="2507" WIDTH="32" HEIGHT="0" />
+            <String ID="Word_20910" HPOS="1691" VPOS="2511" WIDTH="271" HEIGHT="33" CONTENT="thermometer" />
+            <SP ID="SP_19131" HPOS="1962" VPOS="2507" WIDTH="34" HEIGHT="0" />
+            <String ID="Word_20911" HPOS="1996" VPOS="2507" WIDTH="148" HEIGHT="36" CONTENT="ranged" />
+            <SP ID="SP_19132" HPOS="2144" VPOS="2507" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20912" HPOS="2174" VPOS="2507" WIDTH="100" HEIGHT="36" CONTENT="from" />
+            <SP ID="SP_19133" HPOS="2274" VPOS="2507" WIDTH="32" HEIGHT="0" />
+            <String ID="Word_20913" HPOS="2306" VPOS="2520" WIDTH="23" HEIGHT="23" CONTENT="a" />
+            <SP ID="SP_19134" HPOS="2329" VPOS="2508" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20914" HPOS="2356" VPOS="2508" WIDTH="74" HEIGHT="37" CONTENT="few" />
+          </TextLine>
+          <TextLine ID="TextLine_1785" HPOS="620" VPOS="2565" WIDTH="1808" HEIGHT="46">
+            <String ID="Word_20915" HPOS="620" VPOS="2565" WIDTH="158" HEIGHT="46" CONTENT="degrees" />
+            <SP ID="SP_19135" HPOS="778" VPOS="2565" WIDTH="13" HEIGHT="0" />
+            <String ID="Word_20916" HPOS="791" VPOS="2568" WIDTH="123" HEIGHT="36" CONTENT="below" />
+            <SP ID="SP_19136" HPOS="914" VPOS="2568" WIDTH="22" HEIGHT="0" />
+            <String ID="Word_20917" HPOS="936" VPOS="2568" WIDTH="301" HEIGHT="43" CONTENT="freezing-point" />
+            <SP ID="SP_19137" HPOS="1237" VPOS="2568" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20918" HPOS="1256" VPOS="2572" WIDTH="38" HEIGHT="33" CONTENT="to" />
+            <SP ID="SP_19138" HPOS="1294" VPOS="2569" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20919" HPOS="1315" VPOS="2569" WIDTH="63" HEIGHT="36" CONTENT="96°" />
+            <SP ID="SP_19139" HPOS="1378" VPOS="2569" WIDTH="22" HEIGHT="0" />
+            <String ID="Word_20920" HPOS="1400" VPOS="2569" WIDTH="112" HEIGHT="36" CONTENT="Fahr." />
+            <SP ID="SP_19140" HPOS="1512" VPOS="2568" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20921" HPOS="1532" VPOS="2568" WIDTH="40" HEIGHT="36" CONTENT="in" />
+            <SP ID="SP_19141" HPOS="1572" VPOS="2568" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20922" HPOS="1592" VPOS="2568" WIDTH="64" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_19142" HPOS="1656" VPOS="2568" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20923" HPOS="1675" VPOS="2568" WIDTH="120" HEIGHT="36" CONTENT="shade" />
+            <SP ID="SP_19143" HPOS="1795" VPOS="2568" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20924" HPOS="1815" VPOS="2568" WIDTH="38" HEIGHT="35" CONTENT="in" />
+            <SP ID="SP_19144" HPOS="1853" VPOS="2568" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20925" HPOS="1874" VPOS="2581" WIDTH="177" HEIGHT="23" CONTENT="summer." />
+            <SP ID="SP_19145" HPOS="2051" VPOS="2568" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20926" HPOS="2108" VPOS="2568" WIDTH="79" HEIGHT="36" CONTENT="The" />
+            <SP ID="SP_19146" HPOS="2187" VPOS="2568" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20927" HPOS="2206" VPOS="2568" WIDTH="68" HEIGHT="36" CONTENT="hot" />
+            <SP ID="SP_19147" HPOS="2274" VPOS="2568" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20928" HPOS="2295" VPOS="2581" WIDTH="133" HEIGHT="24" CONTENT="season" />
+          </TextLine>
+          <TextLine ID="TextLine_1786" HPOS="405" VPOS="2596" WIDTH="733" HEIGHT="39">
+            <String ID="Word_20929" HPOS="405" VPOS="2602" WIDTH="125" HEIGHT="27" CONTENT="Climate." />
+            <SP ID="SP_19148" HPOS="530" VPOS="2602" WIDTH="169" HEIGHT="0" />
+            <String ID="Word_20930" HPOS="699" VPOS="2626" WIDTH="7" HEIGHT="7" CONTENT="." />
+            <SP ID="SP_19149" HPOS="706" VPOS="2598" WIDTH="13" HEIGHT="0" />
+            <String ID="Word_20931" HPOS="789" VPOS="2627" WIDTH="7" HEIGHT="6" CONTENT="." />
+            <SP ID="SP_19150" HPOS="796" VPOS="2598" WIDTH="284" HEIGHT="0" />
+            <String ID="Word_20932" HPOS="1080" VPOS="2598" WIDTH="22" HEIGHT="19" CONTENT="&amp;" />
+            <SP ID="SP_19151" HPOS="1102" VPOS="2596" WIDTH="25" HEIGHT="0" />
+            <String ID="Word_20933" HPOS="1127" VPOS="2596" WIDTH="11" HEIGHT="20" CONTENT="1" />
+          </TextLine>
+          <TextLine ID="TextLine_1787" HPOS="617" VPOS="2628" WIDTH="1812" HEIGHT="50">
+            <String ID="Word_20934" HPOS="617" VPOS="2628" WIDTH="139" HEIGHT="46" CONTENT="begins" />
+            <SP ID="SP_19152" HPOS="756" VPOS="2628" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20935" HPOS="786" VPOS="2640" WIDTH="39" HEIGHT="24" CONTENT="in" />
+            <SP ID="SP_19153" HPOS="825" VPOS="2628" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20936" HPOS="853" VPOS="2628" WIDTH="106" HEIGHT="48" CONTENT="May," />
+            <SP ID="SP_19154" HPOS="959" VPOS="2628" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20937" HPOS="989" VPOS="2629" WIDTH="78" HEIGHT="36" CONTENT="and" />
+            <SP ID="SP_19155" HPOS="1067" VPOS="2629" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20938" HPOS="1097" VPOS="2630" WIDTH="96" HEIGHT="36" CONTENT="ends" />
+            <SP ID="SP_19156" HPOS="1193" VPOS="2630" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20939" HPOS="1214" VPOS="2630" WIDTH="101" HEIGHT="36" CONTENT="early" />
+            <SP ID="SP_19157" HPOS="1315" VPOS="2630" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20940" HPOS="1334" VPOS="2630" WIDTH="40" HEIGHT="35" CONTENT="in" />
+            <SP ID="SP_19158" HPOS="1374" VPOS="2629" WIDTH="23" HEIGHT="0" />
+            <String ID="Word_20941" HPOS="1397" VPOS="2629" WIDTH="255" HEIGHT="49" CONTENT="September;" />
+            <SP ID="SP_19159" HPOS="1652" VPOS="2629" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20942" HPOS="1682" VPOS="2629" WIDTH="67" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_19160" HPOS="1749" VPOS="2629" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20943" HPOS="1769" VPOS="2629" WIDTH="73" HEIGHT="47" CONTENT="day" />
+            <SP ID="SP_19161" HPOS="1842" VPOS="2629" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20944" HPOS="1862" VPOS="2632" WIDTH="259" HEIGHT="32" CONTENT="temperature" />
+            <SP ID="SP_19162" HPOS="2121" VPOS="2629" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20945" HPOS="2141" VPOS="2629" WIDTH="146" HEIGHT="35" CONTENT="seldom" />
+            <SP ID="SP_19163" HPOS="2287" VPOS="2629" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20946" HPOS="2307" VPOS="2630" WIDTH="122" HEIGHT="35" CONTENT="under" />
+          </TextLine>
+          <TextLine ID="TextLine_1788" HPOS="317" VPOS="2681" WIDTH="2111" HEIGHT="58">
+            <String ID="Word_20947" HPOS="317" VPOS="2681" WIDTH="61" HEIGHT="37" CONTENT="88°" />
+            <SP ID="SP_19164" HPOS="378" VPOS="2681" WIDTH="22" HEIGHT="0" />
+            <String ID="Word_20948" HPOS="400" VPOS="2682" WIDTH="108" HEIGHT="37" CONTENT="Fahr." />
+            <SP ID="SP_19165" HPOS="508" VPOS="2682" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20949" HPOS="529" VPOS="2697" WIDTH="42" HEIGHT="23" CONTENT="or" />
+            <SP ID="SP_19166" HPOS="571" VPOS="2697" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_20950" HPOS="599" VPOS="2698" WIDTH="89" HEIGHT="24" CONTENT="over" />
+            <SP ID="SP_19167" HPOS="688" VPOS="2688" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20951" HPOS="707" VPOS="2688" WIDTH="63" HEIGHT="35" CONTENT="94°" />
+            <SP ID="SP_19168" HPOS="770" VPOS="2688" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20952" HPOS="790" VPOS="2688" WIDTH="112" HEIGHT="37" CONTENT="Fahr." />
+            <SP ID="SP_19169" HPOS="902" VPOS="2688" WIDTH="56" HEIGHT="0" />
+            <String ID="Word_20953" HPOS="958" VPOS="2689" WIDTH="118" HEIGHT="37" CONTENT="Often" />
+            <SP ID="SP_19170" HPOS="1076" VPOS="2689" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20954" HPOS="1105" VPOS="2690" WIDTH="93" HEIGHT="36" CONTENT="days" />
+            <SP ID="SP_19171" HPOS="1198" VPOS="2690" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20955" HPOS="1228" VPOS="2690" WIDTH="78" HEIGHT="36" CONTENT="and" />
+            <SP ID="SP_19172" HPOS="1306" VPOS="2690" WIDTH="26" HEIGHT="0" />
+            <String ID="Word_20956" HPOS="1332" VPOS="2690" WIDTH="133" HEIGHT="49" CONTENT="nights" />
+            <SP ID="SP_19173" HPOS="1465" VPOS="2690" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20957" HPOS="1485" VPOS="2702" WIDTH="115" HEIGHT="24" CONTENT="occur" />
+            <SP ID="SP_19174" HPOS="1600" VPOS="2689" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20958" HPOS="1618" VPOS="2689" WIDTH="40" HEIGHT="35" CONTENT="in" />
+            <SP ID="SP_19175" HPOS="1658" VPOS="2689" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20959" HPOS="1687" VPOS="2689" WIDTH="123" HEIGHT="35" CONTENT="which" />
+            <SP ID="SP_19176" HPOS="1810" VPOS="2689" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20960" HPOS="1840" VPOS="2689" WIDTH="66" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_19177" HPOS="1906" VPOS="2689" WIDTH="25" HEIGHT="0" />
+            <String ID="Word_20961" HPOS="1931" VPOS="2689" WIDTH="243" HEIGHT="48" CONTENT="atmosphere" />
+            <SP ID="SP_19178" HPOS="2174" VPOS="2689" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20962" HPOS="2193" VPOS="2689" WIDTH="33" HEIGHT="36" CONTENT="is" />
+            <SP ID="SP_19179" HPOS="2226" VPOS="2689" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20963" HPOS="2255" VPOS="2689" WIDTH="88" HEIGHT="37" CONTENT="still," />
+            <SP ID="SP_19180" HPOS="2343" VPOS="2689" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20964" HPOS="2363" VPOS="2690" WIDTH="65" HEIGHT="36" CONTENT="the" />
+          </TextLine>
+          <TextLine ID="TextLine_1789" HPOS="317" VPOS="2742" WIDTH="2111" HEIGHT="57">
+            <String ID="Word_20965" HPOS="317" VPOS="2742" WIDTH="132" HEIGHT="47" CONTENT="nights" />
+            <SP ID="SP_19181" HPOS="449" VPOS="2742" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_20966" HPOS="479" VPOS="2757" WIDTH="104" HEIGHT="24" CONTENT="more" />
+            <SP ID="SP_19182" HPOS="583" VPOS="2749" WIDTH="32" HEIGHT="0" />
+            <String ID="Word_20967" HPOS="615" VPOS="2749" WIDTH="221" HEIGHT="45" CONTENT="oppressive" />
+            <SP ID="SP_19183" HPOS="836" VPOS="2749" WIDTH="25" HEIGHT="0" />
+            <String ID="Word_20968" HPOS="861" VPOS="2750" WIDTH="93" HEIGHT="35" CONTENT="than" />
+            <SP ID="SP_19184" HPOS="954" VPOS="2750" WIDTH="32" HEIGHT="0" />
+            <String ID="Word_20969" HPOS="986" VPOS="2750" WIDTH="65" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_19185" HPOS="1051" VPOS="2750" WIDTH="33" HEIGHT="0" />
+            <String ID="Word_20970" HPOS="1084" VPOS="2750" WIDTH="83" HEIGHT="49" CONTENT="day." />
+            <SP ID="SP_19186" HPOS="1167" VPOS="2750" WIDTH="57" HEIGHT="0" />
+            <String ID="Word_20971" HPOS="1224" VPOS="2750" WIDTH="230" HEIGHT="37" CONTENT="September" />
+            <SP ID="SP_19187" HPOS="1454" VPOS="2750" WIDTH="31" HEIGHT="0" />
+            <String ID="Word_20972" HPOS="1485" VPOS="2751" WIDTH="32" HEIGHT="35" CONTENT="is" />
+            <SP ID="SP_19188" HPOS="1517" VPOS="2750" WIDTH="33" HEIGHT="0" />
+            <String ID="Word_20973" HPOS="1550" VPOS="2750" WIDTH="66" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_19189" HPOS="1616" VPOS="2750" WIDTH="31" HEIGHT="0" />
+            <String ID="Word_20974" HPOS="1647" VPOS="2753" WIDTH="101" HEIGHT="33" CONTENT="most" />
+            <SP ID="SP_19190" HPOS="1748" VPOS="2749" WIDTH="25" HEIGHT="0" />
+            <String ID="Word_20975" HPOS="1773" VPOS="2749" WIDTH="134" HEIGHT="49" CONTENT="trying" />
+            <SP ID="SP_19191" HPOS="1907" VPOS="2749" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_20976" HPOS="1936" VPOS="2749" WIDTH="131" HEIGHT="36" CONTENT="month" />
+            <SP ID="SP_19192" HPOS="2067" VPOS="2749" WIDTH="26" HEIGHT="0" />
+            <String ID="Word_20977" HPOS="2093" VPOS="2749" WIDTH="40" HEIGHT="36" CONTENT="of" />
+            <SP ID="SP_19193" HPOS="2133" VPOS="2749" WIDTH="32" HEIGHT="0" />
+            <String ID="Word_20978" HPOS="2165" VPOS="2750" WIDTH="63" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_19194" HPOS="2228" VPOS="2750" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20979" HPOS="2255" VPOS="2763" WIDTH="102" HEIGHT="35" CONTENT="year," />
+            <SP ID="SP_19195" HPOS="2357" VPOS="2751" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20980" HPOS="2377" VPOS="2751" WIDTH="51" HEIGHT="36" CONTENT="its" />
+          </TextLine>
+          <TextLine ID="TextLine_1790" HPOS="317" VPOS="2807" WIDTH="2109" HEIGHT="53">
+            <String ID="Word_20981" HPOS="317" VPOS="2808" WIDTH="254" HEIGHT="42" CONTENT="temperature" />
+            <SP ID="SP_19196" HPOS="571" VPOS="2807" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_20982" HPOS="589" VPOS="2807" WIDTH="181" HEIGHT="47" CONTENT="variable," />
+            <SP ID="SP_19197" HPOS="770" VPOS="2807" WIDTH="22" HEIGHT="0" />
+            <String ID="Word_20983" HPOS="792" VPOS="2809" WIDTH="115" HEIGHT="49" CONTENT="chilly" />
+            <SP ID="SP_19198" HPOS="907" VPOS="2809" WIDTH="11" HEIGHT="0" />
+            <String ID="Word_20984" HPOS="918" VPOS="2810" WIDTH="154" HEIGHT="36" CONTENT="breezes" />
+            <SP ID="SP_19199" HPOS="1072" VPOS="2810" WIDTH="15" HEIGHT="0" />
+            <String ID="Word_20985" HPOS="1087" VPOS="2814" WIDTH="39" HEIGHT="32" CONTENT="at" />
+            <SP ID="SP_19200" HPOS="1126" VPOS="2811" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_20986" HPOS="1146" VPOS="2811" WIDTH="122" HEIGHT="47" CONTENT="night." />
+            <SP ID="SP_19201" HPOS="1268" VPOS="2811" WIDTH="54" HEIGHT="0" />
+            <String ID="Word_20987" HPOS="1322" VPOS="2811" WIDTH="155" HEIGHT="36" CONTENT="During" />
+            <SP ID="SP_19202" HPOS="1477" VPOS="2811" WIDTH="14" HEIGHT="0" />
+            <String ID="Word_20988" HPOS="1491" VPOS="2811" WIDTH="29" HEIGHT="35" CONTENT="it" />
+            <SP ID="SP_19203" HPOS="1520" VPOS="2810" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_20989" HPOS="1541" VPOS="2810" WIDTH="170" HEIGHT="36" CONTENT="malarial" />
+            <SP ID="SP_19204" HPOS="1711" VPOS="2810" WIDTH="15" HEIGHT="0" />
+            <String ID="Word_20990" HPOS="1726" VPOS="2810" WIDTH="124" HEIGHT="36" CONTENT="fevers" />
+            <SP ID="SP_19205" HPOS="1850" VPOS="2809" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20991" HPOS="1869" VPOS="2809" WIDTH="144" HEIGHT="49" CONTENT="prevail" />
+            <SP ID="SP_19206" HPOS="2013" VPOS="2809" WIDTH="16" HEIGHT="0" />
+            <String ID="Word_20992" HPOS="2029" VPOS="2823" WIDTH="142" HEIGHT="23" CONTENT="among" />
+            <SP ID="SP_19207" HPOS="2171" VPOS="2810" WIDTH="15" HEIGHT="0" />
+            <String ID="Word_20993" HPOS="2186" VPOS="2810" WIDTH="66" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_19208" HPOS="2252" VPOS="2810" WIDTH="15" HEIGHT="0" />
+            <String ID="Word_20994" HPOS="2267" VPOS="2811" WIDTH="159" HEIGHT="46" CONTENT="natives," />
+          </TextLine>
+          <TextLine ID="TextLine_1791" HPOS="318" VPOS="2862" WIDTH="2112" HEIGHT="57">
+            <String ID="Word_20995" HPOS="318" VPOS="2862" WIDTH="75" HEIGHT="36" CONTENT="and" />
+            <SP ID="SP_19209" HPOS="393" VPOS="2862" WIDTH="32" HEIGHT="0" />
+            <String ID="Word_20996" HPOS="425" VPOS="2865" WIDTH="249" HEIGHT="49" CONTENT="occasionally" />
+            <SP ID="SP_19210" HPOS="674" VPOS="2865" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_20997" HPOS="693" VPOS="2868" WIDTH="79" HEIGHT="36" CONTENT="also" />
+            <SP ID="SP_19211" HPOS="772" VPOS="2868" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_20998" HPOS="799" VPOS="2869" WIDTH="112" HEIGHT="37" CONTENT="affect" />
+            <SP ID="SP_19212" HPOS="911" VPOS="2869" WIDTH="34" HEIGHT="0" />
+            <String ID="Word_20999" HPOS="945" VPOS="2870" WIDTH="354" HEIGHT="49" CONTENT="foreigners.—(II." />
+            <SP ID="SP_19213" HPOS="1299" VPOS="2871" WIDTH="22" HEIGHT="0" />
+            <String ID="Word_21000" HPOS="1321" VPOS="2872" WIDTH="75" HEIGHT="36" CONTENT="45.)" />
+            <SP ID="SP_19214" HPOS="1396" VPOS="2871" WIDTH="58" HEIGHT="0" />
+            <String ID="Word_21001" HPOS="1454" VPOS="2871" WIDTH="48" HEIGHT="36" CONTENT="In" />
+            <SP ID="SP_19215" HPOS="1502" VPOS="2871" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_21002" HPOS="1520" VPOS="2871" WIDTH="66" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_19216" HPOS="1586" VPOS="2871" WIDTH="32" HEIGHT="0" />
+            <String ID="Word_21003" HPOS="1618" VPOS="2883" WIDTH="167" HEIGHT="24" CONTENT="summer" />
+            <SP ID="SP_19217" HPOS="1785" VPOS="2870" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_21004" HPOS="1803" VPOS="2870" WIDTH="40" HEIGHT="37" CONTENT="of" />
+            <SP ID="SP_19218" HPOS="1843" VPOS="2869" WIDTH="33" HEIGHT="0" />
+            <String ID="Word_21005" HPOS="1876" VPOS="2869" WIDTH="111" HEIGHT="38" CONTENT="1874," />
+            <SP ID="SP_19219" HPOS="1987" VPOS="2869" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_21006" HPOS="2006" VPOS="2870" WIDTH="65" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_19220" HPOS="2071" VPOS="2870" WIDTH="32" HEIGHT="0" />
+            <String ID="Word_21007" HPOS="2103" VPOS="2875" WIDTH="256" HEIGHT="44" CONTENT="temperature" />
+            <SP ID="SP_19221" HPOS="2359" VPOS="2873" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_21008" HPOS="2389" VPOS="2873" WIDTH="41" HEIGHT="35" CONTENT="of" />
+          </TextLine>
+          <TextLine ID="TextLine_1792" HPOS="317" VPOS="2919" WIDTH="2113" HEIGHT="61">
+            <String ID="Word_21009" HPOS="317" VPOS="2919" WIDTH="91" HEIGHT="48" CONTENT="May" />
+            <SP ID="SP_19222" HPOS="408" VPOS="2919" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_21010" HPOS="427" VPOS="2922" WIDTH="146" HEIGHT="47" CONTENT="ranged" />
+            <SP ID="SP_19223" HPOS="573" VPOS="2922" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_21011" HPOS="592" VPOS="2923" WIDTH="98" HEIGHT="36" CONTENT="from" />
+            <SP ID="SP_19224" HPOS="690" VPOS="2923" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_21012" HPOS="719" VPOS="2925" WIDTH="62" HEIGHT="36" CONTENT="91°" />
+            <SP ID="SP_19225" HPOS="781" VPOS="2925" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_21013" HPOS="801" VPOS="2930" WIDTH="39" HEIGHT="33" CONTENT="to" />
+            <SP ID="SP_19226" HPOS="840" VPOS="2927" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_21014" HPOS="861" VPOS="2927" WIDTH="63" HEIGHT="36" CONTENT="94°" />
+            <SP ID="SP_19227" HPOS="924" VPOS="2927" WIDTH="22" HEIGHT="0" />
+            <String ID="Word_21015" HPOS="946" VPOS="2941" WIDTH="42" HEIGHT="24" CONTENT="as" />
+            <SP ID="SP_19228" HPOS="988" VPOS="2941" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_21016" HPOS="1007" VPOS="2942" WIDTH="22" HEIGHT="23" CONTENT="a" />
+            <SP ID="SP_19229" HPOS="1029" VPOS="2929" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_21017" HPOS="1048" VPOS="2929" WIDTH="233" HEIGHT="47" CONTENT="maximum;" />
+            <SP ID="SP_19230" HPOS="1281" VPOS="2929" WIDTH="31" HEIGHT="0" />
+            <String ID="Word_21018" HPOS="1312" VPOS="2942" WIDTH="43" HEIGHT="24" CONTENT="so" />
+            <SP ID="SP_19231" HPOS="1355" VPOS="2930" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_21019" HPOS="1375" VPOS="2930" WIDTH="79" HEIGHT="36" CONTENT="also" />
+            <SP ID="SP_19232" HPOS="1454" VPOS="2930" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_21020" HPOS="1473" VPOS="2930" WIDTH="40" HEIGHT="35" CONTENT="in" />
+            <SP ID="SP_19233" HPOS="1513" VPOS="2930" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_21021" HPOS="1540" VPOS="2931" WIDTH="116" HEIGHT="46" CONTENT="June," />
+            <SP ID="SP_19234" HPOS="1656" VPOS="2931" WIDTH="22" HEIGHT="0" />
+            <String ID="Word_21022" HPOS="1678" VPOS="2931" WIDTH="104" HEIGHT="48" CONTENT="July," />
+            <SP ID="SP_19235" HPOS="1782" VPOS="2931" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_21023" HPOS="1803" VPOS="2931" WIDTH="76" HEIGHT="36" CONTENT="and" />
+            <SP ID="SP_19236" HPOS="1879" VPOS="2930" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_21024" HPOS="1898" VPOS="2930" WIDTH="169" HEIGHT="49" CONTENT="August." />
+            <SP ID="SP_19237" HPOS="2067" VPOS="2930" WIDTH="56" HEIGHT="0" />
+            <String ID="Word_21025" HPOS="2123" VPOS="2931" WIDTH="47" HEIGHT="35" CONTENT="In" />
+            <SP ID="SP_19238" HPOS="2170" VPOS="2930" WIDTH="31" HEIGHT="0" />
+            <String ID="Word_21026" HPOS="2201" VPOS="2930" WIDTH="229" HEIGHT="39" CONTENT="September" />
+          </TextLine>
+          <TextLine ID="TextLine_1793" HPOS="317" VPOS="2979" WIDTH="2108" HEIGHT="60">
+            <String ID="Word_21027" HPOS="317" VPOS="2979" WIDTH="66" HEIGHT="37" CONTENT="the" />
+            <SP ID="SP_19239" HPOS="383" VPOS="2979" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_21028" HPOS="403" VPOS="2982" WIDTH="210" HEIGHT="37" CONTENT="maximum" />
+            <SP ID="SP_19240" HPOS="613" VPOS="2982" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_21029" HPOS="632" VPOS="2997" WIDTH="76" HEIGHT="24" CONTENT="was" />
+            <SP ID="SP_19241" HPOS="708" VPOS="2984" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_21030" HPOS="729" VPOS="2984" WIDTH="86" HEIGHT="39" CONTENT="100°" />
+            <SP ID="SP_19242" HPOS="815" VPOS="2984" WIDTH="22" HEIGHT="0" />
+            <String ID="Word_21031" HPOS="837" VPOS="3001" WIDTH="49" HEIGHT="35" CONTENT="up" />
+            <SP ID="SP_19243" HPOS="886" VPOS="2992" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_21032" HPOS="907" VPOS="2992" WIDTH="37" HEIGHT="32" CONTENT="to" />
+            <SP ID="SP_19244" HPOS="944" VPOS="2990" WIDTH="25" HEIGHT="0" />
+            <String ID="Word_21033" HPOS="969" VPOS="2990" WIDTH="113" HEIGHT="45" CONTENT="11th;" />
+            <SP ID="SP_19245" HPOS="1082" VPOS="3002" WIDTH="31" HEIGHT="0" />
+            <String ID="Word_21034" HPOS="1113" VPOS="3003" WIDTH="48" HEIGHT="23" CONTENT="on" />
+            <SP ID="SP_19246" HPOS="1161" VPOS="2991" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_21035" HPOS="1180" VPOS="2991" WIDTH="84" HEIGHT="36" CONTENT="that" />
+            <SP ID="SP_19247" HPOS="1264" VPOS="2991" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_21036" HPOS="1285" VPOS="2991" WIDTH="75" HEIGHT="36" CONTENT="day" />
+            <SP ID="SP_19248" HPOS="1360" VPOS="2990" WIDTH="15" HEIGHT="0" />
+            <String ID="Word_21037" HPOS="1375" VPOS="2990" WIDTH="31" HEIGHT="37" CONTENT="it" />
+            <SP ID="SP_19249" HPOS="1406" VPOS="2990" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_21038" HPOS="1424" VPOS="2990" WIDTH="68" HEIGHT="37" CONTENT="fell" />
+            <SP ID="SP_19250" HPOS="1492" VPOS="2990" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_21039" HPOS="1511" VPOS="2994" WIDTH="38" HEIGHT="33" CONTENT="to" />
+            <SP ID="SP_19251" HPOS="1549" VPOS="2992" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_21040" HPOS="1569" VPOS="2992" WIDTH="77" HEIGHT="36" CONTENT="66°," />
+            <SP ID="SP_19252" HPOS="1646" VPOS="2991" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_21041" HPOS="1667" VPOS="2991" WIDTH="76" HEIGHT="36" CONTENT="and" />
+            <SP ID="SP_19253" HPOS="1743" VPOS="2991" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_21042" HPOS="1761" VPOS="2991" WIDTH="65" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_19254" HPOS="1826" VPOS="2991" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_21043" HPOS="1845" VPOS="2996" WIDTH="164" HEIGHT="32" CONTENT="severity" />
+            <SP ID="SP_19255" HPOS="2009" VPOS="2991" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_21044" HPOS="2029" VPOS="2991" WIDTH="40" HEIGHT="36" CONTENT="of" />
+            <SP ID="SP_19256" HPOS="2069" VPOS="2991" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_21045" HPOS="2088" VPOS="3004" WIDTH="169" HEIGHT="25" CONTENT="summer" />
+            <SP ID="SP_19257" HPOS="2257" VPOS="2994" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_21046" HPOS="2276" VPOS="2994" WIDTH="149" HEIGHT="37" CONTENT="ceased." />
+          </TextLine>
+          <TextLine ID="TextLine_1794" HPOS="317" VPOS="3040" WIDTH="2113" HEIGHT="59">
+            <String ID="Word_21047" HPOS="317" VPOS="3062" WIDTH="49" HEIGHT="4" CONTENT="—" />
+            <SP ID="SP_19258" HPOS="366" VPOS="3040" WIDTH="8" HEIGHT="0" />
+            <String ID="Word_21048" HPOS="374" VPOS="3040" WIDTH="133" HEIGHT="46" CONTENT="(VIII." />
+            <SP ID="SP_19259" HPOS="507" VPOS="3040" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_21049" HPOS="528" VPOS="3043" WIDTH="74" HEIGHT="48" CONTENT="48.)" />
+            <SP ID="SP_19260" HPOS="602" VPOS="3043" WIDTH="58" HEIGHT="0" />
+            <String ID="Word_21050" HPOS="660" VPOS="3045" WIDTH="80" HEIGHT="37" CONTENT="The" />
+            <SP ID="SP_19261" HPOS="740" VPOS="3045" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_21051" HPOS="758" VPOS="3045" WIDTH="177" HEIGHT="51" CONTENT="frequent" />
+            <SP ID="SP_19262" HPOS="935" VPOS="3045" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_21052" HPOS="956" VPOS="3050" WIDTH="207" HEIGHT="37" CONTENT="variations" />
+            <SP ID="SP_19263" HPOS="1163" VPOS="3050" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_21053" HPOS="1182" VPOS="3050" WIDTH="39" HEIGHT="36" CONTENT="in" />
+            <SP ID="SP_19264" HPOS="1221" VPOS="3050" WIDTH="15" HEIGHT="0" />
+            <String ID="Word_21054" HPOS="1236" VPOS="3051" WIDTH="65" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_19265" HPOS="1301" VPOS="3051" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_21055" HPOS="1320" VPOS="3054" WIDTH="257" HEIGHT="45" CONTENT="temperature" />
+            <SP ID="SP_19266" HPOS="1577" VPOS="3052" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_21056" HPOS="1597" VPOS="3052" WIDTH="41" HEIGHT="36" CONTENT="of" />
+            <SP ID="SP_19267" HPOS="1638" VPOS="3052" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_21057" HPOS="1666" VPOS="3052" WIDTH="64" HEIGHT="35" CONTENT="the" />
+            <SP ID="SP_19268" HPOS="1730" VPOS="3051" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_21058" HPOS="1749" VPOS="3051" WIDTH="57" HEIGHT="36" CONTENT="air" />
+            <SP ID="SP_19269" HPOS="1806" VPOS="3051" WIDTH="14" HEIGHT="0" />
+            <String ID="Word_21059" HPOS="1820" VPOS="3052" WIDTH="206" HEIGHT="36" CONTENT="constitute" />
+            <SP ID="SP_19270" HPOS="2026" VPOS="3052" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_21060" HPOS="2046" VPOS="3065" WIDTH="22" HEIGHT="23" CONTENT="a" />
+            <SP ID="SP_19271" HPOS="2068" VPOS="3052" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_21061" HPOS="2087" VPOS="3052" WIDTH="283" HEIGHT="38" CONTENT="characteristic" />
+            <SP ID="SP_19272" HPOS="2370" VPOS="3052" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_21062" HPOS="2389" VPOS="3055" WIDTH="41" HEIGHT="36" CONTENT="of" />
+          </TextLine>
+          <TextLine ID="TextLine_1795" HPOS="319" VPOS="3101" WIDTH="2108" HEIGHT="60">
+            <String ID="Word_21063" HPOS="319" VPOS="3101" WIDTH="67" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_19273" HPOS="386" VPOS="3101" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_21064" HPOS="406" VPOS="3102" WIDTH="161" HEIGHT="40" CONTENT="climate." />
+            <SP ID="SP_19274" HPOS="567" VPOS="3102" WIDTH="56" HEIGHT="0" />
+            <String ID="Word_21065" HPOS="623" VPOS="3105" WIDTH="80" HEIGHT="37" CONTENT="The" />
+            <SP ID="SP_19275" HPOS="703" VPOS="3105" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_21066" HPOS="721" VPOS="3119" WIDTH="89" HEIGHT="35" CONTENT="year" />
+            <SP ID="SP_19276" HPOS="810" VPOS="3109" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_21067" HPOS="830" VPOS="3109" WIDTH="123" HEIGHT="37" CONTENT="ended" />
+            <SP ID="SP_19277" HPOS="953" VPOS="3109" WIDTH="25" HEIGHT="0" />
+            <String ID="Word_21068" HPOS="978" VPOS="3111" WIDTH="93" HEIGHT="36" CONTENT="30th" />
+            <SP ID="SP_19278" HPOS="1071" VPOS="3111" WIDTH="30" HEIGHT="0" />
+            <String ID="Word_21069" HPOS="1101" VPOS="3111" WIDTH="237" HEIGHT="49" CONTENT="September," />
+            <SP ID="SP_19279" HPOS="1338" VPOS="3111" WIDTH="24" HEIGHT="0" />
+            <String ID="Word_21070" HPOS="1362" VPOS="3112" WIDTH="107" HEIGHT="37" CONTENT="1876," />
+            <SP ID="SP_19280" HPOS="1469" VPOS="3112" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_21071" HPOS="1488" VPOS="3125" WIDTH="78" HEIGHT="23" CONTENT="was" />
+            <SP ID="SP_19281" HPOS="1566" VPOS="3112" WIDTH="29" HEIGHT="0" />
+            <String ID="Word_21072" HPOS="1595" VPOS="3112" WIDTH="281" HEIGHT="36" CONTENT="characterized" />
+            <SP ID="SP_19282" HPOS="1876" VPOS="3112" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_21073" HPOS="1903" VPOS="3113" WIDTH="52" HEIGHT="47" CONTENT="by" />
+            <SP ID="SP_19283" HPOS="1955" VPOS="3113" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_21074" HPOS="1975" VPOS="3114" WIDTH="261" HEIGHT="47" CONTENT="comparative" />
+            <SP ID="SP_19284" HPOS="2236" VPOS="3114" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_21075" HPOS="2255" VPOS="3116" WIDTH="172" HEIGHT="38" CONTENT="coolness" />
+          </TextLine>
+          <TextLine ID="TextLine_1796" HPOS="320" VPOS="3161" WIDTH="1895" HEIGHT="61">
+            <String ID="Word_21076" HPOS="320" VPOS="3161" WIDTH="77" HEIGHT="36" CONTENT="and" />
+            <SP ID="SP_19285" HPOS="397" VPOS="3161" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_21077" HPOS="417" VPOS="3162" WIDTH="160" HEIGHT="49" CONTENT="dryness" />
+            <SP ID="SP_19286" HPOS="577" VPOS="3162" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_21078" HPOS="597" VPOS="3165" WIDTH="41" HEIGHT="37" CONTENT="of" />
+            <SP ID="SP_19287" HPOS="638" VPOS="3165" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_21079" HPOS="656" VPOS="3166" WIDTH="63" HEIGHT="37" CONTENT="the" />
+            <SP ID="SP_19288" HPOS="719" VPOS="3166" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_21080" HPOS="739" VPOS="3180" WIDTH="178" HEIGHT="35" CONTENT="summer," />
+            <SP ID="SP_19289" HPOS="917" VPOS="3172" WIDTH="22" HEIGHT="0" />
+            <String ID="Word_21081" HPOS="939" VPOS="3172" WIDTH="77" HEIGHT="35" CONTENT="and" />
+            <SP ID="SP_19290" HPOS="1016" VPOS="3172" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_21082" HPOS="1035" VPOS="3172" WIDTH="64" HEIGHT="36" CONTENT="the" />
+            <SP ID="SP_19291" HPOS="1099" VPOS="3172" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_21083" HPOS="1118" VPOS="3172" WIDTH="162" HEIGHT="36" CONTENT="unusual" />
+            <SP ID="SP_19292" HPOS="1280" VPOS="3172" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_21084" HPOS="1298" VPOS="3173" WIDTH="225" HEIGHT="48" CONTENT="prevalence" />
+            <SP ID="SP_19293" HPOS="1523" VPOS="3172" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_21085" HPOS="1543" VPOS="3172" WIDTH="39" HEIGHT="37" CONTENT="of" />
+            <SP ID="SP_19294" HPOS="1582" VPOS="3172" WIDTH="18" HEIGHT="0" />
+            <String ID="Word_21086" HPOS="1600" VPOS="3173" WIDTH="154" HEIGHT="36" CONTENT="breezes" />
+            <SP ID="SP_19295" HPOS="1754" VPOS="3173" WIDTH="20" HEIGHT="0" />
+            <String ID="Word_21087" HPOS="1774" VPOS="3177" WIDTH="39" HEIGHT="32" CONTENT="at" />
+            <SP ID="SP_19296" HPOS="1813" VPOS="3173" WIDTH="17" HEIGHT="0" />
+            <String ID="Word_21088" HPOS="1830" VPOS="3173" WIDTH="290" HEIGHT="48" CONTENT="night.—(XII." />
+            <SP ID="SP_19297" HPOS="2120" VPOS="3173" WIDTH="24" HEIGHT="0" />
+            <String ID="Word_21089" HPOS="2144" VPOS="3174" WIDTH="71" HEIGHT="48" CONTENT="14.)" />
+          </TextLine>
+          <TextLine ID="TextLine_1797" HPOS="398" VPOS="3222" WIDTH="2029" HEIGHT="61">
+            <String ID="Word_21090" HPOS="398" VPOS="3222" WIDTH="46" HEIGHT="36" CONTENT="In" />
+            <SP ID="SP_19298" HPOS="444" VPOS="3222" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_21091" HPOS="465" VPOS="3224" WIDTH="93" HEIGHT="38" CONTENT="1871" />
+            <SP ID="SP_19299" HPOS="558" VPOS="3224" WIDTH="23" HEIGHT="0" />
+            <String ID="Word_21092" HPOS="581" VPOS="3226" WIDTH="30" HEIGHT="37" CONTENT="it" />
+            <SP ID="SP_19300" HPOS="611" VPOS="3226" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_21093" HPOS="630" VPOS="3239" WIDTH="76" HEIGHT="25" CONTENT="was" />
+            <SP ID="SP_19301" HPOS="706" VPOS="3229" WIDTH="23" HEIGHT="0" />
+            <String ID="Word_21094" HPOS="729" VPOS="3229" WIDTH="184" HEIGHT="38" CONTENT="recorded" />
+            <SP ID="SP_19302" HPOS="913" VPOS="3229" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_21095" HPOS="932" VPOS="3231" WIDTH="85" HEIGHT="37" CONTENT="that" />
+            <SP ID="SP_19303" HPOS="1017" VPOS="3231" WIDTH="22" HEIGHT="0" />
+            <String ID="Word_21096" HPOS="1039" VPOS="3232" WIDTH="172" HEIGHT="38" CONTENT="malarial" />
+            <SP ID="SP_19304" HPOS="1211" VPOS="3232" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_21097" HPOS="1230" VPOS="3233" WIDTH="139" HEIGHT="38" CONTENT="fevers," />
+            <SP ID="SP_19305" HPOS="1369" VPOS="3233" WIDTH="23" HEIGHT="0" />
+            <String ID="Word_21098" HPOS="1392" VPOS="3233" WIDTH="124" HEIGHT="37" CONTENT="which" />
+            <SP ID="SP_19306" HPOS="1516" VPOS="3233" WIDTH="27" HEIGHT="0" />
+            <String ID="Word_21099" HPOS="1543" VPOS="3233" WIDTH="146" HEIGHT="49" CONTENT="prevail" />
+            <SP ID="SP_19307" HPOS="1689" VPOS="3233" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_21100" HPOS="1710" VPOS="3233" WIDTH="39" HEIGHT="36" CONTENT="in" />
+            <SP ID="SP_19308" HPOS="1749" VPOS="3232" WIDTH="28" HEIGHT="0" />
+            <String ID="Word_21101" HPOS="1777" VPOS="3232" WIDTH="230" HEIGHT="51" CONTENT="September" />
+            <SP ID="SP_19309" HPOS="2007" VPOS="3232" WIDTH="19" HEIGHT="0" />
+            <String ID="Word_21102" HPOS="2026" VPOS="3235" WIDTH="76" HEIGHT="37" CONTENT="and" />
+            <SP ID="SP_19310" HPOS="2102" VPOS="3235" WIDTH="16" HEIGHT="0" />
+            <String ID="Word_21103" HPOS="2118" VPOS="3235" WIDTH="176" HEIGHT="47" CONTENT="October," />
+            <SP ID="SP_19311" HPOS="2294" VPOS="3235" WIDTH="21" HEIGHT="0" />
+            <String ID="Word_21104" HPOS="2315" VPOS="3238" WIDTH="112" HEIGHT="38" CONTENT="affect" />
+          </TextLine>
+        </TextBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

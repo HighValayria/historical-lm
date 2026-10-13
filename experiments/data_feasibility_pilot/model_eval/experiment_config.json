@@ -1,0 +1,28 @@
+{
+  "experiment_id": "DFP-B0-B1-B2-v1",
+  "status": "configured_not_executed",
+  "reason_not_executed": "No controlled local model command or authorized API credential was detected on 2026-10-13; paid calls are prohibited without explicit separate authorization.",
+  "benchmark": "experiments/data_feasibility_pilot/benchmark/benchmark_items.jsonl",
+  "evidence_bank": "experiments/data_feasibility_pilot/benchmark/evidence_bank.jsonl",
+  "conditions": {
+    "B0": "Question only; no historical-boundary instruction and no supplied evidence.",
+    "B1": "Question plus explicit cutoff, source-boundary and uncertainty instructions; no supplied passage.",
+    "B2": "B1 instructions plus the verified evidence passage(s) for that item."
+  },
+  "generation_defaults": {
+    "temperature": 0.0,
+    "max_output_tokens": 500,
+    "seed": 20261013,
+    "repetitions": 1
+  },
+  "required_run_metadata": [
+    "provider",
+    "model_identifier",
+    "model_revision_if_known",
+    "endpoint_type",
+    "run_timestamp_utc",
+    "prompt_packet_sha256",
+    "generation_parameters",
+    "raw_response"
+  ]
+}

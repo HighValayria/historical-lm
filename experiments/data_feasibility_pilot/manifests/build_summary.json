@@ -1,0 +1,9 @@
+{
+  "selected_pages": 14,
+  "cmmj_pages": 8,
+  "wellcome_pages": 6,
+  "inventory_files": 73,
+  "inventory_bytes": 59212912,
+  "page_manifest": "experiments/data_feasibility_pilot/manifests/selected_pages.jsonl",
+  "inventory": "experiments/data_feasibility_pilot/manifests/file_inventory_sha256.json"
+}

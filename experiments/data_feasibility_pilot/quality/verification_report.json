@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "sources_registered": 3,
+  "sources_admitted": 2,
+  "selected_pages": 14,
+  "evidence_units": 12,
+  "benchmark_items": 20,
+  "independence_groups": 11,
+  "item_type_counts": {
+    "C1_source_comprehension": 8,
+    "C5_insufficiency_abstention": 5,
+    "C4_evidence_fidelity": 3,
+    "C2_attribution": 2,
+    "C3_temporal_boundary": 1,
+    "C3_cross_source_boundary": 1
+  },
+  "prompt_packets": 60,
+  "inventory_files_verified": 73,
+  "model_outputs_present": false,
+  "warnings": [
+    "Verified transcriptions received one visual pass, not double-keying or historian adjudication.",
+    "Twenty items share evidence and form fewer independent groups.",
+    "No model outputs are expected at this stage."
+  ]
+}

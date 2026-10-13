@@ -44,3 +44,6 @@ nodes:
   T62:
     title: Generate next autonomous task graph
     depends_on: [T61]
+  DFP-2026-10-13:
+    title: Data Feasibility Pilot with real historical pages
+    depends_on: [T62]
