@@ -71,6 +71,15 @@
       "relevance": "medium",
       "status": "candidate_open_cc0_claimed",
       "notes": "Official README describes a CC0 dataset with five tasks from page-level OCR to knowledge/linguistic-variant QA, 14 categories, 100+ books and about 3,000 pages. It includes Qing material but has no demonstrated late-Qing public-health subset or passage-level provenance suitability; verify item-level source provenance before any reuse."
+    },
+    "rag_eval_historical_newspapers": {
+      "name": "rag-eval-historical-newspapers",
+      "url": "https://github.com/rsonnen/rag-eval-historical-newspapers",
+      "first_seen": "2026-10-13",
+      "last_checked": "2026-10-13",
+      "relevance": "medium",
+      "status": "candidate_method_template",
+      "notes": "Public MIT repository provides small historical-newspaper RAG evaluation scenarios with page inventories, stable Library of Congress identifiers, page URLs and PDF/JP2/XML/TXT file references; content is sourced from Chronicling America. It is English and out of the late-Qing/public-health target domain, and the actual page files are not included, so it is an engineering/provenance template rather than project corpus data."
     }
   }
 }

@@ -20,11 +20,13 @@
     "hipe_ocrepair_unit_scoring",
     "historical_chinese_ocr_benchmark_cer_protocol",
     "ocr_correction_provenance_span_schema",
-    "historical_benchmark_target_level_dedup_audit"
+    "historical_benchmark_target_level_dedup_audit",
+    "historical_rag_page_inventory_provenance_template"
   ],
   "resource_review": [
     "sinica_customs_medical_reports_database",
     "mchdoc_github_release_watch",
-    "hipe_ocrepair_scorer"
+    "hipe_ocrepair_scorer",
+    "rag_eval_historical_newspapers_schema_review"
   ]
 }

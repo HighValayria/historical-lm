@@ -29,3 +29,11 @@
 - 决策：按用户指示小幅提高来源约束 RAG、时代边界 / 拒答、档案偏差和评测设计的发现优先级。
 - 执行：在 `automation/DAILY_PROTOCOL.md` 增加轻量主线平衡规则；OCR 继续作为来源可用性和证据审计的支撑层，但纯 OCR 发现须直接影响来源、出处链、修订审计或小样本质量控制决策，才进入实质发现或深读队列。
 - 边界：不设机械配额，也不否定 OCR；当 OCR 工作实际解除来源可行性 blocker 时，仍可优先处理。
+
+## 2026-10-13 — Daily Research Radar
+
+- 调度：`AUTO`；`scripts/check_schedule.py` 仅选择 Daily，且允许更新 Daily 状态。
+- 完成：按 PAPERS、DATASETS、ARCHIVES、METHODS、RESOURCES、PROJECT_IMPACT 顺序完成六通道广度检查。
+- 新证据：登记 `rag-eval-historical-newspapers`。该公开 MIT 仓库提供历史报纸 RAG 的情景 YAML、页级 LOC 标识符、稳定 URL 与 PDF/JP2/XML/TXT 文件引用，支持将原始页与派生评测元数据分离的工程结构。
+- 变更假设：不改变目标语料可行性或正式设计；补充一项可供 N03/N05 参考的页级出处链模板。该资源只覆盖美国英语历史报纸，不能作为晚清公共卫生数据、性能证据或许可代理。
+- 阻塞：无新增系统 blocker；可合法复用的 1880—1899 晚清公共卫生页图、段落及其明确使用条款仍是主要实务约束。
