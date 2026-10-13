@@ -1,0 +1,31 @@
+{
+  "checked_via": "authenticated GitHub REST API using the canonical new repository URL",
+  "checked_at": "2026-10-13",
+  "name": "llm-historical-anachronism",
+  "full_name": "HighValayria/llm-historical-anachronism",
+  "html_url": "https://github.com/HighValayria/llm-historical-anachronism",
+  "default_branch": "main",
+  "branch_sha_before_final_report_commit": "a93d6549170d0c66ac18764d2ffbc664e564e182",
+  "branch_protected": false,
+  "private": false,
+  "archived": false,
+  "has_issues": true,
+  "open_issues_count": 0,
+  "permissions_admin": true,
+  "permissions_push": true,
+  "description": "Research on detecting and mitigating historical and temporal anachronism in LLMs using time-conditioned adaptation, temporal RAG, and verification agents.",
+  "topics": [
+    "ai-agents",
+    "anachronism",
+    "digital-humanities",
+    "historical-nlp",
+    "large-language-models",
+    "lora",
+    "retrieval-augmented-generation",
+    "temporal-reasoning"
+  ],
+  "tags": [
+    "pre-anachronism-migration-20261013"
+  ],
+  "note": "This is a point-in-time verification before committing the final migration report; the final remote HEAD is verified after that commit."
+}

@@ -11,6 +11,6 @@
 | Rename local directory | blocked | Windows reported the directory is in use by current Codex |
 | Update local automation binding | blocked by local rename | automation is paused and still targets old project/path |
 | Preserve `.obsidian/` | pass locally | directory remains present and is now ignored, not deleted |
-| Final migration report | pending final status commit | required output prepared after this review |
+| Final migration report | pass | `reports/ANACHRONISM_REPOSITORY_MIGRATION_REPORT.md`; local blocker is explicitly not misreported |
 
 Overall status: **partially complete**. Remote, research and repository-content migration are complete; the local directory/automation identity cannot be claimed complete until B-0006 is resolved.
