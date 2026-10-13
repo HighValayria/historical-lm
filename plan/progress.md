@@ -55,3 +55,21 @@
 - Confirmed scope: computer-science master's thesis, direction A as the primary scientific problem, method innovation as the intended contribution, and late-Qing public health as a preserved legacy scenario rather than the project boundary.
 - Preflight facts: local `main` starts at `1a3119a` and is 27 commits ahead of `origin/main`; GitHub repository is `HighValayria/historical-lm`, default branch `main`, and the authenticated account has admin/push permission; target GitHub name and target local directory are both currently absent.
 - Safety gate: protect the pre-migration commit with a tag, preserve/ignore machine-local Obsidian state, push the pre-migration history, then make research-direction and infrastructure commits before attempting the final directory rename.
+
+### Execution status
+
+- Research direction commit: `b0dc3dc`.
+- Migration safeguards commit: `6aa25c4`.
+- GitHub: original repository renamed in place to `HighValayria/llm-historical-anachronism`; origin, description and topics updated; `main` pushed.
+- Local path: rename attempted and rejected because the active Codex process holds the directory. No duplicate checkout was created. B-0006 and `scripts/complete_local_path_migration.ps1` record the exact post-close action.
+- Persistent automation: found one paused cron automation named“每日自动化迭代”; it still targets the old saved project/path and must remain paused until the new local path is added and retargeted.
+
+### Capability-use audit
+
+- Required skills: using-research-writing, brainstorming-research, paper-orchestration, verification.
+- Skills actually used: all four. The user's migration specification supplied and explicitly confirmed the thesis type, field, main topic, contribution goal and candidate methods, so brainstorming produced a recorded scope decision without reopening settled questions.
+- Inputs consumed: Git status/history/remotes/worktree/config, authenticated GitHub repository metadata, README/charter/design/version files, automation protocols and binding, active state/backlog, both pilot reports/manifests and critical hashes.
+- Inputs not used and why: no new web literature or historical sources were collected because this was an identity/structure migration; no model interface or training route was invoked because no method experiment was authorized by evidence.
+- Artifacts produced: v002 design, active research structure, Legacy indexes, new backlog/graph/config, GitHub rename and metadata, protection tag, migration manifest/verifier, guarded local rename script, reviews, node/final reports.
+- Verification run: both existing pilot verifiers pass; repository migration verifier passes in pre-rename mode; JSON/YAML parse and Python compilation pass; GitHub API and `ls-remote` verify the new repository independently of redirects.
+- Remaining risk: B-0006 prevents the final local directory and Codex automation binding from satisfying acceptance criteria in the active session. M1/M2/M3 still have no experimental result.

@@ -1,6 +1,6 @@
 {
   "run_id": "anachronism-methods-001",
-  "status": "ready",
+  "status": "blocked",
   "completed_nodes": [
     "T00",
     "T10",
@@ -20,10 +20,10 @@
     "DFP-2026-10-13",
     "RVP-2026-10-13"
   ],
-  "running_nodes": [
+  "running_nodes": [],
+  "blocked_nodes": [
     "ARM-2026-10-13"
   ],
-  "blocked_nodes": [],
   "skipped_nodes": [],
   "dynamic_nodes_created": 3,
   "last_updated": "2026-10-13T23:59:00+08:00"

@@ -45,6 +45,15 @@
       "status": "active",
       "summary": "The current 20-item set contains only one direct historical-time item and no item with sufficient independent chronology to label post-cutoff knowledge intrusion.",
       "mitigation": "Build a small dedicated suite only after chronology, cutoff, actor-access and cross-source evidence cards are independently checked."
+    },
+    {
+      "id": "B-0006",
+      "date": "2026-10-13",
+      "node": "ARM-2026-10-13",
+      "severity": "medium",
+      "status": "active",
+      "summary": "The running Codex workspace holds the source directory open, so Windows rejected the final local directory rename. The GitHub repository, origin URL and repository contents have already migrated.",
+      "mitigation": "After closing this Codex workspace, run scripts/complete_local_path_migration.ps1 from D:\\Resources with -Execute, reopen the new project path, and retarget the paused Codex automation."
     }
   ]
 }
