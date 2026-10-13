@@ -1,0 +1,68 @@
+{
+  "captured_at": "2026-10-13",
+  "source_directory": "D:\\Resources\\historical_lm_exploration_starter",
+  "target_directory": "D:\\Resources\\llm-historical-anachronism",
+  "source_repository": "HighValayria/historical-lm",
+  "target_repository": "HighValayria/llm-historical-anachronism",
+  "branch": "main",
+  "baseline_head": "1a3119aeb75f858bcf82a29bb21606cc67d94886",
+  "baseline_commit_count": 43,
+  "baseline_tracked_files": 284,
+  "baseline_tree_listing_sha256": "d53eed7b3f58e8eb0fbaacbb6f6bd7d4f5dcd8fecf912a9113c8d1d6812d1cf1",
+  "remote_head_before_safety_push": "2fb8f4236a564bc8541c42e8e95d51572331d50e",
+  "remote_head_after_safety_push": "1a3119aeb75f858bcf82a29bb21606cc67d94886",
+  "protection_tag": "pre-anachronism-migration-20261013",
+  "special_git_features": {
+    "additional_worktrees": 0,
+    "gitmodules_present": false,
+    "gitattributes_present": false,
+    "lfs_tracked_files_verified": false,
+    "lfs_note": "git-lfs is installed but its sandboxed inspection failed; no .gitattributes exists and the largest tracked file is 22,663,073 bytes."
+  },
+  "pre_migration_worktree": {
+    "reports_marked_modified_but_text_diff_empty": [
+      "reports/FINAL_REPORT.md",
+      "reports/最终总结报告.md"
+    ],
+    "untracked_preserved_locally_and_ignored": [
+      ".obsidian/"
+    ]
+  },
+  "critical_files": [
+    {
+      "path": "experiments/data_feasibility_pilot/manifests/file_inventory_sha256.json",
+      "bytes": 17383,
+      "sha256": "ebbebe4f5e9d18f28fe5a8e81c456c91cb464180e528422dcdd1b9838c163a4d"
+    },
+    {
+      "path": "experiments/data_feasibility_pilot/model_eval/prompt_packets.jsonl",
+      "bytes": 42736,
+      "sha256": "665523c3b8fa62ed1332eb0ba0a82c83d6c3f0811e8b04f6ed156a19c717ca6b"
+    },
+    {
+      "path": "experiments/research_validity_pilot/factorial/prompt_packets_v2.jsonl",
+      "bytes": 90115,
+      "sha256": "cfd68a8858b76570ec42361a9d2b70b2e8239ce426e2024ed3ab06d7de5201e0"
+    },
+    {
+      "path": "experiments/research_validity_pilot/audit/frozen_input_manifest.json",
+      "bytes": 983,
+      "sha256": "0cb256d47393071362895bc84236a5934d1659b57b9edd516cf6623b635ebf03"
+    },
+    {
+      "path": "reports/data_feasibility_pilot/DATA_FEASIBILITY_PILOT_REPORT.md",
+      "bytes": 17928,
+      "sha256": "6d018e8c9bdb025b188bf218f6d214b7313d960e8dd263b24e10f094be820e91"
+    },
+    {
+      "path": "reports/research_validity_pilot/RESEARCH_VALIDITY_BASELINE_PILOT_REPORT.md",
+      "bytes": 12994,
+      "sha256": "aec67810178d0046f6b4c9fe7affeaf451bf3952329771355dd045ffe89fc220"
+    }
+  ],
+  "original_design": {
+    "tag_path": "pre-anachronism-migration-20261013:research_design/RESEARCH_DESIGN.md",
+    "bytes": 14380,
+    "sha256": "7f4785cb1f3c4c20e8f1e27d21fdef32a5d4ee008913fb35475442108e673d36"
+  }
+}

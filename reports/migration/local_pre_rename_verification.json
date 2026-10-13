@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "root": "D:\\Resources\\historical_lm_exploration_starter",
+  "checks": [
+    {
+      "check": "git_repository",
+      "passed": true,
+      "detail": "D:\\Resources\\historical_lm_exploration_starter\\.git"
+    },
+    {
+      "check": "directory_identity",
+      "passed": true,
+      "detail": "historical_lm_exploration_starter"
+    },
+    {
+      "check": "readme_identity",
+      "passed": true,
+      "detail": "README title"
+    },
+    {
+      "check": "design_v002",
+      "passed": true,
+      "detail": "CURRENT.md"
+    },
+    {
+      "check": "legacy_index",
+      "passed": true,
+      "detail": "legacy/late_qing/README.md"
+    },
+    {
+      "check": "origin_identity",
+      "passed": true,
+      "detail": "https://github.com/HighValayria/llm-historical-anachronism.git"
+    },
+    {
+      "check": "history_continuity",
+      "passed": true,
+      "detail": "1a3119aeb75f858bcf82a29bb21606cc67d94886 is ancestor of HEAD"
+    },
+    {
+      "check": "protection_tag",
+      "passed": true,
+      "detail": "pre-anachronism-migration-20261013"
+    },
+    {
+      "check": "critical_legacy_assets",
+      "passed": true,
+      "detail": "6 checked; mismatches=[]"
+    },
+    {
+      "check": "original_design_recoverable",
+      "passed": true,
+      "detail": "pre-anachronism-migration-20261013:research_design/RESEARCH_DESIGN.md"
+    },
+    {
+      "check": "obsidian_preserved",
+      "passed": true,
+      "detail": ".obsidian local directory"
+    }
+  ]
+}
