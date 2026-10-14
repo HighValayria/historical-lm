@@ -1,7 +1,8 @@
 #!/usr/bin/env python
-"""Plan rolling Daily / 3-day / 7-day / 14-day research automation.
+"""Plan rolling 24-hour Radar / 3-day / 7-day / 14-day research reviews.
 
-This module is intentionally read-only. A stage result is persisted only by
+This module is intentionally read-only and independent from the five-hour
+execution-tick clock. A stage result is persisted only by
 ``record_automation_result.py`` after the stage's acceptance checks pass.
 """
 
@@ -107,8 +108,6 @@ def migrate_legacy_state(state: dict, anchor: datetime) -> dict:
 
 
 def stage_due(stage: str, stage_state: dict, anchor: datetime, now: datetime) -> bool:
-    if stage == "daily":
-        return True
     last_successful = parse_timestamp(stage_state.get("last_successful"), now.tzinfo or timezone.utc)
     not_before = parse_timestamp(stage_state.get("not_before"), now.tzinfo or timezone.utc)
     due_at = anchor + timedelta(days=INTERVAL_DAYS[stage])
@@ -144,6 +143,7 @@ def compute_run_plan(
         "force_mode": mode,
         "legacy_mode_alias": legacy_alias,
         "update_schedule": should_update,
+        "execution_tick_is_separate": True,
         "ordered_stages": list(selected),
         "schedule_anchor": normalized["schedule_anchor"],
         "due": automatic,

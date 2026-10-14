@@ -23,14 +23,20 @@ run:
 
 automation:
   timezone: "Asia/Shanghai"
+  execution_tick:
+    anchor: "2026-10-14T09:00:00+08:00"
+    interval_hours: 5
+    late_tolerance_minutes: 30
+    missed_slot_policy: "SKIP_MISSED_SLOTS"
+    lock_lease_minutes: 120
   stage_order: [daily, tactical, synthesis, audit]
   intervals_days:
     daily: 1
     tactical: 3
     synthesis: 7
     audit: 14
-  max_tasks_per_daily_run: 3
-  max_total_minutes_per_daily_run: 90
+  max_tasks_per_execution_tick: 3
+  max_total_minutes_per_execution_tick: 90
   manual_update_schedule_default: false
   success_required_to_advance_schedule: true
 

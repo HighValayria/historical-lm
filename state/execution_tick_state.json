@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "timezone": "Asia/Shanghai",
+  "anchor": "2026-10-14T09:00:00+08:00",
+  "interval_hours": 5,
+  "late_tolerance_minutes": 30,
+  "missed_slot_policy": "SKIP_MISSED_SLOTS",
+  "last_valid_execution_slot": null,
+  "last_successful_research_task_at": "2026-10-14T09:10:34+08:00",
+  "completed_slots": [],
+  "current_task_checkpoint": null,
+  "execution_lock": {
+    "status": "unlocked",
+    "run_id": null,
+    "slot_id": null,
+    "acquired_at": null,
+    "heartbeat_at": null
+  },
+  "migration_note": "The five-hour tick clock starts without claiming a slot. Existing research success time is preserved; stage run counts and historical reports are unchanged."
+}

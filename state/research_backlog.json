@@ -2,8 +2,8 @@
   "version": 1,
   "updated_at": "2026-10-14T09:09:06+08:00",
   "scheduler": {
-    "max_tasks_per_daily_run": 3,
-    "max_total_minutes_per_daily_run": 90,
+    "max_tasks_per_execution_tick": 3,
+    "max_total_minutes_per_execution_tick": 90,
     "last_claimed_track": "B",
     "selection_policy": "Resume a safe running task; otherwise choose the lowest numeric priority with satisfied dependencies, preferring the track not claimed last when priorities tie."
   },

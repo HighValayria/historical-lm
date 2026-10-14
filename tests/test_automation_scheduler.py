@@ -13,6 +13,13 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from check_schedule import compute_run_plan, compute_schedule, migrate_legacy_state  # noqa: E402
+from manage_execution_tick import (  # noqa: E402
+    claim_tick,
+    default_state as tick_state,
+    finish_tick,
+    slot_at_or_before,
+    slot_id,
+)
 from record_automation_result import record  # noqa: E402
 
 
@@ -39,7 +46,23 @@ def state(anchor: str = "2026-10-13T00:00:00+08:00") -> dict:
 
 class ScheduleTests(unittest.TestCase):
     def test_first_initialization_does_not_run_new_stages(self) -> None:
-        self.assertEqual(compute_run_plan(state(), dt("2026-10-13T12:00:00+08:00"))["ordered_stages"], ["daily"])
+        self.assertEqual(compute_run_plan(state(), dt("2026-10-13T12:00:00+08:00"))["ordered_stages"], [])
+
+    def test_radar_runs_at_most_once_per_24_hours(self) -> None:
+        current = state()
+        current["stages"]["daily"]["last_successful"] = "2026-10-14T09:10:34+08:00"
+        self.assertFalse(compute_schedule(current, dt("2026-10-15T09:10:33+08:00"))["daily"])
+        self.assertTrue(compute_schedule(current, dt("2026-10-15T09:10:34+08:00"))["daily"])
+
+    def test_five_hour_ticks_do_not_accelerate_research_cycles(self) -> None:
+        current = state()
+        current["stages"]["daily"]["last_successful"] = "2026-10-14T09:10:34+08:00"
+        for tick in ("2026-10-14T14:00:00+08:00", "2026-10-14T19:00:00+08:00", "2026-10-15T00:00:00+08:00"):
+            due = compute_schedule(current, dt(tick))
+            self.assertFalse(due["daily"])
+            self.assertFalse(due["tactical"])
+            self.assertFalse(due["synthesis"])
+            self.assertFalse(due["audit"])
 
     def test_3_7_14_day_due_boundaries(self) -> None:
         current = state()
@@ -113,6 +136,77 @@ class ScheduleTests(unittest.TestCase):
             self.assertEqual(second["status"], "idempotent_noop")
             after_success = json.loads((root / "state/automation_state.json").read_text(encoding="utf-8"))
             self.assertEqual(after_success["stages"]["tactical"]["run_count"], 1)
+
+
+class ExecutionTickTests(unittest.TestCase):
+    def make_paths(self, root: Path) -> tuple[Path, Path]:
+        state_path = root / "state" / "execution_tick_state.json"
+        state_path.parent.mkdir()
+        state_path.write_text(json.dumps(tick_state()), encoding="utf-8")
+        return state_path, root / "runtime" / "execution.lock"
+
+    def test_five_hour_slot_calculation(self) -> None:
+        anchor = dt("2026-10-14T09:00:00+08:00")
+        self.assertEqual(slot_at_or_before(dt("2026-10-14T13:59:59+08:00")), anchor)
+        self.assertEqual(slot_at_or_before(dt("2026-10-14T14:00:00+08:00")), dt("2026-10-14T14:00:00+08:00"))
+
+    def test_cross_day_cycle_is_continuous(self) -> None:
+        self.assertEqual(slot_at_or_before(dt("2026-10-15T00:10:00+08:00")), dt("2026-10-15T00:00:00+08:00"))
+        self.assertEqual(slot_at_or_before(dt("2026-10-15T05:00:00+08:00")), dt("2026-10-15T05:00:00+08:00"))
+
+    def test_missed_slots_do_not_batch_catch_up(self) -> None:
+        with tempfile.TemporaryDirectory(dir=ROOT / "tests") as directory:
+            state_path, lock_path = self.make_paths(Path(directory))
+            result = claim_tick(state_path, lock_path, dt("2026-10-15T00:10:00+08:00"), run_id="wake")
+            self.assertEqual(result["decision"], "run")
+            self.assertEqual(result["slot_id"], slot_id(dt("2026-10-15T00:00:00+08:00")))
+            self.assertNotIn("missed_slots", result)
+
+    def test_late_execution_is_skipped(self) -> None:
+        with tempfile.TemporaryDirectory(dir=ROOT / "tests") as directory:
+            state_path, lock_path = self.make_paths(Path(directory))
+            result = claim_tick(
+                state_path,
+                lock_path,
+                dt("2026-10-14T14:31:00+08:00"),
+                scheduled_at=dt("2026-10-14T14:00:00+08:00"),
+            )
+            self.assertEqual(result["reason"], "stale_slot")
+            self.assertFalse(lock_path.exists())
+
+    def test_same_slot_cannot_complete_twice(self) -> None:
+        with tempfile.TemporaryDirectory(dir=ROOT / "tests") as directory:
+            state_path, lock_path = self.make_paths(Path(directory))
+            now = dt("2026-10-14T14:05:00+08:00")
+            first = claim_tick(state_path, lock_path, now, run_id="first")
+            self.assertEqual(first["decision"], "run")
+            finish_tick(state_path, lock_path, "first", "success", now)
+            second = claim_tick(state_path, lock_path, now, run_id="second")
+            self.assertEqual(second["reason"], "slot_already_completed")
+
+    def test_active_previous_run_blocks_new_trigger(self) -> None:
+        with tempfile.TemporaryDirectory(dir=ROOT / "tests") as directory:
+            state_path, lock_path = self.make_paths(Path(directory))
+            first = claim_tick(state_path, lock_path, dt("2026-10-14T14:05:00+08:00"), run_id="first")
+            self.assertEqual(first["decision"], "run")
+            second = claim_tick(state_path, lock_path, dt("2026-10-14T14:10:00+08:00"), run_id="second")
+            self.assertEqual(second["reason"], "active_execution_lock")
+
+    def test_manual_run_does_not_advance_automatic_slot(self) -> None:
+        with tempfile.TemporaryDirectory(dir=ROOT / "tests") as directory:
+            state_path, lock_path = self.make_paths(Path(directory))
+            now = dt("2026-10-14T12:00:00+08:00")
+            claimed = claim_tick(state_path, lock_path, now, run_id="manual-one", manual=True)
+            self.assertTrue(claimed["manual"])
+            finish_tick(state_path, lock_path, "manual-one", "success", now, research_task_successful=True)
+            saved = json.loads(state_path.read_text(encoding="utf-8"))
+            self.assertIsNone(saved["last_valid_execution_slot"])
+            self.assertEqual(saved["completed_slots"], [])
+            self.assertEqual(saved["last_successful_research_task_at"], "2026-10-14T12:00:00+08:00")
+
+    def test_timezone_is_normalized_to_shanghai(self) -> None:
+        utc_time = dt("2026-10-14T06:05:00+00:00")
+        self.assertEqual(slot_at_or_before(utc_time), dt("2026-10-14T14:00:00+08:00"))
 
 
 if __name__ == "__main__":
