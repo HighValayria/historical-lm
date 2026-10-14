@@ -5,8 +5,8 @@
   "stages": {
     "daily": {
       "interval_days": 1,
-      "last_successful": "2026-10-13T00:00:00+08:00",
-      "run_count": 10,
+      "last_successful": "2026-10-14T09:10:34+08:00",
+      "run_count": 11,
       "not_before": "2026-10-13T00:00:00+08:00"
     },
     "tactical": {
@@ -28,7 +28,7 @@
       "not_before": "2026-10-27T00:00:00+08:00"
     }
   },
-  "last_successful_run": "2026-10-13T00:00:00+08:00",
+  "last_successful_run": "2026-10-14T09:10:34+08:00",
   "legacy_migration": {
     "source_version": 1,
     "migrated_at": "2026-10-13T00:00:00+08:00",

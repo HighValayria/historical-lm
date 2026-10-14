@@ -1,44 +1,44 @@
 {
   "PAPERS": {
-    "last_checked": "2026-10-13",
+    "last_checked": "2026-10-14",
     "last_material_update": "2026-10-13",
     "last_run_status": "checked_material_update",
-    "last_run_id": "manual-daily-20261013T224500+0800",
-    "note": "A1 bounded review verified eight primary works; three newly registered papers."
+    "last_run_id": "daily-20261014T005838Z",
+    "note": "Registered Chronologic (arXiv:2609.23178) at abstract level; it is a high-relevance evaluation reference, not project chronology evidence."
   },
   "DATASETS": {
-    "last_checked": "2026-10-13",
+    "last_checked": "2026-10-14",
     "last_material_update": "2026-10-13",
-    "last_run_status": "checked_material_update",
-    "last_run_id": "manual-daily-20261013T224500+0800",
-    "note": "Registered the official Rewind Time subsets and EvolveBench repository as candidates; license/provenance remain unverified."
+    "last_run_status": "checked_no_material_update",
+    "last_run_id": "daily-20261014T005838Z",
+    "note": "No newly usable dataset; Chronologic availability/terms were not treated as verified dataset evidence."
   },
   "ARCHIVES": {
-    "last_checked": "2026-10-13",
+    "last_checked": "2026-10-14",
     "last_material_update": "2026-10-11",
     "last_run_status": "checked_no_material_update",
-    "last_run_id": "manual-daily-20261013T224500+0800",
-    "note": "Checked Wellcome archive guidance and Library of Congress public-history/public-health discovery pages; no new project-changing source was adopted."
+    "last_run_id": "daily-20261014T005838Z",
+    "note": "Checked Library of Congress Chronicling America migration guidance; no target-period, licensed late-Qing public-health source was adopted."
   },
   "METHODS": {
-    "last_checked": "2026-10-13",
+    "last_checked": "2026-10-14",
     "last_material_update": "2026-10-13",
     "last_run_status": "checked_material_update",
-    "last_run_id": "manual-daily-20261013T224500+0800",
-    "note": "Compared cutoff prompting, recall prompting, temporal critique, historical RAG and time-sensitive knowledge editing."
+    "last_run_id": "daily-20261014T005838Z",
+    "note": "Completed B1 reuse audit and added a zero-call baseline compatibility contract; no method effectiveness claim."
   },
   "RESOURCES": {
-    "last_checked": "2026-10-13",
+    "last_checked": "2026-10-14",
     "last_material_update": "2026-10-13",
     "last_run_status": "checked_material_update",
-    "last_run_id": "manual-daily-20261013T224500+0800",
-    "note": "Verified author/official project pages for Rewind Time and EvolveBench; no download or model execution performed."
+    "last_run_id": "daily-20261014T005838Z",
+    "note": "Chronologic arXiv entry queued for deep reading; local safe execution adapter retained as resource only."
   },
   "PROJECT_IMPACT": {
-    "last_checked": "2026-10-13",
+    "last_checked": "2026-10-14",
     "last_material_update": "2026-10-13",
     "last_run_status": "checked_material_update",
-    "last_run_id": "manual-daily-20261013T224500+0800",
-    "note": "Material: raises the prompt baseline, narrows M2 differentiation to cutoff-admissible evidence, and identifies TCFT as a close M3 competitor; no formal design revision."
+    "last_run_id": "daily-20261014T005838Z",
+    "note": "Limited: Chronologic adds an evaluation comparator and B1 reduces engineering ambiguity; neither changes formal direction or resolves chronology/interface blockers."
   }
 }

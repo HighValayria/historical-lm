@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T22:44:27+08:00",
+  "updated_at": "2026-10-14T09:09:06+08:00",
   "scheduler": {
     "max_tasks_per_daily_run": 3,
     "max_total_minutes_per_daily_run": 90,
-    "last_claimed_track": "A",
+    "last_claimed_track": "B",
     "selection_policy": "Resume a safe running task; otherwise choose the lowest numeric priority with satisfied dependencies, preferring the track not claimed last when priorities tie."
   },
   "tasks": [
@@ -63,13 +63,18 @@
         "max_files_changed": 4,
         "paid_api": false
       },
-      "status": "ready",
-      "evidence_paths": [],
+      "status": "completed",
+      "evidence_paths": [
+        "data/chronology/CHRONOLOGY_CARD_SCHEMA.md",
+        "data/chronology/chronology_card.schema.json",
+        "reports/daily/2026-10-14.md"
+      ],
       "blockers": [],
-      "attempt_count": 0,
+      "attempt_count": 1,
       "checkpoint": {
-        "safe_to_resume": false,
-        "summary": "not started"
+        "updated_at": "2026-10-14T09:07:04+08:00",
+        "summary": "Accepted: machine-valid chronology-card schema and documentation define four layers, source provenance, uncertainty, bias, and review rules; no historical cases asserted.",
+        "safe_to_resume": false
       }
     },
     {
@@ -94,13 +99,14 @@
         "max_cases_per_attempt": 5,
         "paid_api": false
       },
-      "status": "proposed",
+      "status": "ready",
       "evidence_paths": [],
       "blockers": [],
       "attempt_count": 0,
       "checkpoint": {
-        "safe_to_resume": false,
-        "summary": "waiting for A2"
+        "updated_at": "2026-10-14T09:07:04+08:00",
+        "summary": "dependencies satisfied",
+        "safe_to_resume": false
       }
     },
     {
@@ -123,13 +129,18 @@
         "max_files_changed": 8,
         "model_calls": 0
       },
-      "status": "ready",
-      "evidence_paths": [],
+      "status": "completed",
+      "evidence_paths": [
+        "reports/engineering_reuse_audit.md",
+        "experiments/baselines/README.md",
+        "reports/daily/2026-10-14.md"
+      ],
       "blockers": [],
-      "attempt_count": 0,
+      "attempt_count": 1,
       "checkpoint": {
-        "safe_to_resume": false,
-        "summary": "not started"
+        "updated_at": "2026-10-14T09:04:09+08:00",
+        "summary": "Accepted: reuse audit and baseline compatibility contract completed; dry-run and 14 local tests passed without model calls.",
+        "safe_to_resume": false
       }
     },
     {
@@ -154,15 +165,20 @@
         "model_calls": 0,
         "large_downloads": false
       },
-      "status": "proposed",
-      "evidence_paths": [],
+      "status": "completed",
+      "evidence_paths": [
+        "experiments/baselines/config.schema.json",
+        "tests/test_baseline_scaffold.py",
+        "reports/daily/2026-10-14.md"
+      ],
       "blockers": [
         "B-0003: no authorized versioned model interface for real runs"
       ],
-      "attempt_count": 0,
+      "attempt_count": 1,
       "checkpoint": {
-        "safe_to_resume": false,
-        "summary": "waiting for B1; dry-run work remains possible"
+        "updated_at": "2026-10-14T09:09:06+08:00",
+        "summary": "Accepted: dry-run-only baseline config schema supports P0/P1/O0/O1/R0/R1 and separates raw/scoring artifacts; 17 local tests passed with zero model calls.",
+        "safe_to_resume": false
       }
     },
     {
@@ -188,13 +204,14 @@
         "max_hypotheses": 3,
         "model_calls": 0
       },
-      "status": "proposed",
+      "status": "ready",
       "evidence_paths": [],
       "blockers": [],
       "attempt_count": 0,
       "checkpoint": {
-        "safe_to_resume": false,
-        "summary": "waiting for A1 and B1"
+        "updated_at": "2026-10-14T09:04:09+08:00",
+        "summary": "dependencies satisfied",
+        "safe_to_resume": false
       }
     }
   ]

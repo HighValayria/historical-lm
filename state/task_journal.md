@@ -85,3 +85,12 @@
 - 决策变化：后续 Prompt 基线需含 Recall-Based Prompting；M2 重点收窄到命题级 cutoff admissibility；M3 必须与 TCFT 明确区分。未修改正式研究设计。
 - 限制：没有真实模型实验；数据集许可、revision 和条目级时间出处仍需采用前核验；严格验证时代错置题仍为 0。
 - 调度：手动执行不更新 `state/automation_state.json`，未执行 Tactical、Synthesis 或 Audit。
+
+## 2026-10-14 — Scheduled Daily / B1
+
+- 调度：`AUTO`；`scripts/check_schedule.py` 仅选择 Daily，允许在验收成功后更新其日程。
+- 六通道：PAPERS、METHODS、RESOURCES、PROJECT_IMPACT 有实质更新；DATASETS 与 ARCHIVES 检查后无实质更新。
+- 论文：登记 `arxiv:2609.23178` Chronologic；仅完成作者摘要级核验，进入 deep-reading，不把它当作本项目年代证据或可用数据集。
+- 任务：完成 B1、A2、B2（本轮 Daily 上限 3 项）。B1 审计并将基线 README 改为零调用兼容契约；A2 交付四层年代证据卡 schema；B2 交付可记录版本 / 参数 / 条件 / 哈希与路径分离的干运行配置 schema。旧 20 题、原始输出和审计保持不变。
+- 假设 / 决策：未来新题必须以年代卡、独立命题、截止点和行动者范围接入；B1/B2 不解除 B-0003 或 B-0005，也不改变正式研究设计。A3 已就绪，作为下一 Daily 的优先任务。
+- 验证与完成状态：dry-run 未产生响应；年代卡 schema 通过 Draft 2020-12 与示例验证；Baseline scaffold、backlog 和调度共 17 项测试通过；JSON 与 diff 检查待收尾复核。

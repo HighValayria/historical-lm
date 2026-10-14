@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://llm-historical-anachronism.local/schema/baseline-config-v0.1.json",
+  "title": "Minimum Historical-Anachronism Baseline Configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["experiment_id", "status", "execution_mode", "model", "endpoint", "generation", "conditions", "input_packets", "artifacts"],
+  "properties": {
+    "experiment_id": {"type": "string", "minLength": 1},
+    "status": {"enum": ["configured_not_executed", "authorized_ready", "executed", "blocked"]},
+    "execution_mode": {"enum": ["dry_run", "authorized_execute"]},
+    "model": {"type": "object", "additionalProperties": false, "required": ["identifier", "revision"], "properties": {"identifier": {"type": "string", "minLength": 1}, "revision": {"type": "string", "minLength": 1}}},
+    "endpoint": {"type": "object", "additionalProperties": false, "required": ["type", "scope"], "properties": {"type": {"enum": ["openai_compatible_chat_completions", "other_authorized"]}, "scope": {"enum": ["loopback", "remote_authorized"]}, "base_url": {"type": "string"}, "authorization_id": {"type": "string"}}},
+    "generation": {"type": "object", "additionalProperties": false, "required": ["temperature", "max_tokens"], "properties": {"temperature": {"type": "number", "minimum": 0}, "max_tokens": {"type": "integer", "minimum": 1}, "seed": {"type": ["integer", "null"]}}},
+    "conditions": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["P0", "P1", "O0", "O1", "R0", "R1"]}},
+    "input_packets": {"type": "object", "additionalProperties": false, "required": ["path", "sha256"], "properties": {"path": {"type": "string", "minLength": 1}, "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}},
+    "retrieval": {"type": "object", "additionalProperties": false, "properties": {"corpus_version": {"type": "string"}, "license_review": {"enum": ["not_applicable", "pending", "verified"]}, "ordinary_rag": {"enum": ["not_configured", "configured"]}, "temporal_rag": {"enum": ["not_configured", "configured"]}, "temporal_metadata_version": {"type": "string"}}},
+    "artifacts": {"type": "object", "additionalProperties": false, "required": ["raw_responses_path", "scoring_path"], "properties": {"raw_responses_path": {"type": "string", "pattern": "(^|/)raw/"}, "scoring_path": {"type": "string", "pattern": "(^|/)scoring/"}, "run_manifest_path": {"type": "string"}}}
+  },
+  "allOf": [
+    {"if": {"properties": {"execution_mode": {"const": "authorized_execute"}}}, "then": {"properties": {"status": {"const": "authorized_ready"}, "endpoint": {"required": ["authorization_id"]}}}},
+    {"if": {"properties": {"endpoint": {"properties": {"scope": {"const": "remote_authorized"}}}}}, "then": {"properties": {"endpoint": {"required": ["authorization_id"]}}}}
+  ]
+}

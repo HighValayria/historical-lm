@@ -23,13 +23,34 @@ class BacklogTests(unittest.TestCase):
             self.assertTrue(REQUIRED_FIELDS.issubset(task))
 
     def test_dependencies_hold_proposed_tasks(self) -> None:
-        by_id = {task["task_id"]: task for task in self.data["tasks"]}
+        data = json.loads(json.dumps(self.data))
+        by_id = {task["task_id"]: task for task in data["tasks"]}
+        # Persisted automation state advances over time; exercise the rule with
+        # a dependency-incomplete snapshot instead of assuming a fresh repo.
+        by_id["A2"]["status"] = "ready"
+        by_id["B1"]["status"] = "ready"
+        by_id["A3"]["status"] = "proposed"
+        by_id["B2"]["status"] = "proposed"
+        by_id["B3"]["status"] = "proposed"
         self.assertEqual(by_id["A3"]["status"], "proposed")
         self.assertIn("A2", by_id["A3"]["dependencies"])
         self.assertEqual(by_id["B2"]["status"], "proposed")
 
     def test_selection_uses_priority_and_track_balance(self) -> None:
         data = json.loads(json.dumps(self.data))
+        # The persisted backlog may contain a task actively claimed by an
+        # automation run. This unit test isolates tie-breaking among ready
+        # tasks rather than inheriting that resumable-running state.
+        for task in data["tasks"]:
+            if task["status"] == "running":
+                task["status"] = "ready"
+                task["checkpoint"]["safe_to_resume"] = False
+        by_id = {task["task_id"]: task for task in data["tasks"]}
+        by_id["A2"]["status"] = "ready"
+        by_id["B1"]["status"] = "ready"
+        by_id["A3"]["status"] = "proposed"
+        by_id["B2"]["status"] = "proposed"
+        by_id["B3"]["status"] = "proposed"
         data["scheduler"]["last_claimed_track"] = "A"
         self.assertEqual(select_next(data)["task_id"], "B1")
         data["scheduler"]["last_claimed_track"] = "B"

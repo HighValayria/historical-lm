@@ -390,6 +390,23 @@
       "relevance": "medium",
       "reading_depth": "abstract_read",
       "notes": "Temporal knowledge-editing reference comparing PEFT with locate-and-edit methods. Its forward update objective does not establish arbitrary historical rewind."
+    },
+    "arxiv:2609.23178": {
+      "title": "Chronologic: Measuring Language Models' Ability to Represent the Past",
+      "normalized_title": "chronologic measuring language models ability to represent the past",
+      "url": "https://arxiv.org/abs/2609.23178",
+      "doi": "10.48550/arXiv.2609.23178",
+      "arxiv_id": "2609.23178",
+      "stable_paper_id": null,
+      "publication_date": "2026-09-19",
+      "publication_year": 2026,
+      "first_seen": "2026-10-14",
+      "last_checked": "2026-10-14",
+      "discovery_type": "newly_discovered",
+      "discovery_source": "daily_multi_channel_radar",
+      "relevance": "high",
+      "reading_depth": "abstract_read",
+      "notes": "Authors describe an English-language 1831–1930 benchmark with pairwise ground truths and distractors, and report generative tasks harder than discriminative tasks. It is a close evaluation reference, but does not establish chronology, actor access, archival record, or model-use labels for this project."
     }
   }
 }

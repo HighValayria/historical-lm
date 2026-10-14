@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://llm-historical-anachronism.local/schema/chronology-card-v0.1.json",
+  "title": "Chronology Evidence Card v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["card_id", "claim", "cutoff", "actor_scope", "knowledge_existence", "actor_access", "archival_record", "model_use", "sources", "allowed_labels", "review_status", "review", "biases"],
+  "properties": {
+    "card_id": {"type": "string", "pattern": "^CARD-[A-Z0-9][A-Z0-9_-]{2,}$"},
+    "claim": {"type": "object", "additionalProperties": false, "required": ["text", "claim_type"], "properties": {"text": {"type": "string", "minLength": 1}, "claim_type": {"enum": ["event", "knowledge", "concept", "institution", "causal_interpretation", "other"]}}},
+    "cutoff": {"type": "object", "additionalProperties": false, "required": ["value", "temporal_precision", "basis"], "properties": {"value": {"type": "string", "minLength": 1}, "temporal_precision": {"enum": ["day", "month", "year", "interval", "unknown"]}, "basis": {"type": "string", "minLength": 1}}},
+    "actor_scope": {"type": "object", "additionalProperties": false, "required": ["description", "geography", "languages", "institutional_context"], "properties": {"description": {"type": "string", "minLength": 1}, "geography": {"type": "array", "minItems": 1, "items": {"type": "string"}}, "languages": {"type": "array", "minItems": 1, "items": {"type": "string"}}, "institutional_context": {"type": "string", "minLength": 1}}},
+    "knowledge_existence": {"$ref": "#/$defs/layerStatus"},
+    "actor_access": {"$ref": "#/$defs/layerStatus"},
+    "archival_record": {"allOf": [{"$ref": "#/$defs/layerStatus"}, {"type": "object", "required": ["archive_scope"], "properties": {"archive_scope": {"type": "string", "minLength": 1}}}]},
+    "model_use": {"$ref": "#/$defs/modelUseStatus"},
+    "sources": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/source"}},
+    "allowed_labels": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["explicit_future_fact", "post_cutoff_knowledge", "access_anachronism", "concept_anachronism", "institutional_anachronism", "hindsight_interpretation", "archival_silence", "ordinary_error", "indeterminate"]}},
+    "review_status": {"enum": ["draft", "under_review", "verified", "rejected"]},
+    "review": {"type": "object", "additionalProperties": false, "required": ["reviewers", "decision", "notes"], "properties": {"reviewers": {"type": "array", "items": {"type": "string"}}, "decision": {"enum": ["pending", "accept", "accept_with_limitations", "reject"]}, "notes": {"type": "string"}}},
+    "biases": {"type": "array", "uniqueItems": true, "items": {"enum": ["knowledge_diffusion", "archive_survival", "literacy_class", "regional", "author_publisher", "ocr", "modern_editing", "digitization", "training_contamination", "other"]}}
+  },
+  "$defs": {
+    "layerStatus": {"type": "object", "additionalProperties": false, "required": ["status", "evidence_ids"], "properties": {"status": {"enum": ["supported", "not_supported", "unknown", "unverified", "contested", "not_assessed"]}, "evidence_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}}, "uncertainty": {"type": "string"}, "archive_scope": {"type": "string", "minLength": 1}}},
+    "modelUseStatus": {"type": "object", "additionalProperties": false, "required": ["status", "evidence_ids"], "properties": {"status": {"enum": ["supported", "not_supported", "unknown", "unverified", "contested", "not_assessed"]}, "evidence_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}}, "uncertainty": {"type": "string"}, "run_reference": {"type": "string"}}},
+    "source": {"type": "object", "additionalProperties": false, "required": ["source_id", "source_type", "citation", "stable_locator", "supports", "layers", "uncertainty"], "properties": {"source_id": {"type": "string", "minLength": 1}, "source_type": {"enum": ["primary_record", "official_archive", "catalogue", "scholarly_secondary", "reference_work", "dataset_documentation", "other"]}, "citation": {"type": "string", "minLength": 1}, "stable_locator": {"type": "string", "minLength": 1}, "publication_or_event_time": {"type": "string"}, "supports": {"enum": ["direct", "inference", "context_only", "contradicts"]}, "layers": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["knowledge_existence", "actor_access", "archival_record", "model_use"]}}, "uncertainty": {"type": "string", "minLength": 1}}}
+  }
+}
